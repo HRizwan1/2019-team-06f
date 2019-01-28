@@ -1,6 +1,6 @@
-
-![Vagrant] (images/vagrant.png "Vagrant")
+## Vagrant
+![Vagrant] (images\vagrant.png "Vagrant")
 
 ---
-
-![Packer] (images/packer.png "Packer")
+## Packer
+![Packer] (images\packer.png "Packer")
