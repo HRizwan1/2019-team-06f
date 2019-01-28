@@ -1,7 +1,7 @@
 ##Daniel Kolov
-![Me](images/IMG_2637.JPG "Picture of myself")
+![Me](Images/IMG_2637.JPG "Picture of myself")
 
-![Cancun](images/IMG_3676.JPG "Cancun view from Riu Palace Peninsula")
+![Cancun](Images/IMG_3676.JPG "Cancun view from Riu Palace Peninsula")
 ##"Where are you from?"
 
 Originally I am from Montana which is a small city in the country of Bulgaria which a tiny country in Eastern Europe.
@@ -17,4 +17,4 @@ I enjoy table tennis, basketball and I play drums in my free time.
 
 ##"Git tutorial."
 
-![Git Badges](images/GitBadges.png "Git Badges")
+![Git Badges](Images/GitBadges.png "Git Badges")
