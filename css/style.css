@@ -1,3 +1,4 @@
+/* resetting browser stuff */
 *     {
   box-sizing: border-box;
 }
@@ -9,17 +10,34 @@ body   {
   font-size: 16px;
 }
 
+/* styling our overall page */
 body     {
   background: #FFF;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* styling header */
+/* styling our header */
 header   {
   background: #222;
   color: #FFF;
   padding: 20px 30px;
+}
 
+/* logo */
+#logo         {
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  width: 49%;
+}
+#logo img    {
+  width: 50px;
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#logo span   {
+  display: inline-block;
 }
 
 /* main navigation */
@@ -47,6 +65,7 @@ nav ul li a:hover   {
   background: #444;
 }
 
+/* styling our footer */
 footer   {
   background: #222;
   color: #777;
@@ -60,32 +79,25 @@ footer img   {
   margin: 0 auto 10px;
 }
 
-.carbon           {
+/* styling our main content */
+.iit           {
   min-height: 800px;
   text-align: center;
   background-image: url('../img/carbon.png');
   background-size: cover;
 }
-
-/* styling main content */
-.iit           {
-  min-height: 800px;
-  text-align: center;
-  background-image: url('../img/sky.jpg');
-  background-size: cover;
-}
-.iit   {
+.iit-content   {
   color: #FFF;
   padding-top: 130px;
 }
-.iit h1   {
+.iit-content h1   {
   font-size: 100px;
   margin: 0;
 }
-.iit p    {
+.iit-content p    {
   font-size: 50px;
 }
-.iit a    {
+.iit-content a    {
   display: inline-block;
   color: #FFF;
   border: 3px solid #FFF;
@@ -96,7 +108,7 @@ footer img   {
   font-size: 28px;
 }
 
-/*  site sections */
+/* basic site sections */
 .site-section   {
   padding-bottom: 50px;
   padding-top: 50px;
@@ -140,33 +152,4 @@ footer img   {
   margin: 0;
 }
 
-/*  boxes */
-.testimonial-box   {
-  display: inline-block;
-  width: 33%;
-  padding: 20px 30px;
-}
-.testimonial   {
-  background: #FFF;
-  padding: 15px;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-.testimonial-author           {
 
-}
-.testimonial-author img {
-  float: left;
-  width: 80px;
-  border-radius: 50%;
-  margin-right: 15px;
-  vertical-align: middle;
-}
-.testimonial-author h5   {
-  font-size: 18px;
-  margin: 0;
-  padding-top:15px;
-}
-.testimonial-author span {
-  font-size: 14px;
-}
