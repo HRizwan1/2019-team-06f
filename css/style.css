@@ -60,6 +60,13 @@ footer img   {
   margin: 0 auto 10px;
 }
 
+.carbon           {
+  min-height: 800px;
+  text-align: center;
+  background-image: url('../img/carbon.png');
+  background-size: cover;
+}
+
 /* styling main content */
 .iit           {
   min-height: 800px;
