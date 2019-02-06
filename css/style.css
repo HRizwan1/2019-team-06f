@@ -81,14 +81,12 @@ footer img   {
 
 /* styling our main content */
 .iit           {
-  min-height: 50.00em;
+  min-height: 40.00em;
   text-align: center;
-  background-image: url('../img/carbon.png');
-  background-size: cover;
 }
 .iit-content   {
   color: #FFF;
-  padding-top: 8.125em;
+  padding-top: 5em;
 }
 .iit-content h1   {
   font-size: 6.250em;
@@ -160,12 +158,14 @@ div.Help {
   font-size: .80em;
 }
 .rslides {
-  position: relative;
+  min-height: 40.00em;
+  position: absolute;
   list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
   margin: 0;
+  z-index: -1;
   }
 
 .rslides li {
