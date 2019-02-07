@@ -51,3 +51,6 @@ b. Updates are deployed to Github
 11. 15 Real Test Users (I)
 
 ![Infrastructure](images/infrastructure.png "Infrastructure")
+![Index](images/index.png "Index")
+![Login](images/login.png "Login")
+![Gallery](images/gallery.png "Gallery")
