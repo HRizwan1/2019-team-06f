@@ -24,10 +24,10 @@
 #### Project Accomplishments: 9/11 Goals Accomplished
 
 1. Language and Framework of Choice
-a. HTML, CSS, Javascript
-b. PHP
-c. MySQL
-d. Vagrant/Packer
+-a. HTML, CSS, Javascript
+-b. PHP
+-c. MySQL
+-d. Vagrant/Packer
 e. Redis
 2. Operating System
 a. Linux - Ubuntu 18.10
