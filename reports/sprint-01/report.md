@@ -49,4 +49,4 @@ b. Unauthenticated- restricted features
 a. Use of Slack and Trello
 b. Updates are deployed to Github
 11. 15 Real Test Users (I)
-![Infrastructure](images/infrastructure.jpg "Infrastructure"
+![Infrastructure](images/infrastructure.png "Infrastructure"
