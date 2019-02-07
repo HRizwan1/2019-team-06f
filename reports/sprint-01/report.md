@@ -50,4 +50,4 @@ a. Use of Slack and Trello
 b. Updates are deployed to Github
 11. 15 Real Test Users (I)
 
-![Infrastructure](images/infrastructure.png "Infrastructure"
+![Infrastructure](images/infrastructure.png "Infrastructure")
