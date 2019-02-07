@@ -24,7 +24,7 @@
 #### Project Accomplishments: 9/11 Goals Accomplished
 
 1. Language and Framework of Choice
- - a. HTML, CSS, Javascript
+   - a. HTML, CSS, Javascript
  - b. PHP
  - c. MySQL
  - d. Vagrant/Packer
