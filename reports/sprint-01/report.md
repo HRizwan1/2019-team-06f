@@ -9,7 +9,7 @@
 3. Jr Developer -- Shan Shazad
 4. IT Operations -- Bhumika Patel / Jason D’Souza
 5. UI/UX Developer -- Sarina Stoker
-#### Project Goals
+#### Project/Sprint Goals
 - Choose Roles (C)
 - Choose Project (C)
 - Install Required Software (C)
@@ -19,9 +19,13 @@
 - Operating System Platform (C)
 - Data Storage Technology (C)
 - Start a home site design (C)
+- Implement Responsive Slides on Website (C)
+- Photo Gallery (C)
+- Login Page (C)
+- Lucidchart Diagram (C)
 - Setting up our servers through Vagrant / Packer (I) 
 - Interface Design (I)
-#### Project Accomplishments: 9/11 Goals Accomplished
+#### Project Accomplishments: 13/15 Goals Accomplished
 
 1. Language and Framework of Choice
    - a. HTML, CSS, Javascript
@@ -40,17 +44,26 @@
 5. Responsive Design
    - a. Website design will include mobile queries for resizing
 6. Use of https
+   - a. Port 443 will be utilized for https furthur in development
 7. Use of User Authentication
-   - a. Authenticated- Login with myIIT credentials
-b. Unauthenticated- restricted features
+    - a. Authenticated- Login with myIIT credentials
+   - b. Unauthenticated- restricted features
 8. Creation of Dev Environment (Upcoming)
-9. Layout Design & Management of Visio (Upcoming)
+9. Layout Design & Management of Visio 
+   - a. Lucidchart diagram of infrastructure 
 10. Management of Project Progress
-   - a. Use of Slack and Trello
-   - b. Updates are deployed to Github
+    - a. Use of Slack and Trello
+    - b. Updates are deployed to Github
 11. 15 Real Test Users (I)
 
-![Infrastructure](images/infrastructure.png "Infrastructure")
-![Index](images/index.png "Index")
-![Login](images/login.png "Login")
-![Gallery](images/gallery.png "Gallery")
+Hasan - As the Project Manager I believe the most important accomplishment was to plan the infrastructure that is displayed in the flowchart. These last few weeks we were able to install all the necessary software that will assist us in deploying the virtual servers. I believe this first sprint primarily involved us coming up with a good plan to execute. Looking forward, I believe the foundation is set to start deploying virtual servers and developing the application. 
+
+Bhumi - 
+
+Shan - As the Jr. Developer for the first sprint I feel like we have accomplished a lot as a team. My goal for the first 3 weeks was to put together our website layout and have an idea where as a group we want to proceed. I think the most difficult part would be now having the site communicate with the backend server and having it actually work. 
+
+Daniel -
+
+Jason - As this is the first sprint and the beginning of the overall project, this phase primarily involved installing and getting used to the software that we’ll be using for the duration of the project, as well as an initial idea and an overall, documented plan to execute the idea. Overall, the team has accomplished a lot and will deliver more tangible results in future sprints.
+
+Sarina - I do not have any tangible accomplishments this sprint because we were trying to grasp the requirements of the project, discussing different components and getting my machine running with the required software. I assisted in creating the report. Moving forward, I plan to have a better game plan for upcoming sprints.
