@@ -129,7 +129,7 @@ footer img   {
   letter-spacing: .125em;
   text-transform: uppercase;
   font-weight: 300;
-  color: #777;
+  color: #0f0f0f;
 }
 
 /* feature boxes */
@@ -191,3 +191,41 @@ div.Help {
   width: 100%;
   border: 0;
   }
+#btnSignup {
+  margin-right: 4em;
+  font-size: 1.250em;
+  color: #000000;
+  background: #0DFFAB
+}
+#btnSignup:hover {
+  color: #FFF;
+  background: #22D40D;
+}
+  
+.form-signin-heading {
+  padding-left: 3.00em;
+}
+#form1 {
+  position: relative;
+  padding-left: 40%;
+  padding-top: 5.00em;
+  padding-bottom: 5.00em;
+  boarder-width: .7em;
+  boarder-style: inset;
+  boarder-color: #000000;
+}
+.form-control {
+  position: relative;
+}
+label[for="txtUsername"] {
+  padding-right: 4em;
+}
+label[for="txtPassword"] {
+  padding-right: 4.250em;
+}
+label[for="txtEmail"] {
+  padding-right: 6.050em;
+}
+label[for="txtConfirmPassword"] {
+  padding-right: 0.460em
+}

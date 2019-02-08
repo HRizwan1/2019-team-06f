@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Form</title>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src="js/form.js"></script>
+    <!--  stylesheet -->
+    <link rel="stylesheet" type="text/css" href="cssreset.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js'></script>
+
+</head>
+  <body>
+      <!--  header -->
+    <header>
+
+        <!--  main  -->
+        <a id="logo" href="index.html">
+            <span>IIT Photo</span>
+        </a>
+
+        <!--  navigation  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+            </ul>
+        </nav>
+
+</header>
+  <main>
+    <form method="post" action="Default.aspx" id="form1">
+      <div style="max-width: 400px;">
+        <h2 class="form-signin-heading">
+        Registration</h2>
+        <label for="txtUsername">
+        Username</label>
+        <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
+        required />
+        <br />
+        <label for="txtPassword">
+        Password</label>
+        <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
+        class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+        <br />
+        <label for="txtConfirmPassword">
+        Confirm Password</label>
+        <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
+        placeholder="Confirm Password" />
+        <br />
+        <label for="txtEmail">
+        Email</label>
+        <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Email"
+        required type="email" />
+        <hr />
+        <input type="submit" name="btnSignup" value="Register" id="btnSignup" class="btn btn-primary" />
+</div>
+</form>
+<!-- the footer -->
+<footer>
+   <span>IIT Photo Logo<br>Copyright &copy; 2019 </span>
+</footer>
+      </main>
+</body>
