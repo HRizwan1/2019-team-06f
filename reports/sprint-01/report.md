@@ -8,7 +8,7 @@
 3. Jr Developer -- Shan Shazad
 4. IT Operations -- Bhumika Patel / Jason D’Souza
 5. UI/UX Developer -- Sarina Stoker
-#### Project/Sprint Goals
+#### Sprint Goals
 - Choose Roles (C)
 - Choose Project (C)
 - Install Required Software (C)
@@ -22,9 +22,9 @@
 - Photo Gallery (C)
 - Login Page (C)
 - Lucidchart Diagram (C)
+- Interface Design (C)
 - Setting up our servers through Vagrant / Packer (I) 
-- Interface Design (I)
-#### Project Accomplishments: 13/15 Goals Accomplished
+#### Project Accomplishments: 14/15 Goals Accomplished
 1. Language and Framework of Choice
    - a. HTML, CSS, Javascript
    - b. PHP
@@ -58,10 +58,10 @@
 ![Index](images/index.png "Index")
 ![Login](images/login.png "Login")
 ![Gallery](images/gallery.png "Gallery")
-
+#### Reflections
 Hasan - As the Project Manager I believe the most important accomplishment was to plan the infrastructure that is displayed in the flowchart. These last few weeks we were able to install all the necessary software that will assist us in deploying the virtual servers. I believe this first sprint primarily involved us coming up with a good plan to execute. Looking forward, I believe the foundation is set to start deploying virtual servers and developing the application. 
 
-Bhumi - At this point, I haven’t done much other than setting up with the VirtualBox, vagrant, and packer that are required for the production environment of our project and making the “TruHawk” logo for the website. From now on I am going to help the team in building the front end of the website. Our goal for the next sprint is to work on data storage using PHP and MySQL.
+Bhumi - For this first sprint I was responsible for the IT Operations. I have engaged in the group activity to discussed how we want our website to be functioning according to the project requirements. So far, as per the need, I have set up the VirtualBox, vagrant, and packer that are required for the production environment of our project and making the “TruHawk” logo for the website. Our team has a static website up running and for the next sprint am looking forward to work with a team in building the dynamic website using PHP and MySQL for database storage and server deployment.
 
 Shan - As the Jr. Developer for the first sprint I feel like we have accomplished a lot as a team. My goal for the first 3 weeks was to put together our website layout and have an idea where as a group we want to proceed. I think the most difficult part would be now having the site communicate with the backend server and having it actually work. 
 
@@ -70,3 +70,7 @@ Daniel - As a Developer, my goal was to work on our website, which will serve as
 Jason - As this is the first sprint and the beginning of the overall project, this phase primarily involved installing and getting used to the software that we’ll be using for the duration of the project, as well as an initial idea and an overall, documented plan to execute the idea. Overall, the team has accomplished a lot and will deliver more tangible results in future sprints.
 
 Sarina - I do not have any tangible accomplishments this sprint because we were trying to grasp the requirements of the project, discussing different components and getting my machine running with the required software. I assisted in creating the report. Moving forward, I plan to have a better game plan for upcoming sprints.
+
+#### Goals for Next Sprint:
+- Create Visio Diagrams for site functionality
+- Deploy the 4 virtual servers using Packer
