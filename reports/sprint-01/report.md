@@ -74,3 +74,5 @@ Sarina - I do not have any tangible accomplishments this sprint because we were 
 #### Goals for Next Sprint:
 - Create Visio Diagrams for site functionality
 - Deploy the 4 virtual servers using Packer
+- Implement PHP on our website 
+- User Authentication
