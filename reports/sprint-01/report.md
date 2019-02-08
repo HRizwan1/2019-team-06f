@@ -2,7 +2,6 @@
 ## Team True
 ## Project: Flickr/Instagram Hybrid Internal Photo Search Site
 ## Site Name: TruHawk
-
 ### Roles
 1. Project Manager -- Hasan Rizwan
 2. Developer -- Daniel Kolov
@@ -26,7 +25,6 @@
 - Setting up our servers through Vagrant / Packer (I) 
 - Interface Design (I)
 #### Project Accomplishments: 13/15 Goals Accomplished
-
 1. Language and Framework of Choice
    - a. HTML, CSS, Javascript
    - b. PHP
@@ -46,7 +44,7 @@
 6. Use of https
    - a. Port 443 will be utilized for https furthur in development
 7. Use of User Authentication
-    - a. Authenticated- Login with myIIT credentials
+   - a. Authenticated- Login with myIIT credentials
    - b. Unauthenticated- restricted features
 8. Creation of Dev Environment (Upcoming)
 9. Layout Design & Management of Visio 
@@ -54,15 +52,20 @@
 10. Management of Project Progress
     - a. Use of Slack and Trello
     - b. Updates are deployed to Github
-11. 15 Real Test Users (I)
+11. 15 Real Test Users (Upcoming)
+
+![Infrastructure](images/infrastructure.png "Infrastructure")
+![Index](images/index.png "Index")
+![Login](images/login.png "Login")
+![Gallery](images/gallery.png "Gallery")
 
 Hasan - As the Project Manager I believe the most important accomplishment was to plan the infrastructure that is displayed in the flowchart. These last few weeks we were able to install all the necessary software that will assist us in deploying the virtual servers. I believe this first sprint primarily involved us coming up with a good plan to execute. Looking forward, I believe the foundation is set to start deploying virtual servers and developing the application. 
 
-Bhumi - 
+Bhumi - At this point, I haven’t done much other than setting up with the VirtualBox, vagrant, and packer that are required for the production environment of our project and making the “TruHawk” logo for the website. From now on I am going to help the team in building the front end of the website. Our goal for the next sprint is to work on data storage using PHP and MySQL.
 
 Shan - As the Jr. Developer for the first sprint I feel like we have accomplished a lot as a team. My goal for the first 3 weeks was to put together our website layout and have an idea where as a group we want to proceed. I think the most difficult part would be now having the site communicate with the backend server and having it actually work. 
 
-Daniel -
+Daniel - As a Developer my goal was to work on our website, which will serve as an interface for the user to interact with our photo libraries. There is much work left to be done such as implementing a good search bar that will allow the user to look for photos by # or id. The registration page and the login page were my primary focus for those first few weeks and although they require some css polishing and more functionality added, there is some definite progress. All necessary software was installed and we are ready for the next phase where we will finish most of the website, start hosting it off our own server and creating database server/s.
 
 Jason - As this is the first sprint and the beginning of the overall project, this phase primarily involved installing and getting used to the software that we’ll be using for the duration of the project, as well as an initial idea and an overall, documented plan to execute the idea. Overall, the team has accomplished a lot and will deliver more tangible results in future sprints.
 
