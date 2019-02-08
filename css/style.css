@@ -210,9 +210,9 @@ div.Help {
   padding-left: 40%;
   padding-top: 5.00em;
   padding-bottom: 5.00em;
-  boarder-width: .7em;
-  boarder-style: inset;
-  boarder-color: #000000;
+  border-width: .7em;
+  border-style: inset;
+  border-color: #000000;
 }
 .form-control {
   position: relative;
