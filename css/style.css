@@ -194,12 +194,11 @@ div.Help {
 #btnSignup {
   margin-right: 4em;
   font-size: 1.250em;
-  color: #000000;
-  background: #0DFFAB
+  color: #EC1C24;
+  background: #000000
 }
 #btnSignup:hover {
-  color: #FFF;
-  background: #22D40D;
+  background: #444;
 }
   
 .form-signin-heading {
@@ -210,9 +209,6 @@ div.Help {
   padding-left: 40%;
   padding-top: 5.00em;
   padding-bottom: 5.00em;
-  border-width: .7em;
-  border-style: inset;
-  border-color: #000000;
 }
 .form-control {
   position: relative;
