@@ -18,7 +18,7 @@ body     {
 
 /* styling our header */
 header   {
-  background: #222;
+  background: #000000;
   color: #EC1C24;
   padding: 1.250em 1.875em;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover   {
 
 /* styling our footer */
 footer   {
-  background: #222;
+  background: #000000;
   color: #EC1C24;
   padding: 2.50em;
   text-align: center;
@@ -98,8 +98,8 @@ footer img   {
 .iit-content a    {
   display: inline-block;
   color: #FFF;
-  border: 0.188em solid #222;
-  background: #222;
+  border: 0.188em solid #000000;
+  background: #000000;
   border-radius: 0.188em;
   padding: 0.938em 1.875em;
   margin-right: 1.250em;
