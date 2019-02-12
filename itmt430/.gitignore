@@ -1,2 +1,7 @@
 id_rsa_github_deploy_key
 variables.json
+output-itmt430-ws
+output-itmt430-db
+itmt430-ws.vdi
+itmt430-db.vdi
+packer_cache
