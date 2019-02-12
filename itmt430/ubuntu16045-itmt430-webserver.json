@@ -4,8 +4,8 @@
         "type": "virtualbox-iso",
         "guest_os_type": "Ubuntu_64",
         "guest_additions_mode": "disable",
-        "iso_url": "http://mirrors.kernel.org/ubuntu-releases/18.10/ubuntu-18.10-live-server-amd64.iso",
-        "iso_checksum": "7b9f670c749f797a0f7481d619ce8807edac052c97e1a0df3b130c95efae4765",
+        "iso_url": "https://mirrors.kernel.org/ubuntu-releases/16.04.5/ubuntu-16.04.5-server-amd64.iso",
+        "iso_checksum": "c94de1cc2e10160f325eb54638a5b5aa38f181d60ee33dae9578d96d932ee5f8",
         "iso_checksum_type": "sha256",
  "http_directory" : ".",
   "http_port_min" : 9001,
@@ -80,7 +80,7 @@
         "cp -v /home/vagrant/id_rsa_github_deploy_key /home/vagrant/.ssh/",
         "cp -v /home/vagrant/config /home/vagrant/.ssh/",
         "cp -v /home/vagrant/config /root/.ssh/",
-        "git clone git@github.com:illinoistech-itm/2019-team-06f.git"
+        "git clone git@github.com:illinoistech-itm/hajek.git"
       ]
     },
     {
