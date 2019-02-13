@@ -34,7 +34,8 @@ sudo apt-get update
 sudo apt-get install -y mariadb-server 
 
 # chown the cloned github repo files so the user owns it 
-sudo chown -R vagrant:vagrant ~/hajek
+sudo chown -R vagrant:vagrant ~/2019-team-06f
+sudo chown -R vagrant:vagrant ~/jhajek
 # copying the php code to the /var/www/html directory to serve php files
 
 # Inject the username and password for autologin later in a ~/.my.cnf file
@@ -79,10 +80,10 @@ mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABL
 
 # Exectue sql file from repo cloned to create database and table and schema
 # These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./hajek/itmt-430/db-samples/create-new.sql 
+mysql -u root < ./jhajek/itmt-430/db-samples/create-new.sql 
 mysql -u root -e "SHOW DATABASES;"
 # Execute sql file from repo cloned to insert 3 records into the table to seed it with valid data
 # These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./hajek/itmt-430/db-samples/insert-new.sql
+mysql -u root < ./jhajek/itmt-430/db-samples/insert-new.sql
 mysql -u root -e "USE comments; SHOW TABLES;"
 
