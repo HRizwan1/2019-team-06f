@@ -39,9 +39,9 @@ sudo apt-get update
 sudo apt-get install -y apache2 mariadb-client php7.0 libapache2-mod-php7.0 php7.0-mysql
 
 # chown the cloned github repo files so the user owns it 
-sudo chown -R vagrant:vagrant ~/hajek
+sudo chown -R vagrant:vagrant ~/jhajek
 # copying the php code to the /var/www/html directory to serve php files
-sudo cp ./hajek/itmt-430/db-samples/*.php /var/www/html
+sudo cp ./jhajek/itmt-430/db-samples/*.php /var/www/html
 
 # include statement to place values into an include file for the connection string in test-select.php
 # https://unix.stackexchange.com/questions/4335/how-to-insert-text-into-a-root-owned-file-using-sudo
