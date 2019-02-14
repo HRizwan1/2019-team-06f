@@ -64,3 +64,12 @@ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 # Enable the service and start the service
 sudo systemctl enable apache2
 sudo systemctl restart apache2
+
+# Change permissions of /var/www/html
+sudo chmod 777 -R /var/www/html
+
+# Remove all old files from /var/www/html
+rm -rf /var/www/html/*
+
+# Copy team repo files to /var/www/html
+cp -r 2019-team-06f/* /var/www/html
