@@ -71,6 +71,8 @@ footer   {
   color: #EC1C24;
   padding: 2.50em;
   text-align: center;
+  bottom:0;
+  width:100%;
 }
 footer img   {
   display: block;
