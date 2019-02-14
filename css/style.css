@@ -141,6 +141,7 @@ footer img   {
 .feature-box img  {
   margin-bottom: 0.750em;
   width: 5.00em;
+  display: inline-block;
 }
 .feature-box h5   {
   font-size: 1.250em;
