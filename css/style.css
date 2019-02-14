@@ -72,6 +72,7 @@ footer   {
   padding: 2.50em;
   text-align: center;
   position: absolute;
+  bottom:0;
   width:100%;
 }
 footer img   {
