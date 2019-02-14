@@ -66,16 +66,13 @@ nav ul li a:hover   {
 }
 
 /* styling our footer */
-footer   {
+footer {
   background: #000000;
   color: #EC1C24;
   padding: 2.50em;
   text-align: center;
-  position: absolute;
-  bottom:0;
-  width:100%;
 }
-footer img   {
+footer img {
   display: block;
   border-radius: 0.313em;
   width: 5.00em;
@@ -83,7 +80,7 @@ footer img   {
 }
 
 /* styling our main content */
-.iit           {
+.iit {
   min-height: 40.00em;
   text-align: center;
 }
@@ -111,14 +108,14 @@ footer img   {
 }
 
 /* basic site sections */
-.site-section   {
+.site-section  {
   padding-bottom: 3.125em;
   padding-top: 3.125em;
 }
-.site-section-secondary   {
+.site-section-secondary {
   background: #EFEFEF;
 }
-.site-section-inside   {
+.site-section-inside {
   width: 80%;
   max-width: 75.00em;
   margin: 0 auto;
@@ -136,17 +133,17 @@ footer img   {
 }
 
 /* feature boxes */
-.feature-box   {
+.feature-box {
   display: inline-block;
   width: 33%;
   padding: 1.250em 1.875em;
 }
-.feature-box img  {
+.feature-box img {
   margin-bottom: 0.750em;
   width: 5.00em;
   display: inline-block;
 }
-.feature-box h5   {
+.feature-box h5 {
   font-size: 1.250em;
   color: #999;
   text-transform: uppercase;
