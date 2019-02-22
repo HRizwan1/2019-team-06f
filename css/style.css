@@ -24,7 +24,7 @@ header   {
   padding: 1.250em 1.875em;
 }
 
-h1  {
+.section h1  {
   font-size: 1.00em;
   margin: 0.25em;
   font-family: Arial, Helvetica, sans-serif;
