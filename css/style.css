@@ -42,8 +42,7 @@ header   {
 }
 
 hr  {
-
-  display: block;
+ overflow:visible;
   height: 30px;
   border-style:solid;
   border-color: black;
