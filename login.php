@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
@@ -37,8 +38,9 @@
 
   <div class="section-header">
       <h2>Login to TruHawk</h2>
-  <form method="post" action="">
-    <p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+  <form method="post" action="login.php">
+    <?php include('errors.php'); ?>
+    <p><input type="text" name="username" value="" placeholder="Username"></p>
     <p><input type="password" name="password" value="" placeholder="Password"></p>
     <p class="remember_me">
       <label>
@@ -46,7 +48,10 @@
         Remember me on this computer
       </label>
     </p>
-    <p class="submit"><input type="submit" name="commit" value="Login"></p>
+    <p class="submit"><input type="submit" name="login_user" value="Login"></p>
+    <p>
+  		Not yet a member? <a href="register.php">Sign up</a>
+  	</p>
   </form>
 </div>
 

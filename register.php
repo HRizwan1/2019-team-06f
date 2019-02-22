@@ -1,4 +1,4 @@
-<?php include('register.php') ?>
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
@@ -38,17 +38,18 @@
 
 </header>
   <main>
-    <form method="post" action="Default.aspx" id="form1">
+    <form method="post" action="register.php" id="form1">
+      <?php include('errors.php'); ?>
       <div style="max-width: 400px;">
         <h2 class="form-signin-heading"></h2>
 
         <div class="section-header">
             <h2>Registration</h2>
 
-        <label for="txtUsername">
+        <label for="username">
         Username</label>
-        <input name="txtUsername" type="text" id="txtUsername" class="form-control" placeholder="Enter Username"
-        required />
+        <input name="username" type="text" id="username" class="form-control" placeholder="Enter Username" value="<?php echo $username; ?>"
+        >
         <br />
         <label for="txtPassword">
         Password</label>
@@ -60,12 +61,15 @@
         <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
         placeholder="Confirm Password" />
         <br />
-        <label for="txtEmail">
+        <label for="email">
         Email</label>
-        <input name="txtEmail" id="txtEmail" class="form-control" placeholder="Enter Email"
-        required type="email" />
+        <input name="email" id="email" class="form-control" placeholder="Enter Email"
+        required type="email" value="<?php echo $email; ?>" />
         <hr />
         <input type="submit" name="btnSignup" value="Register" id="btnSignup" class="btn btn-primary" />
+        <p>
+  		    Already a member? <a href="login.php">Sign in</a>
+  	    </p>
       </div>
     </form>
 </main>
