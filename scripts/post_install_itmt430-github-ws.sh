@@ -75,10 +75,10 @@ rm -rf /var/www/html/*
 cp -r 2019-team-06f/* /var/www/html
 
 # Blocking public access
-sudo chmod -r 700 /var/www/html/css
-sudo chmod -r 700 /var/www/html/img
-sudo chmod -r 700 /var/www/html/itmt430
-sudo chmod -r 700 /var/www/html/js
-sudo chmod -r 700 /var/www/html/reports
-sudo chmod -r 700 /var/www/html/ResponsiveSlides.js-master
-sudo chmod -r 700 /var/www/html/scripts
+sudo chmod -r 711 /var/www/html/css
+sudo chmod -r 711 /var/www/html/img
+sudo chmod -r 711 /var/www/html/itmt430
+sudo chmod -r 711 /var/www/html/js
+sudo chmod -r 711 /var/www/html/reports
+sudo chmod -r 711 /var/www/html/ResponsiveSlides.js-master
+sudo chmod -r 711 /var/www/html/scripts
