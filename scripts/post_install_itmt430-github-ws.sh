@@ -62,6 +62,14 @@ sudo mv ssl-params.conf /etc/apache2/conf-available/ssl-params.conf
 # Backup the original SSL Virtual Host File
 sudo mv /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
 sudo mv default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
+sudo sed -i -e 's/server_domain_or_IP/'$WEBSERVERIP'/g' /etc/apache2/sites-available/default-ssl.conf
+sudo sed -i -e 's/your_email@example.com/hrizwan1@hawk.iit.edu/g' /etc/apache2/sites-available/default-ssl.conf
+sudo ufw allow 'Apache Full'
+sudo a2enmod ssl
+sudo a2enmod headers
+sudo a2ensite default-ssl
+sudo a2enconf ssl-params
+sudo systemctl restart apache2
 
 # Enable the service and start the service
 sudo systemctl enable apache2
