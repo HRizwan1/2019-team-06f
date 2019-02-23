@@ -55,11 +55,13 @@ echo "?>" | sudo tee -a /var/www/html/connection-info.php
 # Create Ubuntu 16.04 Self-Signed Cert for Apache2
 # https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04
 
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/C=US/ST=Illinois/L=Chicago/O=IIT-Company/OU=Org/CN=www.school.com"
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/C=US/ST=Illinois/L=Chicago/O=Illinois Institute of Technology/OU=Team True/CN=$WEBSERVERIP"
 # While we are using OpenSSL, we should also create a strong Diffie-Hellman group, which is used in negotiating Perfect Forward Secrecy with clients.
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
-
-
+sudo mv ssl-params.conf /etc/apache2/conf-available/ssl-params.conf
+# Backup the original SSL Virtual Host File
+sudo mv /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
+sudo mv default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
 
 # Enable the service and start the service
 sudo systemctl enable apache2
