@@ -58,18 +58,25 @@ echo "?>" | sudo tee -a /var/www/html/connection-info.php
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/apache-selfsigned.key -out /etc/ssl/certs/apache-selfsigned.crt -subj "/C=US/ST=Illinois/L=Chicago/O=Illinois Institute of Technology/OU=Team True/CN=$WEBSERVERIP"
 # While we are using OpenSSL, we should also create a strong Diffie-Hellman group, which is used in negotiating Perfect Forward Secrecy with clients.
 sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+# To set up Apache SSL securely, we will be using the recommendations by Remy van Elst on the Cipherli.st site
 sudo mv ssl-params.conf /etc/apache2/conf-available/ssl-params.conf
 # Backup the original SSL Virtual Host File
 sudo mv /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-available/default-ssl.conf.bak
+# Modify the Default Apache SSL Virtual Host File
 sudo mv default-ssl.conf /etc/apache2/sites-available/default-ssl.conf
 sudo sed -i -e 's/server_domain_or_IP/'$WEBSERVERIP'/g' /etc/apache2/sites-available/default-ssl.conf
 sudo sed -i -e 's/your_email@example.com/hrizwan1@hawk.iit.edu/g' /etc/apache2/sites-available/default-ssl.conf
+# Modify the Unencrypted Virtual Host File to Redirect to HTTPS
+sudo sed -i '/DocumentRoot/aRedirect permanent "/" "https://'$WEBSERVERIP'/"' /etc/apache2/sites-available/000-default.conf
+# Allow the "Apache Full" profile
 sudo ufw allow 'Apache Full'
+# We can enable mod_ssl, the Apache SSL module, and mod_headers, needed by some of the settings in our SSL snippet, with the a2enmod command:
 sudo a2enmod ssl
 sudo a2enmod headers
+# We can enable our SSL Virtual Host with the a2ensite command:
 sudo a2ensite default-ssl
+# We will also need to enable our ssl-params.conf file, to read in the values we set:
 sudo a2enconf ssl-params
-sudo systemctl restart apache2
 
 # Enable the service and start the service
 sudo systemctl enable apache2
