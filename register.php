@@ -20,7 +20,7 @@
     <header>
 
         <!--  main  -->
-        <a id="logo" href="index.html">
+        <a id="logo" href="index.php">
           <img src="img/THLogo.png" alt="THLogo">
           <span>TruHawk</span>
         </a>
@@ -40,7 +40,6 @@
   <main>
     <form method="post" action="register.php" id="form1">
       <?php include('errors.php'); ?>
-      <div style="max-width: 400px;">
         <h2 class="form-signin-heading"></h2>
 
         <div class="section-header">
@@ -67,9 +66,11 @@
         required type="email" value="<?php echo $email; ?>" />
         <hr />
         <input type="submit" name="btnSignup" value="Register" id="btnSignup" class="btn btn-primary" />
+        <div class="alreadym">
         <p>
-  		    Already a member? <a href="login.php">Sign in</a>
-  	    </p>
+          Already a member? <a href="login.php">Sign in</a>
+        </p>
+</div>
       </div>
     </form>
 </main>

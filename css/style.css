@@ -213,10 +213,17 @@ div.Help {
   border: 0;
   }
 #btnSignup {
-  margin-right: 4em;
+  margin-left: 100px;
   font-size: 1.250em;
   color: #EC1C24;
-  background: #000000
+  background: #000000;
+  text-align: center;
+}
+[name=login_user] {
+  font-size: 1.250em;
+  color: #EC1C24;
+  background: #000000;
+  text-align: center;
 }
 #btnSignup:hover {
   background: #444;
@@ -226,16 +233,23 @@ div.Help {
   padding-left: 3.00em;
 }
 #form1 {
+  max-width: 400px;
+  max-height: 700px;
+  text-align: center;
   position: relative;
   padding-left: 40%;
-  padding-top: 5.00em;
-  padding-bottom: 5.00em;
+  padding-top: 3.00em;
+  padding-bottom: 3.00em;
+  display: inline-block;
 }
 .form-control {
   position: relative;
+  width: 300px;
 }
-label[for="txtUsername"] {
+label[for="username"] {
   padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 label[for="txtPassword"] {
   padding-right: 4.250em;
@@ -244,6 +258,7 @@ label[for="txtEmail"] {
   padding-right: 6.050em;
 }
 label[for="txtConfirmPassword"] {
+  width: 500px;
   padding-right: 0.460em
 }
 form, .content {
@@ -270,4 +285,11 @@ form, .content {
   background: #dff0d8; 
   border: 1px solid #3c763d;
   margin-bottom: 20px;
+}
+div.alreadym {
+  font-size : .8em;
+  text-overflow: ellipsis;
+  width: 400px;
+  text-align: left;
+  margin-bottom: 5em;
 }
