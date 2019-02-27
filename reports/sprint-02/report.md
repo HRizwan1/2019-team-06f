@@ -9,8 +9,8 @@
 4. IT Operations -- Shan Shazad / Hasan Rizwan
 5. UI/UX Developer -- Bhumika Patel
 
-![https](images/index.png "HTTPS 1")
-![https2](images/index.png "HTTPS 2")
-![https3](images/index.png "HTTPS 3")
+![https](images/https.png "HTTPS 1")
+![https2](images/https2.png "HTTPS 2")
+![https3](images/https3.png "HTTPS 3")
 ![testusers](images/testusers.png "Test Users")
 ![deploykeys](images/deploykeys.png "Deploy Keys")
