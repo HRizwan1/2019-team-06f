@@ -57,11 +57,13 @@ echo -e "\ndefault-character-set = utf8mb4\n" >> /home/vagrant/.my.cnf.user
 # https://en.wikipedia.org/wiki/Sed
 # If using mysql instead of MariaDB the path to the cnf file is /etc/mysql/mysql.conf.d/mysql.cnf
 # sudo sed -i "s/.*bind-address.*/#bind-address = $DATABASEIP/" /etc/mysql/mysql.conf.d/mysql.cnf
+sudo chmod 777 /etc/mysql/mariadb.conf.d/50-server.cnf
 sudo sed -i "s/.*bind-address.*/bind-address = $WEBSERVERIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
 
 # Enable the service and start the service
 sudo systemctl enable mysql
 sudo systemctl start mysql
+sudo chmod 444 /etc/mysql/mariadb.conf.d/50-server.cnf
 
 # Enable Firewall
 # https://serverfault.com/questions/809643/how-do-i-use-ufw-to-open-ports-on-ipv4-only
