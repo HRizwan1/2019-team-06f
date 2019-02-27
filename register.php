@@ -4,7 +4,7 @@
 <head>
     <title>Register Form</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script async src="js/form.js"></script>
     <!--  stylesheet -->
