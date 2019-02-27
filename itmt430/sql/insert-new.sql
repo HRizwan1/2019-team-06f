@@ -2,62 +2,62 @@ Use website;
 INSERT INTO users (id, username, email, password) 
 Values 
   (
-    1, "New Idea", "Abraham Lincoln", 
-    "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal."
+    1, "ficy1953", "AnitaDByrd@einrot.com", 
+    ""
   ), 
   (
-    2, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    2, "nothers", 
+    "NoahDVaughn@armyspy.com", ""
   ), 
   (
-    3, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    3, "hurasawends", "JessieCDaughtry@gustr.com", 
+    ""
   ), 
   (
-    4, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    4, "litend", 
+    "BettyCLi@fleckens.hu", ""
   ), 
   (
-    5, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    5, "hagerre", "BrianKSifuentes@armyspy.com", 
+    ""
   ), 
   (
-    6, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    6, "mothesseze", 
+    "RobinLShortridge@teleworm.us", ""
   ), 
   (
-    7, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    7, "girese", "MittieJReed@armyspy.com", 
+    ""
   ), 
   (
-    8, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    8, "fement42", 
+    "AmyRBabb@jourrapide.com", ""
   ), 
   (
-    9, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    9, "withey", "RichardBGerman@jourrapide.com", 
+    ""
   ), 
   (
-    10, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    10, "ther1993", 
+    "AlbertREspinoza@teleworm.us", ""
   ), 
   (
-    11, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    11, "majessis", "EricGBrim@gustr.com", 
+    ""
   ), 
   (
-    12, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    12, "hertake93", 
+    "MirnaTRobinson@teleworm.us", ""
   ), 
   (
-    13, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    13, "adven1991", "JenniferJVasquez@superrito.com", 
+    ""
   ), 
   (
-    14, "Someone is wrong on the internet", 
-    "Annie Mouse", "https://www.xkcd.com/386/"
+    14, "highted", 
+    "JenniferTStarbuck@einrot.com", ""
   ), 
   (
-    15, "Presidential Quote", "President James Madison", 
-    "If men were angels, no government would be necessary"
+    15, "obect1934", "RussellEDaniels@rhyta.com", 
+    ""
   );
