@@ -14,3 +14,16 @@
 ![https3](images/https3.png "HTTPS 3")
 ![testusers](images/testusers.png "Test Users")
 ![deploykeys](images/deploykeys.png "Deploy Keys")
+
+#### Individual Reflections
+Daniel -  
+
+Sarina - 
+
+Jason - 
+
+Shan - 
+
+Hasan - 
+
+Bhumi - 
