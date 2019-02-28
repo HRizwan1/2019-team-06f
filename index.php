@@ -14,7 +14,7 @@
 <head>
     <title>TruHawk</title>
     <meta charset="utf-8" class="nojs">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/cssreset.css">
     <link rel="stylesheet" href="css/style.css">
