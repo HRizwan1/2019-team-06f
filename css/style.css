@@ -152,6 +152,33 @@ footer img {
   color: #0f0f0f;
 }
 
+.section-about {
+  text-align: center;
+  margin-bottom: 1.875em;
+}
+.section-about h2  {
+  font-size: 1.875em;
+  letter-spacing: .125em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+.imgContainer{
+   padding: 0 20px 190px 0;
+  display: -webkit-inline-box; 
+  position: relative;
+  
+}
+.text-block {
+  position: absolute;
+  bottom: 190px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* feature boxes */
 .feature-box {
   display: inline-block;
@@ -162,21 +189,6 @@ footer img {
   margin-bottom: 0.750em;
   width: 5.00em;
   display: inline-block;
-}
-
-.imgContainer{
-   padding: 0 20px 190px 0;
-  display: -webkit-inline-box; 
-  position: relative;
-}
-.text-block {
-  position: absolute;
-  bottom: 190px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .feature-box h5 {
   font-size: 1.250em;
