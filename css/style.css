@@ -163,6 +163,21 @@ footer img {
   width: 5.00em;
   display: inline-block;
 }
+
+.imgContainer{
+   padding: 0 20px 190px 0;
+  display: -webkit-inline-box; 
+  position: relative;
+}
+.text-block {
+  position: absolute;
+  bottom: 190px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .feature-box h5 {
   font-size: 1.250em;
   color: #999;
