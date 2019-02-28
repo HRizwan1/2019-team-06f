@@ -65,7 +65,7 @@
 <hr/>
 
                             <div class="imgContainer">
-                                <img src="img/hasan.png" height="200" width="200"/>
+                                <img class="middle-img" src="img/hasan.png" height="200" width="200"/>
                                 <div class="text-block"> 
                                 <h4>Hasan Rizwan</h4>
                             </div>
