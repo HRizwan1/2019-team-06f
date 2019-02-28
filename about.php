@@ -1,3 +1,13 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  }
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
@@ -11,18 +21,18 @@
 
 <body>
     <header>
-        <a id="logo" href="index.html">
+        <a id="logo" href="index.php">
         <img src="img/THLogo.png" alt="THLogo">
         <span>TruHawk</span>
         </a>
             
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Register</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="gallery.php">Photo Gallery</a></li>
             </ul>
         </nav>
     </header>
