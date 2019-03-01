@@ -103,12 +103,16 @@
   * Authentication keys (if applicable) 
   * Seeding of usernames and passwords 
   * Pre-seeding databases/datastores with schema and records ----//
+  
 8. Use of User Authentication:
+
 **Unauthenticated users** will have access to “read-only” and restrict certain site features until they have created an account.
+
 **Authenticated normal users will have access to:**
   * Upload photos
   * View own photos
   * Search for photos (hashtags)
+  
 **Administrator Access:**
   * Custom made admin panel 
   * Able to delete other users photos
