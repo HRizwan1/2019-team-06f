@@ -173,6 +173,7 @@
   * Successfully build and deploy a cache server (with Redis)
   * Continue to manage diagrams as new pieces are implemented
   * Have a full functioning website user and admin panel
+  * Data Encryption at Rest
   * To focus more on responsive design, having the website function properly in multiple form factors, such on mobile, tablet, etc.
 
 
