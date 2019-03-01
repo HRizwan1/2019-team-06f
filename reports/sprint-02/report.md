@@ -116,7 +116,7 @@
   * Upload photos
   * View own photos
   * Search for photos (hashtags)
-  
+![php](images/php.png "PHP")  
 **Administrator Access:**
   * Custom made admin panel 
   * Able to delete other users photos
