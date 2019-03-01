@@ -106,7 +106,10 @@
   
 8. Use of User Authentication:
 
-**Unauthenticated users** will have access to “read-only” and restrict certain site features until they have created an account.
+**Unauthenticated users access:** 
+
+* Will have access to “read-only” data
+* Restrict certain site features until they have created an account
 
 **Authenticated normal users will have access to:**
   * Upload photos
