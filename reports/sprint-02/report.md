@@ -87,18 +87,18 @@
 7. Use of HTTPS:
 
 <p>While it was once reserved primarily for passwords and other sensitive data, the entire web is gradually leaving HTTP behind and switching to HTTPS. The “S” in HTTPS stands for “Secure”. It’s the secure version of the standard “hypertext transfer protocol” your web browser uses when communicating with websites. It is important for our application to run on HTTPS to gain the trust of our users. We have generated a self-signed certificate. The certificate is issued by Team True at the Illinois Institute of Technology and is good for one year.</p>
-
- 
-
-
-  
-  
-  
-  
-  
+    
 ![https](images/https.png "HTTPS 1")
 ![https2](images/https2.png "HTTPS 2")
 ![https3](images/https3.png "HTTPS 3")
+  1. Firewall
+    - Using UFW (Uncomplicated Firewall) in Apache 2:
+    - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup.
+  2. Authentication keys (if applicable) 
+  3. Seeding of usernames and passwords 
+  4. Pre-seeding databases/datastores with schema and records ----//
+  
+  
 ![testusers](images/testusers.png "Test Users")
 ![deploykeys](images/deploykeys.png "Deploy Keys")
 
