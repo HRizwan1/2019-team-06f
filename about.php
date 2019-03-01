@@ -64,53 +64,50 @@
             <section id = "Who?">
                     <h2> The Team </h2>
 
-<hr/>
+                <hr/>
 
                             <div class="imgContainer">
                                 <img class="middle-img" src="img/hasan.png" height="200" width="200"/>
                                 <div class="text-block"> 
                                 <h4>Hasan Rizwan</h4>
+                                </div>
                             </div>
-                        </div>
 
                             <div class="imgContainer">
                                 <img class="middle-img" src="img/daniel.png" height="200" width="200"/>
                                 <div class="text-block"> 
                                 <h4>Daniel Kolov</h4>
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgContainer">
+
+                            <div class="imgContainer">
                                 <img class="middle-img" src="img/shan.png" height="200" width="200"/>
                                 <div class="text-block"> 
                                 <h4>Shan Shazad</h4>
-
+                                </div>
                             </div>
-                        </div>
-                        <div class="imgContainer">
+
+                            <div class="imgContainer">
                                 <img class="middle-img" src="img/bhumi.png" height="200" width="200"/>
                                 <div class="text-block"> 
                                 <h4>Bhumi Patel</h4>
-
+                                </div>
                             </div>
-                        </div>
 
-                    
-                <div class="imgContainer">
-                        <img class="middle-img" src="img/jason.jpg" height="200" width="200"/>
-                        <div class="text-block"> 
-                        <h4>Jason D'Souza</h4>
-
-                    </div>
-                </div>
+                            <div class="imgContainer">
+                                <img class="middle-img" src="img/jason.jpg" height="200" width="200"/>
+                                <div class="text-block"> 
+                                <h4> Jason DSouza </h4>
+                                </div>
+                            </div>
 
 
-                <div class="imgContainer">
-                        <img class="middle-img" src="img/sarina.png" height="200" width="200"/>
-                        <div class="text-block"> 
-                        <h4>Sarina Stoker</h4>
-
-                    </div>
-                </div>
+                             <div class="imgContainer">
+                                <img class="middle-img" src="img/sarina.png" height="200" width="200"/>
+                                <div class="text-block"> 
+                                <h4>Sarina Stoker</h4>
+                                </div>
+                            </div>
 
 
                     
