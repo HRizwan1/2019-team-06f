@@ -44,7 +44,7 @@
 1. Language and Framework of Choice:
 
   * HTML is used to structure the webpages
-  * CSS is used style our web pages 
+  * CSS is used to style our web pages 
   * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHPStorm used for login and register process
   * Vagrant/Packer is used for building the web server and database server
@@ -79,7 +79,7 @@
   * 1 Redis cache server
 
 <p>Our setup will use the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos would be written to the master database server. The master will be connected to a slave server which will hold a copy of the database used for reads. By separating writes and reads we will minimize the required movement of the disk head.  On the master database, separating writes from reads will free up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads will allow it to handle more queries by freeing resources for the job.</p>
-<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and reads from the web server.</p>
+<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.</p>
  
 6. Responsive Design (In-progress):
 
@@ -152,6 +152,7 @@
 
   * Site Flow:
   
+  
 ![sflow](images/sflow.png "Site Flow Diagram")
 
 11. Management of Visio Diagram:
@@ -191,7 +192,7 @@
 
 
 #### Individual Reflections
-**Daniel** - Over this sprint duration, I believe the team was able to make great progress. Personally, I was able to incorporate PHP into our website to allow for registration and login to work as well as show login status in the header of the webpage. Error handling PHP was also implemented and our PHP checks for invalid input on registration to prevent false values from being entered. I was able to successfully connect our web server and database server. User data table was created and stores user information when entered on our registration form. Permissions and the connection to MariaDB took some time, but in the end, it all works satisfactorily. Some polishing of CSS on the registration and login page was done, with more work to come. 
+**Daniel** - Over this sprint duration, I believe the team was able to make great progress. Personally, I was able to incorporate PHP into our website to allow for registration and login to work as well as show login status in the header of the webpage. Error handling PHP was also implemented and our PHP checks for invalid input on registration to prevent false values from being entered. I was able to successfully connect our web server and database server. User data table was created and stores user information when entered on our registration form. Permissions and the connection to MariaDB took some time, but in the end, it all works satisfactorily. Some polishing of CSS on the registration and login page was done, with more work to come. As the Project Manager of the team my job was to also asign task to members in Trello, closely follow up on tasks when they are approaching the due date, and helping out in case a task was falling behind.
 
 **Sarina** - For this sprint spent some time researching “about page” examples to get an idea of the kind of information we could have and I coded the html content for about page. I also did some troubleshooting with the css for the about page. I spent time correcting typos and formatting issues that I found in our code. Since a big part of this sprint was focused on the servers, I spent time getting the web server and database server on my machine as well as troubleshooting errors with it. I sought my team for help during this time. I spent some time creating the diagrams for the layout of our pages and site functionality. Lastly, I assisted in the creation of this report.
 
