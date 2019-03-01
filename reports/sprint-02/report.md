@@ -39,14 +39,14 @@
 ### Project Requirements:
 1. Language and Framework of Choice:
 
-  * HTML 
+  * HTML5
   * CSS to style our web pages 
   * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHPStorm used for login and register process
   * Vagrant/Packer is used for building the web server and database server
-  * Apache
-  * Redis
-  * mariaDB server provides an SQL interface for accessing data
+  * Apache 2.4.18 (Ubuntu)
+  * Redis 5.0.3 is for our cache in-memory data structure 
+  * MariaDB Server 10.0.38 provides an SQL interface for accessing data
   
 2. Operating System Platform:
 
@@ -115,7 +115,7 @@
   * Upload photos
   * View own photos
   * Search for photos (hashtags)
-![php](images/php.png "PHP")  
+  
 **Administrator Access:**
   * Custom made admin panel 
   * Able to delete other users photos
