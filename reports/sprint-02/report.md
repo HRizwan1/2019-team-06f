@@ -59,6 +59,16 @@
     - One of the databases will be used to store our information (Master) and this will be the database which we write to. This database will store some of the initial photos provided by the instructor and photos that potentially would be uploaded by users. As well as this server will host the user information such as name, email, usernames & passwords.
     - The other database (Slave) will be the one which we read from. Photos will be queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
 
+4. Data Encryption at Rest:
+  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields will be encrypted data using a one-way password hash.
+  * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
+  * MariaDB can allow our files to encrypt:
+     - All tablespaces
+     - Individual tables
+     - Uses a 32-bit integer as a key identifier.
+     - Encryption keys can also be rotated which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys. 
+ 
+
 
   
   
