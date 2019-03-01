@@ -97,6 +97,9 @@
   * Firewall
     - Using UFW (Uncomplicated Firewall) in Apache 2:
     - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup.
+   
+![ufw](images/ufw.png "Uncomplicated Firewall Rules") 
+
   * Authentication keys (if applicable) 
   * Seeding of usernames and passwords 
   * Pre-seeding databases/datastores with schema and records ----//
