@@ -81,7 +81,7 @@
 <p>“Why media queries?” - Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.</p>
 <p>Technically we want a media-rich, widescreen page for desktop viewing and a smaller size page formatted for small screen viewing, with less clutter, larger fonts and tighter-wrapping constraints for mobile viewing.</p>
 <p>Below is the IPhone X view without the use of media queries, for next sprint we are going to use media queries to make the mobile view look better.</p>
-![mobileview](images/mobile.png "Mobile View")
+![mobile](images/mobile.png "Mobile View")
 
 7. Use of HTTPS:
 
