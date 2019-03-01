@@ -21,7 +21,8 @@
   * To build the vagrant boxes with RSA keys (C)
   * Design About Page (C)
   * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
-  * To build cache server (I)
+  * To build cache server (I) 
+  * upload/add/hashtag capability (I)
   * Create Diagrams for Site Functionality (C)
 
 ### Project Accomplishments: Goals Accomplished (9/12)
