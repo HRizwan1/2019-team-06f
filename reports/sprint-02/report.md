@@ -69,6 +69,7 @@
   * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. 
   
   XtraDB: A storage engine for the MariaDB 
+  
   InnoDB: A storage engine for the database management system MySQL. 
   
   * MariaDB can allow our files to encrypt:
