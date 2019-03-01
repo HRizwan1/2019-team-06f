@@ -22,7 +22,7 @@
  * To build the vagrant boxes with RSA keys (C) 
  * Design an About Page (C) 
  * Successfully able to access the “TruHawk” website using an IP address (C)
- * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
+ * To make the website responsive in order to fit any form factor: desktop, mobile and tablets(I)
  * Different user authentication panel on the website (I)
  * Allow users to upload photos using hashtags (I)
  * Data Encryption at Rest (I) 
@@ -193,11 +193,19 @@
 
 **Goals for Next Sprint:**
   * Successfully build and deploy a cache server (with Redis)
+    - Hassn will work on using packer/vagrant to build a Redis cache server
   * Continue to manage diagrams as new pieces are implemented
+    - Diagrams for new website interface for logged in users
   * Have a full functioning website user and admin panel
+    - UI for authenticated users needs to be developed Shan & Daniel
+    - Administrator login detection needs to be implemented
+    - Administrator UI needs to be designed
+    - Administrator UI needs to be developed and styled HTML + CSS + JQuery
   * Data Encryption at Rest
+    - Enable Data Encryption at rest for mariadb
   * To focus more on responsive design, having the website function properly in multiple form factors, such on mobile, tablet, etc.
-
+    - include mobile first css which will detect screen size and style our webpage according to device its been used on.
+    - Add JQueries that will assure graet user experience on any screen size.
 
 #### Individual Reflections
 **Daniel** - Over this sprint duration, I believe the team was able to make great progress. Personally, I was able to incorporate PHP into our website to allow for registration and login to work as well as show login status in the header of the webpage. Error handling PHP was also implemented and our PHP checks for invalid input on registration to prevent false values from being entered. I was able to successfully connect our web server and database server. User data table was created and stores user information when entered on our registration form. Permissions and the connection to MariaDB took some time, but in the end, it all works satisfactorily. Some polishing of CSS on the registration and login page was done, with more work to come. As the Project Manager of the team my job was to also asign task to members in Trello, closely follow up on tasks when they are approaching the due date, and helping out in case a task was falling behind.
