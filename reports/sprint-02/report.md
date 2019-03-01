@@ -25,6 +25,7 @@
  * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
  * Different user authentication panel on the website (I)
  * Allow users to upload photos using hashtags (I)
+ * Data Encryption at Rest (I) 
  * To build cache server (I)
 
 ### Project Accomplishments: Goals Accomplished (11/13)
@@ -68,7 +69,7 @@
 4. Data Encryption at Rest:
 
   * Encrypted using a symmetric cipher provided by OpenSSL. Password fields will be encrypted data using a one-way password hash.
-  * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. 
+  * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. This encryption method will be implemented. 
   
   XtraDB: A storage engine for the MariaDB 
   
