@@ -91,14 +91,51 @@
 ![https](images/https.png "HTTPS 1")
 ![https2](images/https2.png "HTTPS 2")
 ![https3](images/https3.png "HTTPS 3")
-  1. Firewall
+  * Firewall
     - Using UFW (Uncomplicated Firewall) in Apache 2:
     - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup.
-  2. Authentication keys (if applicable) 
-  3. Seeding of usernames and passwords 
-  4. Pre-seeding databases/datastores with schema and records ----//
-  
-  
+  * Authentication keys (if applicable) 
+  * Seeding of usernames and passwords 
+  * Pre-seeding databases/datastores with schema and records ----//
+8. Use of User Authentication:
+**Unauthenticated users** will have access to “read-only” and restrict certain site features until they have created an account.
+**Authenticated normal users will have access to:**
+  * Upload photos
+  * View own photos
+  * Search for photos (hashtags)
+**Administrator Access:**
+  * Custom made admin panel 
+  * Able to delete other users photos
+  * Able to delete accounts
+9. Creation of Dev Environment:
+![devenv](images/devenv.png "Dev Environment")
+
+![devenv](images/devenv1.png "Dev Environment Servers")
+
+![serverdiag](images/serverdiag.png "Server Diagram")
+
+10. Layout Design:
+  * Home page:
+![homepage](images/homepage.png "Homepage Layout")
+
+  * Button Link:
+![buttonslink](images/buttonslink.png "Buttons Link")
+
+  * Login & Register page:
+![lregpage](images/lregpage.png "Login/Registration Layout")
+
+  * Photo-Gallery page:
+![pgallery](images/pgallery.png "Photo Gallery page Layout")
+  * Site Flow:
+![sflow](images/sflow.png "Site Flow Diagram")
+
+11. Management of Visio Diagram:
+<p>Diagrams managed on a weekly basis or whenever we have an update by UI/UX and Project Manager. A tool that we are using to create diagrams is LucidChart.</p>
+
+12. Management of project progress:
+
+<p>Mostly all the communication and update process for this project is done through slack. We are keeping track of our to-do, in-progress and done tasks through trello. Upon the completion of the task, the person assigned to that task moves the card to the done section.</p>
+
 ![testusers](images/testusers.png "Test Users")
 ![deploykeys](images/deploykeys.png "Deploy Keys")
 
