@@ -140,14 +140,14 @@
 ![deploykeys](images/deploykeys.png "Deploy Keys")
 
 #### Individual Reflections
-Daniel -  
+Daniel - Over this sprint duration, I believe the team was able to make great progress. Personally, I was able to incorporate PHP into our website to allow for registration and login to work as well as show login status in the header of the webpage. Error handling PHP was also implemented and our PHP checks for invalid input on registration to prevent false values from being entered. I was able to successfully connect our web server and database server. User data table was created and stores user information when entered on our registration form. Permissions and the connection to MariaDB took some time, but in the end, it all works satisfactorily. Some polishing of CSS on the registration and login page was done, with more work to come. 
 
-Sarina - 
+Sarina - For this sprint spent some time researching “about page” examples to get an idea of the kind of information we could have and I coded the html content for about page. I also did some troubleshooting with the css for the about page. I spent time correcting typos and formatting issues that I found in our code. Since a big part of this sprint was focused on the servers, I spent time getting the web server and database server on my machine as well as troubleshooting errors with it. I sought my team for help during this time. I spent some time creating the diagrams for the layout of our pages and site functionality. Lastly, I assisted in the creation of this report.
 
 Jason - 
 
 Shan - 
 
-Hasan - 
+Hasan - In this sprint I think we accomplished a lot as a team. My role for this sprint was IT operations along with Shan.  At the beginning of the sprint we were focused on getting the servers deployed on everyone’s machine. We were able to configure the script for the build to host our site successfully on everyone’s computer. Afterwards, we started working on implementing HTTPS for the website. Once we had HTTPS working, we were able to automate it and implement it into the build script. Working with Daniel we were even able to get the sign up page to work. However, we were not able to implement it into the build script without bugs. We will work on that on the next sprint and try to improve our application.  
 
 Bhumi - 
