@@ -23,6 +23,7 @@
  * Design an About Page (C) 
  * Successfully able to access the “TruHawk” website using an IP address (C)
  * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
+ * Different user authentication panel on the website (I) 
  * To build cache server (I)
 
 ### Project Accomplishments: Goals Accomplished (11/13)
