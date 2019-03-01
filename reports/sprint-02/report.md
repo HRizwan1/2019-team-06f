@@ -25,23 +25,26 @@
  * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
  * To build cache server (I)
 
-### Project Accomplishments: Goals Accomplished (9/12)
+### Project Accomplishments: Goals Accomplished (11/13)
 
-  * Configured vagrant files
-  * Successfully deployed web server
-  * Successfully deployed database server
-  * Successfully built both a database and web server
-  * Successfully implemented HTTPS
-  * Connected the vagrant boxes with RSA keys
-  * Successfully deployed RSA keys for each member via Github
-  * Successfully built servers on each team member’s machine
-  * Created Diagrams for Site Functionality
+ * Configured vagrant files
+ * Successfully deployed web server
+ * Successfully deployed database server
+ * Successfully implemented HTTPS
+ * Connected the vagrant boxes with RSA keys
+ * Successfully deployed RSA keys for each member via Github
+ * Successfully built servers on each team member’s machine
+ * Created Diagrams for Site Functionality
+ * Successfully created an About Page
+ * Successfully implemented PHP to both the register and login page
+ * Successfully able to access the “TruHawk” website using an IP address
+
 
 ### Project Requirements:
 1. Language and Framework of Choice:
 
-  * HTML5
-  * CSS to style our web pages 
+  * HTML is used to structure the webpages
+  * CSS is used style our web pages 
   * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHPStorm used for login and register process
   * Vagrant/Packer is used for building the web server and database server
