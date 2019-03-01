@@ -1,3 +1,4 @@
+
 <?php 
   session_start(); 
 
@@ -8,6 +9,7 @@
   	session_destroy();
   	unset($_SESSION['username']);
   }
+?>
 <!DOCTYPE html>
 <html lang="en" class="nojs">
 <head>
