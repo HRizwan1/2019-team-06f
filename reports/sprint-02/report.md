@@ -11,19 +11,19 @@
 
 ### Project Goals:
 
-  * To build a web server (C)
-  * To build a database server (C)
-  * To get web server and database server running on everyone’s machine (C)
-  * Configure vagrant files (C)
-  * Implementing PHP to the register and login page (C)
-  * To generate and deploy RSA keys of each member on GitHub (C)
-  * Switching over from HTTP to HTTPS with valid security  (C)
-  * To build the vagrant boxes with RSA keys (C)
-  * Design About Page (C)
-  * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
-  * To build cache server (I) 
-  * Upload/add/hashtag capability (I)
-  * Create Diagrams for Site Functionality (C)
+ * To build a web server (C)
+ * To build a database server (C)  
+ * To get web server and database server running on everyone’s machine (C)
+ * Configure vagrant files (C) 
+ * Create Diagrams for Site Functionality (C)
+ * Implementing PHP to the register and login page (C)
+ * To generate and deploy RSA keys for each member on GitHub (C)
+ * Switching over from HTTP to HTTPS with valid security  (C)
+ * To build the vagrant boxes with RSA keys (C) 
+ * Design an About Page (C) 
+ * Successfully able to access the “TruHawk” website using an IP address (C)
+ * To make the website responsive in order to fit any form factor: desktop, mobile, tablet, or whatever is next (I)
+ * To build cache server (I)
 
 ### Project Accomplishments: Goals Accomplished (9/12)
 
