@@ -57,7 +57,7 @@ echo -e "\ndefault-character-set = utf8mb4\n" >> /home/vagrant/.my.cnf.user
 # https://en.wikipedia.org/wiki/Sed
 # If using mysql instead of MariaDB the path to the cnf file is /etc/mysql/mysql.conf.d/mysql.cnf
 # sudo sed -i "s/.*bind-address.*/#bind-address = $DATABASEIP/" /etc/mysql/mysql.conf.d/mysql.cnf
-sudo sed -i "s/.*bind-address.*/#bind-address = $ACCESSFROMIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
+sudo sed -i "s/.*bind-address.*/#bind-address = $DATABASEIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
 
 # Enable the service and start the service
 sudo systemctl enable mysql
@@ -74,16 +74,15 @@ ufw allow from $ACCESSFROMIP to any port 3306
 # https://stackoverflow.com/questions/8055694/how-to-execute-a-mysql-command-from-a-shell-script
 # This section uses the user environment variables declared in packer json build template
 # #USERPASS and $BKPASS
-mysql -u root -e "CREATE DATABASE comments DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 
 mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON comments.* TO worker@'$ACCESSFROMIP' IDENTIFIED BY '$USERPASS'; flush privileges;"
 
 # Exectue sql file from repo cloned to create database and table and schema
 # These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./jhajek/itmt-430/db-samples/create-new.sql 
+mysql -u root < ./2019-team-06f/itmt430/sql/create-new.sql 
 mysql -u root -e "SHOW DATABASES;"
 # Execute sql file from repo cloned to insert 3 records into the table to seed it with valid data
 # These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./jhajek/itmt-430/db-samples/insert-new.sql
-mysql -u root -e "USE comments; SHOW TABLES;"
+mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
+mysql -u root -e "USE website; SHOW TABLES;"
 
