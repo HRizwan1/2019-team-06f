@@ -42,7 +42,7 @@
 	          "/install/vmlinuz noapic ",
             "preseed/url=http://{{ .HTTPIP }}:{{ .HTTPPort }}/preseed/preseed.cfg ",
             "debian-installer=en_US auto locale=en_US kbd-chooser/method=us ",
-            "hostname=itmt430-db ",
+            "hostname=itmt430-dbs ",
             "fb=false debconf/frontend=noninteractive ",
             "keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA ",
             "keyboard-configuration/variant=USA console-setup/ask_detect=false ",
@@ -87,12 +87,14 @@
     {
     "type": "shell",
   "execute_command" : "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'", 
-    "script": "../scripts/post_install_itmt430-github-db.sh",
+    "script": "../scripts/post_install_itmt430-github-dbs.sh",
     "environment_vars": [ 
       "DBPASS={{user `database-root-password`}}",
       "USERPASS={{user `database-user-password`}}",
       "ACCESSFROMIP={{user `database-access-from-ip`}}",
       "DATABASEIP={{user `database-ip`}}",
+      "WEBSERVERIP={{user `webserver-ip`}}",
+      "DATABASESLAVE={{user `databaseslave-ip`}}",
       "DATABASENAME={{user `database-name`}}",
       "DATABASEUSERNAME={{user `database-user-name`}}"
     ]
@@ -106,4 +108,3 @@
  }
 ]
 }
-
