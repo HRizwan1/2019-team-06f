@@ -71,18 +71,3 @@ ufw --force enable
 ufw allow proto tcp to 0.0.0.0/0 port 22
 ufw allow from $ACCESSFROMIP to any port 3306
 
-# https://stackoverflow.com/questions/8055694/how-to-execute-a-mysql-command-from-a-shell-script
-# This section uses the user environment variables declared in packer json build template
-# #USERPASS and $BKPASS
-
-mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON website.* TO worker@'$ACCESSFROMIP' IDENTIFIED BY '$USERPASS'; flush privileges;"
-
-# Exectue sql file from repo cloned to create database and table and schema
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./2019-team-06f/itmt430/sql/create-new.sql 
-mysql -u root -e "SHOW DATABASES;"
-# Execute sql file from repo cloned to insert 15 records into the table to seed it with valid data
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
-mysql -u root -e "USE website; SHOW TABLES;"
-
