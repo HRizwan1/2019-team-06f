@@ -42,6 +42,13 @@
                 <li><a href="gallery.php">Photo Gallery</a></li>
             </ul>
         </nav>
+        <div class="topnav">
+        <form class="formright">
+          <input type="text" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+          
+        </div> 
 
     </header>
 
