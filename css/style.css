@@ -25,6 +25,52 @@ header   {
   padding: 1.250em 1.875em;
 }
 
+/* search bar css */
+
+.search {
+  width: 80%;
+  position: relative
+  
+}
+
+.searchTerm {
+  float: left;
+  width: 80%;
+  border: 3px solid #EC1C24;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  color: #000000;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -10px;
+  width: 55px;
+  height: 40px;
+  border: 1px solid #000000;
+  background: #EC1C24;
+  text-align: center;
+  color: #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 5%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+  }
+
 .section h1  {
   font-size: 3.00em;
   margin: 1.00em;
