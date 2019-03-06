@@ -38,7 +38,7 @@
 
 </header>
   <main>
-    <form method="post" action="register.php" id="form1">
+    <form method="post" action="register.php" id="">
       <?php include('errors.php'); ?>
         <h2 class="form-signin-heading"></h2>
 
@@ -46,22 +46,23 @@
             <h2>Registration</h2>
 
         <label for="username">
-        Username</label>
+        Username:</label>
         <input name="username" type="text" id="username" class="form-control" placeholder="Enter Username" value="<?php echo $username; ?>"
         >
         <br />
         <label for="txtPassword">
-        Password</label>
+        Password:</label>
         <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
         class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
         <br />
         <label for="txtConfirmPassword">
-        Confirm Password</label>
+        Confirm Password:</label>
         <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
         placeholder="Confirm Password" />
         <br />
+        
         <label for="email">
-        Email</label>
+        Email:</label>
         <input name="email" id="email" class="form-control" placeholder="Enter Email"
         required type="email" value="<?php echo $email; ?>" />
         <hr />
