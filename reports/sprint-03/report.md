@@ -58,6 +58,7 @@
 2. Operating System Platform:
 
   * Linux - Ubuntu 16.04.5
+  * Process of secrets management: gitignore, openSSL
   
 3. Use of Data Store:
 
