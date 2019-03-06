@@ -92,4 +92,5 @@ sudo sed -i "s/.*bind-address.*/bind-address = $DATABASEIP/" /etc/mysql/mariadb.
 sudo sed -i "s/.*server-id.*/server-id = 101/" /etc/mysql/mariadb.conf.d/50-server.cnf
 sudo sed -i "s/#log_bin/log_bin/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 sudo service mysql restart
+
 mysql -u root -e "show master status;"

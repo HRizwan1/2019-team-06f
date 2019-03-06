@@ -86,6 +86,8 @@ sudo sed -i "s/#log_bin/log_bin/g" /etc/mysql/mariadb.conf.d/50-server.cnf
 echo 'read_only=1' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf
 echo 'report-host='$DATABASESLAVEIP'' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf
 
+sudo service mysql restart
+
 mysql -u root -e "change master to master_host='$DATABASEIP',master_user='replica',master_password='password',master_log_file='mysql-bin.000003',master_log_pos=312;"
 mysql -u root -e "start slave;"
 mysql -u root -e "show slave status\G;"
