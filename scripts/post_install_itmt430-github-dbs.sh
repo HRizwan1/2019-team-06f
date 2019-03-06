@@ -84,6 +84,8 @@ mysql -u root -e "SHOW DATABASES;"
 mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
 mysql -u root -e "USE website; SHOW TABLES;"
 sudo service mysql restart
-mysql -u root -e "change master to master_host='$DATABASEIP',master_user='replica',master_password='password',master_log_file='mysql-bin.000001',master_log_pos=312;"
+
+# Starting slave server
+mysql -u root -e "change master to master_host='$DATABASEIP',master_user='replica',master_password='$USERPASS',master_log_file='mysql-bin.000001',master_log_pos=312;"
 mysql -u root -e "start slave;"
 mysql -u root -e "show slave status\G;"

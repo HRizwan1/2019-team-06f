@@ -79,6 +79,7 @@ ufw allow from $DATABASESLAVEIP to any port 3306
 # #USERPASS and $BKPASS
 
 mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES,DROP,INDEX,ALTER ON website.* TO worker@'$ACCESSFROMIP' IDENTIFIED BY '$USERPASS'; flush privileges;"
+mysql -u root -e "GRANT REPLICATION SLAVE ON *.* TO replica@'%' IDENTIFIED BY '$USERPASS'; flush privileges;"
 
 # Exectue sql file from repo cloned to create database and table and schema
 # These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
@@ -89,6 +90,5 @@ mysql -u root -e "SHOW DATABASES;"
 mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
 mysql -u root -e "USE website; SHOW TABLES;"
 
-mysql -u root -e "GRANT REPLICATION SLAVE ON *.* TO replica@'%' IDENTIFIED BY 'password'; flush privileges;"
 sudo service mysql restart
 mysql -u root -e "show master status;"
