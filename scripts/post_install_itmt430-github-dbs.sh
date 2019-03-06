@@ -57,7 +57,11 @@ echo -e "\ndefault-character-set = utf8mb4\n" >> /home/vagrant/.my.cnf.user
 # https://en.wikipedia.org/wiki/Sed
 # If using mysql instead of MariaDB the path to the cnf file is /etc/mysql/mysql.conf.d/mysql.cnf
 # sudo sed -i "s/.*bind-address.*/#bind-address = $DATABASEIP/" /etc/mysql/mysql.conf.d/mysql.cnf
-sudo sed -i "s/.*bind-address.*/#bind-address = $DATABASESLAVEIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
+sudo sed -i "s/.*bind-address.*/bind-address = $DATABASESLAVEIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
+sudo sed -i "s/.*server-id.*/server-id = 102/" /etc/mysql/mariadb.conf.d/50-server.cnf
+sudo sed -i "s/#log_bin/log_bin/g" /etc/mysql/mariadb.conf.d/50-server.cnf
+echo 'read_only=1' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf
+echo 'report-host='$DATABASESLAVEIP'' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf 
 
 # Enable the service and start the service
 sudo systemctl enable mysql
@@ -80,14 +84,3 @@ mysql -u root -e "SHOW DATABASES;"
 mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
 mysql -u root -e "USE website; SHOW TABLES;"
 
-sudo sed -i "s/.*bind-address.*/bind-address = $DATABASESLAVEIP/" /etc/mysql/mariadb.conf.d/50-server.cnf 
-sudo sed -i "s/.*server-id.*/server-id = 102/" /etc/mysql/mariadb.conf.d/50-server.cnf
-sudo sed -i "s/#log_bin/log_bin/g" /etc/mysql/mariadb.conf.d/50-server.cnf
-echo 'read_only=1' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf
-echo 'report-host='$DATABASESLAVEIP'' | sudo tee -a /etc/mysql/mariadb.conf.d/50-server.cnf
-
-sudo service mysql restart
-
-mysql -u root -e "change master to master_host='$DATABASEIP',master_user='replica',master_password='password',master_log_file='mysql-bin.000003',master_log_pos=312;"
-mysql -u root -e "start slave;"
-mysql -u root -e "show slave status\G;"
