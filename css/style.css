@@ -27,51 +27,25 @@ header   {
 
 /* search bar css */
 
-.search {
-  width: 90%;
-  position: relative
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-color: white; 
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: lightgray;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.1s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  position: relative;
 }
 
-.searchTerm {
-  float: left;
-  width: 80%;
-  border: 3px solid #EC1C24;
-  padding: 5px;
-  height: 40px;
-  border-radius: 5px;
-  outline: none;
-  color: #000000;
-  
-}
-
-.searchTerm:focus{
-  color: #000000;
-
-}
-
-.searchButton {
-  position: absolute;  
-  right: 1px;
-  width: 55px;
-  height: 40px;
-  border: 1px solid #000000;
-  background: #EC1C24;
-  text-align: center;
-  color: #000000;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-  
-  /*Resize the wrap to see the search bar change!*/
-  .wrap{
-    width: 30%;
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    display: inline-block; /* for IE9 */
-    display: flex-box;
+input[type=text]:focus {
+  width: 40%;
   }
 
 
