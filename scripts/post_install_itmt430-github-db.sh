@@ -90,5 +90,4 @@ mysql -u root < ./2019-team-06f/itmt430/sql/insert-new.sql
 mysql -u root -e "USE website; SHOW TABLES;"
 
 mysql -u root -e "GRANT REPLICATION SLAVE ON *.* TO replica@'%' IDENTIFIED BY 'password'; flush privileges;"
-sudo service mysql restart
 mysql -u root -e "show master status;"
