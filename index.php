@@ -35,6 +35,7 @@
         <!--  navigation  -->
         <nav>
             <ul>
+                <input type="text" name="search" placeholder="Search..">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="register.php">Register</a></li>
@@ -43,12 +44,6 @@
             </ul>
         </nav>
     <div class="wrap">
-   <div class="search">
-      <input type="text" class="searchTerm" placeholder="What are you looking for?">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-     </button>
-   </div>
 </div>
 
     </header>
