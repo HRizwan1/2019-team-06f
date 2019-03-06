@@ -283,7 +283,7 @@ div.Help {
   border: 0;
   }
 #btnSignup {
-  margin-left: 100px;
+  margin-left: 00px;
   font-size: 1.250em;
   color: #EC1C24;
   background: #000000;
@@ -312,25 +312,24 @@ div.Help {
   padding-bottom: 3.00em;
   display: inline-block;
 }
+
 .form-control {
-  position: relative;
+  position:  static; 
   width: 300px;
 }
 label[for="username"] {
-  padding-right: 4em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-right: 14.460em
 }
 label[for="txtPassword"] {
-  padding-right: 4.250em;
+  padding-right: 14.460em
 }
-label[for="txtEmail"] {
-  padding-right: 6.050em;
+label[for="email"] {
+  padding-right: 16.460em
 }
 label[for="txtConfirmPassword"] {
-  width: 500px;
-  padding-right: 0.460em
+  padding-right: 10.460em
 }
+
 form, .content {
   width: 30%;
   margin: 0px auto;
