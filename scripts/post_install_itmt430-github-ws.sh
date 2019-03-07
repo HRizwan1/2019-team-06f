@@ -91,5 +91,5 @@ rm -rf /var/www/html/*
 # Copy team repo files to /var/www/html
 cp -r 2019-team-06f/* /var/www/html
 
-sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/server.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASESLAVEIP'/g' /var/www/html/server.php
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/server.php
