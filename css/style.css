@@ -18,6 +18,18 @@ body     {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Implementing responsive design for mobile devices */
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
 /* styling our header */
 header   {
   background: #000000;
