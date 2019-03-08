@@ -18,21 +18,21 @@ body     {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Implementing responsive design for mobile devices */
+/* Implementing responsive design for multiple form factors */
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
     width: 80%;
     padding: 0;
   }
-  .right {
+  .section, .nav, .iit, .site {
     width: 100%;
   }
 }
 
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .section, .nav, .iit, .site {
     width: 100%;
   }
 }
