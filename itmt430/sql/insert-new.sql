@@ -6,62 +6,62 @@ Values
     "d05bb31a344150a394a86268b87076a0"
   ), 
   (
-    2, "Nothers", 
-    "NoahDVaughn@armyspy.com", "0ef2fbb4c70096ae41051a3472677ec6"
+    2, "Nothers", "NoahDVaughn@armyspy.com", 
+    "0ef2fbb4c70096ae41051a3472677ec6"
   ), 
   (
     3, "Hurasawends", "JessieCDaughtry@gustr.com", 
     "e08a980c73fa2b2922082b6ba3115fc6"
   ), 
   (
-    4, "Litend", 
-    "BettyCLi@fleckens.hu", "fa89ded6df0b082502ffaf7355041aec"
+    4, "Litend", "BettyCLi@fleckens.hu", 
+    "fa89ded6df0b082502ffaf7355041aec"
   ), 
   (
     5, "Hagerre", "BrianKSifuentes@armyspy.com", 
     "74f8a94958b2d49e5c35871eac81a2f4"
   ), 
   (
-    6, "Mothesseze", 
-    "RobinLShortridge@teleworm.us", "683b6de824fe701459a4443c9e01d35b"
+    6, "Mothesseze", "RobinLShortridge@teleworm.us", 
+    "683b6de824fe701459a4443c9e01d35b"
   ), 
   (
     7, "Girese", "MittieJReed@armyspy.com", 
     "e71fdd54ce0ec6e24b09ede64bf616bf"
   ), 
   (
-    8, "Fement42", 
-    "AmyRBabb@jourrapide.com", "a572d0f99f033a68fff8ccbc24de477f"
+    8, "Fement42", "AmyRBabb@jourrapide.com", 
+    "a572d0f99f033a68fff8ccbc24de477f"
   ), 
   (
     9, "Withey", "RichardBGerman@jourrapide.com", 
     "a2f050f50bd36ba1d2064b80a8870047"
   ), 
   (
-    10, "Ther1993", 
-    "AlbertREspinoza@teleworm.us", "e3ac9a0782c90e5de368672eef136d4a"
+    10, "Ther1993", "AlbertREspinoza@teleworm.us", 
+    "e3ac9a0782c90e5de368672eef136d4a"
   ), 
   (
     11, "Majessis", "EricGBrim@gustr.com", 
     "c82de23dcd88a5ee4e6c7c99e76ad7f1"
   ), 
   (
-    12, "Hertake93", 
-    "MirnaTRobinson@teleworm.us", "124c5ad611106d97f9367db137d2c3d5"
+    12, "Hertake93", "MirnaTRobinson@teleworm.us", 
+    "124c5ad611106d97f9367db137d2c3d5"
   ), 
   (
     13, "Adven1991", "JenniferJVasquez@superrito.com", 
     "05eae33fcffb03512c4a82a0bf95e3b1"
   ), 
   (
-    14, "Highted", 
-    "JenniferTStarbuck@einrot.com", "3443a6bdb6614571826b39dd7cbf23f5"
+    14, "Highted", "JenniferTStarbuck@einrot.com", 
+    "3443a6bdb6614571826b39dd7cbf23f5"
   ), 
   (
     15, "Obect1934", "RussellEDaniels@rhyta.com", 
     "37cf97aa4102f9933ad033523f71766e"
   );
-INSERT INTO pictures (photo_id, photo, id)
+INSERT INTO pictures (photo_id, photo, id) 
 Values 
   (
     1, 
@@ -69,14 +69,14 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/angel.jpg'
     ), 
     1
-  ),
+  ), 
   (
     16, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/beach-rock.jpg'
     ), 
     1
-  ),
+  ), 
   (
     31, 
     LOAD_FILE(
@@ -167,21 +167,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/tropical.jpg'
     ), 
     1
-  ),
+  ), 
   (
     2, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/apples.jpg'
     ), 
     2
-  ),
+  ), 
   (
     17, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/ara.jpg'
     ), 
     2
-  ),
+  ), 
   (
     32, 
     LOAD_FILE(
@@ -272,21 +272,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/zebra-stripes.jpg'
     ), 
     2
-  ),
+  ), 
   (
     3, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/amsterdam.jpg'
     ), 
     3
-  ),
+  ), 
   (
     18, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/basil-pizza.jpg'
     ), 
     3
-  ),
+  ), 
   (
     33, 
     LOAD_FILE(
@@ -377,21 +377,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/wine-cheese.jpg'
     ), 
     3
-  ),
+  ), 
   (
     4, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/castle.jpg'
     ), 
     4
-  ),
+  ), 
   (
     19, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/clarinet.jpg'
     ), 
     4
-  ),
+  ), 
   (
     34, 
     LOAD_FILE(
@@ -482,21 +482,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/pink-macarons.jpg'
     ), 
     4
-  ),
+  ), 
   (
     5, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/blossom.jpg'
     ), 
     5
-  ),
+  ), 
   (
     20, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/cathedral.jpg'
     ), 
     5
-  ),
+  ), 
   (
     35, 
     LOAD_FILE(
@@ -587,21 +587,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/water-sport.jpg'
     ), 
     5
-  ),
+  ), 
   (
     6, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/continents.jpg'
     ), 
     6
-  ),
+  ), 
   (
     21, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/cross.jpg'
     ), 
     6
-  ),
+  ), 
   (
     36, 
     LOAD_FILE(
@@ -692,21 +692,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/spring-bird.jpg'
     ), 
     6
-  ),
+  ), 
   (
     7, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/australian-shepherd.jpg'
     ), 
     7
-  ),
+  ), 
   (
     22, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/blush-roses.jpg'
     ), 
     7
-  ),
+  ), 
   (
     37, 
     LOAD_FILE(
@@ -797,21 +797,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/waterbunglows.jpg'
     ), 
     7
-  ),
+  ), 
   (
     8, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/buddha-statue.jpg'
     ), 
     8
-  ),
+  ), 
   (
     23, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/cham.jpg'
     ), 
     8
-  ),
+  ), 
   (
     38, 
     LOAD_FILE(
@@ -902,21 +902,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/whitekitchen.jpg'
     ), 
     8
-  ),
+  ), 
   (
     9, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/brown-dog.jpg'
     ), 
     9
-  ),
+  ), 
   (
     24, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/cactus.jpg'
     ), 
     9
-  ),
+  ), 
   (
     39, 
     LOAD_FILE(
@@ -1007,21 +1007,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/wolf.jpg'
     ), 
     9
-  ),
+  ), 
   (
     10, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/automobile.jpg'
     ), 
     10
-  ),
+  ), 
   (
     25, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/chain-clock.jpg'
     ), 
     10
-  ),
+  ), 
   (
     40, 
     LOAD_FILE(
@@ -1112,21 +1112,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/white-ling.jpg'
     ), 
     10
-  ),
+  ), 
   (
     11, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/bali.jpg'
     ), 
     11
-  ),
+  ), 
   (
     26, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/beverage.jpg'
     ), 
     11
-  ),
+  ), 
   (
     41, 
     LOAD_FILE(
@@ -1217,21 +1217,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/spring.jpg'
     ), 
     11
-  ),
+  ), 
   (
     12, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amuse.jpg'
     ), 
     12
-  ),
+  ), 
   (
     27, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amusement.jpg'
     ), 
     12
-  ),
+  ), 
   (
     42, 
     LOAD_FILE(
@@ -1322,21 +1322,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/tulips.jpg'
     ), 
     12
-  ),
+  ), 
   (
     13, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/basketball.jpg'
     ), 
     13
-  ),
+  ), 
   (
     28, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/bowling.jpg'
     ), 
     13
-  ),
+  ), 
   (
     43, 
     LOAD_FILE(
@@ -1427,21 +1427,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/zebra-family.jpg'
     ), 
     13
-  ),
+  ), 
   (
     14, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/athletes.jpg'
     ), 
     14
-  ),
+  ), 
   (
     29, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/ball.jpg'
     ), 
     14
-  ),
+  ), 
   (
     44, 
     LOAD_FILE(
@@ -1532,21 +1532,21 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/white-stones.jpg'
     ), 
     14
-  ),
+  ), 
   (
     15, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/carnival.jpg'
     ), 
     15
-  ),
+  ), 
   (
     30, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/cocoa.jpg'
     ), 
     15
-  ),
+  ), 
   (
     45, 
     LOAD_FILE(
