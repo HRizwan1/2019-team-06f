@@ -21,6 +21,3 @@ This is how we are passing passwords/RSA keys securely.
 ![screenshot3](img/screenshot3.png "Screenshot3")
 1) Issue the command ```vagrant up``` for each of the servers.
 1) To access TruHawk, enter the webserver IP into your web browser. 
-
-
-### Current Features
