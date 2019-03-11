@@ -97,7 +97,7 @@ if (count($_FILES) > 0) {
        require "../db.php";
        $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
        $imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
-       $sql = "INSERT INTO photos(imageType ,imageData)
+       $sql = "INSERT INTO pictures(photo_type, photo)
     VALUES('{$imageProperties['mime']}', '{$imgData}')";
        $current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn));
        if (isset($current_id)) {

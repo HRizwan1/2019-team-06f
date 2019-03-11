@@ -7,8 +7,8 @@ $email    = "";
 $errors   = array(); 
 
 // connect to database
-$db = mysqli_connect('127.0.0.1:8889', 'root', 'root', 'website');
-
+$db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
+$dbs = mysqli_connect('$DATABASESLAVEIP','replica', '$USERPASS','website');
 
 // call the register() function if register_btn is clicked
 if (isset($_POST['register_btn'])) {

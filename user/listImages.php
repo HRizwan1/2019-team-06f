@@ -1,7 +1,7 @@
 <?php 
 include('../server.php');
 require_once "../db.php";
-$sql = "SELECT imageId FROM photos ORDER BY imageId DESC"; 
+$sql = "SELECT photo_id FROM pictures ORDER BY photo_id DESC"; 
 $result = mysqli_query($conn, $sql);
 
 if (!isUser()) {
@@ -99,7 +99,7 @@ if (isset($_GET['logout'])) {
                    <?php
 	while($row = mysqli_fetch_array($result)) {
 	?>
-		<img src="imageView.php?image_id=<?php echo $row["imageId"]; ?>" /><br/>
+		<img src="imageView.php?image_id=<?php echo $row["photo_id"]; ?>" /><br/>
 	
 <?php		
 	}
