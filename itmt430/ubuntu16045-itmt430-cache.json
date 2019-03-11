@@ -87,7 +87,7 @@
     {
     "type": "shell",
   "execute_command" : "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'", 
-    "script": "../scripts/post_install_itmt430-github-db.sh",
+    "script": "../scripts/post_install_itmt430-github-c.sh",
     "environment_vars": [ 
       "DBPASS={{user `database-root-password`}}",
       "USERPASS={{user `database-user-password`}}",
