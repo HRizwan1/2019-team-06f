@@ -30,3 +30,5 @@ sudo service fail2ban restart
 sudo chown -R vagrant:vagrant ~/2019-team-06f
 sudo chown -R vagrant:vagrant ~/jhajek
 
+sudo apt update
+sudo apt install -y redis-server
