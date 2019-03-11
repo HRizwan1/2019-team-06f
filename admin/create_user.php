@@ -1,6 +1,4 @@
 
-
-
 <?php 
 include('../server.php');
 
@@ -63,6 +61,7 @@ if (isset($_GET['logout'])) {
 		
 		
 		<main> 
+		</header>
 
 		
 
@@ -82,7 +81,7 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<h2 style="color:#069">Admin Control Panel - Create User</h2>	</div>
+	<center> <h2 style="color:#069">Admin Control Panel - Create User</h2>	</div> </center> 
 	<!-- logged in user information -->
 		
 
@@ -122,7 +121,6 @@ if (isset($_GET['logout'])) {
 		</div>
 	</form>
 
-			</header>
 
 
 			</main>
