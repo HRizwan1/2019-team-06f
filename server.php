@@ -7,15 +7,14 @@ $email    = "";
 $errors   = array(); 
 
 // connect to database
-
-$db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
-$dbs = mysqli_connect('$DATABASESLAVEIP','replica', '$USERPASS','website');
+$db = mysqli_connect('127.0.0.1:8889', 'root', 'root', 'website');
 
 
 // call the register() function if register_btn is clicked
 if (isset($_POST['register_btn'])) {
 	register();
 }
+
 
 // REGISTER USER
 function register(){
@@ -191,3 +190,16 @@ function isUser()
 		return false;
 	}
 }
+
+function GetData(){
+
+    $sql="SELECT * from ITEM,Price where ITEM.item_id=Price.item_id";
+
+    $query=mysql_query($sql);
+
+    $result=result_to_array($query);
+
+    return $result;
+
+}
+
