@@ -55,13 +55,11 @@ if (isset($_GET['logout'])) {
 
 
             </ul>
-		</nav>
+        </nav>
+        </header>
 
-		
-		
-		<main> 
-
-		
+    
+        <main> 
 
 		<div class="wrapper-admin">
 	<!-- notification message -->
@@ -79,7 +77,7 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<h2 style="color:#000000">My User Panel - Upload Photo</h2>	</div>
+<center>	<h2 style="color:#000000">My User Panel - Upload Photo</h2> </center>	</div>
 	<!-- logged in user information -->
 				
 		        <!-- content for the iit -->
@@ -96,6 +94,7 @@ if (isset($_GET['logout'])) {
            <?php
 if (count($_FILES) > 0) {
    if (is_uploaded_file($_FILES['userImage']['tmp_name'])) {
+       require "../db.php";
        $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
        $imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
        $sql = "INSERT INTO photos(imageType ,imageData)
@@ -107,19 +106,37 @@ if (count($_FILES) > 0) {
    }
 }
 ?>
-			</header>
 
-
-			</main>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 			
 		            
 		<footer class="site-footer">
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>
 
-	</main>
 	
-	
+</main> 
+
 
 </body>
 
