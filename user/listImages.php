@@ -60,7 +60,8 @@ if (isset($_GET['logout'])) {
             </ul>
 		</nav>
 
-		
+</header>
+
 		
 		<main> 
 
@@ -82,18 +83,18 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<h2 style="color:#000000">My User Panel</h2>	</div>
+<center>	<h2 style="color:#000000">My User Panel - My Images</h2>	</center> </div>
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
-		<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2>
+		<h2> <center>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong> </center> </h2>
 
-				<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+		<center>		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>  </center>
 					<br> 
-                   &nbsp; <a href="upload.php">Upload Photos</a>
-                   &nbsp; <a href="create_user.php">View my Photos</a>
-                   &nbsp; <a href="create_user.php">Recent Photo Uploads</a>
-                   <a href="../index.html?logout='1'" style="color: red;">Logout</a>
+                 <center>  &nbsp; <a href="upload.php">Upload Photos</a> </center>
+				 <center> &nbsp; <a href="create_user.php">View my Photos</a>  </center>
+				   <center>    &nbsp; <a href="create_user.php">Recent Photo Uploads</a>  </center>
+				   <center>   <a href="../index.html?logout='1'" style="color: red;">Logout</a>  </center>
 
                    <?php
 	while($row = mysqli_fetch_array($result)) {
@@ -106,8 +107,6 @@ if (isset($_GET['logout'])) {
 ?>
 
 			<?php endif ?>
-
-			</header>
 
 
 			</main>
