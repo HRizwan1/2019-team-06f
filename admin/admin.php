@@ -56,6 +56,7 @@ if (isset($_GET['logout'])) {
 
             </ul>
 		</nav>
+</header>
 
 		
 		
@@ -79,20 +80,16 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<h2 style="color:#069">Admin Control Panel</h2>	</div>
+<center>	<h2 style="color:#069">Admin Control Panel</h2>	</div> </center>
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
-		<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2>
+	<Center>	<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2> </center>
 
-				<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
-					<br> <br> 
-					<a href="../index.html?logout='1'" class="btn" style="color: black">Logout</a>
-				   &nbsp; <a href="create_user.php" style="color: black" class="btn">  Create User</a> 
+			<center>	<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center>
+				<Center>	<a href="../index.html?logout='1'" class="btn" style="color: color:#069">Logout</a> <a href="create_user.php" class="btn" style="color: color:#069">Create User</a> <a href="view_user.php" class="btn" style="color: color:#069">View Users</a> </center>
 
 			<?php endif ?>
-
-			</header>
 
 
 			</main>
