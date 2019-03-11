@@ -1,5 +1,7 @@
 Use website;
-INSERT INTO users (id, username, user_type, email, password) 
+INSERT INTO users (
+  id, username, user_type, email, password
+) 
 Values 
   (
     1, "Ficy1953", "user", "AnitaDByrd@einrot.com", 
@@ -61,13 +63,14 @@ Values
     15, "Obect1934", "user", "RussellEDaniels@rhyta.com", 
     "37cf97aa4102f9933ad033523f71766e"
   );
-INSERT INTO pictures (photo_id, photo, id) 
+INSERT INTO pictures (photo_id, photo, photo_type, id) 
 Values 
   (
     1, 
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/angel.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -75,6 +78,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/beach-rock.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -82,6 +86,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/clam.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -89,6 +94,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/cuba.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -96,6 +102,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/cutedog.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -103,6 +110,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/dragon.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -110,6 +118,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/eve.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -117,6 +126,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/glass.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -124,6 +134,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/hirsch.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -131,6 +142,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/iceland.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -138,6 +150,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/skates.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -145,6 +158,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/sunset.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -152,6 +166,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/talkeetna.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -159,6 +174,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/tiger-cub.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -166,6 +182,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/tropical.jpg'
     ), 
+    "image/jpeg", 
     1
   ), 
   (
@@ -173,6 +190,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/apples.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -180,6 +198,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/ara.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -187,6 +206,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/aurora.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -194,6 +214,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/chicago.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -201,6 +222,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/coffee-beans.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -208,6 +230,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/colorful-buildings.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -215,6 +238,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/cuba-birds.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -222,6 +246,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/golden-lion.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -229,6 +254,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/mouse.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -236,6 +262,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/orange-sunset.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -243,6 +270,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/sunrise.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -250,6 +278,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/turtle.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -257,6 +286,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/water-drop.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -264,6 +294,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/wooden-boat.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -271,6 +302,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(2)Nothers/zebra-stripes.jpg'
     ), 
+    "image/jpeg", 
     2
   ), 
   (
@@ -278,6 +310,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/amsterdam.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -285,6 +318,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/basil-pizza.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -292,6 +326,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/church.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -299,6 +334,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/cocktail.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -306,6 +342,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/deer-buck.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -313,6 +350,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/elephant.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -320,6 +358,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/horseshoe.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -327,6 +366,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/kingfisher.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -334,6 +374,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/mother.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -341,6 +382,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/ny.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -348,6 +390,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/sky-shades.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -355,6 +398,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/sphinx.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -362,6 +406,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/sunset-birds.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -369,6 +414,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/white-wave.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -376,6 +422,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(3)Hurasawends/wine-cheese.jpg'
     ), 
+    "image/jpeg", 
     3
   ), 
   (
@@ -383,6 +430,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/castle.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -390,6 +438,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/clarinet.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -397,6 +446,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/colorfful-boats.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -404,6 +454,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/dark.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -411,6 +462,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/dawn.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -418,6 +470,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/delicate-arch.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -425,6 +478,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/eiffel.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -432,6 +486,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/key.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -439,6 +494,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/keyboard.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -446,6 +502,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/maldives.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -453,6 +510,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/man-sun.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -460,6 +518,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/manipulation.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -467,6 +526,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/newyears.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -474,6 +534,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/peacock.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -481,6 +542,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(4)Litend/pink-macarons.jpg'
     ), 
+    "image/jpeg", 
     4
   ), 
   (
@@ -488,6 +550,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/blossom.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -495,6 +558,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/cathedral.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -502,6 +566,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/chess.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -509,6 +574,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/chipmunk.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -516,6 +582,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/counch-shell.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -523,6 +590,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/rainbow.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -530,6 +598,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/roofs.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -537,6 +606,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/sail-boat.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -544,6 +614,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/sailboats.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -551,6 +622,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/seawave.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -558,6 +630,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/spring.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -565,6 +638,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/strawberries.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -572,6 +646,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/summer.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -579,6 +654,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/vintagecar.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -586,6 +662,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/water-sport.jpg'
     ), 
+    "image/jpeg", 
     5
   ), 
   (
@@ -593,6 +670,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/continents.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -600,6 +678,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/cross.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -607,6 +686,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/cube.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -614,6 +694,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/fall.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -621,6 +702,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/fly-agaric.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -628,6 +710,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/giraffe.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -635,6 +718,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/horse-racing.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -642,6 +726,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/lake.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -649,6 +734,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/lichterkette.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -656,6 +742,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/native.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -663,6 +750,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/paintedglass.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -670,6 +758,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/pattern.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -677,6 +766,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/picture.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -684,6 +774,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/skydivers.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -691,6 +782,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/spring-bird.jpg'
     ), 
+    "image/jpeg", 
     6
   ), 
   (
@@ -698,6 +790,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/australian-shepherd.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -705,6 +798,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/blush-roses.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -712,6 +806,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/brown-butterfly.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -719,6 +814,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/chocolates.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -726,6 +822,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/continents.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -733,6 +830,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/daffodils.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -740,6 +838,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/divers.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -747,6 +846,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/easter-statue.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -754,6 +854,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/easter-theme.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -761,6 +862,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/flower-cat.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -768,6 +870,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/launch-pad.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -775,6 +878,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/palmtrees.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -782,6 +886,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/pink-tulip.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -789,6 +894,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/water-lily.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -796,6 +902,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/waterbunglows.jpg'
     ), 
+    "image/jpeg", 
     7
   ), 
   (
@@ -803,6 +910,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/buddha-statue.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -810,6 +918,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/cham.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -817,6 +926,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/christ.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -824,6 +934,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/egg.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -831,6 +942,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/emperor-penguin.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -838,6 +950,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/gold-honey.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -845,6 +958,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/lanterns.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -852,6 +966,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/mosque.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -859,6 +974,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/salad.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -866,6 +982,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/scarves.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -873,6 +990,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/shish-kebab.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -880,6 +998,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/spices.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -887,6 +1006,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/sultanahmet.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -894,6 +1014,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/vegetables.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -901,6 +1022,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/whitekitchen.jpg'
     ), 
+    "image/jpeg", 
     8
   ), 
   (
@@ -908,6 +1030,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/brown-dog.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -915,6 +1038,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/cactus.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -922,6 +1046,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/cuban-streets.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -929,6 +1054,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/graffiti-wall.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -936,6 +1062,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/ice-cream-cone.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -943,6 +1070,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/kitten.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -950,6 +1078,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/marbles.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -957,6 +1086,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/organizer.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -964,6 +1094,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/pancakes.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -971,6 +1102,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/purple-lantern.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -978,6 +1110,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/tajmahal.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -985,6 +1118,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/tea-time.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -992,6 +1126,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/violin.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -999,6 +1134,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/white-puppy.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -1006,6 +1142,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/wolf.jpg'
     ), 
+    "image/jpeg", 
     9
   ), 
   (
@@ -1013,6 +1150,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/automobile.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1020,6 +1158,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/chain-clock.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1027,6 +1166,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/chipmunk.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1034,6 +1174,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/cute-bunny.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1041,6 +1182,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/dahlia.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1048,6 +1190,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/dandelion.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1055,6 +1198,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/fig.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1062,6 +1206,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/hedgehog.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1069,6 +1214,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/oldtimer.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1076,6 +1222,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/pink-bee.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1083,6 +1230,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/pinkcar.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1090,6 +1238,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/raspberry.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1097,6 +1246,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/red-rose.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1104,6 +1254,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/white-lily.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1111,6 +1262,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/white-ling.jpg'
     ), 
+    "image/jpeg", 
     10
   ), 
   (
@@ -1118,6 +1270,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/bali.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1125,6 +1278,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/beverage.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1132,6 +1286,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/chinese-lantern.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1139,6 +1294,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/day-of-the-dead.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1146,6 +1302,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/dumplings.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1153,6 +1310,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/early-spring.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1160,6 +1318,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/flower-branch.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1167,6 +1326,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/flower-buds.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1174,6 +1334,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/golden-gate-bridge.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1181,6 +1342,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/hollywood-sign.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1188,6 +1350,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/nature-scene.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1195,6 +1358,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/palm-trees.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1202,6 +1366,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/pumpkin-pie.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1209,6 +1374,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/sport.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1216,6 +1382,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/spring.jpg'
     ), 
+    "image/jpeg", 
     11
   ), 
   (
@@ -1223,6 +1390,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amuse.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1230,6 +1398,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amusement.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1237,6 +1406,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/anise.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1244,6 +1414,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/beijing.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1251,6 +1422,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/birthday-cake.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1258,6 +1430,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/bloom.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1265,6 +1438,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/bread.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1272,6 +1446,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/christmas-tree.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1279,6 +1454,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/classical.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1286,6 +1462,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/colorful-lanterns.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1293,6 +1470,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/cupcakes.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1300,6 +1478,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/dragonfruit.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1307,6 +1486,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/library.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1314,6 +1494,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/red-skates.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1321,6 +1502,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/tulips.jpg'
     ), 
+    "image/jpeg", 
     12
   ), 
   (
@@ -1328,6 +1510,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/basketball.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1335,6 +1518,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/bowling.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1342,6 +1526,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/cosmetic-oil.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1349,6 +1534,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/ferris-wheel.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1356,6 +1542,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/golf-stick.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1363,6 +1550,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/greece.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1370,6 +1558,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/herbs.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1377,6 +1566,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/lavender.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1384,6 +1574,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/orchids.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1391,6 +1582,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/snooker.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1398,6 +1590,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/surfer-wave.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1405,6 +1598,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/the-christmas-tree.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1412,6 +1606,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/the-roller-coaster.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1419,6 +1614,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/video-game.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1426,6 +1622,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/zebra-family.jpg'
     ), 
+    "image/jpeg", 
     13
   ), 
   (
@@ -1433,6 +1630,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/athletes.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1440,6 +1638,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/ball.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1447,6 +1646,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/beverage.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1454,6 +1654,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/book.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1461,6 +1662,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/breakfast-toast.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1468,6 +1670,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/brush.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1475,6 +1678,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/buttons.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1482,6 +1686,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/candle.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1489,6 +1694,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/embroidery.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1496,6 +1702,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/love-key.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1503,6 +1710,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/mezcal.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1510,6 +1718,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/sand.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1517,6 +1726,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/soap-bubble.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1524,6 +1734,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/taco.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1531,6 +1742,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/white-stones.jpg'
     ), 
+    "image/jpeg", 
     14
   ), 
   (
@@ -1538,6 +1750,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/carnival.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1545,6 +1758,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/cocoa.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1552,6 +1766,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/fiat.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1559,6 +1774,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/happy-teady.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1566,6 +1782,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/idol.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1573,6 +1790,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/justice.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1580,6 +1798,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/light-bulb.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1587,6 +1806,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/macaroons.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1594,6 +1814,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/mask.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1601,6 +1822,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/paris.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1608,6 +1830,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/pink-wine.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1615,6 +1838,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/praline-sweet.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1622,6 +1846,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/sad-red-rose.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1629,6 +1854,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/sombrero.jpg'
     ), 
+    "image/jpeg", 
     15
   ), 
   (
@@ -1636,5 +1862,6 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/white-car.jpg'
     ), 
+    "image/jpeg", 
     15
   );
