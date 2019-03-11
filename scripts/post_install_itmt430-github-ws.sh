@@ -96,4 +96,4 @@ sudo sed -i -e 's/$DATABASESLAVEIP/'$DATABASESLAVEIP'/g' /var/www/html/server.ph
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/server.php
 
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/db.php
-sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/server.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/db.php
