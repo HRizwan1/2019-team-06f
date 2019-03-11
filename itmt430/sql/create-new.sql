@@ -13,6 +13,7 @@ CREATE TABLE users(
 CREATE TABLE pictures(
   photo_id INT(11) NOT NULL AUTO_INCREMENT,
   photo mediumblob NOT NULL,
+  photo_type VARCHAR (25),
   id INT(11) NOT NULL,
   PRIMARY KEY(photo_id),
   FOREIGN KEY (id) REFERENCES users(id)
