@@ -5,6 +5,7 @@
     "database-ip": "127.0.0.1",
     "webserver-ip": "127.0.0.1",
     "databaseslave-ip": "127.0.0.1",
+    "cache-ip": "127.0.0.1",
     "database-name": "namegoeshere",
     "database-user-name": "database-username-goes-here"
 }
