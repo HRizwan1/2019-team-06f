@@ -5,6 +5,7 @@ USE website;
 CREATE TABLE users(
   id INT(11) NOT NULL AUTO_INCREMENT, 
   username VARCHAR(100) NOT NULL, 
+  user_type VARCHAR(100),  
   email VARCHAR(100) NOT NULL, 
   password VARCHAR(100) NOT NULL, 
   PRIMARY KEY(id)
