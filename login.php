@@ -23,7 +23,7 @@
         <!--  navigation  -->
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="register.php">Register</a></li>
                 <li><a href="about.php">About</a></li>
@@ -37,22 +37,27 @@
   <div class="login">
 
   <div class="section-header">
-      <h2>Login to TruHawk</h2>
-  <form method="post" action="login.php">
-    <?php include('errors.php'); ?>
-    <p><input type="text" name="username" value="" placeholder="Username"></p>
-    <p><input type="password" name="password" value="" placeholder="Password"></p>
-    <p class="remember_me">
-      <label>
-        <input type="checkbox" name="remember_me" id="remember_me">
-        Remember me on this computer
-      </label>
-    </p>
-    <p class="submit"><input type="submit" name="login_user" value="Login"></p>
-    <p>
-  		Not yet a member? <a href="register.php">Sign up</a>
-  	</p>
-  </form>
+<h2>Login to TruHawk</h2>
+	</div>
+	<form method="post" action="login.php">
+
+		<?php echo display_error(); ?>
+
+		<div class="input-group">
+			<label>Username</label>
+			<input type="text" name="username" >
+		</div>
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="password">
+		</div>
+		<div class="input-group">
+			<button type="submit" class="btn" name="login_btn">Login</button>
+		</div>
+		<p>
+			Not yet a member? <a href="register.php">Sign up</a>
+		</p>
+	</form>
 </div>
 
 <div class="Help">

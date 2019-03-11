@@ -38,39 +38,32 @@
 
 </header>
   <main>
+  <h2 class="form-signin-heading"></h2>
+
+<div class="section-header">
+<h2>Registration</h2>
     <form method="post" action="register.php" id="">
       <?php include('errors.php'); ?>
-        <h2 class="form-signin-heading"></h2>
-
-        <div class="section-header">
-            <h2>Registration</h2>
-
-        <label for="username">
-        Username:</label>
-        <input name="username" type="text" id="username" class="form-control" placeholder="Enter Username" value="<?php echo $username; ?>"
-        >
-        <br />
-        <label for="txtPassword">
-        Password:</label>
-        <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
-        class="form-control" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
-        <br />
-        <label for="txtConfirmPassword">
-        Confirm Password:</label>
-        <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control"
-        placeholder="Confirm Password" />
-        <br />
-        
-        <label for="email">
-        Email:</label>
-        <input name="email" id="email" class="form-control" placeholder="Enter Email"
-        required type="email" value="<?php echo $email; ?>" />
-        <hr />
-        <input type="submit" name="btnSignup" value="Register" id="btnSignup" class="btn btn-primary" />
-        <div class="alreadym">
-        <p>
-          Already a member? <a href="login.php">Sign in</a>
-        </p>
+      <div class="input-group">
+		<label>Username</label>
+    <input type="text" name="username" value="<?php echo $username; ?>">	</div>
+	<div class="input-group">
+		<label>Email</label>
+    <input type="email" name="email" value="<?php echo $email; ?>">	</div>
+	<div class="input-group">
+		<label>Password</label>
+		<input type="password" name="password_1">
+	</div>
+	<div class="input-group">
+		<label>Confirm password</label>
+		<input type="password" name="password_2">
+	</div>
+	<div class="input-group">
+		<button type="submit" class="btn" name="register_btn">Register</button>
+	</div>
+	<p>
+		Already a member? <a href="login.php">Sign in</a>
+	</p>
 </div>
       </div>
     </form>
