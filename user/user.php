@@ -30,6 +30,9 @@ if (isset($_GET['logout'])) {
 </head>
 
 <body>
+
+
+
     <!--  header -->
     <header>
         <!--  main  -->
@@ -58,10 +61,11 @@ if (isset($_GET['logout'])) {
 		</nav>
 
 		
-		
+		</header>
+
 		<main> 
 
-		
+
 
 		<div class="wrapper-admin">
 	<!-- notification message -->
@@ -79,24 +83,45 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<h2 style="color:#000000">My User Panel</h2>	</div>
+	<center> <h2 style="color:#000000">My User Panel </center> 
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
-		<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2>
+			<center> 	<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2> </center>
 
-				<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> 
+			<center> 		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center> 
 					<br> 
-                   &nbsp; <a href="create_user.php">Upload Photos</a>
-                   &nbsp; <a href="create_user.php">View my Photos</a>
-                   &nbsp; <a href="create_user.php">Recent Photo Uploads</a>
-                   <a href="../index.html?logout='1'" style="color: red;">Logout</a>
+					<center>            &nbsp; <a href="upload.php">Upload Photos</a> </center> 
+					<center>         &nbsp; <a href="create_user.php">View my Photos</a> </center> 
+					<center>            &nbsp; <a href="create_user.php">Recent Photo Uploads</a> </center> 
+					<center>          <a href="../index.html?logout='1'" style="color: red;">Logout</a> </center> 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
 			<?php endif ?>
 
-			</header>
 
 
 			</main>
