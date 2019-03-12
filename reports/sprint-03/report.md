@@ -16,7 +16,7 @@
  * Different user authentication panel on the website (C)
  * Allow users to upload photos using hashtags (IP)
  * Data Encryption at Rest () 
- * To make the website responsive in order to fit any form factor such as desktop, mobile and tablets (I)
+ * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
 
 ### Project Accomplishments: Goals Accomplished ()
 
@@ -28,7 +28,7 @@
 
   * HTML-5 is used to structure the webpages
   * CSS-3 is used to style our web pages 
-  * Javascript / jQuery is used for the photo slideshow on the    gallery page
+  * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHP is used for login and registering process
   * Vagrant is primarily used as a development enironment tool
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
@@ -200,9 +200,9 @@
     - Administrator UI needs to be developed and styled HTML + CSS + JQuery
   * Data Encryption at Rest
     - Enable Data Encryption at rest for mariadb
-  * To focus more on responsive design, having the website function properly in multiple form factors, such on mobile, tablet, etc.
-    - include mobile first css which will detect screen size and style our webpage according to device its been used on.
-    - Add JQueries that will assure graet user experience on any screen size.
+  * To focus more on responsive design, having the website function properly in multiple form factors, such as on mobile, tablet, etc.
+    - Include mobile first css which will detect screen size and style our webpage according to device it's been used on.
+    - Add JQueries that will assure a great user experience on any screen size.
 
 #### Individual Reflections
 **Daniel** - 
