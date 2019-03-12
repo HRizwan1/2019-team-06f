@@ -38,10 +38,15 @@
 2. Operating System Platform:
 
   a. Linux - Ubuntu 16.04.5
+
   b. Process of secrets management: gitignore, openSSL, SSH key
+
       i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
+
       ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
+
       iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.
+      
   c. Capture of application metrics: 
 
   
