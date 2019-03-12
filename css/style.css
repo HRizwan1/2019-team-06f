@@ -19,7 +19,7 @@ body     {
 }
 
 /* Implementing responsive design for multiple form factors */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:900px) {
   /* For tablets: */
   .main {
     width: 80%;
@@ -30,7 +30,7 @@ body     {
   }
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
   /* For mobile phones: */
   .section, .nav, .iit, .site {
     width: 100%;
