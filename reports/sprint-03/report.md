@@ -37,24 +37,24 @@
   
 2. Operating System Platform:
 
-  a. Linux - Ubuntu 16.04.5
+    a. Linux - Ubuntu 16.04.5
 
-  b. Process of secrets management: gitignore, openSSL, SSH key
+    b. Process of secrets management: gitignore, openSSL, SSH key
 
-      i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
+      <p>i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
 
-      ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
+      <p>ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-      iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.
-      
-  c. Capture of application metrics: 
+      <p>iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
+
+    c. Capture of application metrics: 
 
   
 3. Use of Data Store:
 
   * We are using 2 database servers (Platform: MySQL/MariaDB)
-  * One of the database serves as a master is used to store our     information (Master) and this database is used to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
-  * The other database used as Slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.)
+  * One of the database server serves as the master is to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
+  * The other database server serves as the slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
   * One Redis Cache Server will be used to cache data that a webserver serves. Redis is a NoSQL key-value data store. To store a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
 
 
@@ -83,8 +83,8 @@
   * Application only write on the master and cannot modify data directly on the slave, instead replication process is going to funciton on a read-only server because replication only flows in one direction.
   
 
-(<p>Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
-<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.</p>)
+<p>(Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
+<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.)</p>
  
 6. Responsive Design (In-progress):
 
