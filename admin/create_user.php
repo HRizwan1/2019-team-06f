@@ -116,8 +116,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<br>
 		<div class="input-group">
-			<button type="submit" class="btn" name="register_btn"> + Create user</button>
-			<input type="button" class="btn" value="Go Back" onclick="history.back(-1)" />
+		<button type="submit" class="btn" name="register_btn"> Create User</button> <input type="button" class="btn" value="Go Back" onclick="history.back(-1)" />
 		</div>
 	</form>
 
