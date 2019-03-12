@@ -11,14 +11,14 @@
 
 ### Project Goals:
 
- * To build a slave database server using vagrant and packerbuild.
- * To make the website responsive in order to fit any form factor: desktop, mobile and tablets(I)
- * Different user authentication panel on the website (I)
- * Allow users to upload photos using hashtags (I)
- * Data Encryption at Rest (I) 
- * To build cache server (I)
+ * To build a slave database server using vagrant and packerbuild (C)
+ * To build cache server (C)
+ * Different user authentication panel on the website (C)
+ * Allow users to upload photos using hashtags (IP)
+ * Data Encryption at Rest () 
+ * To make the website responsive in order to fit any form factor such as desktop, mobile and tablets (I)
 
-### Project Accomplishments: Goals Accomplished (11/13)
+### Project Accomplishments: Goals Accomplished ()
 
  * 
 
@@ -41,11 +41,11 @@
 
     b. Process of secrets management: gitignore, openSSL, SSH key
 
-      <p>i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
+        <p> i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
 
-      <p>ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+        <p> ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-      <p>iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
+        <p> iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
 
     c. Capture of application metrics: 
 
@@ -55,7 +55,7 @@
   * We are using 2 database servers (Platform: MySQL/MariaDB)
   * One of the database server serves as the master is to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
   * The other database server serves as the slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
-  * One Redis Cache Server will be used to cache data that a webserver serves. Redis is a NoSQL key-value data store. To store a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
+  * One Redis Cache Server used for caching the data that a webserver serves. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
 
 
 4. Data Encryption at Rest:
@@ -76,7 +76,7 @@
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
 
-  * 2-Database Servers running MySQL - 1 server serves as a master server and another server servers as a slave. Slave connects to master.
+  * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server servers as a slave. Slave connects to master.
   * The purpose of using the master-slave replication process is to enable data from one MySQL database server (servering as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave), only the master database is used for the write operations, while the read operation is spread on the slave database.
   * During designing or deploying application, all the write operations (statement/query that changes the state of database) are excuted ONLY on the master server. As to minimize the risk of data conflicts on the slave, only the replication process has right to make changes on the slave and thus slave is kept in read-only mode. 
