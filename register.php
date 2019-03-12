@@ -21,7 +21,7 @@
 
         <!--  main  -->
         <a id="logo" href="index.php">
-          <img src="img/THLogo.png" alt="THLogo">
+          <img src="img/THLogo.png" alt="THLogo" style="max-width:100%;height:auto;">
           <span>TruHawk</span>
         </a>
 
@@ -71,7 +71,7 @@
 
 <!-- the footer -->
 <footer>
-  <img src="img/THLogo.png" alt="THLogo">
+  <img src="img/THLogo.png" alt="THLogo" style="max-width:100%;height:auto;">
   <span>&copy; 2019 TruHawk </span>
 </footer>
 
