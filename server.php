@@ -42,6 +42,11 @@ function register(){
 	if ($password_1 != $password_2) {
 		array_push($errors, "The two passwords do not match");
 	}
+	
+	if(strlen($password_1) < 8){
+		array_push($errors, "Password must be at least 8 characters");
+	
+	} 
 
 	  // first check the database to make sure 
   // a user does not already exist with the same username and/or email
