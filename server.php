@@ -67,7 +67,7 @@ function register(){
 	// register user if there are no errors in the form
 		if (count($errors) == 0) {
 		$salt = "jeremyistheboss123456789"; 
-		$password = $_post['password_1'].$salt;
+		$password = $_POST['password_1'].$salt;
 		$password = sha1($password);//encrypt the password before saving in the database
 
 		if (isset($_POST['user_type'])) {
@@ -157,7 +157,7 @@ function login(){
 	// attempt login if no errors on form
 	if (count($errors) == 0) {
 		$salt = "jeremyistheboss123456789"; 
-		$password = $_post['password_1'].$salt;
+		$password = $_POST['password'].$salt;
 		$password = sha1($password);//encrypt the password before saving in the database
 
 		$query = "SELECT * FROM users WHERE username='$username' AND password='$password' LIMIT 1";
