@@ -58,14 +58,18 @@
 2. Operating System Platform:
 
   * Linux - Ubuntu 16.04.5
-  * Process of secrets management: gitignore, openSSL
+  * Process of secrets management: gitignore, openSSL, SSH key
+    a. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded.
+    b. openSSL -
+    c. SSH Key -
+
   
 3. Use of Data Store:
 
-  * We will be using 2 database servers ( Platform: MySQL)
+  * We are using 2 database servers ( Platform: MySQL)
   * Use of Master/Slave
-    - One of the databases will be used to store our information (Master) and this will be the database which we write to. This database will store some of the initial photos provided by the instructor and photos that potentially would be uploaded by users. As well as this server will host the user information such as name, email, usernames & passwords.
-    - The other database (Slave) will be the one which we read from. Photos will be queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
+    - One of the database which serves master is used to store our information (Master) and this database is used to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
+    - The other database used as Slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
 
 4. Data Encryption at Rest:
 
@@ -83,16 +87,16 @@
      - Encryption keys can also be rotated which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys. 
 
 5. Use of Master & Slave Replication:
-  * 2 Database Servers running MySQL - 1 server will serve as a master server and 1 server will be a slave.
+  * 2 Database Servers running MySQL - 1 server serves as a master server and 1 server servers as a slave.
   * 1 Apache web server that will host HTML, PHP, JavaScript and CSS 
   * 1 Redis cache server
 
-<p>Our setup will use the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos would be written to the master database server. The master will be connected to a slave server which will hold a copy of the database used for reads. By separating writes and reads we will minimize the required movement of the disk head.  On the master database, separating writes from reads will free up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads will allow it to handle more queries by freeing resources for the job.</p>
+<p>Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
 <p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.</p>
  
 6. Responsive Design (In-progress):
 
-<p>Our goal is to design our website with Responsive Web Design (RWD) that adapts the layout to the viewing environment by using CSS media queries ( an extension of the @media rule).</p>
+<p>Our goal is to design our website with Responsive Web Design (RWD) that adapts the layout to the viewing environment by using CSS media queries (an extension of the @media rule).</p>
 <p>“Why media queries?” - Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.</p>
 <p>Technically we want a media-rich, widescreen page for desktop viewing and a smaller size page formatted for small screen viewing, with less clutter, larger fonts and tighter-wrapping constraints for mobile viewing.</p>
 <p>Below is the IPhone X view without the use of media queries, for next sprint we are going to use media queries to make the mobile view look better.</p>
