@@ -11,17 +11,7 @@
 
 ### Project Goals:
 
- * To build a web server (C)
- * To build a database server (C)  
- * To get web server and database server running on everyone’s machine (C)
- * Configure vagrant files (C) 
- * Create Diagrams for Site Functionality (C)
- * Implementing PHP to the register and login page (C)
- * To generate and deploy RSA keys for each member on GitHub (C)
- * Switching over from HTTP to HTTPS with valid security  (C)
- * To build the vagrant boxes with RSA keys (C) 
- * Design an About Page (C) 
- * Successfully able to access the “TruHawk” website using an IP address (C)
+ * To build a slave database server using vagrant and packerbuild.
  * To make the website responsive in order to fit any form factor: desktop, mobile and tablets(I)
  * Different user authentication panel on the website (I)
  * Allow users to upload photos using hashtags (I)
@@ -30,46 +20,38 @@
 
 ### Project Accomplishments: Goals Accomplished (11/13)
 
- * Configured vagrant files
- * Successfully deployed web server
- * Successfully deployed database server
- * Successfully implemented HTTPS
- * Connected the vagrant boxes with RSA keys
- * Successfully deployed RSA keys for each member via Github
- * Successfully built servers on each team member’s machine
- * Created Diagrams for Site Functionality
- * Successfully created an About Page
- * Successfully implemented PHP to both the register and login page
- * Successfully able to access the “TruHawk” website using an IP address
+ * 
 
 
 ### Project Requirements:
 1. Language and Framework of Choice:
 
-  * HTML is used to structure the webpages
-  * CSS is used to style our web pages 
-  * Javascript / jQuery is used for the photo slideshow on the gallery page
-  * PHPStorm used for login and register process
-  * Vagrant/Packer is used for building the web server and database server
-  * Apache 2.4.18 (Ubuntu)
-  * Redis 5.0.3 is for our cache in-memory data structure 
+  * HTML-5 is used to structure the webpages
+  * CSS-3 is used to style our web pages 
+  * Javascript / jQuery is used for the photo slideshow on the    gallery page
+  * PHP is used for login and registering process
+  * Vagrant is primarily used as a development enironment tool
+  * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
+  * Redis 5.0.3 is used as in-memory data structure store and allow for faster searching and to cache data from the webserver
   * MariaDB Server 10.0.38 provides an SQL interface for accessing data
   
 2. Operating System Platform:
 
-  * Linux - Ubuntu 16.04.5
-  * Process of secrets management: gitignore, openSSL, SSH key
-    a. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore will never be included in git commits. Not only does this feature allow for system-specific files to be untouched, but it allows for insurance that sensitive files will never be uploaded.
-    b. openSSL -
-    c. SSH Key -
+  a. Linux - Ubuntu 16.04.5
+  b. Process of secrets management: gitignore, openSSL, SSH key
+      i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
+      ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
+      iii. SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.
+  c. Capture of application metrics: 
 
   
 3. Use of Data Store:
 
-  * We are using 2 database servers ( Platform: MySQL)
-  * Use of Master/Slave
-    - One of the database which serves master is used to store our information (Master) and this database is used to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
-    - The other database used as Slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
+  * We are using 2 database servers (Platform: MySQL/MariaDB)
+  * One of the database serves as a master is used to store our     information (Master) and this database is used to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
+  * The other database used as Slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.)
+  * One Redis Cache Server will be used to cache data that a webserver serves. Redis is a NoSQL key-value data store. To store a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
+
 
 4. Data Encryption at Rest:
 
@@ -80,19 +62,24 @@
   
   InnoDB: A storage engine for the database management system MySQL. 
   
-  * MariaDB can allow our files to encrypt:
+  * MariaDB allow our files to encrypt:
      - All tablespaces
      - Individual tables
      - Uses a 32-bit integer as a key identifier.
      - Encryption keys can also be rotated which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys. 
 
-5. Use of Master & Slave Replication:
-  * 2 Database Servers running MySQL - 1 server serves as a master server and 1 server servers as a slave.
-  * 1 Apache web server that will host HTML, PHP, JavaScript and CSS 
-  * 1 Redis cache server
 
-<p>Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
-<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.</p>
+5. Use of MySQL/MariaDB Database Master-Slave Replication:
+
+  * 2-Database Servers running MySQL - 1 server serves as a master server and another server servers as a slave. Slave connects to master.
+  * The purpose of using the master-slave replication process is to enable data from one MySQL database server (servering as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
+  * The master-slave replication is a one-way replication (from master to slave), only the master database is used for the write operations, while the read operation is spread on the slave database.
+  * During designing or deploying application, all the write operations (statement/query that changes the state of database) are excuted ONLY on the master server. As to minimize the risk of data conflicts on the slave, only the replication process has right to make changes on the slave and thus slave is kept in read-only mode. 
+  * Application only write on the master and cannot modify data directly on the slave, instead replication process is going to funciton on a read-only server because replication only flows in one direction.
+  
+
+(<p>Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
+<p>We will implement a Redis Cache server which will be placed between our Web server and Slave Database server and it will be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.</p>)
  
 6. Responsive Design (In-progress):
 
