@@ -62,7 +62,12 @@ Values
   (
     15, "Obect1934", "user", "RussellEDaniels@rhyta.com", 
     "37cf97aa4102f9933ad033523f71766e"
+  ),
+  (
+    16, "admin", "admin", "admin@truhawk.com", 
+    "21232f297a57a5a743894a0e4a801fc3"
   );
+
 INSERT INTO pictures (photo_id, photo, photo_type, id) 
 Values 
   (
