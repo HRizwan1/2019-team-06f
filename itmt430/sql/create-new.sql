@@ -15,6 +15,7 @@ CREATE TABLE pictures(
   photo mediumblob NOT NULL,
   photo_type VARCHAR(25) NOT NULL,
   id INT(11),
+  text TEXT;
   PRIMARY KEY(photo_id),
   FOREIGN KEY (id) REFERENCES users(id)
 );

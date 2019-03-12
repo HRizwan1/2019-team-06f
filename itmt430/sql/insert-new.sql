@@ -5,70 +5,70 @@ INSERT INTO users (
 Values 
   (
     1, "Ficy1953", "user", "AnitaDByrd@einrot.com", 
-    "d829f81a918cd60352a185fb4f7cd7407fb6d68f "
+    "d829f81a918cd60352a185fb4f7cd7407fb6d68f"
   ), 
   (
     2, "Nothers", "user", "NoahDVaughn@armyspy.com", 
-    "95679f7748777c13b2d5aff301629702061dd0bc "
+    "95679f7748777c13b2d5aff301629702061dd0bc"
   ), 
   (
     3, "Hurasawends", "user", "JessieCDaughtry@gustr.com", 
-    "3fe6df3966f68f46fd9156f1b2e9cc9418dbd68b "
+    "3fe6df3966f68f46fd9156f1b2e9cc9418dbd68b"
   ), 
   (
     4, "Litend", "user", "BettyCLi@fleckens.hu", 
-    "32d21e9f69062b43892b0621fee624207945a558 "
+    "32d21e9f69062b43892b0621fee624207945a558"
   ), 
   (
     5, "Hagerre", "user", "BrianKSifuentes@armyspy.com", 
-    "12cfbc0bb52684717abc5e0b576ed7ff302e5da9 "
+    "12cfbc0bb52684717abc5e0b576ed7ff302e5da9"
   ), 
   (
     6, "Mothesseze", "user", "RobinLShortridge@teleworm.us", 
-    "ade98b29b2b5edd5726a8594c764f7c924aabd93 "
+    "ade98b29b2b5edd5726a8594c764f7c924aabd93"
   ), 
   (
     7, "Girese", "user", "MittieJReed@armyspy.com", 
-    "ac18f4abc8190ac6f47e31bf41274f1934e0525a "
+    "ac18f4abc8190ac6f47e31bf41274f1934e0525a"
   ), 
   (
     8, "Fement42", "user", "AmyRBabb@jourrapide.com", 
-    "b578c0afc147e305f2f2a6bb76260a871c628b7b "
+    "b578c0afc147e305f2f2a6bb76260a871c628b7b"
   ), 
   (
     9, "Withey", "user", "RichardBGerman@jourrapide.com", 
-    "cc2bd1f21741c0bb1adaa78ce4e8ec1be6e6cc17 "
+    "cc2bd1f21741c0bb1adaa78ce4e8ec1be6e6cc17"
   ), 
   (
     10, "Ther1993", "user", "AlbertREspinoza@teleworm.us", 
-    "859777b495a50556b1dea9d31365c973c73321ad "
+    "859777b495a50556b1dea9d31365c973c73321ad"
   ), 
   (
     11, "Majessis", "user", "EricGBrim@gustr.com", 
-    "b58282250cedd03dc00becacc9104c2c0b169461 "
+    "b58282250cedd03dc00becacc9104c2c0b169461"
   ), 
   (
     12, "Hertake93", "user", "MirnaTRobinson@teleworm.us", 
-    "0710e08784d71f0729be69dbf56ef40c8658bbe3 "
+    "0710e08784d71f0729be69dbf56ef40c8658bbe3"
   ), 
   (
     13, "Adven1991", "user", "JenniferJVasquez@superrito.com", 
-    "503bad60119643f1b6e8c20a74b5188e6cdcc934 "
+    "503bad60119643f1b6e8c20a74b5188e6cdcc934"
   ), 
   (
     14, "Highted", "user", "JenniferTStarbuck@einrot.com", 
-    "6a9780618426de51614fcc573daca03e57755cf0 "
+    "6a9780618426de51614fcc573daca03e57755cf0"
   ), 
   (
     15, "Obect1934", "user", "RussellEDaniels@rhyta.com", 
-    "e553164c790eb3611d0ca99be71876624cd2c0c1 "
+    "e553164c790eb3611d0ca99be71876624cd2c0c1"
   ),
   (
     16, "Admin", "admin", "Admin@truhawk.com", 
-    "48c159634a2eaef9729ba694fe5f4a374b2bc689 "
+    "48c159634a2eaef9729ba694fe5f4a374b2bc689"
   );
 
-INSERT INTO pictures (photo_id, photo, photo_type, id) 
+INSERT INTO pictures (photo_id, photo, photo_type, id, text) 
 Values 
   (
     1, 
@@ -76,7 +76,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/angel.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "statue angel"
   ), 
   (
     16, 
@@ -84,7 +84,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/beach-rock.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "rock water"
   ), 
   (
     31, 
@@ -92,7 +92,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/clam.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "shell algae"
   ), 
   (
     46, 
@@ -100,7 +100,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/cuba.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "water bird"
   ), 
   (
     61, 
@@ -108,7 +108,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/cutedog.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "dog animal"
   ), 
   (
     76, 
@@ -116,7 +116,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/dragon.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "art statue"
   ), 
   (
     91, 
@@ -124,7 +124,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/eve.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "sunset water"
   ), 
   (
     106, 
@@ -132,7 +132,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/glass.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "art colors"
   ), 
   (
     121, 
@@ -140,7 +140,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/hirsch.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "deer animal"
   ), 
   (
     136, 
@@ -148,7 +148,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/iceland.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "glacier iceberg"
   ), 
   (
     151, 
@@ -156,7 +156,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/skates.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "skating rollerstakes"
   ), 
   (
     166, 
@@ -164,7 +164,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/sunset.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "sunset water"
   ), 
   (
     181, 
@@ -172,7 +172,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/talkeetna.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "clouds water"
   ), 
   (
     196, 
@@ -180,7 +180,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/tiger-cub.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "tiger animal"
   ), 
   (
     211, 
@@ -188,7 +188,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/tropical.jpg'
     ), 
     "image/jpeg", 
-    1
+    1, "beach sunset"
   ), 
   (
     2, 
