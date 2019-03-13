@@ -199,7 +199,8 @@
 
 12. Management of project progress:
 
-<p>Mostly all the communication and update process for this project is done through slack. We are keeping track of our to-do, in-progress and done tasks through trello. Upon the completion of the task, the person assigned to that task moves the card to the done section.</p>
+<p>Mostly all the communication and update process for this project is done through slack. We are keeping track of our to-do, in-progress and done tasks through trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint to update eachother on accomplishments/issues.</p>
+
   * Trello:
   
 ![trello](images/trello.png "Trello")
