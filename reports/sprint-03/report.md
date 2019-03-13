@@ -67,17 +67,19 @@
 
     b. Process of secrets management: gitignore, openSSL, SSH key
 
-        ...* Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
+        i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
 
-        ...* openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+        ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-        ...*  SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
+        iii.  SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
 
-        ...* SHA1-hash - We used SHA-1 to hash our passwords
+        iv. SHA1-hash - We used SHA-1 to hash our passwords
 
-        ...* Priveleges - Unregistered users cannot view photos; Admin have the ability to view and create new users
+        v. Priveleges - Unregistered users cannot view photos; Admin have the ability to view and create new users
 
     c. Capture of application metrics: 
+
+        We do not have a schema for application metrics at this time.
 
   
 3. Use of Data Store:
