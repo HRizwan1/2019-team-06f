@@ -86,7 +86,7 @@ if (isset($_GET['logout'])) {
 		<center>	<input type="button" class="btn" value="Go Back" onclick="history.back(-1)" /> </center>
 <br>
 
-
+<div class="table-container">
 <table border="1" align="center">
 <tr>
   <td>ID</td>
