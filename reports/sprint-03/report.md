@@ -150,10 +150,9 @@
 
 **Unauthenticated users access:** 
 
-* Will have access to “read-only” data
-* Restrict certain site features until they have created an account
-
-**Authenticated normal users will have access to:**
+* Have access to “read-only” data
+* Restricted features until account created (cannot view gallery or have any access to photos without an account)
+**Authenticated normal users have access to:**
   * Upload photos
   * View own photos
   * Search for photos (hashtags)
@@ -162,6 +161,7 @@
   * Custom made admin panel 
   * Able to delete other users photos
   * Able to delete accounts
+  * Able to create accounts
 9. Creation of Dev Environment:
 ![devenv](images/devenv.png "Dev Environment")
 
