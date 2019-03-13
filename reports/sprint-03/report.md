@@ -32,8 +32,8 @@
 ### Project Accomplishments: Goals Accomplished (14/17)
 
  * Built a slave database server using vagrant and packerbuild
- * To build Redis cache server
- * Automation of Data Entry
+ * Built Redis cache server
+ * Automated of Data Entry
  * Designed & Created tables for users and pictures using MySQL
  * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
  * Admin Panel created
