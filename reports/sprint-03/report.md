@@ -214,7 +214,7 @@
 ![deploykeys](images/deploykeys.png "Deploy Keys")  
   
 13. Test Users:
-<p>Fifteen test users were generated, and data will be injected into our MariaDB database at build. For the purpose, ‘.sql’ file will be created with the insert command to add values into the username, password and other account required fields.</p>
+<p>Fifteen test users were generated, and the data is currently being used in our MariaDB database at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, password and other account required fields.</p>
 
 ![testusers](images/testusers.png "Test Users")
 
