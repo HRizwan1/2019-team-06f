@@ -224,18 +224,7 @@
 <p>We also had an issue where mariadb was not granting permissions to the user "worker" and it turned out after countless hours of hair pulling that it was missing '' surrounding the IP address.</p>
 
 **Goals for Next Sprint:**
-  * Successfully build and deploy a cache server (with Redis)
-    - Hassn will work on using packer/vagrant to build a Redis cache server
-  * Continue to manage diagrams as new pieces are implemented
-    - Diagrams for new website interface for logged in users
-  * Have a full functioning website user and admin panel
-    - UI for authenticated users needs to be developed Shan & Daniel
-    - Administrator login detection needs to be implemented
-    - Administrator UI needs to be designed
-    - Administrator UI needs to be developed and styled HTML + CSS + JQuery
-  * Data Encryption at Rest
-    - Enable Data Encryption at rest for mariadb
-  * To focus more on responsive design, having the website function properly in multiple form factors, such as on mobile, tablet, etc.
+  * Responsive design, making the website function properly in other form factors:mobile & tablet.
     - Include mobile first css which will detect screen size and style our webpage according to device it's been used on.
     - Add JQueries that will assure a great user experience on any screen size.
 
