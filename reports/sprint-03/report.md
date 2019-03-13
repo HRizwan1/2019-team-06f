@@ -227,6 +227,8 @@
   * Responsive design, making the website function properly in other form factors:mobile & tablet.
     - Include mobile first css which will detect screen size and style our webpage according to device it's been used on.
     - Add JQueries that will assure a great user experience on any screen size.
+  * Data Encryption at Rest using XtraDB and InnoDB
+  * Functioning search box
 
 #### Individual Reflections
 **Daniel** - 
