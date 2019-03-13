@@ -6,6 +6,7 @@
     "webserver-ip": "127.0.0.1",
     "databaseslave-ip": "127.0.0.1",
     "cache-ip": "127.0.0.1",
+    "salt": "insertsalthere",
     "database-name": "namegoeshere",
     "database-user-name": "database-username-goes-here"
 }

@@ -66,7 +66,7 @@ function register(){
 
 	// register user if there are no errors in the form
 		if (count($errors) == 0) {
-		$salt = "jeremyistheboss123456789"; 
+		$salt = "insertsalthere"; 
 		$password = $_POST['password_1'].$salt;
 		$password = sha1($password);//encrypt the password before saving in the database
 
@@ -156,7 +156,7 @@ function login(){
 
 	// attempt login if no errors on form
 	if (count($errors) == 0) {
-		$salt = "jeremyistheboss123456789"; 
+		$salt = "insertsalthere"; 
 		$password = $_POST['password'].$salt;
 		$password = sha1($password);//encrypt the password before saving in the database
 
@@ -210,4 +210,3 @@ function GetData(){
     return $result;
 
 }
-

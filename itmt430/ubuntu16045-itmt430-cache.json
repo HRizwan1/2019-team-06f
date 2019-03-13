@@ -96,6 +96,7 @@
       "WEBSERVERIP={{user `webserver-ip`}}",
       "DATABASESLAVEIP={{user `databaseslave-ip`}}",
       "CACHEIP={{user `cache-ip`}}",
+      "SALT={{user `salt`}}",
       "DATABASENAME={{user `database-name`}}",
       "DATABASEUSERNAME={{user `database-user-name`}}"
     ]
