@@ -92,8 +92,8 @@
 
 4. Data Encryption at Rest:
 
-  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields will be encrypted data using a one-way password hash.
-  * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. This encryption method will be implemented. 
+  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
+  * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. 
   
   XtraDB: A storage engine for the MariaDB 
   
