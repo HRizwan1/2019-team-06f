@@ -17,10 +17,10 @@
  * Designed and create tables for users and pictures using mysql (C)
  * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
  * Create an upload button for a registered user to upload and view all pictures (C)
+ * Create a search box for users to search for photos (IP)
  * Create admin panel to view all users and to create admins / regular users (C)
  * Restricted privileges for unregistered : read access (index page) (C)
  * Further develop the user panel by allowing users to upload photos (C)
- * Create a search box for users to search for photos (IP)
  * Layout diagram for user/admin interface  (IN)
  * Hashtag the photos (IN)
  * To establish connection from web server to database server (C)
@@ -29,11 +29,24 @@
  * Data Encryption at Rest using XtraDB and InnoDB (I) 
  * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
 
-### Project Accomplishments: Goals Accomplished ()
+### Project Accomplishments: Goals Accomplished (14/17)
 
  * Built a slave database server using vagrant and packerbuild
  * To build Redis cache server
+ * Automation of Data Entry
+ * Designed & Created tables for users and pictures using MySQL
+ * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
+ * Admin Panel created
+ * User Panel created
+ * Created search box and upload feature-button
+ * Gathered test photos for each test user and stored in the database (225 photos)
+ * Website pulls from the database to display photos in user accounts
+ * Users can upload as well as view all available photos
+ * Binding error fixed from one of our github issues last sprint
+ * Established connection from web server to database server 
+ * Restricted privileges for unregistered users
  
+
 
 
 ### Project Requirements:
