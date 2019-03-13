@@ -85,8 +85,8 @@
 3. Use of Data Store:
 
   * We are using 2 database servers (Platform: MySQL/MariaDB)
-  * One of the database server serves as the master is to write. The usage of this database is to store the initial photos of the users to search and to hold the photos that potentially uploaded by users. Not just that but also this server hosts the user information such as name, email, usernames & passwords.
-  * The other database server serves as the slave is to read from. Photos are queried from this database using javascript media queries for pictures to display on our website and internally in the user accounts.
+  * One of the database server serves as the master which we write to. One of the uses of this database is to store the photos which we upload for testing, as well as photos uploaded by users. Secondly,  this server hosts the user information such as names, emails, usernames & passwords.
+  * The other database server serves as the slave and is the database which we read from. User infomration for logging in as well as photos are being pulled from this database for use in our website.
   * One Redis Cache Server used for caching the data that a webserver serves. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
 
 
