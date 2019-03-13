@@ -65,7 +65,7 @@ Values
   ), 
   (
     16, "Admin", "admin", "Admin@truhawk.com", 
-    "48c159634a2eaef9729ba694fe5f4a374b2bc689"
+    "98224dbb7c3397c56127074d5cbc2f876040f874"
   );
 INSERT INTO pictures (
   photo_id, photo, photo_type, id, text
