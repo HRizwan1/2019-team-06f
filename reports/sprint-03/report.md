@@ -12,15 +12,28 @@
 ### Project Goals:
 
  * To build a slave database server using vagrant and packerbuild (C)
- * To build cache server (C)
- * Different user authentication panel on the website (C)
- * Allow users to upload photos using hashtags (IP)
- * Data Encryption at Rest () 
+ * To build Redis cache server (C)
+ * Fix binding error (50 -server.cnf is ignored causing a binding error due to permissions) (C)
+ * Designed and create tables for users and pictures using mysql (C)
+ * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
+ * Create an upload button for a registered user to upload and view all pictures (C)
+ * Create admin panel to view all users and to create admins / regular users (C)
+ * Restricted privileges for unregistered : read access (index page) (C)
+ * Further develop the user panel by allowing users to upload photos (C)
+ * Create a search box for users to search for photos (IP)
+ * Layout diagram for user/admin interface  (IN)
+ * Hashtag the photos (IN)
+ * To establish connection from web server to database server (C)
+ * Gather pictures we will use for test user accounts and store in our database (C)
+ * Be able to display photos from database in user accounts (C)
+ * Data Encryption at Rest using XtraDB and InnoDB (I) 
  * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
 
 ### Project Accomplishments: Goals Accomplished ()
 
- * 
+ * Built a slave database server using vagrant and packerbuild
+ * To build Redis cache server
+ 
 
 
 ### Project Requirements:
