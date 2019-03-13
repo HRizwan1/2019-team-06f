@@ -120,12 +120,11 @@
  
 6. Responsive Design (In-progress):
 
-<p>Our goal is to design our website with Responsive Web Design (RWD) that adapts the layout to the viewing environment by using CSS media queries (an extension of the @media rule).</p>
+<p> Our responsive design is in-progress but is not an attained goal at this time.
+<p>Our goal is to have our website responsive that adapts the layout to the viewing environment by using CSS media queries (an extension of the @media rule).</p>
 <p>“Why media queries?” - Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.</p>
 <p>Technically we want a media-rich, widescreen page for desktop viewing and a smaller size page formatted for small screen viewing, with less clutter, larger fonts and tighter-wrapping constraints for mobile viewing.</p>
-<p>Below is the IPhone X view without the use of media queries, for next sprint we are going to use media queries to make the mobile view look better.</p>
-
-![mobile](images/mobile.jpg "Mobile View")
+<p> "Why don't we have this yet?" - Because we are focusing on the functional elements of our site for use on a web browser first.
 
 
 7. Use of HTTPS:
