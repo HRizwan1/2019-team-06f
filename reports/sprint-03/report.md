@@ -81,15 +81,15 @@
 
     c. Capture of application metrics: 
 
-        We do not have a schema for application metrics at this time.
-
+      * Riemann 0.3.1 is going to be used for capture of application metrics. We plan to incorporate this in the next sprint. 
+      ![riemann](images/riemann.png "Riemann")
   
 3. Use of Data Store:
 
-  * We are using 2 database servers (Platform: MySQL/MariaDB)
-  * One of the database server serves as the master which we write to. One of the uses of this database is to store the photos which we upload for testing, as well as photos uploaded by users. Secondly,  this server hosts the user information such as names, emails, usernames & passwords.
-  * The other database server serves as the slave and is the database which we read from. User infomration for logging in as well as photos are being pulled from this database for use in our website.
-  * One Redis Cache Server used for caching the data that a webserver serves. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
+  * We are using 2 database servers (Platform: MariaDB/MySQL)
+  * One of the database server serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
+  * The other database server serves as the slave and is the database which we read from. User infomration and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull information and photos from.
+  * One Redis Cache Server used for caching the data sent between the slave database and webserver. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
 
 
 4. Data Encryption at Rest:
