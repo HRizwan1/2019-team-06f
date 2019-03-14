@@ -195,18 +195,19 @@
 ![sflow](images/sflow.png "Site Flow Diagram")
 
 11. Management of Visio Diagram:
-<p>Diagrams managed on a weekly basis or whenever we have an update by UI/UX and Project Manager. A tool that we are using to create diagrams is LucidChart.</p>
+<p>Diagrams managed on a weekly basis and updates are made by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart.</p>
+
+![lucidchart](images/lucidchart.png "Lucidchart")
 
 12. Management of project progress:
 
-<p>Mostly all the communication and update process for this project is done through slack. We are keeping track of our to-do, in-progress and done tasks through trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via slack to update eachother on accomplishments/issues.</p>
+<p> All the communication and update process for this project is done through Slack. We have integrated Github on Slack so that commits are shown immediately on Slack.  We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update eachother on accomplishments/issues.</p>
 
   * Trello:
   
 ![trello](images/trello.png "Trello")
 
   * Slack:
-
 
 ![githubonslack](images/githubonslack.png "Github Slack Integration")
 
@@ -219,10 +220,10 @@
 ![github](images/github.png "Github")  
   
 13. Test Users:
-<p>Fifteen test users were generated, and the data is currently being used in our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, password and other account required fields.</p>
+<p>Fifteen test users were generated, and the data is being inserted in our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
 
 ![testusers](images/testusers.png "Test Users")
-
+![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
 <p>We had an issue with our web server not working in the lab. It might be just a matter of restarting the system we were tasting on and we will attempt it again at our next meeting in the smart lab.</p>
