@@ -164,11 +164,10 @@
   * Able to create accounts
 9. Creation of Dev Environment:
 
-<p> We have created the webserver, database master and slave, as well as the cache server using packer. All of our servers are currently deployable. </p>
+<p> We have created the webserver, database master and slave, as well as the cache server using Packer. All of our servers are currently deployable. </p>
 
 ![devenv](images/devenv.png "Dev Environment")
 
-![devenv](images/devenv1.png "Dev Environment Servers")
 
 ![serverdiag](images/serverdiag.png "Server Diagram")
 
