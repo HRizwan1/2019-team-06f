@@ -158,12 +158,15 @@
   * Upload photos
   * View own photos
   * Search for photos (hashtags)
-![php](images/php.png "PHP")  
+![user](images/user.png "user")  
 **Administrator Access:**
   * Custom made admin panel 
   * Able to delete other users photos
   * Able to delete accounts
   * Able to create accounts
+![admin](images/admin.png "Admin")
+![admin2](images/admin2.png "Admin 2")
+
 9. Creation of Dev Environment:
 
 <p> We have created the webserver, database master and slave, as well as the cache server using Packer. All of our servers are currently deployable. </p>
