@@ -113,6 +113,17 @@ nav ul li a:hover   {
 
 } 
 
+.site-footer {
+  background: #000000;
+  color: #EC1C24;
+  padding: 0.3em;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
 /* styling our footer */
 footer {
   background: #000000;
