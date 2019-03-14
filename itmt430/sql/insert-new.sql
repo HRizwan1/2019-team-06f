@@ -744,7 +744,7 @@ Values
     ), 
     "image/jpeg", 
     5,
-    "water water-sport"
+    "water watersport"
   ), 
   (
     6, 
@@ -924,7 +924,7 @@ Values
     ), 
     "image/jpeg", 
     7,
-    "bluebackgroung world"
+    "bluebackground world"
   ), 
   (
     82, 
@@ -1077,7 +1077,7 @@ Values
     ), 
     "image/jpeg", 
     8,
-    "lanters lights "
+    "lanterns lights "
   ), 
   (
     113, 
@@ -1590,7 +1590,7 @@ Values
     ), 
     "image/jpeg", 
     12,
-    "beijig place"
+    "beijing place"
   ), 
   (
     72, 
@@ -1995,7 +1995,7 @@ Values
     ), 
     "image/jpeg", 
     15,
-    "teady toy"
+    "teddy toy"
   ), 
   (
     75, 
@@ -2031,7 +2031,7 @@ Values
     ), 
     "image/jpeg", 
     15,
-    "macarons food"
+    "macaroons food"
   ), 
   (
     135, 
@@ -2049,7 +2049,7 @@ Values
     ), 
     "image/jpeg", 
     15,
-    "farriswheel ride"
+    "ferriswheel ride"
   ), 
   (
     165, 
