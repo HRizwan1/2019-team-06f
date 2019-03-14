@@ -56,7 +56,7 @@
   * CSS-3 is used to style our web pages 
   * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHP is used for login and registering process
-  * Vagrant is primarily used as a development enironment tool
+  * Vagrant/Packer are used for building and automating the building of the servers
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
   * Redis 5.0.3 is used as in-memory data structure store and allow for faster searching and to cache data from the webserver
   * MariaDB Server 10.0.38 provides an SQL interface for accessing data
@@ -67,15 +67,17 @@
 
     b. Process of secrets management: gitignore, openSSL, SSH key
 
-        i. Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
+      * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
 
-        ii. openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+      * openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-        iii.  SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer.</p>
+      *  SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
-        iv. SHA1-hash - We used SHA-1 to hash our passwords
+      * SHA1-hash - We used SHA-1 with salt to hash our passwords
 
-        v. Priveleges - Unregistered users cannot view photos; Admin have the ability to view and create new users
+      ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
+
+      * Privileges - Unregistered users cannot view photos; Admin have the ability to view and create new users
 
     c. Capture of application metrics: 
 
