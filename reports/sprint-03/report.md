@@ -26,6 +26,7 @@
  * Gather pictures we will use for test user accounts and store in our database (C)
  * Be able to display photos from database (C)
  * Data Encryption at Rest using XtraDB and InnoDB (I) 
+ * Continue on coding the upload feature to link pictures that belong to each user (I)
  * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (I)
  * Incorporate Riemann for capture of application metrics (I)
 
