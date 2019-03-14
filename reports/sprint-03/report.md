@@ -11,7 +11,7 @@
 
 ### Project Goals:
 
- * To build a slave database server using vagrant and packerbuild (C)
+ * To build a slave database server using Packer (C)
  * To build Redis cache server (C)
  * Fix binding error (50 -server.cnf is ignored causing a binding error due to permissions) (C)
  * Designed and create tables for users and pictures using mysql (C)
@@ -31,7 +31,7 @@
 
 ### Project Accomplishments: Goals Accomplished (14/17)
 
- * Built a slave database server using vagrant and packerbuild
+ * Built a slave database server using Packer and Vagrant
  * Built Redis cache server
  * Automated of Data Entry
  * Designed & Created tables for users and pictures using MySQL
@@ -207,14 +207,19 @@
 
   * Slack:
 
-![slack](images/slack.png "Slack")
 
+![githubonslack](images/githubonslack.png "Github Slack Integration")
+
+  * Github Issues:
+
+![githubissues](images/githubissues.png "Github Issues")
+  
   * Github:
   
-![deploykeys](images/deploykeys.png "Deploy Keys")  
+![github](images/github.png "Github")  
   
 13. Test Users:
-<p>Fifteen test users were generated, and the data is currently being used in our MariaDB database at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, password and other account required fields.</p>
+<p>Fifteen test users were generated, and the data is currently being used in our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, password and other account required fields.</p>
 
 ![testusers](images/testusers.png "Test Users")
 
