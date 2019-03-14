@@ -160,9 +160,11 @@
   ![user](images/user.png "user")  
   **Administrator Access:**
   * Custom made admin panel
-  * Able to create accounts
-  * Able to view accounts
+  * Able to create accounts (admin or user)
+  * Able to view all accounts
   ![admin](images/admin.png "Admin")
+  ![adminadd](images/admin_panel_add1.png "Adminadding")
+  ![adminadd2](images/admin_panel_add2.png "Adminadding2")
   ![admin2](images/admin2.png "Admin 2")
 
 9. Creation of Dev Environment:
