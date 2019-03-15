@@ -256,17 +256,18 @@
 **Any issues/Bugs?**
   <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out, after countless hours of hair pulling, that it was missing '' surrounding the IP address.</p>
   <p>
-  <p>We looked into incorporating Cloudinary into our website but found that it is our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
+  <p>We looked into incorporating Cloudinary into our website but found that it is used by our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
   * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
     - Include mobile first css which will detect screen size and style our webpage according to device it's being used on.
     - Add JQueries that will assure a great user experience on any screen size.
   * Data Encryption at Rest using XtraDB and InnoDB
+  * Sort Photo Uploads by user
   * Functioning search box
 
 #### Individual Reflections
-**Daniel** - 
+**Daniel** - My progress for the current sprint was getting the photo uploads to succesfully create records and store our photos in the database. Also the ability to display those photos that are in the database was implemented. The code needs some work to be able to sort all the photos by the userid (in users table), which is passed as a foreign key to our photos table. The idea is there just has not been implemented yet, but will be completed by next sprint. Adding the userid is one step of displaying our photos the way we want them to, the second part is to provide functionality to our search bar so we can search for photos by date uploaded or hashtag. Worked closely with Hasan and Shan to create the mariaDb schema.
 
 **Sarina** - This sprint I was the project manager. I worked with my team rebuilding my servers on my local computer. I also managed the trello board with my group by archiving cards adding new tasks and moving things around. I started on our midterm report with assistance from Bhumi, until we found out that it was individual so that was scratched. I contributed to and edited all throughout this sprint report. I also was responsible for the updating of the diagrams. As the presenter of our progress this week, I spent time to meet up with my group to go over our presentation and practice demos.
 
