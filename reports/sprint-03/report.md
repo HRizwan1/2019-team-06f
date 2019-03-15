@@ -223,7 +223,7 @@
   ![sflow](images/sflow.png "Site Flow Diagram")
 
 11. Management of Visio Diagram:
-  <p>Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart and Draw.io.</p>
+  <p>Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. Two tools that we are using to create diagrams is LucidChart and Draw.io.</p>
 
   ![lucidchart](images/lucidchart.png "Lucidchart")
 
@@ -274,6 +274,6 @@
 
 **Shan** -  
 
-**Hasan** - I think we were able to make very good progress this sprint. Although we only had two weeks in between sprints I believe we made the best of it. In this sprint I worked with Shan to implement SHA1 hashing with salt. On my own, I was able to create a functional database slave and a cache server. Also, I worked closely with Daniel to implement the upload page. I worked with Bhumi to preseed the database with user information and pictures. I think as a group we accomplished alot and in the next sprint I plan to work on monitoring applications and data encryption at rest.    
+**Hasan** - I think we were able to make very good progress this sprint. Although we only had two weeks in between sprints I believe we made the best of it. In this sprint I worked with Shan to implement SHA1 hashing with salt. On my own, I was able to create a functional database slave and a cache server. Also, I worked closely with Daniel to implement the upload page. I worked with Bhumi to preseed the database with user information and pictures. I think as a group we accomplished alot and in the next sprint I plan to work on monitoring application metrics, data encryption at rest, and a functioning search box.     
 
 **Bhumi** - 
