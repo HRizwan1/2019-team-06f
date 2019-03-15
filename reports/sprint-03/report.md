@@ -85,8 +85,6 @@
       ![riemann](images/riemann.png "Riemann")
   
 3. Use of Data Store:
-  * Database Schema:
-  ![schema](images/schema.png "Schema")
   * We are using 2 database servers (Platform: MariaDB/MySQL)
   * One of the database server serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
   * The other database server serves as the slave and is the database which we read from. User infomration and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull information and photos from.
@@ -98,9 +96,9 @@
   * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
   * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB. 
   
-  XtraDB: A storage engine for the MariaDB 
+  * XtraDB: A storage engine for the MariaDB 
   
-  InnoDB: A storage engine for the database management system MySQL. 
+  * InnoDB: A storage engine for the database management system MySQL. 
   
   * MariaDB allow our files to encrypt:
      - All tablespaces
@@ -110,7 +108,8 @@
 
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
-
+  * Database Schema:
+  ![schema](images/schema.png "Schema")
   * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server servers as a slave. Master and slave servers are connected.
   * The purpose of using the master-slave replication process is to enable data from one MySQL database server (servering as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave), the master database is used only for the write operations, while the slave database is only used for read operations.
@@ -119,7 +118,7 @@
   * 1 Redis Cache server
 
   <p>(Our setup uses the Apache server for providing the UI (our website) to the end user, information from registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are seperated to minimize the required movement of the disk head.  On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads which then allow it to handle more queries by freeing resources for the job.</p>
-  <p>A Redis Cache server is placed between our Web server and Slave Database server and is be responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.)</p>
+  <p>A Redis Cache server is placed between our Web server and Slave Database server and is  responsible for storing a portion of the database entries and allow for faster searching and queries entered on the web server.)</p>
  
 6. Responsive Design (In-progress):
 
@@ -142,8 +141,7 @@
   ![ufw](images/ufw.png "Uncomplicated Firewall Rules") 
 
   * Authentication keys (if applicable) 
-  * Seeding of usernames and passwords 
-  * Pre-seeding databases/datastores with schema and records ----//
+  * Seeding of username and passwords as well as pre-seeding databases with schema and records is done on build using packer build scripts. 
   
 8. Use of User Authentication:
 
@@ -173,6 +171,8 @@
 
 
   ![serverdiag](images/serverdiag.png "Server Diagram")
+
+  We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then furthur assigned as tasks to the appropriate team members to fix. 
 
 10. Layout Design:
   * Home page:
@@ -248,6 +248,6 @@
 
 **Shan** -  
 
-**Hasan** -   
+**Hasan** - I think we were able to make very good progress this sprint. Although we only had two weeks in between sprints I believe we made the best of it. In this sprint I worked with Shan to implement SHA1 hashing with salt. On my own, I was able to create a functional database slave and a cache server. Also, I worked closely with Daniel to implement the upload page. I worked with Bhumi to preseed the database with user information and pictures. I think as a group we accomplished alot and in the next sprint I plan to work on monitoring applications and data encryption at rest.    
 
 **Bhumi** - 
