@@ -122,7 +122,7 @@
  
 6. Responsive Design (In-progress):
 
-<p> Responsive Web Design is in progress. Want our website to fit  </p>
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet.  </p>
 
 ![mobile](images/mobile.png "Mobile")
 
@@ -226,7 +226,7 @@
 
 12. Management of project progress:
 
-  <p> All the communication and update process for this project is done through Slack. We have integrated Github on Slack so that commits are shown immediately on Slack.  We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update eachother on accomplishments/issues.</p>
+  <p> All the communication and update process for this project is done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
   * Trello:
   
@@ -245,7 +245,7 @@
   ![github](images/github.png "Github")  
   
 13. Test Users:
-  <p>Fifteen test users were generated, and the data is being inserted in our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
+  <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
 
   ![testusers](images/testusers.png "Test Users")
   ![testimages](images/testimages.png "Test Images")
@@ -253,10 +253,10 @@
 **Any issues/Bugs?**
   <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out after countless hours of hair pulling that it was missing '' surrounding the IP address.</p>
   <p>
-  <p>We looked into incorporating cloudinary into our website but found that it is our competitor. They have some great tagging and searching features for images. However, incorporating the cloudinary API into our application leaves our website useless if their servers go down. As a group we decided to continue developing features for our own application as a pose to using an API.</p>
+  <p>We looked into incorporating Cloudinary into our website but found that it is our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group we decided to continue developing features for our own application as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
-  * Responsive design, making the website function properly in other form factors:mobile & tablet.
+  * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
     - Include mobile first css which will detect screen size and style our webpage according to device it's been used on.
     - Add JQueries that will assure a great user experience on any screen size.
   * Data Encryption at Rest using XtraDB and InnoDB
