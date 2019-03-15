@@ -265,7 +265,7 @@
 #### Individual Reflections
 **Daniel** - 
 
-**Sarina** - 
+**Sarina** - This sprint I was the project manager. I worked with my team rebuilding my servers on my local computer. I also managed the trello board with my group by archiving cards adding new tasks and moving things around. I started on our midterm report with assistance from Bhumi, until we found out that it was individual so that was scratched. I contributed to and edited all throughout this sprint report. I also was responsible for the updating of the diagrams. As the presenter of our progress this week, I spent time to meet up with my group to go over our presentation and practice demos.
 
 **Jason** - Even though this sprint was a short duration, the team has accomplished alot and has made great progress towards the overall goals of this project. In this sprint, I was the UI/UX developer and was mainly responsible for the implementation of responsive design. There has been some progress made, but I am still in the process of learning about responsive design and experimenting to see what works and how to scale each element. Responsive design is still in progress, with hopefully a majority of it done, if not all, by next sprint. However, the website is looking more fleshed out, with a few pieces left as the team has made great strides to put all of this together.  
 
