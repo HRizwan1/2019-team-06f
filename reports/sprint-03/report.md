@@ -195,24 +195,24 @@
 
   * User Panel:
 
-  ![U-panel](images/UserPanel.jpg "User Panel Layout")
+  ![U-panel](images/UserPanel.JPG "User Panel Layout")
 
   * Upload Photo:
 
-  ![upload](images/UploadFeature.jpg "Upload Photo")
+  ![upload](images/UploadFeature.JPG "Upload Photo")
 
 
   * Admin Panel:
 
-  ![A-panel](images/AdminPanel.jpg "Admin Panel Layout")
+  ![A-panel](images/AdminPanel.JPG "Admin Panel Layout")
 
   * Create User:
 
-  ![CUser](images/CreateUser.jpg "Admin Can Create New User")
+  ![CUser](images/CreateUser.JPG "Admin Can Create New User")
 
   * View User:
 
-  ![VUser](images/ViewUsers.jpg "Admin can view all users")
+  ![VUser](images/ViewUsers.JPG "Admin can view all users")
 
   * Site Flow:
   
