@@ -226,6 +226,7 @@
   <p>Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. Two tools that we are using to create diagrams is LucidChart and Draw.io.</p>
 
   ![lucidchart](images/lucidchart.png "Lucidchart")
+  ![draw](images/draw.io.png "Draw")
 
 12. Management of project progress:
 
