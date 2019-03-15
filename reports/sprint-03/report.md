@@ -15,15 +15,15 @@
 * To build Redis cache server using Packer (C)
 * Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
 * Create layout diagrams for user/admin interface  (C)
-* Designed and create tables for users and pictures using mysql (C)
+* Designed and create tables for users and pictures using MariaDB (C)
 * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
 * Create admin panel to view all users and to create admins / regular users (C)
 * Create an upload button for a registered user to upload photos (C)
 * Restricted privileges for unregistered : only read access (index page) (C)
 * To develop the user panel by allowing registered users to upload photos (C)
 * Gather 225 images for 15 test users and store all the images in our database (C)
-* Insert photo hashtags for all the images in mysql database (C)
-* Be able to display photos from database (C)
+* Insert photo hashtags for all the images in our database (C)
+* Be able to display photos from the database (C)
 * Fix footer position on the admin page (C)
 * Added a vertical scroll bar table onto the admin page view all users (C)
 * Change md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords (C)
@@ -40,19 +40,19 @@
 * Built Redis cache server using Packer
 * Fixed binding Error:50-server.cnf (ignored causing a binding error due to permissions) from one of our github issues last sprint
 * Created layouts for user/admin interface
-* Designed & Created tables for users and pictures using MySQL
+* Designed & Created tables for users and pictures using MariaDB
 * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
 * Created Admin panel to view all users and to create admins / regular users
 * User Panel created
 * Created upload feature-button for registered users to upload images
 * Restricted privileges for unregistered users have only read access to index page
 * To develop the user panel by allowing registered users to upload images
-* Gathered images for 15 test user and stored all these images in database (225 photos downloaded)
-* Inserted Photo hashtags for all the images in database
+* Gathered images for 15 test user and stored all these images in the database (225 photos downloaded)
+* Inserted Photo hashtags for all the images in the database
+* Website pulls from the database to display photos in user accounts
 * Fixed the footer on the admin page
 * Added a vertical scroll bar table into admin page view all users
 * Successfully changed md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords
-* Website pulls from the database to display photos in user accounts
 * Users can upload images from their registered account
 
 
@@ -78,7 +78,7 @@
 
       * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-      *  SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
+      *  SSH Key - To automate secure access to the servers, bypassing the need to manually enter login credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
       * SHA1-hash - We used SHA-1 with salt to hash our passwords
 
@@ -124,12 +124,13 @@
   * 1 Apache web server hosts HTML, PHP, JavaScript and CSS
   * 1 Redis Cache server
 
-  <p>Our setup uses the Apache server for providing the UI (our website) to the end user; information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server, which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.</p>
-  <p>A Redis Cache server is placed between our Web server and Slave Database server and is responsible for storing a portion of the database entries and allows for faster searching and queries entered on the web server.)</p>
+  CHECK: <p>Our setup uses the Apache server for providing the UI (our website) to the end user; information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server, which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.</p>
+  <p>A Redis Cache server is placed between our Web server and Slave Database server and is responsible for storing a portion of the database entries and allows for faster searching and queries entered on the web server.</p>
  
 6. Responsive Design (In-progress):
 
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet.  </p>
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphones or tablet. </p>
+
 
 ![mobile](images/mobile.png "Mobile")
 
@@ -234,7 +235,7 @@
 
 12. Management of project progress:
 
-  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
+  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact through out the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
   * Trello:
   
@@ -253,7 +254,7 @@
   ![github](images/github.png "Github")  
   
 13. Test Users:
-  <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
+  <p>Fifteen test users were generated with the help of http://fakenamegenerator.com/ , and that data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
 
   ![testusers](images/testusers.png "Test Users")
   ![testimages](images/testimages.png "Test Images")
@@ -264,15 +265,16 @@
   <p>We looked into incorporating Cloudinary into our website but found that it is used by our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
-  * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
+  * Responsive Web design, making the website function properly and scale to multiple form factors: smartphones & tablet.
     - Include mobile first css which will detect screen size and style our webpage according to device it's being used on.
     - Add JQueries that will assure a great user experience on any screen size.
   * Data Encryption at Rest using XtraDB and InnoDB
   * Allow registered users to upload photos using hashtags
-  * Assign new team roles for the sprint
   * Capture of application metrics using Riemann 0.3.1
   * Continue on coding the upload feature to link pictures that belong to each user
   * Functioning search box that will allow registered users to search for images using hashtags.
+  * Assign new team roles for the next sprint
+
 
 #### Individual Reflections
 **Daniel** - My progress for the current sprint was getting the photo uploads to succesfully create records and store our photos in the database. Also the ability to display those photos that are in the database was implemented. The code needs some work to be able to sort all the photos by the userid (in users table), which is passed as a foreign key to our photos table. The idea is there just has not been implemented yet, but will be completed by next sprint. Adding the userid is one step of displaying our photos the way we want them to, the second part is to provide functionality to our search bar so we can search for photos by date uploaded or hashtag. Worked closely with Hasan and Shan to create the mariaDb schema.
