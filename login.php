@@ -15,7 +15,7 @@
     <header>
 
         <!--  main  -->
-        <a id="logo" href="index.php">
+        <a id="logo" href="index.html">
           <img src="img/THLogo.png" alt="THLogo">
           <span>TruHawk</span>
         </a>
