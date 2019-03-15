@@ -113,14 +113,14 @@
   * Database Schema:
   ![schema](images/schema.png "Schema")
   * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another serves as a slave. Master and slave servers are connected.
-  * The purpose of using the master-slave replication process is to enable data from one MySQL database server (serving as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
+  * The purpose of using the master-slave replication process is to enable data from one MySQL database server (serving as 'the master') to be copied automatically to another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave); the master database is used only for the write operations, while the slave database is only used for read operations.
   ![databaseslave](images/databaseslave.png "Database Slave")
   * During designing or deploying the application, all the write operations (statement/query that changes the state of the database) are executed ONLY on the master server. As to minimize the risk of data conflicts on the slave, changes can only be made through the replication process. 
   * 1 Apache web server hosts HTML, PHP, JavaScript and CSS
   * 1 Redis Cache server
 
-  <p>(Our setup uses the Apache server for providing the UI (our website) to the end user, information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.</p>
+  <p>Our setup uses the Apache server for providing the UI (our website) to the end user; information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server, which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.</p>
   <p>A Redis Cache server is placed between our Web server and Slave Database server and is responsible for storing a portion of the database entries and allows for faster searching and queries entered on the web server.)</p>
  
 6. Responsive Design (In-progress):
@@ -223,13 +223,13 @@
   ![sflow](images/sflow.png "Site Flow Diagram")
 
 11. Management of Visio Diagram:
-  <p>Diagrams managed on a weekly basis and updates are made by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart and Draw.io.</p>
+  <p>Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart and Draw.io.</p>
 
   ![lucidchart](images/lucidchart.png "Lucidchart")
 
 12. Management of project progress:
 
-  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
+  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
   * Trello:
   
@@ -248,15 +248,15 @@
   ![github](images/github.png "Github")  
   
 13. Test Users:
-  <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For the purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
+  <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
 
   ![testusers](images/testusers.png "Test Users")
   ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-  <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out after countless hours of hair pulling that it was missing '' surrounding the IP address.</p>
+  <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out, after countless hours of hair pulling, that it was missing '' surrounding the IP address.</p>
   <p>
-  <p>We looked into incorporating Cloudinary into our website but found that it is our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group we decided to continue developing features for our own application as opposed to using an API.</p>
+  <p>We looked into incorporating Cloudinary into our website but found that it is our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
   * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
