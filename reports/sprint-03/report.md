@@ -14,6 +14,7 @@
  * To build a slave database server using Packer (C)
  * To build Redis cache server using Packer (C)
  * Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
+ * Automation of Data Entry (C)
  * Designed and create tables for users and pictures using mysql (C)
  * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
  * Create an upload button for a registered user to upload photos (C)
@@ -30,10 +31,11 @@
  * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
  * Incorporate Riemann for capture of application metrics (I)
 
-### Project Accomplishments: Goals Accomplished (13/18)
+### Project Accomplishments: Goals Accomplished (15/19)
 
  * Built a slave database server using Packer and Vagrant
  * Built Redis cache server using Packer and Vagrant
+ * Binding error fixed from one of our github issues last sprint
  * Automation of Data Entry
  * Designed & Created tables for users and pictures using MySQL
  * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
@@ -43,8 +45,9 @@
  * Gathered test photos for each test user and stored in the database (225 photos)
  * Website pulls from the database to display photos in user accounts
  * Users can upload as well as view all available photos
- * Binding error fixed from one of our github issues last sprint
  * Restricted privileges for unregistered users
+ * Layout diagram for user/admin interface  
+ * Hashtag the photos 
 
 
 
