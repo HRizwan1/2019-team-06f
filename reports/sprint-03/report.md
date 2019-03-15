@@ -123,6 +123,7 @@
 6. Responsive Design (In-progress):
 
 <p> Responsive Web Design is in progress. Want our website to fit  </p>
+
 ![mobile](images/mobile.png "Mobile")
 
 
