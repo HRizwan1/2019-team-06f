@@ -200,7 +200,7 @@
   ![sflow](images/sflow.png "Site Flow Diagram")
 
 11. Management of Visio Diagram:
-  <p>Diagrams managed on a weekly basis and updates are made by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart.</p>
+  <p>Diagrams managed on a weekly basis and updates are made by the UI/UX leader and Project Manager. A tool that we are using to create diagrams is LucidChart and Draw.io.</p>
 
   ![lucidchart](images/lucidchart.png "Lucidchart")
 
