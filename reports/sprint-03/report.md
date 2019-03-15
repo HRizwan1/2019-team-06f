@@ -27,14 +27,14 @@
  * Be able to display photos from database (C)
  * Data Encryption at Rest using XtraDB and InnoDB (I) 
  * Continue on coding the upload feature to link pictures that belong to each user (I)
- * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (I)
+ * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
  * Incorporate Riemann for capture of application metrics (I)
 
-### Project Accomplishments: Goals Accomplished (14/17)
+### Project Accomplishments: Goals Accomplished (13/18)
 
  * Built a slave database server using Packer and Vagrant
  * Built Redis cache server using Packer and Vagrant
- * Automated of Data Entry
+ * Automation of Data Entry
  * Designed & Created tables for users and pictures using MySQL
  * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
  * Admin Panel created
@@ -71,13 +71,13 @@
 
       * openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
-      *  SSH Key - To automate the secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
+      *  SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
       * SHA1-hash - We used SHA-1 with salt to hash our passwords
 
       ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
 
-      * Privileges - Unregistered users cannot view photos; Admin have the ability to view and create new users
+      * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
     c. Capture of application metrics: 
 
@@ -86,10 +86,9 @@
   
 3. Use of Data Store:
   * We are using 2 database servers (Platform: MariaDB/MySQL)
-  * One of the database server serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
-  * The other database server serves as the slave and is the database which we read from. User infomration and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull information and photos from.
-  * One Redis Cache Server used for caching the data sent between the slave database and webserver. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. Purpose of using Redis caching is to improve database loading performance.
-
+  * One of the database servers serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
+  * The other database server serves as the slave and is the database which we read from. User information and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull the information and photos.
+  * One Redis Cache Server is used for caching the data, which is sent between the slave database and webserver. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. The purpose of using Redis caching is to improve the database loading performance.
 
 4. Data Encryption at Rest:
 
@@ -104,13 +103,13 @@
      - All tablespaces
      - Individual tables
      - Uses a 32-bit integer as a key identifier.
-     - Encryption keys can also be rotated which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys. 
+     - Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys. 
 
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
   * Database Schema:
   ![schema](images/schema.png "Schema")
-  * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server servers as a slave. Master and slave servers are connected.
+  * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server serves as a slave. Master and slave servers are connected.
   * The purpose of using the master-slave replication process is to enable data from one MySQL database server (servering as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave), the master database is used only for the write operations, while the slave database is only used for read operations.
   ![databaseslave](images/databaseslave.png "Database Slave")
