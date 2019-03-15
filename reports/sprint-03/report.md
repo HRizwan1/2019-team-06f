@@ -16,11 +16,11 @@
  * Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
  * Designed and create tables for users and pictures using mysql (C)
  * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
- * Create an upload button for a registered user to upload (C)
+ * Create an upload button for a registered user to upload photos (C)
  * Create a search box (C)
  * Create admin panel to view all users and to create admins / regular users (C)
- * Restricted privileges for unregistered : read access (index page) (C)
- * Further develop the user panel by allowing users to upload photos (C)
+ * Restricted privileges for unregistered : only read access (index page) (C)
+ * To develop the user panel by allowing registered users to upload photos (C)
  * Layout diagram for user/admin interface  (C)
  * Hashtag the photos (C)
  * Gather pictures we will use for test user accounts and store in our database (C)
@@ -123,11 +123,7 @@
  
 6. Responsive Design (In-progress):
 
-  <p> Our responsive design is in-progress but is not an attained goal at this time.
-  <p>Our goal is to have our website responsive that adapts the layout to the viewing environment by using CSS media queries (an extension of the @media rule).</p>
-  <p>“Why media queries?” - Media queries allow the page to use different CSS style rules based on characteristics of the device the site is being displayed on, most commonly the width of the browser.</p>
-  <p>Technically we want a media-rich, widescreen page for desktop viewing and a smaller size page formatted for small screen viewing, with less clutter, larger fonts and tighter-wrapping constraints for mobile viewing.</p>
-  <p> "Why don't we have this yet?" - Because we are focusing on the functional elements of our site for use on a web browser first.
+<p> Responsive Web Design is in progress. Want our website to fit  </p>
 
 
 7. Use of HTTPS:
