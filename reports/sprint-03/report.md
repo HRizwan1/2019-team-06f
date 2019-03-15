@@ -36,8 +36,8 @@
 
 ### Project Accomplishments: Goals Accomplished (17/20)
 
-* Built a slave database server using Packer and Vagrant
-* Built Redis cache server using Packer and Vagrant
+* Successfully built a slave database server using Packer
+* Built Redis cache server using Packer
 * Fixed binding Error:50-server.cnf (ignored causing a binding error due to permissions) from one of our github issues last sprint
 * Created layouts for user/admin interface
 * Designed & Created tables for users and pictures using MySQL
@@ -48,12 +48,12 @@
 * Restricted privileges for unregistered users have only read access to index page
 * To develop the user panel by allowing registered users to upload images
 * Gathered images for 15 test user and stored all these images in database (225 photos downloaded)
-* Successfully inserted Photo hashtags for all the images in database
+* Inserted Photo hashtags for all the images in database
 * Fixed the footer on the admin page
 * Added a vertical scroll bar table into admin page view all users
 * Successfully changed md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords
 * Website pulls from the database to display photos in user accounts
-* Users can successfully upload images from their registered account
+* Users can upload images from their registered account
 
 
 ### Project Requirements:
@@ -76,7 +76,7 @@
 
       * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
 
-      * openSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+      * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
       *  SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
