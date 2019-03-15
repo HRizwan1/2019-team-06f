@@ -199,14 +199,3 @@ function isUser()
 	}
 }
 
-function GetData(){
-
-    $sql="SELECT * from ITEM,Price where ITEM.item_id=Price.item_id";
-
-    $query=mysql_query($sql);
-
-    $result=result_to_array($query);
-
-    return $result;
-
-}
