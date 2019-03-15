@@ -113,6 +113,7 @@
   * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server servers as a slave. Master and slave servers are connected.
   * The purpose of using the master-slave replication process is to enable data from one MySQL database server (servering as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave), the master database is used only for the write operations, while the slave database is only used for read operations.
+  ![databaseslave](images/databaseslave.png "Database Slave")
   * During designing or deploying application, all the write operations (statement/query that changes the state of database) are excuted ONLY on the master server. As to minimize the risk of data conflicts on the slave, changes can only be made through the replication process 
   * 1 Apache web server hosts HTML, PHP, JavaScript and CSS
   * 1 Redis Cache server
