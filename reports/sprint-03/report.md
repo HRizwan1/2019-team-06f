@@ -11,45 +11,49 @@
 
 ### Project Goals:
 
- * To build a slave database server using Packer (C)
- * To build Redis cache server using Packer (C)
- * Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
- * Automation of Data Entry (C)
- * Designed and create tables for users and pictures using mysql (C)
- * Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
- * Create an upload button for a registered user to upload photos (C)
- * Create a search box (C)
- * Create admin panel to view all users and to create admins / regular users (C)
- * Restricted privileges for unregistered : only read access (index page) (C)
- * To develop the user panel by allowing registered users to upload photos (C)
- * Layout diagram for user/admin interface  (C)
- * Hashtag the photos (C)
- * Gather pictures we will use for test user accounts and store in our database (C)
- * Be able to display photos from database (C)
- * Data Encryption at Rest using XtraDB and InnoDB (I) 
- * Continue on coding the upload feature to link pictures that belong to each user (I)
- * To make the website responsive in order to fit any form factor, such as desktop, mobile, and tablet (IP)
- * Incorporate Riemann for capture of application metrics (I)
+* To build a slave database server using Packer (C)
+* To build Redis cache server using Packer (C)
+* Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
+* Create layout diagrams for user/admin interface  (C)
+* Designed and create tables for users and pictures using mysql (C)
+* Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
+* Create admin panel to view all users and to create admins / regular users (C)
+* Create an upload button for a registered user to upload photos (C)
+* Restricted privileges for unregistered : only read access (index page) (C)
+* To develop the user panel by allowing registered users to upload photos (C)
+* Gather 225 images for 15 test users and store all the images in our database (C)
+* Insert photo hashtags for all the images in mysql database (C)
+* Be able to display photos from database (C)
+* Fix footer position on the admin page (C)
+* Added a vertical scroll bar table onto the admin page view all users (C)
+* Change md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords (C)
+* Allow registered users to upload images using hashtags (I)
+* Functioning "Search-box" for registered users to search images using (hashtags) (I)
+* Data Encryption at Rest using XtraDB and InnoDB (I)
+* Working on the upload feature to link pictures that belong to each user (I)
+* Design responsive web design using CSS media queries in order to fit into devices such as desktop, mobiles, and iPad (I)
+* Incorporate Riemann for capture of application metrics (I)
 
-### Project Accomplishments: Goals Accomplished (15/19)
+### Project Accomplishments: Goals Accomplished (17/20)
 
- * Built a slave database server using Packer and Vagrant
- * Built Redis cache server using Packer and Vagrant
- * Binding error fixed from one of our github issues last sprint
- * Automation of Data Entry
- * Designed & Created tables for users and pictures using MySQL
- * Created “create-new.sql” and “insert-new.sql” files to use at build for automation
- * Admin Panel created
- * User Panel created
- * Created search box and upload feature-button
- * Gathered test photos for each test user and stored in the database (225 photos)
- * Website pulls from the database to display photos in user accounts
- * Users can upload as well as view all available photos
- * Restricted privileges for unregistered users
- * Layout diagram for user/admin interface  
- * Hashtag the photos 
-
-
+* Built a slave database server using Packer and Vagrant
+* Built Redis cache server using Packer and Vagrant
+* Fixed binding Error:50-server.cnf (ignored causing a binding error due to permissions) from one of our github issues last sprint
+* Created layouts for user/admin interface
+* Designed & Created tables for users and pictures using MySQL
+* Created “create-new.sql” and “insert-new.sql” files to use at build for automation
+* Created Admin panel to view all users and to create admins / regular users
+* User Panel created
+* Created upload feature-button for registered users to upload images
+* Restricted privileges for unregistered users have only read access to index page
+* To develop the user panel by allowing registered users to upload images
+* Gathered images for 15 test user and stored all these images in database (225 photos downloaded)
+* Successfully inserted Photo hashtags for all the images in database
+* Fixed the footer on the admin page
+* Added a vertical scroll bar table into admin page view all users
+* Successfully changed md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords
+* Website pulls from the database to display photos in user accounts
+* Users can successfully upload images from their registered account
 
 
 ### Project Requirements:
@@ -268,7 +272,7 @@
   * Assign new team roles for the sprint
   * Capture of application metrics using Riemann 0.3.1
   * Continue on coding the upload feature to link pictures that belong to each user
-  * Make Search box working for users to search images using (hashtags)
+  * Functioning search box that will allow registered users to search for images using hashtags.
 
 #### Individual Reflections
 **Daniel** - My progress for the current sprint was getting the photo uploads to succesfully create records and store our photos in the database. Also the ability to display those photos that are in the database was implemented. The code needs some work to be able to sort all the photos by the userid (in users table), which is passed as a foreign key to our photos table. The idea is there just has not been implemented yet, but will be completed by next sprint. Adding the userid is one step of displaying our photos the way we want them to, the second part is to provide functionality to our search bar so we can search for photos by date uploaded or hashtag. Worked closely with Hasan and Shan to create the mariaDb schema.
@@ -281,4 +285,4 @@
 
 **Hasan** - I think we were able to make very good progress this sprint. Although we only had two weeks in between sprints I believe we made the best of it. In this sprint I worked with Shan to implement SHA1 hashing with salt. On my own, I was able to create a functional database slave and a cache server. Also, I worked closely with Daniel to implement the upload page. I worked with Bhumi to preseed the database with user information and pictures. I think as a group we accomplished alot and in the next sprint I plan to work on monitoring application metrics, data encryption at rest, and a functioning search box.     
 
-**Bhumi** - 
+**Bhumi** - As a Jr. Developer my responsibility was to work with the main Developers to develop the functionality of the website. I have helped the main developers to download the images (225 images for 15 users) and helped them to insert the hashtags for those images in the database. Also I have helped the teammates to document the report. During this sprint our team has successfully accomplished many difficult tasks that were challenging such as changing md5 hash password to SHA1 hashing with salt and creating admin panel that allows admin to create new users, allow registered users to upload images. So far our team has made really good progress and we already have our goals set to achieve for the upcoming sprint.
