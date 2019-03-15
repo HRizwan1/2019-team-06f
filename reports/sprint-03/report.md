@@ -264,8 +264,11 @@
     - Include mobile first css which will detect screen size and style our webpage according to device it's being used on.
     - Add JQueries that will assure a great user experience on any screen size.
   * Data Encryption at Rest using XtraDB and InnoDB
-  * Sort Photo Uploads by user
-  * Functioning search box
+  * Allow registered users to upload photos using hashtags
+  * Assign new team roles for the sprint
+  * Capture of application metrics using Riemann 0.3.1
+  * Continue on coding the upload feature to link pictures that belong to each user
+  * Make Search box working for users to search images using (hashtags)
 
 #### Individual Reflections
 **Daniel** - My progress for the current sprint was getting the photo uploads to succesfully create records and store our photos in the database. Also the ability to display those photos that are in the database was implemented. The code needs some work to be able to sort all the photos by the userid (in users table), which is passed as a foreign key to our photos table. The idea is there just has not been implemented yet, but will be completed by next sprint. Adding the userid is one step of displaying our photos the way we want them to, the second part is to provide functionality to our search bar so we can search for photos by date uploaded or hashtag. Worked closely with Hasan and Shan to create the mariaDb schema.
