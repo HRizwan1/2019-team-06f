@@ -20,7 +20,7 @@
     <header>
 
         <!--  main  -->
-        <a id="logo" href="index.php">
+        <a id="logo" href="index.html">
           <img src="img/THLogo.png" alt="THLogo">
           <span>TruHawk</span>
         </a>
@@ -28,7 +28,7 @@
         <!--  navigation  -->
         <nav>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="register.php">Register</a></li>
                 <li><a href="about.php">About</a></li>
