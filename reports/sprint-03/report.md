@@ -85,7 +85,8 @@
       ![riemann](images/riemann.png "Riemann")
   
 3. Use of Data Store:
-
+  * Database Schema:
+  ![schema](images/schema.png "Schema")
   * We are using 2 database servers (Platform: MariaDB/MySQL)
   * One of the database server serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
   * The other database server serves as the slave and is the database which we read from. User infomration and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull information and photos from.
