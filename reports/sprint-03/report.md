@@ -194,6 +194,27 @@
   
   ![pgallery](images/pgallery.png "Photo Gallery page Layout")
 
+  * User Panel:
+
+  ![U-panel](images/UserPanel.jpg "User Panel Layout")
+
+  * Upload Photo:
+
+  ![upload](images/UploadFeature.jpg "Upload Photo")
+
+
+  * Admin Panel:
+
+  ![A-panel](images/AdminPanel.jpg "Admin Panel Layout")
+
+  * Create User:
+
+  ![CUser](images/CreateUser.jpg "Admin Can Create New User")
+
+  * View User:
+
+  ![VUser](images/ViewUsers.jpg "Admin can view all users")
+
   * Site Flow:
   
   
