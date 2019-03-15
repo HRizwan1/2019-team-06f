@@ -109,7 +109,7 @@
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
   * Database Schema:
   ![schema](images/schema.png "Schema")
-  * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another server serves as a slave. Master and slave servers are connected.
+  * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another serves as a slave. Master and slave servers are connected.
   * The purpose of using the master-slave replication process is to enable data from one MySQL database server (serving as 'the master') to be copied automatically to the another MySQL databse server (which serves as 'the slave'). 
   * The master-slave replication is a one-way replication (from master to slave); the master database is used only for the write operations, while the slave database is only used for read operations.
   ![databaseslave](images/databaseslave.png "Database Slave")
@@ -226,7 +226,7 @@
 
 12. Management of project progress:
 
-  <p> All the communication and update process for this project is done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
+  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of the task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
   * Trello:
   
@@ -257,7 +257,7 @@
 
 **Goals for Next Sprint:**
   * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
-    - Include mobile first css which will detect screen size and style our webpage according to device it's been used on.
+    - Include mobile first css which will detect screen size and style our webpage according to device it's being used on.
     - Add JQueries that will assure a great user experience on any screen size.
   * Data Encryption at Rest using XtraDB and InnoDB
   * Functioning search box
@@ -265,9 +265,9 @@
 #### Individual Reflections
 **Daniel** - 
 
-**Sarina** - This sprint I was the project manager. I worked with my team rebuilding my servers on my local computer. I also managed the trello board with my group by archiving cards adding new tasks and moving things around. I started on our midterm report with assistance from Bhumi, until we found out that it was individual so that was scratched. I contributed to and edited all throughout this sprint report. I also was responsible for the updating of the diagrams. As the presenter of our progress this week, I spent time to meet up with my group to go over our presentation and practice demos.
+**Sarina** - 
 
-**Jason** - 
+**Jason** - Even though this sprint was a short duration, the team has accomplished alot and has made great progress towards the overall goals of this project. In this sprint, I was the UI/UX developer and was mainly responsible for the implementation of responsive design. There has been some progress made, but I am still in the process of learning about responsive design and experimenting to see what works and how to scale each element. Responsive design is still in progress, with hopefully a majority of it done, if not all, by next sprint. However, the website is looking more fleshed out, with a few pieces left as the team has made great strides to put all of this together.  
 
 **Shan** -  
 
