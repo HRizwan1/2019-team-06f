@@ -147,7 +147,7 @@ rm -rf prometheus-2.0.0.linux-amd64.tar.gz prometheus-2.0.0.linux-amd64
 
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
 sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
-sudo chmod 644 prometheus.yml
+sudo chmod 644 /etc/prometheus/prometheus.yml
 
 # First, download the current stable version of Node Exporter into your home directory.
 (cd ~; curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz)
