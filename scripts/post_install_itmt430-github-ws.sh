@@ -120,6 +120,8 @@ sudo chown prometheus:prometheus /var/lib/prometheus
 
 # Next, use the sha256sum command to generate a checksum of the downloaded file
 sha256sum prometheus-2.0.0.linux-amd64.tar.gz
+# Compare the output from this command with the checksum on the Prometheus download page to ensure that your file is both genuine and not corrupted.
+# Output e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46  prometheus-2.0.0.linux-amd64.tar.gz
 
 # Now, unpack the downloaded archive.
 tar xvf prometheus-2.0.0.linux-amd64.tar.gz
@@ -146,3 +148,21 @@ rm -rf prometheus-2.0.0.linux-amd64.tar.gz prometheus-2.0.0.linux-amd64
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
 sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
 sudo chmod 644 prometheus.yml
+
+# First, download the current stable version of Node Exporter into your home directory.
+(cd ~; curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz)
+ 
+# Use the sha256sum command to generate a checksum of the downloaded file:
+sha256sum node_exporter-0.15.1.linux-amd64.tar.gz
+# Verify the downloaded file's integrity by comparing its checksum with the one on the download page.
+# Output 7ffb3773abb71dd2b2119c5f6a7a0dbca0cff34b24b2ced9e01d9897df61a127  node_exporter-0.15.1.linux-amd64.tar.gz
+
+# tar xvf node_exporter-0.15.1.linux-amd64.tar.gz
+tar xvf node_exporter-0.15.1.linux-amd64.tar.gz
+
+# Copy the binary to the /usr/local/bin directory and set the user and group ownership to the node_exporter user that you created in Step 1.
+sudo cp node_exporter-0.15.1.linux-amd64/node_exporter /usr/local/bin
+sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
+
+# Lastly, remove the leftover files from your home directory as they are no longer needed.
+rm -rf node_exporter-0.15.1.linux-amd64.tar.gz node_exporter-0.15.1.linux-amd64
