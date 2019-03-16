@@ -86,6 +86,16 @@
       "destination": "/home/vagrant/"
     },
     {
+      "type": "file",
+      "source": "./node_exporter.service",
+      "destination": "/home/vagrant/"
+    },
+    {
+      "type": "file",
+      "source": "./prometheus.service",
+      "destination": "/home/vagrant/"
+    },
+    {
       "type": "shell",
       "execute_command" : "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'", 
       "inline": [
