@@ -81,6 +81,11 @@
       "destination": "/home/vagrant/"     
     },
     {
+      "type": "file",
+      "source": "./prometheus.yml",
+      "destination": "/home/vagrant/"
+    },
+    {
       "type": "shell",
       "execute_command" : "echo 'vagrant' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'", 
       "inline": [
