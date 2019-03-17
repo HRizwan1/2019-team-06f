@@ -33,8 +33,10 @@ ufw --force enable
 ufw allow proto tcp to 0.0.0.0/0 port 22
 ufw allow proto tcp to 0.0.0.0/0 port 80
 ufw allow proto tcp to 0.0.0.0/0 port 443
-sudo ufw allow proto tcp to 0.0.0.0/0 port 9090
-sudo ufw allow proto tcp to 0.0.0.0/0 port 9100
+ufw allow proto tcp to 0.0.0.0/0 port 3000
+ufw allow proto tcp to 0.0.0.0/0 port 9090
+ufw allow proto tcp to 0.0.0.0/0 port 9100
+
 
 #Install apache2 webserver
 sudo apt-get update
@@ -197,3 +199,24 @@ sudo systemctl start node_exporter
 
 # Lastly, enable Node Exporter to start on boot.
 sudo systemctl enable node_exporter
+
+# Download the packagecloud GPG key with curl, then pipe the output to apt-key.
+curl https://packagecloud.io/gpg.key | sudo apt-key add -
+
+# Next, add the packagecloud repository to your APT sources.
+sudo add-apt-repository "deb https://packagecloud.io/grafana/stable/debian/ stretch main"
+
+# Refresh your APT cache to update your package lists.
+sudo apt-get update
+
+# And, make sure Grafana will be installed from the packagecloud repository.
+apt-cache policy grafana
+
+# You can now proceed with the installation.
+sudo apt-get --allow-unauthenticated install -y grafana
+
+# Once Grafana's installed, you're ready to start it.
+sudo systemctl start grafana-server
+
+# Lastly, enable the service to automatically start Grafana on boot.
+sudo systemctl enable grafana-server
