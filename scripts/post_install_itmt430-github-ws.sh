@@ -33,6 +33,8 @@ ufw --force enable
 ufw allow proto tcp to 0.0.0.0/0 port 22
 ufw allow proto tcp to 0.0.0.0/0 port 80
 ufw allow proto tcp to 0.0.0.0/0 port 443
+sudo ufw allow proto tcp to 0.0.0.0/0 port 9090
+sudo ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 #Install apache2 webserver
 sudo apt-get update
