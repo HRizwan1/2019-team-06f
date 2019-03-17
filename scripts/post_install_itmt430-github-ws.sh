@@ -145,9 +145,24 @@ sudo chown -R prometheus:prometheus /etc/prometheus/console_libraries
 # Lastly, remove the leftover files from your home directory as they are no longer needed.
 rm -rf prometheus-2.0.0.linux-amd64.tar.gz prometheus-2.0.0.linux-amd64
 
+# Move prometheus.yml and change permissions
 sudo mv prometheus.yml /etc/prometheus/prometheus.yml
 sudo chown prometheus:prometheus /etc/prometheus/prometheus.yml
 sudo chmod 644 /etc/prometheus/prometheus.yml
+
+# Move prometheus.service and change permissions
+sudo mv prometheus.service /etc/systemd/system/prometheus.service
+sudo chown root:root /etc/systemd/system/prometheus.service
+sudo chmod 644 /etc/systemd/system/prometheus.service
+
+# To use the newly created service, reload systemd.
+sudo systemctl daemon-reload
+
+# You can now start Prometheus using the following command:
+sudo systemctl start prometheus
+
+# Lastly, enable the service to start on boot.
+sudo systemctl enable prometheus
 
 # First, download the current stable version of Node Exporter into your home directory.
 (cd ~; curl -LO https://github.com/prometheus/node_exporter/releases/download/v0.15.1/node_exporter-0.15.1.linux-amd64.tar.gz)
@@ -166,3 +181,17 @@ sudo chown node_exporter:node_exporter /usr/local/bin/node_exporter
 
 # Lastly, remove the leftover files from your home directory as they are no longer needed.
 rm -rf node_exporter-0.15.1.linux-amd64.tar.gz node_exporter-0.15.1.linux-amd64
+
+# Move node_exporter.service and change permissions
+sudo mv node_exporter.service /etc/systemd/system/node_exporter.service
+sudo chown root:root /etc/systemd/system/node_exporter.service
+sudo chmod 644 /etc/systemd/system/node_exporter.service
+
+# Finally, reload systemd to use the newly created service.
+sudo systemctl daemon-reload
+
+# You can now run Node Exporter using the following command:
+sudo systemctl start node_exporter
+
+# Lastly, enable Node Exporter to start on boot.
+sudo systemctl enable node_exporter
