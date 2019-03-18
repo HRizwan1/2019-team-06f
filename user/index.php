@@ -33,7 +33,7 @@ if (isset($_GET['logout'])) {
     <!--  header -->
     <header>
         <!--  main  -->
-        <a id="logo" href="index.php">
+        <a id="logo" href="#">
             <img src="../img/THLogo.png" alt="THLogo">
             <span><font size="5">TruHawk</font></span>
         </a>
@@ -44,7 +44,7 @@ if (isset($_GET['logout'])) {
         <nav>
             <ul>
             <input type="text" class="searchTerm" placeholder="Search..">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="user.php">User</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="gallery.php">Photo Gallery</a></li>
