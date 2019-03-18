@@ -94,8 +94,8 @@ if (isset($_GET['logout'])) {
             <div class="iit-content">
                 <h1 class="iit-title">Welcome!</h1>
                 <p>Explore the diversity within the community!</p>
-                <a href="about.html">Learn More</a>
-                <a href="register.html">Register</a>
+                <a href="upload.php">Upload Photos</a>
+                <a href="listImages.php">View Photos</a>
             </div>
         </div>
         
