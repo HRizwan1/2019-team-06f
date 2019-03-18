@@ -21,7 +21,7 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style1.css">
     <link rel="shortcut icon" href="../img/THLogo.ico" />
 </head>
 
@@ -34,12 +34,13 @@ if (isset($_GET['logout'])) {
             <img src="../img/THLogo.png" alt="THLogo">
             <span>TruHawk</span>
         </a>
+		
+		<input type="text" class="searchTerm" placeholder="Search for hashtag...">
 
         <!--  navigation  -->
 
         <nav>
             <ul>
-            <input type="text" class="searchTerm" placeholder="Search..">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="user.php">User</a></li>
                 <li><a href="about.php">About</a></li>
