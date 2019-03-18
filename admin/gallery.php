@@ -42,7 +42,7 @@ if (isset($_GET['logout'])) {
                 <li><a href="index.php">Home</a></li>
                 <li><a href="admin.php">Admin</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="gallery.php">Photo Gallery</a></li>
+                <li><a href="#">Photo Gallery</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>

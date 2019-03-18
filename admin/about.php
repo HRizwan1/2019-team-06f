@@ -24,7 +24,7 @@
 <body>
     <header>
         <a id="logo" href="index.php">
-        <img src="img/THLogo.png" alt="THLogo">
+        <img src="../img/THLogo.png" alt="THLogo">
         <span>TruHawk</span>
         </a>
             
@@ -33,7 +33,7 @@
             <input type="text" class="searchTerm" placeholder="Search..">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="admin.php">Admin</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a href="#">About</a></li>
                 <li><a href="gallery.php">Photo Gallery</a></li>
                 <li><a href="logout.php">Logout</a></li>
             </ul>
