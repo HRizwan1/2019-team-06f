@@ -22,7 +22,7 @@ if (isset($_GET['logout'])) {
     <meta charset="utf-8" class="nojs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../cssreset.css">
+    <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style1.css">
     <link rel="shortcut icon" href="img/THLogo.ico" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -82,7 +82,7 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<center> <h2 style="color:#000000">My User Panel </center> 
+	<center> <h2>My User Panel</h2> </center> 
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
