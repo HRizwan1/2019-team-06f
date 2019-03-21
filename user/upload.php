@@ -11,6 +11,10 @@ if (isset($_GET['logout'])) {
 	unset($_SESSION['user']);
 	header("location: ../index.html");
 }
+if(isset($_SESSION['username']))
+{
+    $usersData = getId(['username']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -92,19 +96,37 @@ if (isset($_GET['logout'])) {
    </form>
            </div>
            <?php
+
 if (count($_FILES) > 0) {
    if (is_uploaded_file($_FILES['userImage']['tmp_name'])) {
+// Function to get the id from the username in session
+    function getId($username){
+    $db = mysqli_connect('localhost','root', 'smokeit84', 'website');
+    $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='".$_SESSION['user']['username']."'";
+    $result = mysqli_query($db, $get_id_query);
+    while($row = mysqli_fetch_assoc($result)){
+        return $row['id'];
+    }
+}
+$useridtest= getId($username);
+
+// function to retrieve all users data not used at this time
+
+
+      
        require "../db.php";
        $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
        $imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
-       $sql = "INSERT INTO pictures(photo_type, photo)
-    VALUES('{$imageProperties['mime']}', '{$imgData}')";
+       $sql = "INSERT INTO pictures(photo_type, photo, id)
+    VALUES('{$imageProperties['mime']}', '{$imgData}', '{$useridtest}')";
        $current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn));
        if (isset($current_id)) {
+        $_SESSION['msg'] = "Upload Successful";
            header("Location: listImages.php");
        }
    }
 }
+
 ?>
 
 <br>
