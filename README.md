@@ -12,7 +12,7 @@ This is how we are passing passwords/RSA keys securely.
 1) Edit the ```variables.json``` file replacing default values with your own    
 1) Issue the commands inside of the itmt430 folder ```packer build --var-file=./variables.json ubuntu16045-itmt430-database.json``` and ```packer build --var-file=./variables.json ubuntu16045-itmt430-webserver.json``` and ```packer build --var-file=./variables.json ubuntu16045-itmt430-database-slave.json``` and ```packer build --var-file=./variables.json ubuntu16045-itmt430-cache.json``` to begin the install with password, usernames, and RSA private key properly seeded
     1) This way we can securely build the system, deploy it and when building it pass in passwords via environment variables
-1) Once all three servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
+1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
 ![screenshot](img/screenshot.png "Screenshot")
 1) Issue the commands ```vagrant box add ./itmt430-db-virtualbox-1551913591.box --name database``` and ```vagrant box add ./itmt430-ws-virtualbox-1551917192.box --name webserver``` and ```vagrant box add ./itmt430-dbs-virtualbox-1551918194.box --name databaseslave``` and ```vagrant box add ./itmt430-c-virtualbox-1551918198.box --name cache``` inside the appropriate folders to add the boxes making sure to replace the box numbers with your box numbers.
 ![screenshot2](img/screenshot2.png "Screenshot2")
