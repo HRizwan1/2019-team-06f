@@ -1,14 +1,21 @@
 <?php 
 include('../server.php');
 require_once "../db.php";
-$sql = "SELECT photo_id FROM pictures ORDER BY photo_id DESC"; 
+function getId($username){
+    $db = mysqli_connect('localhost','root', 'smokeit84', 'website');
+    $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='".$_SESSION['user']['username']."'";
+    $result = mysqli_query($db, $get_id_query);
+    while($row = mysqli_fetch_assoc($result)){
+        return $row['id'];
+    }
+}
+$useridtest= getId($username);
+$sql = "SELECT photo_id FROM pictures WHERE id ='{$useridtest}' ORDER BY photo_id DESC"; 
 $result = mysqli_query($conn, $sql);
-
 if (!isUser()) {
 	$_SESSION['msg'] = "You must log in first";
 	header('location: ../login.php');
 }
-
 if (isset($_GET['logout'])) {
 	session_destroy();
 	unset($_SESSION['user']);
