@@ -92,7 +92,7 @@ if (isset($_GET['logout'])) {
 					<br> 
 					<center>            &nbsp; <a href="upload.php">Upload Photos</a> </center> 
 					<center>         &nbsp; <a href="listImages.php">View my Photos</a> </center> 
-					<center>            &nbsp; <a href="create_user.php">Recent Photo Uploads</a> </center> 
+					<center>            &nbsp; <a href="recentphotos.php">Recent Photo Uploads</a> </center> 
 					<center>          <a href="../index.html?logout='1'" style="color: red;">Logout</a> </center> 
 
 <br>
