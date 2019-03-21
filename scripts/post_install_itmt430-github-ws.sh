@@ -107,6 +107,18 @@ sudo sed -i -e 's/insertsalthere/'$SALT'/g' /var/www/html/server.php
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/db.php
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/db.php
 
+# Database information passed from variables file into user/listImages.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/listImages.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/listImages.php
+
+# Database information passed from variables file into user/recentphotos.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/recentphotos.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/recentphotos.php
+
+# Database information passed from variables file into user/upload.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/upload.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/upload.php
+
 # Create these two users, and use the --no-create-home and --shell /bin/false options so that these users can't log into the server.
 sudo useradd --no-create-home --shell /bin/false prometheus
 sudo useradd --no-create-home --shell /bin/false node_exporter
