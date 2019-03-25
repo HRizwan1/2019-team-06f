@@ -1,30 +1,107 @@
-/* Mobile first queries */
-@media screen and (max-width: 480px) {
-  form {
-    margin: 0 0 1em 0; /* 5px */
-    width: 100%;
+/* Media Queries */
+
+/* @345px */
+
+@media screen and (min-width: 21.5625em) {
+  /* Let the nav breathe a bit more */
+  nav {
+    font-weight: normal;
   }
-  form > label,
-  legend {
-	  width: 100%;
-    float: none;
+  .nav a {
+    padding: 0.6315789474em;
   }
-  form > fieldset {
-    width: 99%;
-    float: none;
+  .ol.alignleft{
+    padding-left: 20px;
   }
-  
-  input[type=email] {
-    width: 95%; 
-  }
-}
-@media screen and (max-width: 960px) {
-  form > label,
-	legend {
-  	text-align: right;
-  }	  
 }
 
+/* @560px */
+
+@media screen and (min-width: 560px) {
+  .flexbox .agenda > ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexbox .agenda > ol > li {
+    flex: 0 1 43.5484%;
+    padding: 0;
+  }
+  .assigned {
+    padding: 1.2631578947em 1.8947368421em 0.6315789474em 1.8947368421em;
+    margin-left: -1.8947368421em;
+    margin-right: -1.8947368421em;
+  }
+  .flexbox .link-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexbox #course-resources {
+    flex: 0 1 100%;
+  }
+  .flexbox #essential-tools,
+  .flexbox #essential-references {
+    flex: 0 1 43.5484%;
+  }
+}
+
+/* @650px */
+
+@media screen and (min-width: 40.625em) {
+  html {
+    padding: 0;
+  }
+  header,
+  footer,
+  .primary,
+  #instructor,
+  #links {
+    padding-left: 14.28571429%; /* 93/651 */
+    padding-right: 28.57142857%; /* 186/651 */
+  }
+  .tagline,
+  .fineprint {
+  }
+  nav {
+    width: 57.14285714%;
+    left: 14.28571429%;
+  }
+  .preview {
+    margin-left: -25%; /* 93/372 */
+    padding-left: 25%;
+    margin-right: -50%; /* 186/372 */
+    padding-right: 50%;
+  }
+  .agenda > ol {
+    display: block;
+  }
+  .link-group {
+    position: relative;
+  }
+  #essential-tools, #course-resources {
+    padding-left: 1em;
+    width: 42.5%;
+    margin-right: 0;
+  }
+  
+  #essential-references {
+    position: absolute;
+    top: 0px;
+    width: 42.5%;
+    margin-left: 55%;
+  }
+
+}
+
+@media screen and (min-width: 804px) {
+  .flexbox .agenda > ol {
+    display: flex; /* My life for element/container queries...*/
+  }
+}
+
+.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
+    color: inherit;
+}
 /* resetting browser stuff */
 *     {
   box-sizing: border-box;
