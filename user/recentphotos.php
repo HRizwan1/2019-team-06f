@@ -90,7 +90,7 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-<center>	<h2 style="color:#000000">My User Panel - My Images</h2>	</center> </div>
+<center>	<h2 style="color:#000000">Latest Uploaded Photos</h2>	</center> </div>
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
@@ -99,8 +99,8 @@ if (isset($_GET['logout'])) {
 		<center>		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>  </center>
 					<br> 
                  <center>  &nbsp; <a href="upload.php">Upload Photos</a> </center>
-				 <center> &nbsp; <a href="#">View my Photos</a>  </center>
-				   <center>    &nbsp; <a href="create_user.php">Recent Photo Uploads</a>  </center>
+				 <center> &nbsp; <a href="listimages.php">View my Photos</a>  </center>
+				   <center>    &nbsp; <a href="recentphotos.php">Recent Photo Uploads</a>  </center>
 				   <center>   <a href="../index.html?logout='1'" style="color: red;">Logout</a>  </center>
 
                    <?php
