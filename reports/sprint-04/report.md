@@ -11,56 +11,24 @@
 
 ### Project Goals:
 
-* To build a slave database server using Packer (C)
-* To build Redis cache server using Packer (C)
-* Fix binding error (50-server.cnf is ignored causing a binding error due to permissions) (C)
-* Create layout diagrams for user/admin interface  (C)
-* Designed and create tables for users and pictures using mysql (C)
-* Create “create-new.sql” and “insert-new.sql” files to use at build for automation (C)
-* Create admin panel to view all users and to create admins / regular users (C)
-* Create an upload button for a registered user to upload photos (C)
-* Restricted privileges for unregistered : only read access (index page) (C)
-* To develop the user panel by allowing registered users to upload photos (C)
-* Gather 225 images for 15 test users and store all the images in our database (C)
-* Insert photo hashtags for all the images in mysql database (C)
-* Be able to display photos from database (C)
-* Fix footer position on the admin page (C)
-* Added a vertical scroll bar table onto the admin page view all users (C)
-* Change md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords (C)
-* Allow registered users to upload images using hashtags (I)
-* Functioning "Search-box" for registered users to search images using (hashtags) (I)
-* Data Encryption at Rest using XtraDB and InnoDB (I)
-* Working on the upload feature to link pictures that belong to each user (I)
-* Implement responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
-* Incorporate Riemann for capture of application metrics (I)
+* Create layout diagrams ()
+* Incorporate Riemann for capture of application metrics ()
+* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet ()
+* Allow registered users to upload images using hashtags ()
+* Functioning "Search-box" for registered users to search images using (hashtags) ()
+* Data Encryption at Rest using XtraDB and InnoDB ()
+* Functioning upload feature to link pictures that belong to each user ()
 
-### Project Accomplishments: Goals Accomplished (18/22)
 
-* Successfully built a slave database server using Packer
-* Built Redis cache server using Packer
-* Fixed binding Error:50-server.cnf (ignored causing a binding error due to permissions) from one of our github issues last sprint
-* Created layouts for user/admin interface
-* Designed & Created tables for users and pictures using MySQL
-* Created “create-new.sql” and “insert-new.sql” files to use at build for automation
-* Created Admin panel to view all users and to create admins / regular users
-* User Panel created
-* Created upload feature-button for registered users to upload images
-* Restricted privileges for unregistered users have only read access to index page
-* To develop the user panel by allowing registered users to upload images
-* Gathered images for 15 test user and stored all these images in database (225 photos downloaded)
-* Inserted Photo hashtags for all the images in database
-* Fixed the footer on the admin page
-* Added a vertical scroll bar table onto admin page view all users
-* Successfully changed md5 hash password to SHA1-hash-SHA-1 with salt to hash the user passwords
-* Website pulls from the database to display photos in user accounts
-* Users can upload images from their registered accounts
+### Project Accomplishments: Goals Accomplished ()
+
+* 
 
 
 ### Project Requirements:
 1. Language and Framework of Choice:
 
-  * HTML-5 is used to structure the webpages
-  * CSS-3 is used to style our web pages 
+  * HTML-5 and CSS are rendered using PHP
   * Javascript / jQuery is used for the photo slideshow on the gallery page
   * PHP is used for login and registering processes
   * Vagrant/Packer are used for building and automating the building of the servers
@@ -88,8 +56,12 @@
 
     c. Capture of application metrics: 
 
-      * Riemann 0.3.1 is going to be used for capture of application metrics. We plan to incorporate this in the next sprint. 
-      ![riemann](images/riemann.png "Riemann")
+      * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from "our services (need to put appropriate word)" and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
+
+      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source for data visualization and monitoring system that collects metrics from our services. Grafana has a features that allows to create alerts, notifications, and ad-hoc filters for our data which will be our future goal.
+
+      * To expand Prometheus beyond metrics about itseif only, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
+
   
 3. Use of Data Store:
   * We are using 2 database servers (Platform: MariaDB/MySQL)
