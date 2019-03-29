@@ -84,50 +84,25 @@ if(isset($_SESSION['username']))
 <center>	<h2 style="color:#000000">My User Panel - Upload Photo</h2> </center>	</div>
 	<!-- logged in user information -->
 				
-		        <!-- content for the iit -->
+		    <!-- content for the iit -->
 
 
-                <div class="Upload">
+            <div class="Upload">
            <form name="frmImage" enctype="multipart/form-data" action=""
-       method="post" class="frmImageUpload">
-       <label>Upload Image File:</label><br /> <input name="userImage"
-           type="file" class="inputFile" /> <input type="submit"
-           value="Submit" class="btnSubmit" />
+        method="post" class="frmImageUpload">
+        <label>Upload Image File:</label><br /> <input name="userImage"
+            type="file" class="inputFile" /> 
+            <div>
+               <textarea name="photoname" value="<?php echo $photoname; ?>"placeholder="Enter Image Name (required field)"></textarea>
+            </div>
+            <div>
+               <textarea name="hashtag" value="<?php echo $hashtag; ?>"placeholder="Type hashtag here (required field)"></textarea>
+            </div>
+            <input type="submit"
+            value="Submit" class="btnSubmit" name="upload_btn" />
    </form>
            </div>
-           <?php
-
-if (count($_FILES) > 0) {
-   if (is_uploaded_file($_FILES['userImage']['tmp_name'])) {
-// Function to get the id from the username in session
-    function getId($username){
-    $db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
-    $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='".$_SESSION['user']['username']."'";
-    $result = mysqli_query($db, $get_id_query);
-    while($row = mysqli_fetch_assoc($result)){
-        return $row['id'];
-    }
-}
-$useridtest= getId($username);
-
-// function to retrieve all users data not used at this time
-
-
-      
-       require "../db.php";
-       $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
-       $imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
-       $sql = "INSERT INTO pictures(photo_type, photo, id)
-    VALUES('{$imageProperties['mime']}', '{$imgData}', '{$useridtest}')";
-       $current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn));
-       if (isset($current_id)) {
-        $_SESSION['msg'] = "Upload Successful";
-           header("Location: listImages.php");
-       }
-   }
-}
-
-?>
+           
 
 <br>
 <br>
