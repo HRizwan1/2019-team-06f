@@ -4,6 +4,8 @@ session_start();
 // initializing variables
 $username = "";
 $email    = "";
+$photoname= "";
+$hashtag  = "";
 $errors   = array(); 
 
 // connect to database
@@ -14,7 +16,58 @@ $dbs = mysqli_connect('$DATABASESLAVEIP','replica', '$USERPASS','website');
 if (isset($_POST['register_btn'])) {
 	register();
 }
+// call the upload() if upload button is pressed
+if (isset($_POST['upload_btn'])){
+	uploadphoto();
+}
+// UPLOAD PHOTO Function
+function uploadphoto(){
+	// call variables with global keyword to make the available
+	global $db, $errors, $photoname, $hashtag;
 
+	//recieve form values
+	$photoname   = e($_POST['photoname']);
+	$hashtag     = e($_POST['hashtag']);
+	//form validataion
+	if (empty($photoname)){
+		array_push($errors, "Photo name is required!");
+	}
+	if (empty($hashtag)){
+		array_push($errors, "Hashtag is required!");
+	}
+	if (count($errors) == 0) {
+		if (count($_FILES) > 0) {
+			if (is_uploaded_file($_FILES['userImage']['tmp_name'])) {
+	 // Function to get the id from the username in session
+			 function getId($username){
+			 $db = mysqli_connect('localhost','root', 'smokeit84', 'website');
+			 $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='".$_SESSION['user']['username']."'";
+			 $result = mysqli_query($db, $get_id_query);
+			 while($row = mysqli_fetch_assoc($result)){
+					 return $row['id'];
+			 }
+	 }
+	 $useridtest= getId($username);
+	 
+	 // function to retrieve all users data not used at this time
+	 
+	 
+				 
+			require "../db.php";
+			$imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
+			$imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
+			$sql = "INSERT INTO pictures(photo_type, photo, id, photoname, hashtag)
+			VALUES('{$imageProperties['mime']}', '{$imgData}', '{$useridtest}', '{$photoname}', '{$hashtag}')";
+			$current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn));
+			if (isset($current_id)) {
+			$_SESSION['msg'] = "Upload Successful";
+			header("Location: listImages.php");
+			}
+		}
+         }
+	 
+     }
+}
 
 // REGISTER USER
 function register(){
