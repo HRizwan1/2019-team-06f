@@ -101,7 +101,7 @@
  
 6. Responsive Design (In-progress):
 
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet.  </p>
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements.</p>
 
 ![mobile](images/mobile.png "Mobile")
 
