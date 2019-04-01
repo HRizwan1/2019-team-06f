@@ -135,6 +135,8 @@ body     {
   .section, .nav, .iit, .site {
     width: 100%;
   }
+  .feature-box p{
+    display: none;
 }
 
 @media only screen and (max-width:800px) {
