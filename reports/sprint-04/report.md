@@ -236,15 +236,7 @@
   <p>We looked into incorporating Cloudinary into our website but found that it is used by our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
-  * Responsive design, making the website function properly and scale to multiple form factors:mobile & tablet.
-    - Include mobile first css which will detect screen size and style our webpage according to device it's being used on.
-    - Add JQueries that will assure a great user experience on any screen size.
-  * Data Encryption at Rest using XtraDB and InnoDB
-  * Allow registered users to upload photos using hashtags
-  * Assign new team roles for the sprint
-  * Capture of application metrics using Riemann 0.3.1
-  * Continue on coding the upload feature to link pictures that belong to each user
-  * Functioning search box that will allow registered users to search for images using hashtags.
+ 
 
 #### Individual Reflections
 **Daniel** - 
