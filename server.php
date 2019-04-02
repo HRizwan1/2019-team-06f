@@ -40,7 +40,7 @@ function uploadphoto(){
 			if (is_uploaded_file($_FILES['userImage']['tmp_name'])) {
 	 // Function to get the id from the username in session
 			 function getId($username){
-			 $db = mysqli_connect('localhost','root', 'smokeit84', 'website');
+			 $db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
 			 $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='".$_SESSION['user']['username']."'";
 			 $result = mysqli_query($db, $get_id_query);
 			 while($row = mysqli_fetch_assoc($result)){
