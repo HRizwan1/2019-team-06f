@@ -68,7 +68,8 @@ Values
     "98224dbb7c3397c56127074d5cbc2f876040f874"
   );
 INSERT INTO pictures (
-  photo_id, photo, photo_type, id, text
+  photo_id, photo, photo_type, id, photoname, 
+  text
 ) 
 Values 
   (
@@ -78,6 +79,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "angel", 
     "statue angel"
   ), 
   (
@@ -86,7 +88,8 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/beach-rock.jpg'
     ), 
     "image/jpeg", 
-    1, 
+    1,
+    "beach-rock", 
     "rock water"
   ), 
   (
@@ -617,7 +620,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/blossom.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "flowers spring"
   ), 
   (
@@ -626,7 +629,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/cathedral.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "art church"
   ), 
   (
@@ -635,7 +638,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/chess.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "chess game"
   ), 
   (
@@ -644,7 +647,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/chipmunk.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "animal flowers"
   ), 
   (
@@ -653,7 +656,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/counch-shell.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "shell sand"
   ), 
   (
@@ -662,7 +665,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/rainbow.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "rainbow water"
   ), 
   (
@@ -671,7 +674,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/roofs.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "roofs snow"
   ), 
   (
@@ -680,7 +683,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/sail-boat.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "spring rain"
   ), 
   (
@@ -689,7 +692,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/sailboats.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "water boat"
   ), 
   (
@@ -698,7 +701,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/seawave.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "water wave"
   ), 
   (
@@ -707,7 +710,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/spring.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "sping rainbow"
   ), 
   (
@@ -716,7 +719,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/strawberries.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "food strawberries"
   ), 
   (
@@ -725,7 +728,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/summer.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "summer birds"
   ), 
   (
@@ -734,7 +737,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/vintagecar.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "vintagecar cars"
   ), 
   (
@@ -743,7 +746,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(5)Hagerre/water-sport.jpg'
     ), 
     "image/jpeg", 
-    5,
+    5, 
     "water watersport"
   ), 
   (
@@ -752,7 +755,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/continents.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "continents map"
   ), 
   (
@@ -761,7 +764,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/cross.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "cross sun"
   ), 
   (
@@ -770,7 +773,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/cube.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "dice cube"
   ), 
   (
@@ -779,7 +782,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/fall.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "fall colors"
   ), 
   (
@@ -788,7 +791,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/fly-agaric.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "red mushrooms"
   ), 
   (
@@ -797,7 +800,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/giraffe.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "giraffe animal"
   ), 
   (
@@ -806,7 +809,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/horse-racing.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "horseracing animal"
   ), 
   (
@@ -815,7 +818,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/lake.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "water hotairballoon"
   ), 
   (
@@ -824,7 +827,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/lichterkette.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "lights colors"
   ), 
   (
@@ -833,7 +836,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/native.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "nativeindians tribe"
   ), 
   (
@@ -842,7 +845,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/paintedglass.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "art colors"
   ), 
   (
@@ -851,7 +854,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/pattern.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "art design"
   ), 
   (
@@ -860,7 +863,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/picture.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "camera lens"
   ), 
   (
@@ -869,7 +872,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/skydivers.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "adventure skydivers"
   ), 
   (
@@ -878,7 +881,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(6)Mothesseze/spring-bird.jpg'
     ), 
     "image/jpeg", 
-    6,
+    6, 
     "spring bird"
   ), 
   (
@@ -887,7 +890,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/australian-shepherd.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "dogs animal"
   ), 
   (
@@ -896,7 +899,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/blush-roses.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "flower roses"
   ), 
   (
@@ -905,7 +908,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/brown-butterfly.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "flower butterfly"
   ), 
   (
@@ -914,7 +917,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/chocolates.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "chocolates food"
   ), 
   (
@@ -923,7 +926,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/continents.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "bluebackground world"
   ), 
   (
@@ -932,7 +935,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/daffodils.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "daffodils flower"
   ), 
   (
@@ -941,7 +944,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/divers.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "divers water"
   ), 
   (
@@ -950,7 +953,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/easter-statue.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "easter bunny"
   ), 
   (
@@ -959,7 +962,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/easter-theme.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "easter eggs"
   ), 
   (
@@ -968,7 +971,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/flower-cat.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "cat animal"
   ), 
   (
@@ -977,7 +980,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/launch-pad.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "rocket launchpad"
   ), 
   (
@@ -986,7 +989,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/palmtrees.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "palmtrees water"
   ), 
   (
@@ -995,7 +998,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/pink-tulip.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "tulip flower"
   ), 
   (
@@ -1004,7 +1007,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/water-lily.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "lily flower"
   ), 
   (
@@ -1013,7 +1016,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(7)Girese/waterbunglows.jpg'
     ), 
     "image/jpeg", 
-    7,
+    7, 
     "water resort"
   ), 
   (
@@ -1022,7 +1025,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/buddha-statue.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "buddha statue"
   ), 
   (
@@ -1031,7 +1034,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/cham.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "places historicsite"
   ), 
   (
@@ -1040,7 +1043,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/christ.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "jesus christ"
   ), 
   (
@@ -1049,7 +1052,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/egg.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "egg colors"
   ), 
   (
@@ -1058,7 +1061,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/emperor-penguin.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "penguin animal"
   ), 
   (
@@ -1067,7 +1070,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/gold-honey.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "honey food"
   ), 
   (
@@ -1076,7 +1079,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/lanterns.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "lanterns lights "
   ), 
   (
@@ -1085,7 +1088,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/mosque.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "mosque islam"
   ), 
   (
@@ -1094,7 +1097,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/salad.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "food salad"
   ), 
   (
@@ -1103,7 +1106,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/scarves.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "scarves colors"
   ), 
   (
@@ -1112,7 +1115,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/shish-kebab.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "food barbeque"
   ), 
   (
@@ -1121,7 +1124,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/spices.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "spices food"
   ), 
   (
@@ -1130,7 +1133,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/sultanahmet.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "mosque city"
   ), 
   (
@@ -1139,7 +1142,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/vegetables.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "vegetables food"
   ), 
   (
@@ -1148,7 +1151,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(8)Fement42/whitekitchen.jpg'
     ), 
     "image/jpeg", 
-    8,
+    8, 
     "white kitchen"
   ), 
   (
@@ -1157,7 +1160,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/brown-dog.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "dog animal"
   ), 
   (
@@ -1166,7 +1169,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/cactus.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "cactus sky"
   ), 
   (
@@ -1175,7 +1178,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/cuban-streets.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "cuba cars"
   ), 
   (
@@ -1184,7 +1187,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/graffiti-wall.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "wall art"
   ), 
   (
@@ -1193,7 +1196,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/ice-cream-cone.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "icecream food"
   ), 
   (
@@ -1202,7 +1205,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/kitten.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "kitten animal"
   ), 
   (
@@ -1211,7 +1214,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/marbles.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "marbles colors"
   ), 
   (
@@ -1220,7 +1223,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/organizer.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "flowers organizer"
   ), 
   (
@@ -1229,7 +1232,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/pancakes.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "food pancakes"
   ), 
   (
@@ -1238,7 +1241,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/purple-lantern.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "lantern lights"
   ), 
   (
@@ -1247,7 +1250,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/tajmahal.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "tajmahal historicsite"
   ), 
   (
@@ -1256,7 +1259,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/tea-time.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "tea flowers"
   ), 
   (
@@ -1265,7 +1268,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/violin.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "violin musicalinstrument"
   ), 
   (
@@ -1274,7 +1277,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/white-puppy.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "dog animal"
   ), 
   (
@@ -1283,7 +1286,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(9)Withey/wolf.jpg'
     ), 
     "image/jpeg", 
-    9,
+    9, 
     "wolf animal"
   ), 
   (
@@ -1292,7 +1295,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/automobile.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "car mercedes"
   ), 
   (
@@ -1301,7 +1304,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/chain-clock.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "clock antique"
   ), 
   (
@@ -1310,7 +1313,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/chipmunk.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "chipmunk animal"
   ), 
   (
@@ -1319,7 +1322,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/cute-bunny.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "bunny animal"
   ), 
   (
@@ -1328,7 +1331,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/dahlia.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "dahlia flower"
   ), 
   (
@@ -1337,7 +1340,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/dandelion.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "dandelion flower"
   ), 
   (
@@ -1346,7 +1349,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/fig.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "fig fruit"
   ), 
   (
@@ -1355,7 +1358,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/hedgehog.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "hedgehog animal"
   ), 
   (
@@ -1364,7 +1367,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/oldtimer.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "vintagecars cars"
   ), 
   (
@@ -1373,7 +1376,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/pink-bee.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "bee flower"
   ), 
   (
@@ -1382,7 +1385,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/pinkcar.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "pinkcar car"
   ), 
   (
@@ -1391,7 +1394,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/raspberry.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "raspberry fruit"
   ), 
   (
@@ -1400,7 +1403,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/red-rose.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "rose flower"
   ), 
   (
@@ -1409,7 +1412,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/white-lily.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "lily flower"
   ), 
   (
@@ -1418,7 +1421,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(10)Ther1993/white-ling.jpg'
     ), 
     "image/jpeg", 
-    10,
+    10, 
     "flower butterfly"
   ), 
   (
@@ -1427,7 +1430,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/bali.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "bali sunset"
   ), 
   (
@@ -1436,7 +1439,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/beverage.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "tea drink"
   ), 
   (
@@ -1445,7 +1448,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/chinese-lantern.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "lantern art"
   ), 
   (
@@ -1454,7 +1457,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/day-of-the-dead.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "art colors"
   ), 
   (
@@ -1463,7 +1466,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/dumplings.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "dumplings food"
   ), 
   (
@@ -1472,7 +1475,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/early-spring.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "flower spring"
   ), 
   (
@@ -1481,7 +1484,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/flower-branch.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "flower spring"
   ), 
   (
@@ -1490,7 +1493,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/flower-buds.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "flower spring"
   ), 
   (
@@ -1499,7 +1502,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/golden-gate-bridge.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "goldengate bridge"
   ), 
   (
@@ -1508,7 +1511,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/hollywood-sign.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "hollywood mountains"
   ), 
   (
@@ -1517,7 +1520,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/nature-scene.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "butterfly flower"
   ), 
   (
@@ -1526,7 +1529,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/palm-trees.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "palm sky"
   ), 
   (
@@ -1535,7 +1538,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/pumpkin-pie.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "pumpkinpie food"
   ), 
   (
@@ -1544,7 +1547,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/sport.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "running colors"
   ), 
   (
@@ -1553,7 +1556,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(11)Majessis/spring.jpg'
     ), 
     "image/jpeg", 
-    11,
+    11, 
     "spring flower"
   ), 
   (
@@ -1562,7 +1565,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amuse.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "ride carousel"
   ), 
   (
@@ -1571,7 +1574,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/amusement.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "amusementpark rides"
   ), 
   (
@@ -1580,7 +1583,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/anise.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "spices lemonslice"
   ), 
   (
@@ -1589,7 +1592,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/beijing.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "beijing place"
   ), 
   (
@@ -1598,7 +1601,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/birthday-cake.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "cake food"
   ), 
   (
@@ -1607,7 +1610,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/bloom.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "flower spring"
   ), 
   (
@@ -1616,7 +1619,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/bread.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "bread food"
   ), 
   (
@@ -1625,7 +1628,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/christmas-tree.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "christmastree ornaments"
   ), 
   (
@@ -1634,7 +1637,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/classical.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "water beach"
   ), 
   (
@@ -1643,7 +1646,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/colorful-lanterns.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "colors lanterns"
   ), 
   (
@@ -1652,7 +1655,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/cupcakes.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "cupcake food"
   ), 
   (
@@ -1661,7 +1664,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/dragonfruit.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "dragonfruit fruit"
   ), 
   (
@@ -1670,7 +1673,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/library.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "books library"
   ), 
   (
@@ -1679,7 +1682,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/red-skates.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "skates skating"
   ), 
   (
@@ -1688,7 +1691,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(12)Hertake93/tulips.jpg'
     ), 
     "image/jpeg", 
-    12,
+    12, 
     "tulips flower"
   ), 
   (
@@ -1697,7 +1700,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/basketball.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "basketball sport"
   ), 
   (
@@ -1706,7 +1709,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/bowling.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "bowling game"
   ), 
   (
@@ -1715,7 +1718,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/cosmetic-oil.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "oil flower"
   ), 
   (
@@ -1724,7 +1727,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/ferris-wheel.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "ferriswheel ride"
   ), 
   (
@@ -1733,7 +1736,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/golf-stick.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "golf sport"
   ), 
   (
@@ -1742,7 +1745,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/greece.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "greece historicsite"
   ), 
   (
@@ -1751,7 +1754,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/herbs.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "herbs spices"
   ), 
   (
@@ -1760,7 +1763,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/lavender.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "flower lavender"
   ), 
   (
@@ -1769,7 +1772,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/orchids.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "orchids flower"
   ), 
   (
@@ -1778,7 +1781,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/snooker.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "billiards balls"
   ), 
   (
@@ -1787,7 +1790,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/surfer-wave.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "surfer wave"
   ), 
   (
@@ -1796,7 +1799,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/the-christmas-tree.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "christmastree ornaments"
   ), 
   (
@@ -1805,7 +1808,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/the-roller-coaster.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "rollercoaster rides"
   ), 
   (
@@ -1814,7 +1817,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/video-game.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "gamecontroller techdevice"
   ), 
   (
@@ -1823,7 +1826,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/zebra-family.jpg'
     ), 
     "image/jpeg", 
-    13,
+    13, 
     "zebras animal"
   ), 
   (
@@ -1832,7 +1835,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/athletes.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "sport athletes"
   ), 
   (
@@ -1841,7 +1844,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/ball.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "pebbles woman"
   ), 
   (
@@ -1850,7 +1853,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/beverage.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "drink coffee"
   ), 
   (
@@ -1859,7 +1862,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/book.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "book object"
   ), 
   (
@@ -1868,7 +1871,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/breakfast-toast.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "toast food"
   ), 
   (
@@ -1877,7 +1880,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/brush.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "paint colors"
   ), 
   (
@@ -1886,7 +1889,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/buttons.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "buttons colors"
   ), 
   (
@@ -1895,7 +1898,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/candle.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "candle coffee"
   ), 
   (
@@ -1904,7 +1907,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/embroidery.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "art embroidery"
   ), 
   (
@@ -1913,7 +1916,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/love-key.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "key heart"
   ), 
   (
@@ -1922,7 +1925,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/mezcal.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "drink mezcal"
   ), 
   (
@@ -1931,7 +1934,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/sand.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "sand water"
   ), 
   (
@@ -1940,7 +1943,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/soap-bubble.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "ball soapbubble"
   ), 
   (
@@ -1949,7 +1952,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/taco.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "taco food"
   ), 
   (
@@ -1958,7 +1961,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(14)Highted/white-stones.jpg'
     ), 
     "image/jpeg", 
-    14,
+    14, 
     "water sand"
   ), 
   (
@@ -1967,7 +1970,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/carnival.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "carnival colors"
   ), 
   (
@@ -1976,7 +1979,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/cocoa.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "drink hotcocoa"
   ), 
   (
@@ -1985,7 +1988,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/fiat.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "fiat car"
   ), 
   (
@@ -1994,7 +1997,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/happy-teady.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "teddy toy"
   ), 
   (
@@ -2003,7 +2006,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/idol.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "idol statue"
   ), 
   (
@@ -2012,7 +2015,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/justice.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "justice statue"
   ), 
   (
@@ -2021,7 +2024,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/light-bulb.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "light bulbs"
   ), 
   (
@@ -2030,7 +2033,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/macaroons.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "macaroons food"
   ), 
   (
@@ -2039,7 +2042,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/mask.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "mask art"
   ), 
   (
@@ -2048,7 +2051,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/paris.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "ferriswheel ride"
   ), 
   (
@@ -2057,7 +2060,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/pink-wine.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "wine drink"
   ), 
   (
@@ -2066,7 +2069,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/praline-sweet.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "food chocolate"
   ), 
   (
@@ -2075,7 +2078,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/sad-red-rose.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "rose flower"
   ), 
   (
@@ -2084,7 +2087,7 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/sombrero.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "hat sombrero"
   ), 
   (
@@ -2093,6 +2096,6 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(15)Obect1934/white-car.jpg'
     ), 
     "image/jpeg", 
-    15,
+    15, 
     "car jeep"
   );
