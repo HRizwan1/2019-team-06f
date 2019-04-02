@@ -56,7 +56,7 @@ function uploadphoto(){
 			require "../db.php";
 			$imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name']));
 			$imageProperties = getimageSize($_FILES['userImage']['tmp_name']);
-			$sql = "INSERT INTO pictures(photo_type, photo, id, photoname, hashtag)
+			$sql = "INSERT INTO pictures(photo_type, photo, id, photoname, text)
 			VALUES('{$imageProperties['mime']}', '{$imgData}', '{$useridtest}', '{$photoname}', '{$hashtag}')";
 			$current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn));
 			if (isset($current_id)) {
