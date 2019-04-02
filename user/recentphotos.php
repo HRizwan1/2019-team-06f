@@ -99,8 +99,8 @@ if (isset($_GET['logout'])) {
 		<center>		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i>  </center>
 					<br> 
                  <center>  &nbsp; <a href="upload.php">Upload Photos</a> </center>
-				 <center> &nbsp; <a href="listimages.php">View my Photos</a>  </center>
-				   <center>    &nbsp; <a href="recentphotos.php">Recent Photo Uploads</a>  </center>
+				 <center> &nbsp; <a href="listImages.php">View my Photos</a>  </center>
+				   <center>    &nbsp; <a href="#">Recent Photo Uploads</a>  </center>
 				   <center>   <a href="../index.html?logout='1'" style="color: red;">Logout</a>  </center>
 
                    <?php
