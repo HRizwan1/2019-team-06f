@@ -52,15 +52,15 @@ if (isset($_GET['logout'])) {
         <nav>
             <ul>
 			<li>
-			<form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
-				<div class="search-box" id="search-box"> 
-				<input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Enter tag and press Enter to search"/> 
-			      <a class="search-btn" type="submit" id="search-btn" name="search-btn" value="Search"> 
-				    <i class="fas fa-search"></i> 
-			      </a> 
-			</div>
-			<form>
-		</li> 
+			   <form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+			     <div class="search-box" id="search-box"> 
+			     <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Enter tag and press Enter to search"/> 
+			     <button type="submit" class="search-btn" name="search-btn"> 
+		             <i class="fas fa-search"></i> 
+			     </button>
+			     </div>
+			   <form>
+		        </li> 
 
 				<li><a href="index.php">Home</a></li>
 				<li><a href="user.php">User</a></li>
