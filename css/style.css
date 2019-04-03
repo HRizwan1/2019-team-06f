@@ -535,3 +535,73 @@ div.alreadym {
   text-align: left;
   margin-bottom: 5em;
 }
+  .images{
+  margin-left: 30px;
+}
+
+
+/* Searchbox style*/
+.search-box { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2f3640; 
+  height: 40px;
+  border-radius: 40px;
+  z-index: 1;
+  } 
+.search-box:hover > .search-txt {
+  width: 240px; 
+  padding: 0 6px;
+  } 
+.search-box:hover > .search-btn { 
+  background: white;
+  color: black;
+  } 
+.search-btn { 
+  color: #e84118;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  } 
+.search-btn > i { 
+  font-size: 30px;
+  color: green;
+  float: left;
+  transition: 0.4s;
+  } 
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-weight: bold; 
+  }
+  #login, .label{
+    text-align: left;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  #register, .label{
+    text-align: left;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+  .frmImageUpload{
+    margin-left: 42em;
+  }
