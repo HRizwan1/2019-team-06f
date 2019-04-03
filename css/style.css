@@ -25,27 +25,6 @@
     display: flex;
     justify-content: space-between;
   }
-  .flexbox .agenda > ol > li {
-    flex: 0 1 43.5484%;
-    padding: 0;
-  }
-  .assigned {
-    padding: 1.2631578947em 1.8947368421em 0.6315789474em 1.8947368421em;
-    margin-left: -1.8947368421em;
-    margin-right: -1.8947368421em;
-  }
-  .flexbox .link-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .flexbox #course-resources {
-    flex: 0 1 100%;
-  }
-  .flexbox #essential-tools,
-  .flexbox #essential-references {
-    flex: 0 1 43.5484%;
-  }
 }
 
 /* @650px */
@@ -53,58 +32,17 @@
 @media screen and (min-width: 40.625em) {
   html {
     padding: 0;
-  }
-  header,
-  footer,
-  .primary,
-  #instructor,
-  #links {
-    padding-left: 14.28571429%; /* 93/651 */
-    padding-right: 28.57142857%; /* 186/651 */
-  }
-  .tagline,
-  .fineprint {
-  }
+  } 
   nav {
-    width: 57.14285714%;
     left: 14.28571429%;
   }
-  .preview {
-    margin-left: -25%; /* 93/372 */
-    padding-left: 25%;
-    margin-right: -50%; /* 186/372 */
-    padding-right: 50%;
-  }
-  .agenda > ol {
-    display: block;
-  }
-  .link-group {
-    position: relative;
-  }
-  #essential-tools, #course-resources {
-    padding-left: 1em;
-    width: 42.5%;
-    margin-right: 0;
-  }
-  
-  #essential-references {
-    position: absolute;
-    top: 0px;
-    width: 42.5%;
-    margin-left: 55%;
-  }
-
 }
 
 @media screen and (min-width: 804px) {
-  .flexbox .agenda > ol {
-    display: flex; /* My life for element/container queries...*/
-  }
+
 }
 
-.panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
-    color: inherit;
-}
+
 /* resetting browser stuff */
 *     {
   box-sizing: border-box;
@@ -114,7 +52,7 @@ html,
 body   {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100%; 
   line-height: 1.5;
   font-size: 1.00em;
 }
@@ -126,7 +64,7 @@ body     {
 }
 
 /* Implementing responsive design for multiple form factors */
-@media only screen and (max-width:2000px) {
+@media only screen and (max-width:900px) {
   /* For tablets: */
   .main {
     width: 80%;
@@ -135,20 +73,12 @@ body     {
   .section, .nav, .iit, .site {
     width: 100%;
   }
-  .feature-box p{
-    display: none;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
   /* For mobile phones: */
   .section, .nav, .iit, .site {
     width: 100%;
-  }
-  .iit-content h1 {
-    font-size: 50px;
-  }
-  .feature-box h5 p{
-    display: none;
   }
 }
 
@@ -171,7 +101,7 @@ header   {
   display: inline-block;
   color: #EC1C24;
   text-decoration: none;
-  width: 49%;
+  width: 20%;
 }
 #logo img    {
   width: 3.125em;
@@ -194,9 +124,11 @@ hr  {
 
 /* main navigation */
 nav     {
-  width: 50%;
+  width: 60%;
   display: inline-block;
+  position: relative;
   text-align: right;
+  margin-right: 10px;
   
 }
 nav ul   {
@@ -228,17 +160,6 @@ nav ul li a:hover   {
 
 } 
 
-.site-footer {
-  background: #000000;
-  color: #EC1C24;
-  padding: 0.3em;
-  text-align: center;
-  left: 0;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-
 /* styling our footer */
 footer {
   background: #000000;
@@ -254,34 +175,6 @@ footer img {
   border-radius: 0.313em;
   width: 5.00em;
   margin: 0 auto 0.625em;
-}
-.table-container {
-  height: 10em;
-}
-table {
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-  width: 100%;
-}
-table thead {
-  /* head takes the height it requires, 
-  and it's not scaled when table is resized */
-  flex: 0 0 auto;
-  width: calc(100% - 0.9em);
-}
-table tbody {
-  /* body takes all the remaining available space */
-  flex: 1 1 auto;
-  display: block;
-  overflow-y: scroll;
-}
-table tbody tr {
-  width: 100%;
-}
-table thead, table tbody tr {
-  display: table;
-  table-layout: fixed;
 }
 
 /* styling our main content */
@@ -312,10 +205,6 @@ table thead, table tbody tr {
   font-size: 1.750em;
 }
 
-form {
-  width:500px;
-  margin:50px auto;
-}
 
 /* basic site sections */
 .site-section  {
@@ -503,7 +392,7 @@ label[for="txtConfirmPassword"] {
   padding-right: 10.460em
 }
 
-form, .content {
+.content {
   width: 30%;
   margin: 0px auto;
   padding: 20px;
@@ -511,7 +400,14 @@ form, .content {
   background: white;
   border-radius: 0px 0px 10px 10px;
 }
-
+#register {
+  width:500px;
+  margin:50px auto;
+}
+#login {
+  width:500px;
+  margin:50px auto;
+}
 .error {
   width: 92%; 
   margin: 0px auto; 
@@ -535,7 +431,7 @@ div.alreadym {
   text-align: left;
   margin-bottom: 5em;
 }
-  .images{
+.images{
   margin-left: 30px;
 }
 
@@ -604,4 +500,7 @@ div.alreadym {
   }
   .frmImageUpload{
     margin-left: 42em;
+  }
+  .search-box{
+    position:absolute;
   }
