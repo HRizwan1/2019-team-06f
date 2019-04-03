@@ -1169,7 +1169,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
-    "emperpr-penguin",
+    "emperor-penguin",
     "penguin animal"
   ), 
   (
@@ -1509,7 +1509,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
-    "oltimer",
+    "oldtimer",
     "vintagecars cars"
   ), 
   (
@@ -1559,7 +1559,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
-    "white-lilly",
+    "white-lily",
     "lily flower"
   ), 
   (
@@ -1709,7 +1709,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
-    "sports",
+    "sport",
     "running colors"
   ), 
   (
@@ -1759,7 +1759,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
-    "bejing",
+    "beijing",
     "beijing place"
   ), 
   (
@@ -1937,9 +1937,9 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/herbs.jpg'
     ), 
-    "herbs",
     "image/jpeg", 
-    13, 
+    13,
+    "herbs",
     "herbs spices"
   ), 
   (
@@ -1947,9 +1947,9 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/lavender.jpg'
     ), 
-    "lavender",
     "image/jpeg", 
     13, 
+    "lavender",
     "flower lavender"
   ), 
   (
@@ -1957,9 +1957,9 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/orchids.jpg'
     ), 
-    "orchids",
     "image/jpeg", 
     13, 
+    "orchids",
     "orchids flower"
   ), 
   (
