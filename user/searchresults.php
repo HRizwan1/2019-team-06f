@@ -11,7 +11,7 @@ function getId($username){
 }
 $useridtest= getId($username);
 
-$sql = "SELECT photo_id FROM pictures WHERE hashtag LIKE '%{$_SESSION['search']}%'";
+$sql = "SELECT photo_id FROM pictures WHERE text LIKE '%{$_SESSION['search']}%'";
 $result = mysqli_query($conn, $sql);
 if (!isUser()) {
 	$_SESSION['msg'] = "You must log in first";
