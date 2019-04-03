@@ -39,7 +39,7 @@
   <div class="section-header">
 <h2>Login to TruHawk</h2>
 	</div>
-	<form method="post" action="login.php">
+	<form method="post" id="login" action="login.php">
 
 		<?php echo display_error(); ?>
 
