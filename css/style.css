@@ -440,19 +440,17 @@ div.alreadym {
 .search-box { 
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 26%;
   transform: translate(-50%, -50%);
   background: #2f3640; 
   height: 40px;
   border-radius: 40px;
+  width: 240px;
   z-index: 1;
   } 
-.search-box:hover > .search-txt {
-  width: 240px; 
-  padding: 0 6px;
-  } 
+
 .search-box:hover > .search-btn { 
-  background: white;
+  background: green;
   color: black;
   } 
 .search-btn { 
@@ -461,7 +459,6 @@ div.alreadym {
   height: 40px;
   border-radius: 50%;
   background: #2f3640;
-  display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
@@ -485,8 +482,9 @@ div.alreadym {
   color: white;
   transition: 0.4s;
   line-height: 40px;
-  width: 0px;
   font-weight: bold; 
+  width: 200px;
+  padding: 0 6px;
   }
   #login, .label{
     text-align: left;
@@ -503,4 +501,4 @@ div.alreadym {
   }
   .search-box{
     position:absolute;
-  }
+}
