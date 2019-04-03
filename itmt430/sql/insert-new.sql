@@ -98,7 +98,8 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/clam.jpg'
     ), 
     "image/jpeg", 
-    1, 
+    1,
+    "clam",
     "shell algae"
   ), 
   (
@@ -108,6 +109,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "cuba",
     "water bird"
   ), 
   (
@@ -117,6 +119,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "cutedog",
     "dog animal"
   ), 
   (
@@ -125,7 +128,8 @@ Values
       '/home/vagrant/2019-team-06f/test.images/(1)Ficy1953/dragon.jpg'
     ), 
     "image/jpeg", 
-    1, 
+    1,
+    "dragon",
     "art statue"
   ), 
   (
@@ -135,6 +139,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "eve",
     "sunset water"
   ), 
   (
@@ -144,6 +149,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "glass",
     "art colors"
   ), 
   (
@@ -153,6 +159,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "hirsch",
     "deer animal"
   ), 
   (
@@ -162,6 +169,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "iceland",
     "glacier iceberg"
   ), 
   (
@@ -171,6 +179,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "skates",
     "skating rollerstakes"
   ), 
   (
@@ -180,6 +189,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "sunset",
     "sunset water"
   ), 
   (
@@ -189,6 +199,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "talkeetna",
     "clouds water"
   ), 
   (
@@ -198,6 +209,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "tiger-cub",
     "tiger animal"
   ), 
   (
@@ -207,6 +219,7 @@ Values
     ), 
     "image/jpeg", 
     1, 
+    "tropical",
     "beach sunset"
   ), 
   (
@@ -216,6 +229,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "apples",
     "fruit red"
   ), 
   (
@@ -225,6 +239,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "ara",
     "parrot bird"
   ), 
   (
@@ -234,6 +249,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "aurora",
     "sky light"
   ), 
   (
@@ -243,6 +259,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "chicago",
     "chicago sky"
   ), 
   (
@@ -252,6 +269,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "coffee-beans",
     "coffee brown"
   ), 
   (
@@ -261,6 +279,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "colorful-buildings",
     "cars colors"
   ), 
   (
@@ -270,6 +289,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "cuba-birds",
     "flamingo birds"
   ), 
   (
@@ -279,6 +299,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "golden-lion",
     "animal lion"
   ), 
   (
@@ -288,6 +309,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "mouse",
     "animal mouse"
   ), 
   (
@@ -297,6 +319,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "orange-sunset",
     "sun bird"
   ), 
   (
@@ -306,6 +329,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "sunrise",
     "sun aircraft"
   ), 
   (
@@ -315,6 +339,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "turtle",
     "water animal"
   ), 
   (
@@ -324,6 +349,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "water-drop",
     "water art"
   ), 
   (
@@ -333,6 +359,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "wooden-boat",
     "boat beach"
   ), 
   (
@@ -342,6 +369,7 @@ Values
     ), 
     "image/jpeg", 
     2, 
+    "zebra-stripes",
     "zebra animal"
   ), 
   (
@@ -351,6 +379,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "amsterdam",
     "water boat"
   ), 
   (
@@ -360,6 +389,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "basil-pizza",
     "food pizza"
   ), 
   (
@@ -369,6 +399,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "church",
     "art colors"
   ), 
   (
@@ -378,6 +409,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "cocktail",
     "beach water"
   ), 
   (
@@ -387,6 +419,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "deer-buck",
     "deer animal"
   ), 
   (
@@ -396,6 +429,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "elephant",
     "animal rock"
   ), 
   (
@@ -405,6 +439,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "horseshoe",
     "water rocks"
   ), 
   (
@@ -414,6 +449,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "kingfisher",
     "bird sky"
   ), 
   (
@@ -423,6 +459,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "mother",
     "bicycle sky"
   ), 
   (
@@ -432,6 +469,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "ny",
     "sky water"
   ), 
   (
@@ -441,6 +479,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "sky-shades",
     "sky sunset"
   ), 
   (
@@ -450,6 +489,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "sphinx.jpg",
     "sky pyramid"
   ), 
   (
@@ -459,6 +499,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "sunset-birds",
     "sunset bird"
   ), 
   (
@@ -468,6 +509,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "white-wave",
     "beach water"
   ), 
   (
@@ -477,6 +519,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
+    "wine-cheese",
     "food beach"
   ), 
   (
@@ -486,6 +529,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "castle",
     "castle sky"
   ), 
   (
@@ -495,6 +539,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "clarinet",
     "instrument music"
   ), 
   (
@@ -504,6 +549,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "colorfful-boats",
     "boat water"
   ), 
   (
@@ -513,6 +559,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "dark",
     "lights fireworks"
   ), 
   (
@@ -522,6 +569,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "dawn",
     "boat water"
   ), 
   (
@@ -531,6 +579,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "delicate-arch",
     "sky rock"
   ), 
   (
@@ -540,6 +589,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "eiffel",
     "eiffeltower lights"
   ), 
   (
@@ -549,6 +599,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "key",
     "key flower"
   ), 
   (
@@ -558,6 +609,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "keyboard",
     "camera keyboard"
   ), 
   (
@@ -567,6 +619,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "maldives",
     "beach water"
   ), 
   (
@@ -576,6 +629,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "man-sun",
     "water mansun"
   ), 
   (
@@ -585,6 +639,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "manipulation",
     "water boat"
   ), 
   (
@@ -594,6 +649,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "newyears",
     "fireworks newyears"
   ), 
   (
@@ -603,6 +659,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "peacock",
     "peacock feathers"
   ), 
   (
@@ -612,6 +669,7 @@ Values
     ), 
     "image/jpeg", 
     4, 
+    "pink-macarons",
     "macarons food"
   ), 
   (
@@ -621,6 +679,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "blosson",
     "flowers spring"
   ), 
   (
@@ -630,6 +689,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "cathedral",
     "art church"
   ), 
   (
@@ -639,6 +699,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "chess",
     "chess game"
   ), 
   (
@@ -648,6 +709,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "chipmunk",
     "animal flowers"
   ), 
   (
@@ -657,6 +719,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "counch-shell",
     "shell sand"
   ), 
   (
@@ -666,6 +729,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "rainbow",
     "rainbow water"
   ), 
   (
@@ -675,6 +739,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "roofs",
     "roofs snow"
   ), 
   (
@@ -684,6 +749,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "sail-boat",
     "spring rain"
   ), 
   (
@@ -693,6 +759,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "sailboats",
     "water boat"
   ), 
   (
@@ -702,6 +769,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "seawave",
     "water wave"
   ), 
   (
@@ -711,6 +779,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "spring",
     "sping rainbow"
   ), 
   (
@@ -720,6 +789,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "strawberries",
     "food strawberries"
   ), 
   (
@@ -729,6 +799,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "summer",
     "summer birds"
   ), 
   (
@@ -738,6 +809,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "vintagecar",
     "vintagecar cars"
   ), 
   (
@@ -747,6 +819,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
+    "water-sport",
     "water watersport"
   ), 
   (
@@ -756,6 +829,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "continents",
     "continents map"
   ), 
   (
@@ -765,6 +839,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "cross",
     "cross sun"
   ), 
   (
@@ -774,6 +849,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "cube",
     "dice cube"
   ), 
   (
@@ -783,6 +859,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "fall",
     "fall colors"
   ), 
   (
@@ -792,6 +869,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "fly-agaric",
     "red mushrooms"
   ), 
   (
@@ -801,6 +879,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "giraffe",
     "giraffe animal"
   ), 
   (
@@ -810,6 +889,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "horse-racing",
     "horseracing animal"
   ), 
   (
@@ -819,6 +899,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "lake",
     "water hotairballoon"
   ), 
   (
@@ -828,6 +909,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "lichterkette",
     "lights colors"
   ), 
   (
@@ -837,6 +919,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "native",
     "nativeindians tribe"
   ), 
   (
@@ -846,6 +929,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "paintedglass",
     "art colors"
   ), 
   (
@@ -855,6 +939,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "pattern",
     "art design"
   ), 
   (
@@ -864,6 +949,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "picture",
     "camera lens"
   ), 
   (
@@ -873,6 +959,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "skydivers",
     "adventure skydivers"
   ), 
   (
@@ -882,6 +969,7 @@ Values
     ), 
     "image/jpeg", 
     6, 
+    "spring-bird",
     "spring bird"
   ), 
   (
@@ -891,6 +979,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "australian-shepherd",
     "dogs animal"
   ), 
   (
@@ -900,6 +989,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "blush-roses",
     "flower roses"
   ), 
   (
@@ -909,6 +999,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "brown-butterfly",
     "flower butterfly"
   ), 
   (
@@ -918,6 +1009,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "chocolates",
     "chocolates food"
   ), 
   (
@@ -927,6 +1019,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "continents",
     "bluebackground world"
   ), 
   (
@@ -936,6 +1029,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "daffodils",
     "daffodils flower"
   ), 
   (
@@ -945,6 +1039,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "divers",
     "divers water"
   ), 
   (
@@ -954,6 +1049,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "easter-statue",
     "easter bunny"
   ), 
   (
@@ -963,6 +1059,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "easter-theme",
     "easter eggs"
   ), 
   (
@@ -972,6 +1069,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "flower-cat",
     "cat animal"
   ), 
   (
@@ -981,6 +1079,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "launch-pad",
     "rocket launchpad"
   ), 
   (
@@ -990,6 +1089,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "palmtrees",
     "palmtrees water"
   ), 
   (
@@ -999,6 +1099,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "pink-tulip",
     "tulip flower"
   ), 
   (
@@ -1008,6 +1109,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "water-lily",
     "lily flower"
   ), 
   (
@@ -1017,6 +1119,7 @@ Values
     ), 
     "image/jpeg", 
     7, 
+    "waterbunglows",
     "water resort"
   ), 
   (
@@ -1026,6 +1129,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "buddha-statue",
     "buddha statue"
   ), 
   (
@@ -1035,6 +1139,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "cham",
     "places historicsite"
   ), 
   (
@@ -1044,6 +1149,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "christ",
     "jesus christ"
   ), 
   (
@@ -1053,6 +1159,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "egg",
     "egg colors"
   ), 
   (
@@ -1062,6 +1169,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "emperpr-penguin",
     "penguin animal"
   ), 
   (
@@ -1071,6 +1179,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "gold-honey",
     "honey food"
   ), 
   (
@@ -1080,6 +1189,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "lanterns",
     "lanterns lights "
   ), 
   (
@@ -1089,6 +1199,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "mosque",
     "mosque islam"
   ), 
   (
@@ -1098,6 +1209,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "salad",
     "food salad"
   ), 
   (
@@ -1107,6 +1219,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "scarves",
     "scarves colors"
   ), 
   (
@@ -1116,6 +1229,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "shish-kebab",
     "food barbeque"
   ), 
   (
@@ -1125,6 +1239,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "spices",
     "spices food"
   ), 
   (
@@ -1134,6 +1249,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "sultanahmet",
     "mosque city"
   ), 
   (
@@ -1143,6 +1259,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "vegetables",
     "vegetables food"
   ), 
   (
@@ -1152,6 +1269,7 @@ Values
     ), 
     "image/jpeg", 
     8, 
+    "whitekitchen",
     "white kitchen"
   ), 
   (
@@ -1161,6 +1279,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "brown-dog",
     "dog animal"
   ), 
   (
@@ -1170,6 +1289,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "cactus",
     "cactus sky"
   ), 
   (
@@ -1179,6 +1299,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "cuban-streets",
     "cuba cars"
   ), 
   (
@@ -1188,6 +1309,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "graffiti-wall",
     "wall art"
   ), 
   (
@@ -1197,6 +1319,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "ice-cream-cone",
     "icecream food"
   ), 
   (
@@ -1206,6 +1329,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "kitten",
     "kitten animal"
   ), 
   (
@@ -1215,6 +1339,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "marbles",
     "marbles colors"
   ), 
   (
@@ -1224,6 +1349,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "organizer",
     "flowers organizer"
   ), 
   (
@@ -1233,6 +1359,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "pancakes",
     "food pancakes"
   ), 
   (
@@ -1242,6 +1369,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "purple-lantern",
     "lantern lights"
   ), 
   (
@@ -1251,6 +1379,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "tajmahal",
     "tajmahal historicsite"
   ), 
   (
@@ -1260,6 +1389,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "tea-time",
     "tea flowers"
   ), 
   (
@@ -1269,6 +1399,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "violin",
     "violin musicalinstrument"
   ), 
   (
@@ -1278,6 +1409,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "white-puppy",
     "dog animal"
   ), 
   (
@@ -1287,6 +1419,7 @@ Values
     ), 
     "image/jpeg", 
     9, 
+    "wolf",
     "wolf animal"
   ), 
   (
@@ -1296,6 +1429,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "automobile",
     "car mercedes"
   ), 
   (
@@ -1305,6 +1439,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "chain-clock",
     "clock antique"
   ), 
   (
@@ -1314,6 +1449,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "chipmunk",
     "chipmunk animal"
   ), 
   (
@@ -1323,6 +1459,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "cute-bunny",
     "bunny animal"
   ), 
   (
@@ -1332,6 +1469,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "dahlia",
     "dahlia flower"
   ), 
   (
@@ -1341,6 +1479,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "dandelion",
     "dandelion flower"
   ), 
   (
@@ -1350,6 +1489,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "fig",
     "fig fruit"
   ), 
   (
@@ -1359,6 +1499,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "hedgehog",
     "hedgehog animal"
   ), 
   (
@@ -1368,6 +1509,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "oltimer",
     "vintagecars cars"
   ), 
   (
@@ -1377,6 +1519,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "pink-bee",
     "bee flower"
   ), 
   (
@@ -1386,6 +1529,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "pinkcar",
     "pinkcar car"
   ), 
   (
@@ -1395,6 +1539,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "raspberry",
     "raspberry fruit"
   ), 
   (
@@ -1404,6 +1549,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "red-rose",
     "rose flower"
   ), 
   (
@@ -1413,6 +1559,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "white-lilly",
     "lily flower"
   ), 
   (
@@ -1422,6 +1569,7 @@ Values
     ), 
     "image/jpeg", 
     10, 
+    "white-ling",
     "flower butterfly"
   ), 
   (
@@ -1431,6 +1579,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "bali",
     "bali sunset"
   ), 
   (
@@ -1440,6 +1589,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "beverage",
     "tea drink"
   ), 
   (
@@ -1449,6 +1599,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "chinese-lantern",
     "lantern art"
   ), 
   (
@@ -1458,6 +1609,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "day-of-the-dead",
     "art colors"
   ), 
   (
@@ -1467,6 +1619,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "dumplings",
     "dumplings food"
   ), 
   (
@@ -1476,6 +1629,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "early-spring",
     "flower spring"
   ), 
   (
@@ -1485,6 +1639,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "flower-branch",
     "flower spring"
   ), 
   (
@@ -1494,6 +1649,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "flower-buds",
     "flower spring"
   ), 
   (
@@ -1503,6 +1659,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "golden-gate-bridge",
     "goldengate bridge"
   ), 
   (
@@ -1512,6 +1669,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "hollywood-sign",
     "hollywood mountains"
   ), 
   (
@@ -1521,6 +1679,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "nature-scene",
     "butterfly flower"
   ), 
   (
@@ -1530,6 +1689,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "palm-trees",
     "palm sky"
   ), 
   (
@@ -1539,6 +1699,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "pumpkin-pie",
     "pumpkinpie food"
   ), 
   (
@@ -1548,6 +1709,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "sports",
     "running colors"
   ), 
   (
@@ -1557,6 +1719,7 @@ Values
     ), 
     "image/jpeg", 
     11, 
+    "spring",
     "spring flower"
   ), 
   (
@@ -1566,6 +1729,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "amuse",
     "ride carousel"
   ), 
   (
@@ -1575,6 +1739,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "amusement",
     "amusementpark rides"
   ), 
   (
@@ -1584,6 +1749,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "anise",
     "spices lemonslice"
   ), 
   (
@@ -1593,6 +1759,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "bejing",
     "beijing place"
   ), 
   (
@@ -1602,6 +1769,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "birthday-cake",
     "cake food"
   ), 
   (
@@ -1611,6 +1779,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "bloom",
     "flower spring"
   ), 
   (
@@ -1620,6 +1789,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "bread",
     "bread food"
   ), 
   (
@@ -1629,6 +1799,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "christmas-tree",
     "christmastree ornaments"
   ), 
   (
@@ -1638,6 +1809,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "classical",
     "water beach"
   ), 
   (
@@ -1647,6 +1819,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "colorful-lanterns",
     "colors lanterns"
   ), 
   (
@@ -1656,6 +1829,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "cupcakes",
     "cupcake food"
   ), 
   (
@@ -1665,6 +1839,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "dragonfruit",
     "dragonfruit fruit"
   ), 
   (
@@ -1674,6 +1849,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "library",
     "books library"
   ), 
   (
@@ -1683,6 +1859,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "red-skates",
     "skates skating"
   ), 
   (
@@ -1692,6 +1869,7 @@ Values
     ), 
     "image/jpeg", 
     12, 
+    "tulips",
     "tulips flower"
   ), 
   (
@@ -1701,6 +1879,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "basketball",
     "basketball sport"
   ), 
   (
@@ -1710,6 +1889,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "bowling",
     "bowling game"
   ), 
   (
@@ -1719,6 +1899,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "cosmetic-oil",
     "oil flower"
   ), 
   (
@@ -1728,6 +1909,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "ferris-wheel",
     "ferriswheel ride"
   ), 
   (
@@ -1737,6 +1919,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "golf-stick",
     "golf sport"
   ), 
   (
@@ -1746,6 +1929,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "greece",
     "greece historicsite"
   ), 
   (
@@ -1753,6 +1937,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/herbs.jpg'
     ), 
+    "herbs",
     "image/jpeg", 
     13, 
     "herbs spices"
@@ -1762,6 +1947,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/lavender.jpg'
     ), 
+    "lavender",
     "image/jpeg", 
     13, 
     "flower lavender"
@@ -1771,6 +1957,7 @@ Values
     LOAD_FILE(
       '/home/vagrant/2019-team-06f/test.images/(13)Adven1991/orchids.jpg'
     ), 
+    "orchids",
     "image/jpeg", 
     13, 
     "orchids flower"
@@ -1782,6 +1969,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "snooker",
     "billiards balls"
   ), 
   (
@@ -1791,6 +1979,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "surfer-wave",
     "surfer wave"
   ), 
   (
@@ -1800,6 +1989,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "the-christmas-tree",
     "christmastree ornaments"
   ), 
   (
@@ -1809,6 +1999,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "the-roller-coaster",
     "rollercoaster rides"
   ), 
   (
@@ -1818,6 +2009,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "video-game",
     "gamecontroller techdevice"
   ), 
   (
@@ -1827,6 +2019,7 @@ Values
     ), 
     "image/jpeg", 
     13, 
+    "zebra-fa,ily",
     "zebras animal"
   ), 
   (
@@ -1836,6 +2029,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "athletes",
     "sport athletes"
   ), 
   (
@@ -1845,6 +2039,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "ball",
     "pebbles woman"
   ), 
   (
@@ -1854,6 +2049,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "beverage",
     "drink coffee"
   ), 
   (
@@ -1863,6 +2059,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "book",
     "book object"
   ), 
   (
@@ -1872,6 +2069,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "breakfast-toast",
     "toast food"
   ), 
   (
@@ -1881,6 +2079,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "brush",
     "paint colors"
   ), 
   (
@@ -1890,6 +2089,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "buttons",
     "buttons colors"
   ), 
   (
@@ -1899,6 +2099,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "candle",
     "candle coffee"
   ), 
   (
@@ -1908,6 +2109,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "embroidery",
     "art embroidery"
   ), 
   (
@@ -1917,6 +2119,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "love-key",
     "key heart"
   ), 
   (
@@ -1926,6 +2129,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "mezcal",
     "drink mezcal"
   ), 
   (
@@ -1935,6 +2139,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "sand",
     "sand water"
   ), 
   (
@@ -1944,6 +2149,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "soap-bubble",
     "ball soapbubble"
   ), 
   (
@@ -1953,6 +2159,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "taco",
     "taco food"
   ), 
   (
@@ -1962,6 +2169,7 @@ Values
     ), 
     "image/jpeg", 
     14, 
+    "white-stones",
     "water sand"
   ), 
   (
@@ -1971,6 +2179,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "carnival",
     "carnival colors"
   ), 
   (
@@ -1980,6 +2189,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "cocoa",
     "drink hotcocoa"
   ), 
   (
@@ -1989,6 +2199,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "fiat",
     "fiat car"
   ), 
   (
@@ -1998,6 +2209,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "happy-teady",
     "teddy toy"
   ), 
   (
@@ -2007,6 +2219,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "idol",
     "idol statue"
   ), 
   (
@@ -2016,6 +2229,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "justice",
     "justice statue"
   ), 
   (
@@ -2025,6 +2239,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "light-bulb",
     "light bulbs"
   ), 
   (
@@ -2034,6 +2249,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "macaroons",
     "macaroons food"
   ), 
   (
@@ -2043,6 +2259,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "mask",
     "mask art"
   ), 
   (
@@ -2052,6 +2269,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "paris",
     "ferriswheel ride"
   ), 
   (
@@ -2061,6 +2279,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "pink-wine",
     "wine drink"
   ), 
   (
@@ -2070,6 +2289,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "praline-sweet",
     "food chocolate"
   ), 
   (
@@ -2079,6 +2299,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "sad-red-rose",
     "rose flower"
   ), 
   (
@@ -2088,6 +2309,7 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "sombrero",
     "hat sombrero"
   ), 
   (
@@ -2097,5 +2319,6 @@ Values
     ), 
     "image/jpeg", 
     15, 
+    "white-car",
     "car jeep"
   );
