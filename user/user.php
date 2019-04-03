@@ -22,11 +22,13 @@ if (isset($_GET['logout'])) {
     <meta charset="utf-8" class="nojs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
-    <link rel="stylesheet" href="../css/style1.css">
-    <link rel="shortcut icon" href="img/THLogo.ico" />
+    <link rel="stylesheet" type="text/css" href="../cssreset.css">
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="shortcut icon" href="img/THLogo.ico" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -38,19 +40,30 @@ if (isset($_GET['logout'])) {
         <!--  main  -->
         <a id="logo" href="index.php">
             <img src="../img/THLogo.png" alt="THLogo">
-			<span>TruHawk</span>
+			<span><font size="5">TruHawk</font></span>
 			
 			
-        </a>
+		</a>
+	
 
-        <input type="text" class="searchTerm" placeholder="Search for hashtag...">
+        
 
         <!--  navigation  -->
         <nav>
             <ul>
-				
+			<li>
+			<form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+				<div class="search-box" id="search-box"> 
+				<input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Enter tag and press Enter to search"/> 
+			      <a class="search-btn" type="submit" id="search-btn" name="search-btn" value="Search"> 
+				    <i class="fas fa-search"></i> 
+			      </a> 
+			</div>
+			<form>
+		</li> 
+
 				<li><a href="index.php">Home</a></li>
-				<li><a href="#">User</a></li>
+				<li><a href="user.php">User</a></li>
                 <li><a href="about.php">About</a></li>
 				<li><a href="gallery.php">Photo Gallery</a></li>
 				 <li><a href="logout.php">Logout</a></li>
@@ -63,8 +76,6 @@ if (isset($_GET['logout'])) {
 		</header>
 
 		<main> 
-
-
 
 		<div class="wrapper-admin">
 	<!-- notification message -->
@@ -82,18 +93,20 @@ if (isset($_GET['logout'])) {
 
 
 	<div class="header">
-	<center> <h2>My User Panel</h2> </center> 
+	<center> <h2 style="color:#000000">My User Panel </center> 
 	<!-- logged in user information -->
 				
 			<?php  if (isset($_SESSION['user'])) : ?>
 			<center> 	<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2> </center>
 
-			<center> 		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center> 
+				<div class="info">
+					<center> 		<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center> 
 					<br> 
 					<center>            &nbsp; <a href="upload.php">Upload Photos</a> </center> 
 					<center>         &nbsp; <a href="listImages.php">View my Photos</a> </center> 
 					<center>            &nbsp; <a href="recentphotos.php">Recent Photo Uploads</a> </center> 
 					<center>          <a href="../index.html?logout='1'" style="color: red;">Logout</a> </center> 
+				</div>
 
 <br>
 <br>
