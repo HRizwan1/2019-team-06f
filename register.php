@@ -42,7 +42,7 @@
 
 <div class="section-header">
 <h2>Registration</h2>
-    <form method="post" action="register.php" id="">
+    <form method="post" action="register.php" id="register">
       <?php include('errors.php'); ?>
       <div class="input-group">
 		<label>Username</label>
