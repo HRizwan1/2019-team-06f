@@ -16,6 +16,10 @@ $dbs = mysqli_connect('$DATABASESLAVEIP','replica', '$USERPASS','website');
 if (isset($_POST['register_btn'])) {
 	register();
 }
+//call the searchresults function if search button is pressed
+if (isset($_POST['searchtext'])){
+	$_SESSION['search']= $_POST['searchtext'];
+}
 // call the upload() if upload button is pressed
 if (isset($_POST['upload_btn'])){
 	uploadphoto();
