@@ -20,6 +20,11 @@ if (isset($_POST['register_btn'])) {
 if (isset($_POST['searchtext'])){
 	$_SESSION['search']= $_POST['searchtext'];
 }
+//on click 
+if (isset($_POST['search_btn'])){
+	$_SESSION['search']= $_POST['searchtext'];
+	header("Location: searchresults.php");
+}
 // call the upload() if upload button is pressed
 if (isset($_POST['upload_btn'])){
 	uploadphoto();
