@@ -489,7 +489,7 @@ Values
     ), 
     "image/jpeg", 
     3, 
-    "sphinx.jpg",
+    "sphinx",
     "sky pyramid"
   ), 
   (
@@ -679,7 +679,7 @@ Values
     ), 
     "image/jpeg", 
     5, 
-    "blosson",
+    "blossom",
     "flowers spring"
   ), 
   (
