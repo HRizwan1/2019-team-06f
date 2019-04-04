@@ -166,6 +166,8 @@
   We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then furthur assigned as tasks to the appropriate team members to fix. 
 
 10. Layout Design:
+  * Font for Site:
+  ![Fonts](images/fonts.JPG "Fonts common for site pages")
   * Home page:
   
   ![homepage](images/home.JPG "Homepage Layout")
