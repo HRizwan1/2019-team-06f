@@ -450,26 +450,26 @@ div.alreadym {
   } 
 
 .search-box:hover > .search-btn { 
-  background: green;
-  color: black;
+  background: #000000;
+  color: #EC1C24;
   } 
 .search-btn { 
   color: #e84118;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #2f3640;
+  background: #000000;
   justify-content: center;
   align-items: center;
   transition: 0.4s;
-  color: white;
+  color: #EC1C24;
   cursor: pointer;
   position: relative;
   z-index: 3;
   } 
 .search-btn > i { 
   font-size: 30px;
-  color: green;
+  color: #EC1C24;
   float: left;
   transition: 0.4s;
   } 
@@ -479,7 +479,7 @@ div.alreadym {
   outline: none;
   float: left;
   padding: 0;
-  color: white;
+  color: #FFF;
   transition: 0.4s;
   line-height: 40px;
   font-weight: bold; 
@@ -501,4 +501,8 @@ div.alreadym {
   }
   .search-box{
     position:absolute;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF;
+  opacity: 1; /* Firefox */
 }
