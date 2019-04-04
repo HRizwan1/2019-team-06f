@@ -229,7 +229,7 @@
   ![githubonslack](images/githubonslack.png "Github Slack Integration")
 
   * Github Issues:
-
+  
   ![githubissues](images/githubissues.png "Github Issues")
   
   * Github:
@@ -239,13 +239,12 @@
 13. Test Users:
   <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
 
+  ![15testusers](images/15testusers.png "15 Test Users")
   ![testusers](images/testusers.png "Test Users")
   ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-  <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out, after countless hours of hair pulling, that it was missing '' surrounding the IP address.</p>
-  <p>
-  <p>We looked into incorporating Cloudinary into our website but found that it is used by our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
+  
 
 **Goals for Next Sprint:**
  
