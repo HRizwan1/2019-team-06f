@@ -72,6 +72,10 @@
 
       * To expand Prometheus beyond metrics about itseif only, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
 
+      ![node_exporter](images/schema.png "Node Exporter")
+      ![prometheus](images/prometheus.png "Prometheus")
+      ![grafana](images/grafana.png "Grafana")
+
   
 3. Use of Data Store:
   * We are using 2 database servers (Platform: MariaDB/MySQL)
