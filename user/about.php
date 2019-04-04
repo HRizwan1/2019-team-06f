@@ -19,6 +19,9 @@
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style1.css">
     <link rel="shortcut icon" href="../img/THLogo.ico" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -27,10 +30,20 @@
         <img src="../img/THLogo.png" alt="THLogo">
         <span>TruHawk</span>
         </a>
-			<input type="text" class="searchTerm" placeholder="Search for hashtag...">
+			
 
         <nav>
             <ul>
+		<li>
+		   <form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+		     <div class="search-box" id="search-box"> 
+		     <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Enter tag and press Enter to search"/> 
+		     <button type="submit" class="search-btn" name="search-btn"> 
+		     <i class="fas fa-search"></i> 
+		     </button>
+		     </div>
+		   <form>
+		</li> 
                 <li><a href="index.php">Home</a></li>
                 <li><a href="user.php">User</a></li>
                 <li><a href="#">About</a></li>
