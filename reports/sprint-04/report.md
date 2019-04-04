@@ -168,7 +168,7 @@
 10. Layout Design:
   * Home page:
   
-  ![homepage](images/home.jpeg "Homepage Layout")
+  ![homepage](images/home.JPG "Homepage Layout")
 
   * Button Link:
   
@@ -176,32 +176,32 @@
 
   * Login & Register page:
   
-  ![lregpage](images/lregpage.jpeg "Login/Registration Layout")
+  ![lregpage](images/lregpage.JPG "Login/Registration Layout")
 
   * Photo-Gallery page:
   
-  ![pgallery](images/gallery.jpeg "Photo Gallery page Layout")
+  ![pgallery](images/gallery.JPG "Photo Gallery page Layout")
 
   * User Panel:
 
-  ![U-panel](images/userPanel.JPEG "User Panel Layout")
+  ![U-panel](images/userPanel.JPG "User Panel Layout")
 
   * Upload Photo:
 
-  ![upload](images/uploadFeature.JPEG "Upload Photo")
+  ![upload](images/uploadFeature.JPG "Upload Photo")
 
 
   * Admin Panel:
 
-  ![A-panel](images/adminPanel.JPEG "Admin Panel Layout")
+  ![A-panel](images/adminPanel.JPG "Admin Panel Layout")
 
   * Create User:
 
-  ![CUser](images/createUser.JPEG "Admin Can Create New User")
+  ![CUser](images/createUser.JPG "Admin Can Create New User")
 
   * View User:
 
-  ![VUser](images/viewUsers.JPEG "Admin can view all users")
+  ![VUser](images/viewUsers.JPG "Admin can view all users")
 
   * Site Flow:
   
