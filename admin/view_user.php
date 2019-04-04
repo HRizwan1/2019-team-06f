@@ -46,7 +46,7 @@ if (isset($_GET['logout'])) {
 
         <!--  navigation  -->
         <nav>
-            <ul>
+            <ul style ="padding-left: 0px;">
 				
 				<li><a href="index.php">Home</a></li>
 				<li><a href="admin.php">Admin</a></li>
