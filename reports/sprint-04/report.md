@@ -38,9 +38,8 @@
 ### Project Requirements:
 1. Language and Framework of Choice:
 
-  * HTML-5 and CSS are rendered using PHP
+  * HTML-5 and CSS are delivered by PHP Version 7.3
   * Javascript is used for the photo slideshow on the gallery page
-  * PHP is used for login and registering processes
   * Vagrant/Packer are used for building and automating the building of the servers
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
   * Redis 5.0.3 is used as in-memory data structure store and allow for faster searching and to cache data from the webserver
@@ -123,6 +122,7 @@
 
 <p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements.</p>
 
+![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
 
 
