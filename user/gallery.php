@@ -35,12 +35,22 @@ if (isset($_GET['logout'])) {
             <span>TruHawk</span>
         </a>
 		
-		<input type="text" class="searchTerm" placeholder="Search for hashtag...">
+		
 
         <!--  navigation  -->
 
         <nav>
             <ul>
+		<li>
+	  	   <form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+		   <div class="search-box" id="search-box"> 
+	     	   <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Enter tag and press Enter to search"/> 
+		   <button type="submit" class="search-btn" name="search-btn"> 
+		   <i class="fas fa-search"></i> 
+		   </button>
+		   </div>
+		   <form>
+		</li> 
                 <li><a href="index.php">Home</a></li>
                 <li><a href="user.php">User</a></li>
                 <li><a href="about.php">About</a></li>
