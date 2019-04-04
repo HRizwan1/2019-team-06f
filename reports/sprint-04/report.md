@@ -201,7 +201,7 @@
 
   * View User:
 
-  ![VUser](images/viewUsers.JPG "Admin can view all users")
+  ![VUser](images/viewUser.JPG "Admin can view all users")
 
   * Site Flow:
   
