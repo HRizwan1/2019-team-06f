@@ -11,18 +11,28 @@
 
 ### Project Goals:
 
-* Create layout diagrams ()
-* Incorporate Riemann for capture of application metrics ()
-* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet ()
-* Allow registered users to upload images using hashtags ()
-* Functioning "Search-box" for registered users to search images using (hashtags) ()
-* Data Encryption at Rest using XtraDB and InnoDB ()
-* Functioning upload feature to link pictures that belong to each user ()
-
+* Create layout diagrams (C)
+* Move and improve Build Instructions on GitHub(C)
+* Incorporate Prometheus for capture of application metrics (C)
+* Upload pictures linked to each user account (C)
+* Add a vertical scroll var table into the Admin Page to view all the users (C)
+* Allow registered users to upload images using hashtags (C)
+* Functioning "Search-box" for registered users to search images using (hashtags) (C)
+* Functioning upload feature to link pictures that belong to each user (I)
+* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
+* Data Encryption at Rest using XtraDB and InnoDB (I)
 
 ### Project Accomplishments: Goals Accomplished ()
 
-* 
+* Create layout diagrams
+* Moved and built the instructions on github
+* Incorporated Prometheus for capture of application metrics
+* Uploaded pictures linked to each user account (C)
+* Added a vertical scroll var table into the Admin Page to view all the users 
+* Allow registered users to upload images using hashtags
+* Functioning "Search-box" for registered users to search images using (hashtags)
+
+
 
 
 ### Project Requirements:
@@ -232,6 +242,8 @@
 
 **Any issues/Bugs?**
   <p>We  had an issue where mariadb was not granting permissions to the user "worker" and it turned out, after countless hours of hair pulling, that it was missing '' surrounding the IP address.</p>
+  <p>
+  <p>We looked into incorporating Cloudinary into our website but found that it is used by our competitor. They have some great tagging and searching features for images. However, incorporating the Cloudinary API into our application leaves our website useless if their servers go down. As a group, we decided to continue developing features for our own application, as opposed to using an API.</p>
 
 **Goals for Next Sprint:**
  
