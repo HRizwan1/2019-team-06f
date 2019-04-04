@@ -23,6 +23,9 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style1.css">
     <link rel="shortcut icon" href="../img/THLogo.ico" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/search.js" type="text/javascript"></script>
 </head>
 
   <body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
