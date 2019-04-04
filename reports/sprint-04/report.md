@@ -50,9 +50,11 @@
 
     a. Linux - Ubuntu 16.04.5
 
-    b. Process of secrets management: gitignore, openSSL, SSH key
+    b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
 
       * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
+
+      ![gitignore](images/gitignore.png "Gitignore") 
 
       * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
@@ -63,6 +65,10 @@
       ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
 
       * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
+
+      * HashiCorp Vault - Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault in the next sprint. 
+
+      ![vault](images/hashicorp.png "Vault")      
 
     c. Capture of application metrics: 
 
