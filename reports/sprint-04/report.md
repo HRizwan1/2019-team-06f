@@ -39,7 +39,7 @@
 1. Language and Framework of Choice:
 
   * HTML-5 and CSS are rendered using PHP
-  * Javascript / jQuery is used for the photo slideshow on the gallery page
+  * Javascript is used for the photo slideshow on the gallery page
   * PHP is used for login and registering processes
   * Vagrant/Packer are used for building and automating the building of the servers
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
@@ -224,17 +224,14 @@
   
   ![trello](images/trello.png "Trello")
 
-  * Slack:
-
-  ![githubonslack](images/githubonslack.png "Github Slack Integration")
-
-  * Github Issues:
-  
-  ![githubissues](images/githubissues.png "Github Issues")
-  
   * Github:
   
-  ![github](images/github.png "Github")  
+  ![github](images/github.png "Github")
+
+  * Github Issues:
+
+  ![githubissues](images/githubissues.png "Github Issues")
+    
   
 13. Test Users:
   <p>Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.  </p>
