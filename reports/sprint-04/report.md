@@ -257,7 +257,7 @@
       - Create layout diagrams <br/>
         ![diags](images/diagramCard.JPG "Creating Diagrams")
       - Moved and built the instructions on github <br/>
-        ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
+        ![buildsInstructions](images/trellob.png "Improving build instructions")
       - Incorporated Prometheus for capture of application metrics <br/>
         ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
       - Uploaded pictures linked to each user account (C) <br/>
@@ -271,9 +271,9 @@
 
  
   * Incomplete
-    - Responsive Design
+    - Responsive Design <br/>
       ![R_D](images/resDesignCard.JPG "Responsive Design")
-    - Data Encryption at rest
+    - Data Encryption at rest <br/>
       ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
   * Development Environment: Our team members are using Windows and Mac to run Ubuntu via VirtualBox, Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the development environment of the project.
