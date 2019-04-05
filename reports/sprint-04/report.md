@@ -14,7 +14,7 @@
 ### Project Goals:
 
 * Create layout diagrams (C)
-* Move and improve build instructions on GitHub ReadMe.md file (C)
+* Move and improve build instructions on a GitHub ReadMe.md file (C)
 * Incorporate Prometheus for the capture of application metrics (C)
 * Upload pictures linked to each user account (C)
 * Add a vertical scroll bar table into the Admin Page to view all the users (C)
@@ -275,7 +275,7 @@
     - Data Encryption at rest
       ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
-  * Development Environment: Our team members are using Windows and Mac to run Ubuntu via VirtualBox, Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the developing the environment of the project.
+  * Development Environment: Our team members are using Windows and Mac to run Ubuntu via VirtualBox, Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the development environment of the project.
 
   * Github:
   
