@@ -47,7 +47,7 @@ if (isset($_GET['logout'])) {
         <!--  main  -->
         <a id="logo" href="index.php">
             <img src="../img/THLogo.png" alt="THLogo">
-			<span><font size="5">TruHawk</font></span>
+			<span>TruHawk</span>
 			
 			
         </a>
