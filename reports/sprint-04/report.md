@@ -256,17 +256,17 @@
   * Accomplishments
       - Create layout diagrams <br/>
         ![diags](images/diagramCard.JPG "Creating Diagrams")
-      - Moved and built the instructions on github
+      - Moved and built the instructions on github <br/>
         ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
-      - Incorporated Prometheus for capture of application metrics
+      - Incorporated Prometheus for capture of application metrics <br/>
         ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
-      - Uploaded pictures linked to each user account (C)
+      - Uploaded pictures linked to each user account (C) <br/>
         ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
-      - Added a vertical scroll var table into the Admin Page to view all the users 
+      - Added a vertical scroll var table into the Admin Page to view all the users <br/> 
         ![scroll](images/scrollBarCard.JPG "Scroll Bar")
-      - Allow registered users to upload images using hashtags
+      - Allow registered users to upload images using hashtags <br/>
         ![hashtags](images/hashtagsCard.JPG "Hashtags")
-      - Functioning "Search-box" for registered users to search images using (hashtags)
+      - Functioning "Search-box" for registered users to search images using (hashtags) <br/>
         ![search](images/searchBoxCard.JPG "Search Box")
 
  
