@@ -253,7 +253,7 @@
   ![trello](images/trello.png "Trello")
   
   * Accomplishments
-      - Create layout diagrams
+      - Create layout diagrams <br/>
         ![diags](images/diagramCard.JPG "Creating Diagrams")
       - Moved and built the instructions on github
         ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
