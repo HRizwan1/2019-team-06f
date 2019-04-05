@@ -175,6 +175,7 @@
   We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then furthur assigned as tasks to the appropriate team members to fix. 
 
 10. Layout Design:
+
   * Font for Site:
   ![Fonts](images/fonts.JPG "Fonts common for site pages")
 
@@ -269,7 +270,7 @@
 #### Individual Reflections
 **Daniel** - 
 
-**Sarina** - 
+**Sarina** - This sprint as IT Operations I did some studying about responsive design and made some css contributions to responsive design by building upon what my teammates Daniel and Jason had started, I helped to manage our trello board by archiving cards and moving tasks around as I appropriate, I updaated our diagrams for site functionality to add new changes noted by professor this sprint (I ended up have to do this twice because I missed some vital features). Also I assisted with the creation of this report. This sprint our team has made some crucial progress and our sight is coming full circle. 
 
 **Jason** - 
 
