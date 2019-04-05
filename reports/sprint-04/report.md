@@ -246,9 +246,7 @@
 
 12. Management of project progress:
 
-  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.
- 
- Development environment: Machines consist of Windows and Mac running Ubuntu via VirtualBox, with Visual Studio Code and Sublime used to write the code, and Powershell 6 used to build and run the webservers.</p>
+  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
   * Trello:
  
@@ -277,7 +275,7 @@
     - Data Encryption at rest
       ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
-  * Development Environment: Our team members are using Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the developing the environment of the project.
+  * Development Environment: Our team members are using Windows and Mac to run Ubuntu via VirtualBox, Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the developing the environment of the project.
 
   * Github:
   
@@ -299,6 +297,9 @@
   
 
 **Goals for Next Sprint:**
+- Implementing responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet
+- Data Encryption at Rest using XtraDB and InnoDB
+- Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
  
 
 #### Individual Reflections
