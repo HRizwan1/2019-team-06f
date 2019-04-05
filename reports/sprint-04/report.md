@@ -256,6 +256,7 @@
   * Accomplishments
       - Create layout diagrams <br/>
         ![diags](images/diagramCard.JPG "Creating Diagrams")
+        ![github_diags](https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505)
       - Moved and built the instructions on github <br/>
         ![buildsInstructions](images/trellob.png "Improving build instructions")
       - Incorporated Prometheus for capture of application metrics <br/>
