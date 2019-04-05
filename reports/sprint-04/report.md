@@ -294,6 +294,7 @@
   ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
+Upload photo php is affected by the search-box php and if search box is included in upload.php the upload feature ceases to work. Currently the issue's cause is unknown and the search box has been removed from upload.php to ensure functionality for the time being. 
   
 
 **Goals for Next Sprint:**
@@ -303,7 +304,7 @@
  
 
 #### Individual Reflections
-**Daniel** - 
+**Daniel** - In this sprint, as a Junior Developer, I managed to add more functionality to our website by implementing few key features to it. First, I was able to tie up each upload to the specific userid in the users table from which the upload was done, this allowed us to display only photos that this particular user has uploaded to them.Users also have the ability so view the last 10 uploaded pictures by all users by using the recently uploaded pictures feature. Second I redisgned the Search-box and made it functional to search photos by hashtag. The search is currently using a wildcard approach %hashtag% to include results which are part of larger hashtags, and a more refined Advanced search feature with its own dedicated button/site will be implemented allowing the user to search photos by date uploaded or the name of the photo. The photo name is currently manually entered by the user at upload, but we plan to implement php GET to auto grab the value from the file name and input it instead of manual input. Implementing those new features created some css interferance and some of the css needed to be redone to fix the issues. I've also worked on mobile first queries, but it's certainly not done and I plan on continuing work on it for the next sprint.
 
 **Sarina** - This sprint as IT Operations I did some studying about responsive design and made some css contributions to responsive design by building upon what my teammates Daniel and Jason had started, I helped to manage our trello board by archiving cards and moving tasks around as I appropriate, I updaated our diagrams for site functionality to add new changes noted by professor this sprint (I ended up have to do this twice because I missed some vital features). Also I assisted with the creation of this report. This sprint our team has made some crucial progress and our sight is coming full circle. 
 
