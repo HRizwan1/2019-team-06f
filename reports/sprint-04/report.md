@@ -12,7 +12,7 @@
 ### Project Goals:
 
 * Create layout diagrams (C)
-* Move and improve Build Instructions on GitHub(C)
+* Move and improve Build Instructions on GitHub (C)
 * Incorporate Prometheus for capture of application metrics (C)
 * Upload pictures linked to each user account (C)
 * Add a vertical scroll var table into the Admin Page to view all the users (C)
@@ -21,12 +21,12 @@
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
 * Data Encryption at Rest using XtraDB and InnoDB (I)
 
-### Project Accomplishments: Goals Accomplished ()
+### Project Accomplishments: Goals Accomplished (7/9)
 
 * Create layout diagrams
-* Moved and built the instructions on github
+* Moved and added the build instructions on a github Readme file
 * Incorporated Prometheus for capture of application metrics
-* Uploaded pictures linked to each user account (C)
+* Uploaded pictures linked to each user account
 * Added a vertical scroll var table into the Admin Page to view all the users 
 * Allow registered users to upload images using hashtags
 * Functioning "Search-box" for registered users to search images using (hashtags)
@@ -41,7 +41,7 @@
   * Javascript is used for the photo slideshow on the gallery page
   * Vagrant/Packer are used for building and automating the building of the servers
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
-  * Redis 5.0.3 is used as in-memory data structure store and allow for faster searching and to cache data from the webserver
+  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the webserver
   * MariaDB Server 10.0.38 provides an SQL interface for accessing data
   
 2. Operating System Platform:
@@ -72,9 +72,9 @@
 
       * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from "our services (need to put appropriate word)" and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
-      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source for data visualization and monitoring system that collects metrics from our services. Grafana has a features that allows to create alerts, notifications, and ad-hoc filters for our data which will be our future goal.
+      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has features that allow the creation of alerts, notifications, and ad-hoc filters for our data which will be our future goal.
 
-      * To expand Prometheus beyond metrics about itseif only, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
+      * To expand Prometheus beyond capturing metrics, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
 
       ![node_exporter](images/node_exporter.png "Node Exporter")
       ![prometheus](images/prometheus.png "Prometheus")
