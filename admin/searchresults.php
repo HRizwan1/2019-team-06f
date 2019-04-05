@@ -15,7 +15,7 @@ $sql = "SELECT photo_id FROM pictures WHERE text LIKE '%{$_SESSION['search']}%'"
 //Reset the variable 
 $_SESSION['search'] = "";
 $result = mysqli_query($conn, $sql);
-if (!isUser()) {
+if (!isAdmin()) {
 	$_SESSION['msg'] = "You must log in first";
 	header('location: ../login.php');
 }
@@ -71,8 +71,8 @@ if (isset($_GET['logout'])) {
 		   <form>
 		</li> 
 		<li><a href="index.php">Home</a></li>
-		<li><a href="user.php">User</a></li>
-                <li><a href="about.php">About</a></li>
+		<li><a href="admin.php">Admin</a></li>
+        <li><a href="about.php">About</a></li>
 		<li><a href="gallery.php">Photo Gallery</a></li>
 	        <li><a href="logout.php">Logout</a></li>
             </ul>
