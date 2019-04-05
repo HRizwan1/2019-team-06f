@@ -122,7 +122,7 @@
 6. Responsive Design (In-progress):
 
 <<<<<<< HEAD
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. The framework being utilzed for responsive design is W3.CSS</p>
+
 =======
 <p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
 >>>>>>> 0bf460bc427d5bc4653e34a1c823aa59bd550439
@@ -251,10 +251,10 @@
  Development environment: Machines consist of Windows and Mac running Ubuntu via VirtualBox, with Visual Studio Code and Sublime used to write the code, and Powershell 6 used to build and run the webservers.</p>
 
   * Trello:
-  
+ 
   ![trello](images/trello.png "Trello")
-
-    * Accomplishments
+  
+  * Accomplishments
       - Create layout diagrams
         ![diags](images/diagramCard.JPG "Creating Diagrams")
       - Moved and built the instructions on github
@@ -270,6 +270,7 @@
       - Functioning "Search-box" for registered users to search images using (hashtags)
         ![search](images/searchBoxCard.JPG "Search Box")
 
+ 
   * Incomplete
     - Responsive Design
       ![R_D](images/resDesignCard.JPG "Responsive Design")
