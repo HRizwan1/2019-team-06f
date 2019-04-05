@@ -115,6 +115,10 @@ sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/listImages.php
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/recentphotos.php
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/recentphotos.php
 
+# Database information passed from variables file into admin/searchresults.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/admin/searchresults.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/admin/searchresults.php
+
 # Database information passed from variables file into user/searchresults.php
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/searchresults.php
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/searchresults.php
