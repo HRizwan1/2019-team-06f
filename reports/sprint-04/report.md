@@ -119,7 +119,7 @@
  
 6. Responsive Design (In-progress):
 
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. The framework being utilzed for responsive design is W3.CSS</p>
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. The framework being utilzed for responsive design is W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -247,34 +247,27 @@
   
   ![trello](images/trello.png "Trello")
 
-  * Accomplishments
-    * Create layout diagrams
-      ![diags](images/diagramCard.JPG "Creating Diagrams")
-
-    * Moved and built the instructions on github
+    * Accomplishments
+      - Create layout diagrams
+        ![diags](images/diagramCard.JPG "Creating Diagrams")
+      - Moved and built the instructions on github
         ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
-
-    * Incorporated Prometheus for capture of application metrics
+      - Incorporated Prometheus for capture of application metrics
         ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
-
-    * Uploaded pictures linked to each user account (C)
+      - Uploaded pictures linked to each user account (C)
         ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
-
-    * Added a vertical scroll var table into the Admin Page to view all the users 
+      - Added a vertical scroll var table into the Admin Page to view all the users 
         ![scroll](images/scrollBarCard.JPG "Scroll Bar")
-
-    * Allow registered users to upload images using hashtags
+      - Allow registered users to upload images using hashtags
         ![hashtags](images/hashtagsCard.JPG "Hashtags")
-        
-    * Functioning "Search-box" for registered users to search images using (hashtags)
+      - Functioning "Search-box" for registered users to search images using (hashtags)
         ![search](images/searchBoxCard.JPG "Search Box")
 
-* Incomplete
-  - Responsive Design
-  ![R_D](images/resDesignCard.JPG "Responsive Design")
-
-  - Data Encryption at rest
-  ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
+  * Incomplete
+    - Responsive Design
+      ![R_D](images/resDesignCard.JPG "Responsive Design")
+    - Data Encryption at rest
+      ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
 
 
@@ -299,7 +292,8 @@
   
 
 **Goals for Next Sprint:**
- 
+ * Implementing responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet
+ * Data Encryption at Rest using XtraDB and InnoDB and incorporating HashiCorp Vault
 
 #### Individual Reflections
 **Daniel** - 
