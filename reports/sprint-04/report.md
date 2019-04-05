@@ -74,7 +74,7 @@
 
       * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
-      ![prometheus](images/Prometheus.png "Prometheus expression browser")
+      ![prometheus](images/prometheus.png "Prometheus")
 
       * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is completely an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has feature rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service which we might incorporate in the future sprint.
 
@@ -256,31 +256,25 @@
   * Accomplishments
       - Create layout diagrams <br/>
         ![diags](images/diagramCard.JPG "Creating Diagrams")
-<<<<<<< HEAD
         ![github_diags](https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505)
       - Moved and built the instructions on github <br/>
         ![buildsInstructions](images/trellob.png "Improving build instructions")
       - Incorporated Prometheus for capture of application metrics <br/>
-=======
-      - Moved and built the instructions on github
-        ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
-      - Incorporated Prometheus for capture of application metrics
->>>>>>> da269dc56bf4d4a5d5f11b50482a7e7a0cd98dc8
         ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
-      - Uploaded pictures linked to each user account (C)
+      - Uploaded pictures linked to each user account (C) <br/>
         ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
-      - Added a vertical scroll var table into the Admin Page to view all the users 
+      - Added a vertical scroll var table into the Admin Page to view all the users <br/> 
         ![scroll](images/scrollBarCard.JPG "Scroll Bar")
-      - Allow registered users to upload images using hashtags
+      - Allow registered users to upload images using hashtags <br/>
         ![hashtags](images/hashtagsCard.JPG "Hashtags")
-      - Functioning "Search-box" for registered users to search images using (hashtags)
+      - Functioning "Search-box" for registered users to search images using (hashtags) <br/>
         ![search](images/searchBoxCard.JPG "Search Box")
 
  
   * Incomplete
-    - Responsive Design
+    - Responsive Design <br/>
       ![R_D](images/resDesignCard.JPG "Responsive Design")
-    - Data Encryption at rest
+    - Data Encryption at rest <br/>
       ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
   * Development Environment: Our team members are using Windows and Mac to run Ubuntu via VirtualBox, Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the development environment of the project.
