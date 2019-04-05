@@ -12,7 +12,7 @@
 ### Project Goals:
 
 * Create layout diagrams (C)
-* Move and improve Build Instructions on GitHub(C)
+* Move and improve Build Instructions on GitHub (C)
 * Incorporate Prometheus for capture of application metrics (C)
 * Upload pictures linked to each user account (C)
 * Add a vertical scroll var table into the Admin Page to view all the users (C)
@@ -21,12 +21,12 @@
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
 * Data Encryption at Rest using XtraDB and InnoDB (I)
 
-### Project Accomplishments: Goals Accomplished ()
+### Project Accomplishments: Goals Accomplished (7/9)
 
 * Create layout diagrams
-* Moved and built the instructions on github
+* Moved and added the build instructions on a github Readme file
 * Incorporated Prometheus for capture of application metrics
-* Uploaded pictures linked to each user account (C)
+* Uploaded pictures linked to each user account
 * Added a vertical scroll var table into the Admin Page to view all the users 
 * Allow registered users to upload images using hashtags
 * Functioning "Search-box" for registered users to search images using (hashtags)
@@ -41,7 +41,7 @@
   * Javascript is used for the photo slideshow on the gallery page
   * Vagrant/Packer are used for building and automating the building of the servers
   * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
-  * Redis 5.0.3 is used as in-memory data structure store and allow for faster searching and to cache data from the webserver
+  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the webserver
   * MariaDB Server 10.0.38 provides an SQL interface for accessing data
   
 2. Operating System Platform:
@@ -72,9 +72,9 @@
 
       * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from "our services (need to put appropriate word)" and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
-      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source for data visualization and monitoring system that collects metrics from our services. Grafana has a features that allows to create alerts, notifications, and ad-hoc filters for our data which will be our future goal.
+      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has features that allow the creation of alerts, notifications, and ad-hoc filters for our data which will be our future goal.
 
-      * To expand Prometheus beyond metrics about itseif only, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
+      * To expand Prometheus beyond capturing metrics, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
 
       ![node_exporter](images/node_exporter.png "Node Exporter")
       ![prometheus](images/prometheus.png "Prometheus")
@@ -119,7 +119,7 @@
  
 6. Responsive Design (In-progress):
 
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements.</p>
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. The framework being utilzed for responsive design is W3.CSS</p>
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -175,6 +175,7 @@
   We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then furthur assigned as tasks to the appropriate team members to fix. 
 
 10. Layout Design:
+
   * Font for Site:
   ![Fonts](images/fonts.JPG "Fonts common for site pages")
 
@@ -238,11 +239,45 @@
 
 12. Management of project progress:
 
-  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
+  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.
+ 
+ Development environment: Machines consist of Windows and Mac running Ubuntu via VirtualBox, with Visual Studio Code and Sublime used to write the code, and Powershell 6 used to build and run the webservers.</p>
 
   * Trello:
   
   ![trello](images/trello.png "Trello")
+
+  * Accomplishments
+    * Create layout diagrams
+      ![diags](images/diagramCard.JPG "Creating Diagrams")
+
+    * Moved and built the instructions on github
+        ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
+
+    * Incorporated Prometheus for capture of application metrics
+        ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
+
+    * Uploaded pictures linked to each user account (C)
+        ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
+
+    * Added a vertical scroll var table into the Admin Page to view all the users 
+        ![scroll](images/scrollBarCard.JPG "Scroll Bar")
+
+    * Allow registered users to upload images using hashtags
+        ![hashtags](images/hashtagsCard.JPG "Hashtags")
+        
+    * Functioning "Search-box" for registered users to search images using (hashtags)
+        ![search](images/searchBoxCard.JPG "Search Box")
+
+* Incomplete
+  - Responsive Design
+  ![R_D](images/resDesignCard.JPG "Responsive Design")
+
+  - Data Encryption at rest
+  ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
+
+
+
 
   * Github:
   
@@ -269,11 +304,21 @@
 #### Individual Reflections
 **Daniel** - 
 
-**Sarina** - 
+**Sarina** - This sprint as IT Operations I did some studying about responsive design and made some css contributions to responsive design by building upon what my teammates Daniel and Jason had started, I helped to manage our trello board by archiving cards and moving tasks around as I appropriate, I updaated our diagrams for site functionality to add new changes noted by professor this sprint (I ended up have to do this twice because I missed some vital features). Also I assisted with the creation of this report. This sprint our team has made some crucial progress and our sight is coming full circle. 
 
 **Jason** - 
 
-**Shan** - 
+**Shan** - I primarily focused on researching more about data encryption at rest using HashiCorp Vault technology. I carefully looked over some tutorials that were on the internet, but I am still having trouble fully understanding the concept behind. Encryption data at rest requires to generate a key management and encryption plugin. This is where it will encrypt data at rest and decrypt as well. MariaDB has three methods to do encryption at rest: 
+
+   * File Key Management Plugin
+   * AWS Key Management Plugin
+   * eperi Gateway for Databases 
+
+The plugin is there but the key that is used to decrypt is on the server which raises a concern for data security. Even if I were to use AWS key management, the credentials will be viewable since it is on the cloud. The file key management plugin would be where the key is generated through and stored. None of these plugins are that effective to prevent from data being leaked. I even thought of the idea of having the credentials stored on a cloud file storage, but it would be the same thing as having AWS doing our encryption work. 
+
+I could have the keys stored under HashiCorp so that secret management comes into play, but since I have never touch those security tools it will take me some time to learn it. The reason why we don't have encryption at rest today because I wanted to look into some solutions on how to secure the key properly. I'm also learning how HashiCorp works and that will be used on our backend as well for quick automation. 
+
+Besides the research being done on this, I worked with Hasan on testing the Prometheus application metrics. I sent out a DDOS attack using Kali Linux penetrating tools to see if our metrics is working properly. After hitting our main server, we were able to see an increase of our data metrics which we wanted to see. 
 
 **Hasan** -      
 
