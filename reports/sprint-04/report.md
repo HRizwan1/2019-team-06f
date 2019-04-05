@@ -18,7 +18,6 @@
 * Add a vertical scroll var table into the Admin Page to view all the users (C)
 * Allow registered users to upload images using hashtags (C)
 * Functioning "Search-box" for registered users to search images using (hashtags) (C)
-* Functioning upload feature to link pictures that belong to each user (I)
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
 * Data Encryption at Rest using XtraDB and InnoDB (I)
 
