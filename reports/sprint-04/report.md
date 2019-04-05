@@ -177,13 +177,14 @@
 10. Layout Design:
   * Font for Site:
   ![Fonts](images/fonts.JPG "Fonts common for site pages")
-  * Home page:
+
+  * General Home page:
   
   ![homepage](images/home.JPG "Homepage Layout")
 
   * Button Link:
   
-  ![buttonslink](images/buttonslink.png "Buttons Link")
+  ![buttonslink](images/buttonslink.png "Button Links")
 
   * Login & Register page:
   
@@ -193,6 +194,12 @@
   
   ![pgallery](images/gallery.JPG "Photo Gallery page Layout")
 
+
+  * User Home page:
+  
+  ![homepage](images/userHome.JPG "Homepage Layout")
+  ![buttons](images/userButtons.JPG "Button links on home page")
+
   * User Panel:
 
   ![U-panel](images/userPanel.JPG "User Panel Layout")
@@ -201,6 +208,10 @@
 
   ![upload](images/uploadFeature.JPG "Upload Photo")
 
+  * Admin Home page:
+  
+  ![homepage](images/adminHome.JPG "Homepage Layout")
+  ![buttons](images/adminButtons.JPG "Button links on home page")
 
   * Admin Panel:
 
