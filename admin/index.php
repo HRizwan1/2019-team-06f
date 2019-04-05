@@ -142,12 +142,12 @@ if (isset($_GET['logout'])) {
            
 
         </div>
+		</div>
         <footer>
         <img src="../img/THLogo.png" alt="THLogo">
         <span>&copy; 2019 TruHawk </span>
     </footer>
         
-        </div>
             
 
     </main>
