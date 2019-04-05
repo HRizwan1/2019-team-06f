@@ -1,7 +1,7 @@
 <?php 
-include('../server.php');
+    include('../server.php');
 
-if (!isAdmin()) {
+    if (!isAdmin()) {
 	$_SESSION['msg'] = "You must log in first";
 	header('location: ../login.php');
 }
@@ -9,8 +9,9 @@ if (!isAdmin()) {
 if (isset($_GET['logout'])) {
 	session_destroy();
 	unset($_SESSION['user']);
-	header("location: ../index.html");
+	header("location: ../login.php");
 }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en" class="nojs">
@@ -20,10 +21,14 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
-    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/THLogo.ico" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/search.js" type="text/javascript"></script>
 </head>
 
+  <body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
       <!--  header -->
     <header>
 
@@ -32,11 +37,23 @@ if (isset($_GET['logout'])) {
             <img src="../img/THLogo.png" alt="THLogo">
             <span>TruHawk</span>
         </a>
-<input type="text" class="searchTerm" placeholder="Search for hashtag...">
+		
+		
+
         <!--  navigation  -->
 
         <nav>
             <ul>
+		<li>
+	  	   <form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+		   <div class="search-box" id="search-box"> 
+	     	   <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Search for hashtag..."/> 
+		   <button type="submit" class="search-btn" name="search-btn"> 
+		   <i class="fas fa-search"></i> 
+		   </button>
+		   </div>
+		   <form>
+		</li> 
                 <li><a href="index.php">Home</a></li>
                 <li><a href="admin.php">Admin</a></li>
                 <li><a href="about.php">About</a></li>
