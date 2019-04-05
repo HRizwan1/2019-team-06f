@@ -273,7 +273,17 @@
 
 **Jason** - 
 
-**Shan** - 
+**Shan** - I primarily focused on researching more about data encryption at rest using HashiCorp Vault technology. I carefully looked over some tutorials that were on the internet, but I am still having trouble fully understanding the concept behind. Encryption data at rest requires to generate a key management and encryption plugin. This is where it will encrypt data at rest and decrypt as well. MariaDB has three methods to do encryption at rest: 
+
+   * File Key Management Plugin
+   * AWS Key Management Plugin
+   * eperi Gateway for Databases 
+
+The plugin is there but the key that is used to decrypt is on the server which raises a concern for data security. Even if I were to use AWS key management, the credentials will be viewable since it is on the cloud. The file key management plugin would be where the key is generated through and stored. None of these plugins are that effective to prevent from data being leaked. I even thought of the idea of having the credentials stored on a cloud file storage, but it would be the same thing as having AWS doing our encryption work. 
+
+I could have the keys stored under HashiCorp so that secret management comes into play, but since I have never touch those security tools it will take me some time to learn it. The reason why we don't have encryption at rest today because I wanted to look into some solutions on how to secure the key properly. I'm also learning how HashiCorp works and that will be used on our backend as well for quick automation. 
+
+Besides the research being done on this, I worked with Hasan on testing the Promethus application metrics. I sent out a DDOS attack using Kali Linux penetrating tools to see if our metrics is working properly. After hitting our main server, we were able to see an increase of our data metrics which we wanted to see. 
 
 **Hasan** -      
 
