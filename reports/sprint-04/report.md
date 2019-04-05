@@ -245,6 +245,31 @@
   
   ![trello](images/trello.png "Trello")
 
+  ** Accomplishments
+    * Create layout diagrams
+    ![diags](images/diagramCard.JPG "Creating Diagrams")
+    * Moved and built the instructions on github
+    ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
+    * Incorporated Prometheus for capture of application metrics
+    ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
+    * Uploaded pictures linked to each user account (C)
+    ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
+    * Added a vertical scroll var table into the Admin Page to view all the users 
+    ![scroll](images/scrollBarCard.JPG "Scroll Bar")
+    * Allow registered users to upload images using hashtags
+    ![hashtags](images/hashtagsCard.JPG "Hashtags")
+    * Functioning "Search-box" for registered users to search images using (hashtags)
+    ![search](images/searchBoxCard.JPG "Search Box")
+
+  ** Incomplete
+    * Responsive Design
+    ![R_D](images/resDesignCard.JPG "Responsive Design")
+    * Data Encryption at rest
+    ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
+
+
+
+
   * Github:
   
   ![github](images/github.png "Github")
