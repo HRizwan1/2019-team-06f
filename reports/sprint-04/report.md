@@ -1,8 +1,10 @@
-# Sprint 4 Report
+# Sprint-4 Report
 ## Team True
 ## Project: Flickr/Instagram Hybrid Internal Photo Search Site
 ## Site Name: TruHawk
-### Roles
+
+### Roles:
+
 1. Project Manager -- Bhumi Patel
 2. Developer -- Jason D'Souza
 3. Jr Developer -- Hasan Rizwan & Daniel Kolov
@@ -12,24 +14,24 @@
 ### Project Goals:
 
 * Create layout diagrams (C)
-* Move and improve Build Instructions on GitHub (C)
-* Incorporate Prometheus for capture of application metrics (C)
+* Move and improve build instructions on GitHub ReadMe.md file (C)
+* Incorporate Prometheus for the capture of application metrics (C)
 * Upload pictures linked to each user account (C)
-* Add a vertical scroll var table into the Admin Page to view all the users (C)
+* Add a vertical scroll bar table into the Admin Page to view all the users (C)
 * Allow registered users to upload images using hashtags (C)
-* Functioning "Search-box" for registered users to search images using (hashtags) (C)
+* Make "Search-box" for registered users to search for images using hashtags (C)
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
 * Data Encryption at Rest using XtraDB and InnoDB (I)
 
-### Project Accomplishments: Goals Accomplished (7/9)
+### Project Accomplishments: Goals Accomplished (7/9):
 
 * Create layout diagrams
-* Moved and added the build instructions on a github Readme file
-* Incorporated Prometheus for capture of application metrics
+* Moved and added the build instructions on a GitHub Readme.md file
+* Incorporated Prometheus for the capture of application metrics
 * Uploaded pictures linked to each user account
 * Added a vertical scroll var table into the Admin Page to view all the users 
 * Allow registered users to upload images using hashtags
-* Functioning "Search-box" for registered users to search images using (hashtags)
+* Functioning "Search-box" for registered users to search for images using hashtags
 
 
 
@@ -39,9 +41,9 @@
 
   * HTML-5 and CSS are delivered by PHP Version 7.3
   * Javascript is used for the photo slideshow on the gallery page
-  * Vagrant/Packer are used for building and automating the building of the servers
-  * Apache 2.4.18 (Ubuntu) web server hosts HTML, PHP, Javascript, and CSS
-  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the webserver
+  * Vagrant/Packer is used for building and automating the building of the servers
+  * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
+  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
   * MariaDB Server 10.0.38 provides an SQL interface for accessing data
   
 2. Operating System Platform:
@@ -64,17 +66,17 @@
 
       * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
-      * HashiCorp Vault - Vault is a tool for securely accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault in the next sprint. 
+      * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next sprint. 
 
       ![vault](images/hashicorp.png "Vault")      
 
     c. Capture of application metrics: 
 
-      * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from "our services (need to put appropriate word)" and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
+      * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
-      * In order to integrate wih complex data from Prometheus, we have used a tool called Grafana which is an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has features that allow the creation of alerts, notifications, and ad-hoc filters for our data which will be our future goal.
+      * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is completely an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has feature rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service which we might incorporate in the future sprint.
 
-      * To expand Prometheus beyond capturing metrics, we have installed an additional exporter called Node Exporter. Node Exporter provides detailed inforamtion about the system, including CPU, disk, and memory usage.
+      * To expand Prometheus beyond capturing metrics about itself only, we have installed an additional exporter called Node Exporter. Node Exporter is a Prometheus exporter that provides detailed information about the system, including CPU, disk, and memory usage. It will expose webserver's metrics through Prometheus.
 
       ![node_exporter](images/node_exporter.png "Node Exporter")
       ![prometheus](images/prometheus.png "Prometheus")
@@ -84,8 +86,8 @@
 3. Use of Data Store:
   * We are using 2 database servers (Platform: MariaDB/MySQL)
   * One of the database servers serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
-  * The other database server serves as the slave and is the database which we read from. User information and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull the information and photos.
-  * One Redis Cache Server is used for caching the data, which is sent between the slave database and webserver. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. The purpose of using Redis caching is to improve the database loading performance.
+  * The other database server serves as the slave and is the database which we read from. User information and photos are transferred from the master database to this database using a replication process. Our application uses this database to pull information and photos.
+  * One Redis Cache Server is used for caching the data, which is sent between the slave database and web server. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. The purpose of using Redis caching is to improve database loading performance.
 
 4. Data Encryption at Rest:
 
@@ -107,8 +109,8 @@
   * Database Schema:
   ![schema](images/schema.png "Schema")
   * 2-Database Servers running MySQL/MariaDB - 1 server serves as a master server and another serves as a slave. Master and slave servers are connected.
-  * The purpose of using the master-slave replication process is to enable data from one MySQL database server (serving as 'the master') to be copied automatically to another MySQL databse server (which serves as 'the slave'). 
-  * The master-slave replication is a one-way replication (from master to slave); the master database is used only for the write operations, while the slave database is only used for read operations.
+  * The purpose of using the master-slave replication process is to enable data from one MySQL database server (serving as 'the master') to be copied automatically to another MySQL database server (which serves as 'the slave'). 
+  * The master-slave replication is a one-way replication (from master to slave); the master database is used only for the write operations, while the slave database is only used for reading operations.
   ![databaseslave](images/databaseslave.png "Database Slave")
   * During designing or deploying the application, all the write operations (statement/query that changes the state of the database) are executed ONLY on the master server. As to minimize the risk of data conflicts on the slave, changes can only be made through the replication process. 
   * 1 Apache web server hosts HTML, PHP, JavaScript and CSS
@@ -119,7 +121,11 @@
  
 6. Responsive Design (In-progress):
 
+<<<<<<< HEAD
 <p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. The framework being utilzed for responsive design is W3.CSS</p>
+=======
+<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
+>>>>>>> 0bf460bc427d5bc4653e34a1c823aa59bd550439
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -172,11 +178,12 @@
 
   ![serverdiag](images/serverdiag.png "Server Diagram")
 
-  We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then furthur assigned as tasks to the appropriate team members to fix. 
+  We are able to deploy all 4 servers using Packer build. Any issues or bugs during deployment or issues with UI/UX are reported using Github Issues. These Github Issues are then further assigned as tasks to the appropriate team members to fix. 
 
 10. Layout Design:
 
   * Font for Site:
+
   ![Fonts](images/fonts.JPG "Fonts common for site pages")
 
   * General Home page:
@@ -247,37 +254,29 @@
   
   ![trello](images/trello.png "Trello")
 
-  * Accomplishments
-    * Create layout diagrams
-      ![diags](images/diagramCard.JPG "Creating Diagrams")
-
-    * Moved and built the instructions on github
+    * Accomplishments
+      - Create layout diagrams
+        ![diags](images/diagramCard.JPG "Creating Diagrams")
+      - Moved and built the instructions on github
         ![buildsInstructions](images/buildInstructionsCard.JPG "Improving build instructions")
-
-    * Incorporated Prometheus for capture of application metrics
+      - Incorporated Prometheus for capture of application metrics
         ![appMetrics](images/prometheusCard.JPG "Using Prometheus")
-
-    * Uploaded pictures linked to each user account (C)
+      - Uploaded pictures linked to each user account (C)
         ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")
-
-    * Added a vertical scroll var table into the Admin Page to view all the users 
+      - Added a vertical scroll var table into the Admin Page to view all the users 
         ![scroll](images/scrollBarCard.JPG "Scroll Bar")
-
-    * Allow registered users to upload images using hashtags
+      - Allow registered users to upload images using hashtags
         ![hashtags](images/hashtagsCard.JPG "Hashtags")
-        
-    * Functioning "Search-box" for registered users to search images using (hashtags)
+      - Functioning "Search-box" for registered users to search images using (hashtags)
         ![search](images/searchBoxCard.JPG "Search Box")
 
-* Incomplete
-  - Responsive Design
-  ![R_D](images/resDesignCard.JPG "Responsive Design")
+  * Incomplete
+    - Responsive Design
+      ![R_D](images/resDesignCard.JPG "Responsive Design")
+    - Data Encryption at rest
+      ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
-  - Data Encryption at rest
-  ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
-
-
-
+  * Development Environment: Our team members are using Visual Studio Code, Sublime Text, Powershell 6, and Git Bash for the developing the environment of the project.
 
   * Github:
   
