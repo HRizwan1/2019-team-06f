@@ -74,13 +74,17 @@
 
       * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
+      ![prometheus](images/prometheus.png "Prometheus")
+
       * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is completely an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has feature rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service which we might incorporate in the future sprint.
+
+      ![grafana](images/grafana.png "Grafana")
 
       * To expand Prometheus beyond capturing metrics about itself only, we have installed an additional exporter called Node Exporter. Node Exporter is a Prometheus exporter that provides detailed information about the system, including CPU, disk, and memory usage. It will expose webserver's metrics through Prometheus.
 
       ![node_exporter](images/node_exporter.png "Node Exporter")
-      ![prometheus](images/prometheus.png "Prometheus")
-      ![grafana](images/grafana.png "Grafana")
+      
+      
 
   
 3. Use of Data Store:
@@ -121,11 +125,8 @@
  
 6. Responsive Design (In-progress):
 
-<<<<<<< HEAD
-
-=======
 <p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
->>>>>>> 0bf460bc427d5bc4653e34a1c823aa59bd550439
+
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -294,20 +295,23 @@
   ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
+Upload photo php is affected by the search-box php and if search box is included in upload.php the upload feature ceases to work. Currently the issue's cause is unknown and the search box has been removed from upload.php to ensure functionality for the time being. 
   
 
 **Goals for Next Sprint:**
 - Implementing responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet
 - Data Encryption at Rest using XtraDB and InnoDB
 - Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
+- Cleaning up code and putting everything in a code folder
  
 
-#### Individual Reflections
-**Daniel** - 
+#### Individual Reflections:
+
+**Daniel** - In this sprint, as a Junior Developer, I managed to add more functionality to our website by implementing few key features to it. First, I was able to tie up each upload to the specific userid in the users table from which the upload was done, this allowed us to display only photos that this particular user has uploaded to them.Users also have the ability so view the last 10 uploaded pictures by all users by using the recently uploaded pictures feature. Second I redisgned the Search-box and made it functional to search photos by hashtag. The search is currently using a wildcard approach %hashtag% to include results which are part of larger hashtags, and a more refined Advanced search feature with its own dedicated button/site will be implemented allowing the user to search photos by date uploaded or the name of the photo. The photo name is currently manually entered by the user at upload, but we plan to implement php GET to auto grab the value from the file name and input it instead of manual input. Implementing those new features created some css interferance and some of the css needed to be redone to fix the issues. I've also worked on mobile first queries, but it's certainly not done and I plan on continuing work on it for the next sprint.
 
 **Sarina** - This sprint as IT Operations I did some studying about responsive design and made some css contributions to responsive design by building upon what my teammates Daniel and Jason had started, I helped to manage our trello board by archiving cards and moving tasks around as I appropriate, I updaated our diagrams for site functionality to add new changes noted by professor this sprint (I ended up have to do this twice because I missed some vital features). Also I assisted with the creation of this report. This sprint our team has made some crucial progress and our sight is coming full circle. 
 
-**Jason** - 
+**Jason** - This sprint the team has come full circle, with just some cleaning up and tweaking left to do. I have mainly been focusing on responsive design, experimenting and hopefully trying to implement a framework. I contributed to the report and tried to fix and clean up whatever could be addressed. The team has made a lot of progress, with future sprints just cleaning up, tweaking, and finalizing the project, mainly focusing on the user experience.
 
 **Shan** - I primarily focused on researching more about data encryption at rest using HashiCorp Vault technology. I carefully looked over some tutorials that were on the internet, but I am still having trouble fully understanding the concept behind. Encryption data at rest requires to generate a key management and encryption plugin. This is where it will encrypt data at rest and decrypt as well. MariaDB has three methods to do encryption at rest: 
 
