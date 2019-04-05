@@ -283,7 +283,7 @@ The plugin is there but the key that is used to decrypt is on the server which r
 
 I could have the keys stored under HashiCorp so that secret management comes into play, but since I have never touch those security tools it will take me some time to learn it. The reason why we don't have encryption at rest today because I wanted to look into some solutions on how to secure the key properly. I'm also learning how HashiCorp works and that will be used on our backend as well for quick automation. 
 
-Besides the research being done on this, I worked with Hasan on testing the Promethus application metrics. I sent out a DDOS attack using Kali Linux penetrating tools to see if our metrics is working properly. After hitting our main server, we were able to see an increase of our data metrics which we wanted to see. 
+Besides the research being done on this, I worked with Hasan on testing the Prometheus application metrics. I sent out a DDOS attack using Kali Linux penetrating tools to see if our metrics is working properly. After hitting our main server, we were able to see an increase of our data metrics which we wanted to see. 
 
 **Hasan** -      
 
