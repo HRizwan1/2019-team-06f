@@ -251,32 +251,24 @@
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505
      - Moved and improved the build instructions on github <br/>
        ![buildsInstructions](images/trellob.png "Improving build instructions")
-
-https://github.com/illinoistech-itm/2019-team-06f/commit/619ceddab7318cdd0d632064d34149f0628baba2#diff-04c6e90faac2675aa89e2176d2eec7d8
-
+       https://github.com/illinoistech-itm/2019-team-06f/commit/619ceddab7318cdd0d632064d34149f0628baba2#diff-04c6e90faac2675aa89e2176d2eec7d8
      - Incorporated Prometheus for capture of application metrics <br/>
-![appMetrics](images/prometheusCard.JPG "Using Prometheus")<br/>
-
-https://github.com/illinoistech-itm/2019-team-06f/commit/c7e3b36cad78596bbc7a4c6900eb4dedadaa7690#diff-3779388a0eaba3b21ec54cb96d816995
-
+       ![appMetrics](images/prometheusCard.JPG "Using Prometheus")<br/>
+       https://github.com/illinoistech-itm/2019-team-06f/commit/c7e3b36cad78596bbc7a4c6900eb4dedadaa7690#diff-3779388a0eaba3b21ec54cb96d816995
      - Uploaded pictures linked to each user account (C) <br/>
        ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")<br/>
-	https://github.com/illinoistech-itm/2019-team-06f/commit/befd459a9fb16bfc2e0cfef8ffe825f6e844fe94#diff-409851e9ddef5a1b16fe63d4050f2757
+	     https://github.com/illinoistech-itm/2019-team-06f/commit/befd459a9fb16bfc2e0cfef8ffe825f6e844fe94#diff-409851e9ddef5a1b16fe63d4050f2757
      - Added a vertical scroll bar table into the Admin Page to view all the users <br/>
        ![scroll](images/scrollBarCard.JPG "Scroll Bar")<br/>
-
-https://github.com/illinoistech-itm/2019-team-06f/commit/8d1d8d1e4187b220b50117c54428ab07f896a3c6
-
+       https://github.com/illinoistech-itm/2019-team-06f/commit/8d1d8d1e4187b220b50117c54428ab07f896a3c6
      - Allow registered users to upload images using hashtags <br/>
        ![hashtags](images/hashtagsCard.JPG "Hashtags")<br/>
-	https://github.com/illinoistech-itm/2019-team-06f/commit/bf9d339c0b458b4055f5369fa60767a3061aaf36#diff-409851e9ddef5a1b16fe63d4050f2757
+	     https://github.com/illinoistech-itm/2019-team-06f/commit/bf9d339c0b458b4055f5369fa60767a3061aaf36#diff-409851e9ddef5a1b16fe63d4050f2757
      - Functioning "Search-box" for registered users to search images using (hashtags) <br/>
        ![search](images/searchBoxCard.JPG "Search Box")<br/>
-	https://github.com/illinoistech-itm/2019-team-06f/commit/81e9cce28821eaee05313553c23f85769dae9368#diff-c7a628cba22e28eb17b5f5c6ae2a266a
-
-https://github.com/illinoistech-itm/2019-team-06f/blob/master/user/searchresults.php
-
-https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
+	     https://github.com/illinoistech-itm/2019-team-06f/commit/81e9cce28821eaee05313553c23f85769dae9368#diff-c7a628cba22e28eb17b5f5c6ae2a266a
+       https://github.com/illinoistech-itm/2019-team-06f/blob/master/user/searchresults.php
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
 
  * Incomplete
    - Responsive Design <br/>
