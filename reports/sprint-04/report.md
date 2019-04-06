@@ -301,7 +301,9 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb9
  ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-Upload photo php is affected by the search-box php and if search box is included in upload.php the upload feature ceases to work. Currently the issue's cause is unknown and the search box has been removed from upload.php to ensure functionality for the time being.
+- Upload photo php is affected by the search-box php and if search box is included in upload.php the upload feature ceases to work. Currently the issue's cause is unknown and the search box has been removed from upload.php to ensure functionality for the time being.
+
+- In the variables-sample.json we have an entry for database-user-name but in the post-install scripts we have that value hard coded as worker.
 
 
 **Goals for Next Sprint:**
