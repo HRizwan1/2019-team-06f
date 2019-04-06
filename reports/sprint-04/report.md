@@ -268,7 +268,7 @@
        ![search](images/searchBoxCard.JPG "Search Box")<br/>
 	     https://github.com/illinoistech-itm/2019-team-06f/commit/81e9cce28821eaee05313553c23f85769dae9368#diff-c7a628cba22e28eb17b5f5c6ae2a266a <br/>
        https://github.com/illinoistech-itm/2019-team-06f/blob/master/user/searchresults.php <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/ 6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
 
  * Incomplete
    - Responsive Design <br/>
