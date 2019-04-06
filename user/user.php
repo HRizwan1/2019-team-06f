@@ -22,7 +22,7 @@ if (isset($_GET['logout'])) {
     <meta charset="utf-8" class="nojs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../cssreset.css">
+    <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style.css">
 	<link rel="shortcut icon" href="img/THLogo.ico" />
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -63,7 +63,7 @@ if (isset($_GET['logout'])) {
 		        </li> 
 
 				<li><a href="index.php">Home</a></li>
-				<li><a href="user.php">User</a></li>
+				<li><a href="#">User</a></li>
                 <li><a href="about.php">About</a></li>
 				<li><a href="gallery.php">Photo Gallery</a></li>
 				 <li><a href="logout.php">Logout</a></li>
@@ -143,7 +143,6 @@ if (isset($_GET['logout'])) {
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>
 
-	</main>
 	
 	
 

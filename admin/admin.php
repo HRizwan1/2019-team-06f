@@ -23,13 +23,18 @@ if (isset($_GET['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--  stylesheet -->
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
-    <link rel="stylesheet" href="../css/style1.css">
-    <link rel="shortcut icon" href="img/THLogo.ico" />
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="shortcut icon" href="img/THLogo.ico" />
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>
+
+
+
     <!--  header -->
     <header>
         <!--  main  -->
@@ -38,13 +43,25 @@ if (isset($_GET['logout'])) {
 			<span>TruHawk</span>
 			
 			
-        </a>
+		</a>
+	
 
-        <input type="text" class="searchTerm" placeholder="Search for hashtag...">
+        
 
         <!--  navigation  -->
         <nav>
             <ul>
+			<li>
+			   <form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+			     <div class="search-box" id="search-box"> 
+			     <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Search for hashtag..."/> 
+			     <button type="submit" class="search-btn" name="search-btn"> 
+		             <i class="fas fa-search"></i> 
+			     </button>
+			     </div>
+			   <form>
+		        </li> 
+
 				<li><a href="index.php">Home</a></li>
 				<li><a href="#">Admin</a></li>
                 <li><a href="about.php">About</a></li>
@@ -54,13 +71,11 @@ if (isset($_GET['logout'])) {
 
             </ul>
 		</nav>
-</header>
 
 		
-		
+		</header>
+
 		<main> 
-
-		
 
 		<div class="wrapper-admin">
 	<!-- notification message -->
@@ -85,9 +100,35 @@ if (isset($_GET['logout'])) {
 	<Center>	<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2> </center>
 
 			<center>	<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center>
-				<Center>	<a href="../index.html?logout='1'" class="btn" style="color: color:#069">Logout</a> <a href="create_user.php" class="btn" style="color: color:#069">Create User</a> <a href="view_user.php" class="btn" style="color: color:#069">View Users</a> </center>
+				<Center>	<a href="../index.html?logout='1'" class="btn" style="color: color:#069">Logout</a> <a href="create_user.php" class="btn" style="color: color:#069">Create User</a> <a href="view_user.php" class="btn" style="color: color:#069">View Users</a> </center> 
+				</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 			<?php endif ?>
+
 
 
 			</main>
@@ -97,7 +138,6 @@ if (isset($_GET['logout'])) {
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>
 
-	</main>
 	
 	
 
