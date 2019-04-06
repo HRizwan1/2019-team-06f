@@ -157,10 +157,20 @@ nav ul li a:hover   {
   margin-top: 8px;
   margin-right: 16px;
   font-size: 17px;
-
 } 
+.site-footer {
+  background: #000000;
+  color: #EC1C24;
+  padding: 0.3em;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
 
-/* styling our footer */
+/* styling our 
+ */
 footer {
   background: #000000;
   color: #EC1C24;
@@ -514,4 +524,32 @@ div.alreadym {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+.table-container {
+  height: 10em;
+}
+table {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+table thead {
+  /* head takes the height it requires, 
+  and it's not scaled when table is resized */
+  flex: 0 0 auto;
+  width: calc(100% - 0.9em);
+}
+table tbody {
+  /* body takes all the remaining available space */
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: scroll;
+}
+table tbody tr {
+  width: 100%;
+}
+table thead, table tbody tr {
+  display: table;
+  table-layout: fixed;
 }
