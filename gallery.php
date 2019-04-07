@@ -243,9 +243,9 @@
             </div>
         </div>
         <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+        <div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:1280px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
             <div data-u="slides">
-                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                <div data-u="prototype" class="p" style="width:177px;height:90px;">
                     <div data-u="thumbnailtemplate" class="t"></div>
                     <svg viewbox="0 0 16000 16000" class="cv">
                         <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
