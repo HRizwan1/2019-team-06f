@@ -186,45 +186,60 @@
         .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
         .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
     </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1280px;height:953px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../img/spin.svg" />
         </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:853px;overflow:hidden;">
             <div>
-                <img data-u="image" src="img/gallery/campus.jpg" />
-                <img data-u="thumb" src="img/gallery/campus.jpg" />
+                <img data-u="image" src="img/gallery/white-car.jpg" />
+                <img data-u="thumb" src="img/gallery/white-car.jpg" />
             </div>
          
             <div>
-                <img data-u="image" src="img/gallery/kaplan.jpg" />
-                <img data-u="thumb" src="img/gallery/kaplan.jpg" />
+                <img data-u="image" src="img/gallery/white-stones.jpg" />
+                <img data-u="thumb" src="img/gallery/white-stones.jpg" />
             </div>
+
             <div>
-                <img data-u="image" src="img/gallery/old_building.jpg" />
-                <img data-u="thumb" src="img/gallery/old_building.jpg" />
+                <img data-u="image" src="img/gallery/zebra-family.jpg" />
+                <img data-u="thumb" src="img/gallery/zebra-family.jpg" />
             </div>
+
             <div>
-                <img data-u="image" src="img/gallery/power.jpg" />
-                <img data-u="thumb" src="img/gallery/power.jpg" />
+                <img data-u="image" src="img/gallery/tulips.jpg" />
+                <img data-u="thumb" src="img/gallery/tulips.jpg" />
             </div>
+
             <div>
-                <img data-u="image" src="img/gallery/view.jpg" />
-                <img data-u="thumb" src="img/gallery/view.jpg" />
+                <img data-u="image" src="img/gallery/spring.jpg" />
+                <img data-u="thumb" src="img/gallery/spring.jpg" />
             </div>
+
             <div>
-                <img data-u="image" src="img/gallery/accepted.jpg" />
-                <img data-u="thumb" src="img/gallery/accepted.jpg" />
+                <img data-u="image" src="img/gallery/white-ling.jpg" />
+                <img data-u="thumb" src="img/gallery/white-ling.jpg" />
             </div>
+            
             <div>
-                <img data-u="image" src="img/gallery/art.jpg" />
-                <img data-u="thumb" src="img/gallery/art.jpg" />
+                <img data-u="image" src="img/gallery/wolf.jpg" />
+                <img data-u="thumb" src="img/gallery/wolf.jpg" />
             </div>
      
             <div>
-                <img data-u="image" src="img/gallery/group.jpg" />
-                <img data-u="thumb" src="img/gallery/group.jpg" />
+                <img data-u="image" src="img/gallery/whitekitchen.jpg" />
+                <img data-u="thumb" src="img/gallery/whitekitchen.jpg" />
+            </div>
+			
+			<div>
+                <img data-u="image" src="img/gallery/waterbunglows.jpg" />
+                <img data-u="thumb" src="img/gallery/waterbunglows.jpg" />
+            </div>
+			
+			<div>
+                <img data-u="image" src="img/gallery/spring-bird.jpg" />
+                <img data-u="thumb" src="img/gallery/spring-bird.jpg" />
             </div>
         </div>
         <!-- Thumbnail Navigator -->
