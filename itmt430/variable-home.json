@@ -1,0 +1,12 @@
+ {
+ 	"database-root-password": "foo",
+    "database-user-password": "bar",
+    "database-access-from-ip": "10.0.0.100",
+    "database-ip": "10.0.0.101",
+    "webserver-ip": "10.0.0.100",
+    "databaseslave-ip": "10.0.0.102",
+    "cache-ip": "10.0.0.103",
+    "salt": "jeremyistheboss123456789",
+    "database-name": "namegoeshere",
+    "database-user-name": "database-username-goes-here"
+}
