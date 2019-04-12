@@ -13,25 +13,20 @@
 
 ### Project Goals:
 
-* Create layout diagrams (C)
-* Move and improve build instructions on a GitHub ReadMe.md file (C)
-* Incorporate Prometheus for the capture of application metrics (C)
-* Upload pictures linked to each user account (C)
-* Add a vertical scroll bar table into the Admin Page to view all the users (C)
-* Allow registered users to upload images using hashtags (C)
-* Make "Search-box" for registered users to search for images using hashtags (C)
-* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I)
-* Data Encryption at Rest using XtraDB and InnoDB (I)
+* Create layout diagrams 
+* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet 
+* Data Encryption at rest using XtraDB and InnoDB
+* Data Encryption for Data in transit
+* Cleaning up code and outting everything in a code folder
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys
+* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality
+* Fix the issue: Variable-sample.json: database-user-name value hardcoded
 
-### Project Accomplishments: Goals Accomplished (7/9):
 
-* Create layout diagrams
-* Moved and added the build instructions on a GitHub Readme.md file
-* Incorporated Prometheus for the capture of application metrics
-* Uploaded pictures linked to each user account
-* Added a vertical scroll bar table into the Admin Page to view all the users
-* Allow registered users to upload images using hashtags
-* Functioning "Search-box" for registered users to search for images using hashtags
+
+### Project Accomplishments: Goals Accomplished ():
+
+* 
 
 
 
@@ -45,6 +40,7 @@
  * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
  * MariaDB Server 10.0.38 provides an SQL interface for accessing data
+
  2. Operating System Platform:
 
    a. Linux - Ubuntu 16.04.5
@@ -138,7 +134,8 @@
 
  ![https3](images/https3.png "HTTPS 3")
 
- * Firewall
+ * Firewall:
+
    - Using UFW (Uncomplicated Firewall) in Apache 2:
    - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup.
  
@@ -270,7 +267,7 @@
        https://github.com/illinoistech-itm/2019-team-06f/blob/master/user/searchresults.php <br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
 
- * Incomplete
+ * Incomplete:
    - Responsive Design <br/>
      ![R_D](images/resDesignCard.JPG "Responsive Design")
    - Data Encryption at rest <br/>
@@ -311,24 +308,14 @@
 
 #### Individual Reflections:
 
-**Daniel** - In this sprint, as a Junior Developer, I managed to add more functionality to our website by implementing few key features to it. First, I was able to tie up each upload to the specific userid in the users table from which the upload was done, this allowed us to display only photos that this particular user has uploaded to them. Users also have the ability to view the last 10 uploaded pictures by all users by using the recently uploaded pictures feature. Second I redesigned the Search-box and made it functional to search photos by hashtag. The search is currently using a wildcard approach %hashtag% to include results which are part of larger hashtags, and a more refined Advanced search feature with its own dedicated button/site will be implemented allowing the user to search photos by date uploaded or the name of the photo. The photo name is currently manually entered by the user at upload, but we plan to implement php GET to auto grab the value from the file name and input it instead of manual input. Implementing those new features created some css interference and some of the css needed to be redone to fix the issues. I've also worked on mobile first queries, but it's certainly not done and I plan on continuing work on it for the next sprint.
+**Daniel** -
 
-**Sarina** - This sprint as IT Operations I did some studying about responsive design and made some css contributions to responsive design by building upon what my teammates Daniel and Jason had started, I helped to manage our trello board by archiving cards and moving tasks around as I appropriate, I updated our diagrams for site functionality to add new changes noted by professor this sprint (I ended up have to do this twice because I missed some vital features). Also I assisted with the creation of this report. This sprint our team has made some crucial progress and our sight is coming full circle.
+**Sarina** - 
 
-**Jason** - This sprint, the team has come full circle, with just some cleaning up and tweaking left to do. I have mainly been focusing on responsive design, experimenting and hopefully trying to implement a framework. I contributed to the report and tried to fix and clean up whatever could be addressed. The team has made a lot of progress, with future sprints just cleaning up, tweaking, and finalizing the project, mainly focusing on the user experience.
+**Jason** - 
 
-**Shan** - I primarily focused on researching more about data encryption at rest using HashiCorp Vault technology. I carefully looked over some tutorials that were on the internet, but I am still having trouble fully understanding the concept behind. Encryption data at rest requires to generate a key management and encryption plugin. This is where it will encrypt data at rest and decrypt as well. MariaDB has three methods to do encryption at rest:
+**Shan** - 
 
-  * File Key Management Plugin
-  * AWS Key Management Plugin
-  * eperi Gateway for Databases
+**Hasan** -     
 
-The plugin is there but the key that is used to decrypt is on the server which raises a concern for data security. Even if I were to use AWS key management, the credentials will be viewable since it is on the cloud. The file key management plugin would be where the key is generated through and stored. None of these plugins are that effective to prevent from data being leaked. I even thought of the idea of having the credentials stored on a cloud file storage, but it would be the same thing as having AWS doing our encryption work.
-
-I could have the keys stored under HashiCorp so that secret management comes into play, but since I have never touch those security tools it will take me some time to learn it. The reason why we don't have encryption at rest today because I wanted to look into some solutions on how to secure the key properly. I'm also learning how HashiCorp works and that will be used on our backend as well for quick automation.
-
-Besides the research being done on this, I worked with Hasan on testing the Prometheus application metrics. I sent out a DDOS attack using Kali Linux penetration tools to see if our metrics is working properly. After hitting our main server, we were able to see an increase of our data metrics which we wanted to see.
-
-**Hasan** - For this sprint I worked primarily on the capture on application metrics. I was able to install node_exporter, prometheus, and grafana on the web server. For the next sprint I plan to move the capture of application metrics to a seperate server. Also, I plan to work on incorporating the Hashicorp Vault and improve the css of our webpage. I think in this sprint we challenged ourselves to try different things and will try to improve our infrastructure and application in the future sprints.       
-
-**Bhumi** - During this sprint as a Project Manager, I worked with group members to keep up with the sprint updates. I helped hasan and Daniel by inserting the “image names” in the database for the searching the pictures for the search bar. For the demo of this sprint, I gained the information about the functioning of Prometheus, Node Exporter and Grafana with the help of Hasan. Along with teammates I have also contributed to document the requirements of the report. For this sprint we have accomplished most of the goals that we set in the beginning of this sprint-4. At this point our TruHawk website servers the main purpose of photo sharing and uploading images using the hashtags and users can also search the images using search tags. It was a good experience to be the Project Manager and coordinate with the team mates and achieve the goals successfully that were being set for this sprint.
+**Bhumi** - 

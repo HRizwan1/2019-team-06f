@@ -103,7 +103,7 @@ if(isset($_SESSION['username']))
 	});
 	</script>
             <div>
-               <textarea name="photoname" value="<?php echo $photoname; ?>"placeholder="Enter Image Name (required field)"></textarea>
+               <textarea name="photoname" id="photoname" value="<?php echo $photoname; ?>"placeholder="Enter Image Name (required field)"></textarea>
             </div>
             <div>
                <textarea name="hashtag" value="<?php echo $hashtag; ?>"placeholder="Type hashtag here (required field)"></textarea>
