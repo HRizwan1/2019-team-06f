@@ -554,3 +554,6 @@ table thead, table tbody tr {
   display: table;
   table-layout: fixed;
 }
+#photoname{
+  display:none;
+}
