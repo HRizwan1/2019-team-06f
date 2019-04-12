@@ -73,12 +73,18 @@ body     {
   .section, .nav, .iit, .site {
     width: 100%;
   }
+   .nav li{
+    display: inline;
+  }
 }
 
 @media only screen and (max-width:600px) {
   /* For mobile phones: */
   .section, .nav, .iit, .site {
     width: 100%;
+  }
+  .nav li{
+    display: inline;
   }
 }
 
@@ -553,4 +559,7 @@ table tbody tr {
 table thead, table tbody tr {
   display: table;
   table-layout: fixed;
+}
+#photoname{
+  display:none;
 }

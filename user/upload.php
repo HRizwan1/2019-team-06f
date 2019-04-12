@@ -93,6 +93,15 @@ if(isset($_SESSION['username']))
         method="post" class="frmImageUpload">
         <label>Upload Image File:</label><br /> <input name="userImage"
             type="file" class="inputFile" /> 
+   	<script type="text/javascript">
+        $(document).ready(function(){
+        $('input[type="file"]').change(function(e){
+        var fileName = e.target.files[0].name;
+        var filenameText = fileName.replace(/\.[^/.]+$/, "");
+        photoname.value= filenameText;
+	});
+	});
+	</script>
             <div>
                <textarea name="photoname" value="<?php echo $photoname; ?>"placeholder="Enter Image Name (required field)"></textarea>
             </div>
