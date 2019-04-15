@@ -398,11 +398,11 @@ div.alreadym {
   z-index: 1;
   } 
 
-.search-box:hover > .search-btn { 
+.search-box:hover > .search_btn { 
   background: #000000;
   color: #EC1C24;
   } 
-.search-btn { 
+.search_btn { 
   color: #e84118;
   width: 40px;
   height: 40px;
@@ -416,7 +416,7 @@ div.alreadym {
   position: relative;
   z-index: 3;
   } 
-.search-btn > i { 
+.search_btn > i { 
   font-size: 30px;
   color: #EC1C24;
   float: left;
