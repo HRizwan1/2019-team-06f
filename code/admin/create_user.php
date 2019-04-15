@@ -41,11 +41,20 @@ if (isset($_GET['logout'])) {
 			
         </a>
 
-        <input type="text" class="searchTerm" placeholder="Search for hashtag...">
-
+		
         <!--  navigation  -->
         <nav>
             <ul>
+			<li>
+		   <form id="search" action="" value="<?php echo $search; ?>" method="POST">
+		     <div class="search-box" id="search-box"> 
+		     <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Search for hashtag..."/> 
+		     <button type="submit" class="search_btn" name="search_btn"> 
+		     <i class="fas fa-search"></i> 
+		     </button>
+		     </div>
+		   <form>
+		</li> 
 				<li><a href="index.php">Home</a></li>
 				<li><a href="admin.php">Admin</a></li>
                 <li><a href="about.php">About</a></li>
@@ -83,8 +92,8 @@ if (isset($_GET['logout'])) {
 	<!-- logged in user information -->
 		
 
-
-	<form method="post" action="create_user.php">
+	<div id="createuserform">
+	<form method="post" name="createuser" id="createuser" action="create_user.php">
 
 		<?php echo display_error(); ?>
 
@@ -94,7 +103,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<div class="input-group">
 			<label>Email</label>
-			<input type="email" name="email"id="email" value="<?php echo $email; ?>">
+			<input type="email" name="email" id="email" value="<?php echo $email; ?>">
 		</div>
 		<div class="input-group">
 			<label>User type</label>
@@ -114,9 +123,10 @@ if (isset($_GET['logout'])) {
 		</div>
 		<br>
 		<div class="input-group">
-		<button type="submit" class="btn" name="register_btn"> Create User</button> <input type="button" class="btn" value="Go Back" onclick="history.back(-1)" />
+		<button type="submit" class="btn" action="create_user.php" name="register_btn"> Create User</button> <input type="button" class="btn" value="Go Back" onclick="history.back(-1)" />
 		</div>
 	</form>
+	</div>
 
 
 
