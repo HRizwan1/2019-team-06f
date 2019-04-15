@@ -1,4 +1,3 @@
-
 /* resetting browser stuff */
 *     {
   box-sizing: border-box;
@@ -18,6 +17,7 @@ body     {
   background: #FFF;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 
 /* styling our header */
@@ -69,14 +69,14 @@ nav     {
   margin-right: 10px;
   
 }
- ul   {
+nav ul   {
   list-style: none;
   margin: 0;
 }
- ul li {
+nav ul li {
   display: inline-block;
 }
- ul li a    {
+nav ul li a    {
   color: #EC1C24;
   text-decoration: none;
   display: block;
@@ -84,7 +84,7 @@ nav     {
   border-radius: 0.188em;
   transition: 0.3s ease all;
 }
- ul li a:hover   {
+nav ul li a:hover   {
   background: #444;
 }
 
@@ -496,7 +496,6 @@ table thead, table tbody tr {
   display:none;
 }
 /* Styles for Shan's create user form*/
-/* Styles for Shan's create user form*/
 #createuser {
   width:500px;
   margin:50px auto;
@@ -547,7 +546,6 @@ and (max-device-width : 667px) {
   }
   nav ul li {
     display: inline-block;
-    padding: 0.3em;
     margin-right: 0em;
   }
   nav ul li a    {
@@ -575,7 +573,7 @@ and (max-device-width : 667px) {
   }
   .search-box {
     position: absolute;
-    top: 2.5em;
+    top: 1.5em;
     left: 10em;
     margin-top: 2em;
 
@@ -607,6 +605,13 @@ and (max-device-width : 667px) {
   }
   table, td {
     font-size: 0.7em;
+  }
+  img {
+    max-width:100%;
+    height:auto;
+  }
+  .images {
+    margin-left: 0;
   }
 }
 /* Iphone 6, 7, 8 Plus */
@@ -685,38 +690,6 @@ and (max-device-width : 736px) {
   .iit {
     min-height: 0;
   }
-}
-/* Iphone 5 & 5s */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) { 
-  nav ul   {
-    list-style: none;
-    margin: 0;
-  }
-  nav ul li {
-    display: inline-block;
-  }
-  nav ul li a    {
-    color: red;
-    text-decoration: none;
-    display: block;
-    padding: 0.225em 0.538em;
-    border-radius: 0.188em;
-    transition: 0.3s ease all;
-  }
-  nav ul li a:hover   {
-    background: #444;
-  }
-  
-  .nav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
-  } 
 }
 /* Iphone X media queries*/
 @media only screen 
@@ -825,6 +798,13 @@ and (max-device-width : 1024px)  {
   .iit {
     min-height: 0;
   }
+  img {
+    max-width:100%;
+    height:auto;
+  }
+  .images {
+    margin-left: 0;
+  }
 }
 
 /* Ipad 3 and 4 retina queries*/
@@ -839,5 +819,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (-webkit-min-device-pixel-ratio: 1){ 
-  
+
 }
