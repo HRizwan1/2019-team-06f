@@ -37,15 +37,12 @@ ufw allow proto tcp to 0.0.0.0/0 port 3000
 ufw allow proto tcp to 0.0.0.0/0 port 9090
 ufw allow proto tcp to 0.0.0.0/0 port 9100
 
-
 #Install apache2 webserver
 sudo apt-get update
 sudo apt-get install -y apache2 mariadb-client php7.0 libapache2-mod-php7.0 php7.0-mysql
 
 # chown the cloned github repo files so the user owns it 
-sudo chown -R vagrant:vagrant ~/jhajek
-# copying the php code to the /var/www/html directory to serve php files
-sudo cp ./jhajek/itmt-430/db-samples/*.php /var/www/html
+sudo chown -R vagrant:vagrant ~/2019-team-06f
 
 # Create Ubuntu 16.04 Self-Signed Cert for Apache2
 # https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-16-04
