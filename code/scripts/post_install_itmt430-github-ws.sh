@@ -93,7 +93,7 @@ sudo chmod 777 -R /var/www/html
 rm -rf /var/www/html/*
 
 # Copy team repo files to /var/www/html
-cp -r 2019-team-06f/* /var/www/html
+cp -r 2019-team-06f/code* /var/www/html
 
 # Database information passed from variables file into server.php
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/server.php
