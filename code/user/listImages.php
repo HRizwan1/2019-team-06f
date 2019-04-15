@@ -58,10 +58,10 @@ if (isset($_GET['logout'])) {
         <nav>
             <ul>
 		<li>		
-            	<form id="search" action="searchresults.php" value="<?php echo $search; ?>" method="POST">
+            	<form id="search" action="" value="<?php echo $search; ?>" method="POST">
 		  <div class="search-box" id="search-box"> 
 		  <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Search for hashtag..."/> 
-		  <button type="submit" class="search-btn" name="search-btn"> 
+		  <button type="submit" class="search_btn" name="search_btn"> 
 	          <i class="fas fa-search"></i> 
 		  </button>
 		  </div>
