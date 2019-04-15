@@ -137,14 +137,14 @@ nav     {
   margin-right: 10px;
   
 }
-nav ul   {
+ ul   {
   list-style: none;
   margin: 0;
 }
-nav ul li {
+ ul li {
   display: inline-block;
 }
-nav ul li a    {
+ ul li a    {
   color: #EC1C24;
   text-decoration: none;
   display: block;
@@ -152,7 +152,7 @@ nav ul li a    {
   border-radius: 0.188em;
   transition: 0.3s ease all;
 }
-nav ul li a:hover   {
+ ul li a:hover   {
   background: #444;
 }
 
