@@ -7,6 +7,4 @@
     "databaseslave-ip": "127.0.0.1",
     "cache-ip": "127.0.0.1",
     "salt": "jeremyistheboss123456789",
-    "database-name": "namegoeshere",
-    "database-user-name": "database-username-goes-here"
 }
