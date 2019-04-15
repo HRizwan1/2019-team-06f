@@ -720,8 +720,77 @@ and (-webkit-device-pixel-ratio : 3) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
+  nav {
+    width: 100%;
+    top: 1em;
+  }
+  nav ul   {
+    list-style: none;
+    position: relative;
+    right: 0;
+    right: 10xp;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 0.3em;
+    margin-right: 0em;
+  }
+  nav ul li a    {
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding: 0.225em 0.538em;
+    border-radius: 0.188em;
+    transition: 0.3s ease all;
+  }
+  nav ul li a:hover   {
+    background: #444;
+  }
+  
+  .nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  } 
+  header {
+    padding: 0em 0em 2em 0em;
+  }
+  .search-box {
+    position: absolute;
+    left: 10em;
 
+  }
+  #logo{
+    width: 35%;
+    padding: .1em;
+    display: none;
+  }
+  .iit-content h1 {
+    font-size: 5em;
+  }
+  .iit-content {
+    padding-top: 0em;
+  }
+  .iit-content p {
+    font-size: 2.2em;
+    margin-bottom: 7.75em;
+  }
+  .iit-content a {
+    margin-top: 0.25em;
+    margin-left: 1.5em;
+  }
+  .feature-box {
+    width: 100%;
+  }
+  .iit {
+    min-height: 0;
+  }
 }
+
 /* Ipad 3 and 4 retina queries*/
 @media only screen 
 and (min-device-width : 768px) 
