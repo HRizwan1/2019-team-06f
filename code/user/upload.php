@@ -51,12 +51,22 @@ if(isset($_SESSION['username']))
         <!--  navigation  -->
         <nav>
             <ul>
-
-				<li><a href="index.php">Home</a></li>
-				<li><a href="user.php">User</a></li>
-                		<li><a href="about.php">About</a></li>
-				<li><a href="gallery.php">Photo Gallery</a></li>
-				 <li><a href="logout.php">Logout</a></li>
+		    
+		<li>
+	  	   <form id="search" action="" value="<?php echo $search; ?>" method="POST">
+		   <div class="search-box" id="search-box"> 
+	     	   <input type="text" id="searchbar" name="searchtext" class="search-txt" placeholder="Search for hashtag..."/> 
+		   <button type="submit" class="search_btn" name="search_btn"> 
+		   <i class="fas fa-search"></i> 
+		   </button>
+		   </div>
+		   <form>
+		   </li>
+		   <li><a href="index.php">Home</a></li>
+		   <li><a href="user.php">User</a></li>
+                   <li><a href="about.php">About</a></li>
+		   <li><a href="gallery.php">Photo Gallery</a></li>
+		   <li><a href="logout.php">Logout</a></li>
 
 
             </ul>
