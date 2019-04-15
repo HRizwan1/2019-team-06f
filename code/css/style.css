@@ -501,12 +501,15 @@ table thead, table tbody tr {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) { 
+  nav {
+    width: 100%;
+    top: 1em;
+  }
   nav ul   {
     list-style: none;
     position: relative;
     right: 0;
     right: 10xp;
-    padding: 1em;
     margin: 0;
   }
   nav ul li {
@@ -539,14 +542,15 @@ and (max-device-width : 667px) {
   }
   .search-box {
     position: absolute;
-    top: 10em;
+    top: 2.5em;
+    left: 10em;
     margin-top: 2em;
 
   }
   #logo{
     width: 35%;
     padding: .1em;
-    visibility: hidden;
+    display: none;
   }
   .iit-content h1 {
     font-size: 3em;
