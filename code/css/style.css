@@ -501,12 +501,27 @@ table thead, table tbody tr {
   margin:50px auto;
 }
 #createuser, .content {
-  width: 30%;
   margin: 0px auto;
-  padding: 20px;
+  padding-top: 2em;
+  padding-left: 2em;
   border: 1px solid #B0C4DE;
   background: white;
   border-radius: 0px 0px 10px 10px;
+}
+#username {
+  margin-left: 4.685em;
+}
+#email {
+  margin-left: 7.2em;
+}
+#user_type {
+  margin-left: 5.125em;
+}
+#password {
+  margin-left: 5em;
+}
+#cpassword {
+  margin-left: .5em;
 }
 /* Iphone media Queries*/
 
