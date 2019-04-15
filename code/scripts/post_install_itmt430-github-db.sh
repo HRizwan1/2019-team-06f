@@ -81,13 +81,11 @@ mysql -u root -e "GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABL
 mysql -u root -e "GRANT REPLICATION SLAVE ON *.* TO replica@'%' IDENTIFIED BY '$USERPASS'; flush privileges;"
 
 # Exectue sql file from repo cloned to create database and table and schema
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
 mysql -u root < ./2019-team-06f/code/itmt430/sql/create-new.sql 
-mysql -u root -e "SHOW DATABASES;"
-# Execute sql file from repo cloned to insert 15 records into the table to seed it with valid data
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
-mysql -u root < ./2019-team-06f/code/itmt430/sql/insert-new.sql
-mysql -u root -e "USE website; SHOW TABLES;"
 
+# Execute sql file from repo cloned to insert 15 records into the table to seed it with valid data
+mysql -u root < ./2019-team-06f/code/itmt430/sql/insert-new.sql
+
+# Restart the service and show master status
 sudo service mysql restart
 mysql -u root -e "show master status;"

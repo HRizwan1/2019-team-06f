@@ -75,16 +75,15 @@ ufw allow proto tcp to 0.0.0.0/0 port 22
 ufw allow from $ACCESSFROMIP to any port 3306
 
 # Exectue sql file from repo cloned to create database and table and schema
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
 mysql -u root < ./2019-team-06f/code/itmt430/sql/create-new.sql 
-mysql -u root -e "SHOW DATABASES;"
+
 # Execute sql file from repo cloned to insert 15 records into the table to seed it with valid data
-# These *.sql files can be found for reference here: https://github.com/illinoistech-itm/jhajek/tree/master/itmt-430/db-samples
 mysql -u root < ./2019-team-06f/code/itmt430/sql/insert-new.sql
-mysql -u root -e "USE website; SHOW TABLES;"
+
+# Restart the service
 sudo service mysql restart
 
-# Starting slave server
+# Start slave and show slave status
 mysql -u root -e "change master to master_host='$DATABASEIP',master_user='replica',master_password='$USERPASS',master_log_file='mysql-bin.000003',master_log_pos=312;"
 mysql -u root -e "start slave;"
 mysql -u root -e "show slave status\G;"
