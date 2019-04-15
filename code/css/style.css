@@ -577,12 +577,22 @@ and (max-device-width : 667px) {
 @media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) { 
+ 
+  nav {
+    width: 100%;
+    top: 1em;
+  }
   nav ul   {
     list-style: none;
+    position: relative;
+    right: 0;
+    right: 10xp;
     margin: 0;
   }
   nav ul li {
     display: inline-block;
+    padding: 0.3em;
+    margin-right: 0em;
   }
   nav ul li a    {
     color: red;
@@ -604,6 +614,41 @@ and (max-device-width : 736px) {
     margin-right: 16px;
     font-size: 17px;
   } 
+  header {
+    padding: 0em 0em 2em 0em;
+  }
+  .search-box {
+    position: absolute;
+    top: 2.5em;
+    left: 13em;
+    margin-top: 2em;
+
+  }
+  #logo{
+    width: 35%;
+    padding: .1em;
+    display: none;
+  }
+  .iit-content h1 {
+    font-size: 3em;
+  }
+  .iit-content {
+    padding-top: 0em;
+  }
+  .iit-content p {
+    font-size: 1.2em;
+    margin-bottom: 5.75em;
+  }
+  .iit-content a {
+    margin-top: 0.25em;
+    margin-left: 1.5em;
+  }
+  .feature-box {
+    width: 100%;
+  }
+  .iit {
+    min-height: 0;
+  }
 }
 /* Iphone 5 & 5s */
 @media only screen 
