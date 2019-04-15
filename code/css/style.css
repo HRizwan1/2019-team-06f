@@ -496,9 +496,14 @@ table thead, table tbody tr {
   display:none;
 }
 /* Styles for Shan's create user form*/
+/* Styles for Shan's create user form*/
 #createuser {
   width:500px;
   margin:50px auto;
+  padding-left: 20em;
+}
+#createuserform {
+  text-align: center;
 }
 #createuser, .content {
   margin: 0px auto;
