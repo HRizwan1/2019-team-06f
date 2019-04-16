@@ -15,9 +15,9 @@
 
 * Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
 * Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
-* Create layout diagrams 
+* Create layout diagrams (C)
 * Move and improve build instructions (C)
-* Cleaning up code and putting everything in a code folder (C)
+* Clean up the code and put everything in a code folder (C)
 * Delete user functionality on admin page (C)
 * Data Encryption at rest using XtraDB and InnoDB (I)
 * Data Encryption for Data in transit (I)
@@ -27,12 +27,12 @@
 
 ### Project Accomplishments: Goals Accomplished ():
 
-* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
-* Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
-* Create layout diagrams 
-* Move and improve build instructions (C)
-* Cleaning up code and putting everything in a code folder (C)
-* Delete user functionality on admin page (C)
+* Fixed the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
+* Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
+* Created layout diagrams (C)
+* Moved and improved build instructions (C)
+* Cleaned up the code and kept everything in a code folder (C)
+* Deleted user functionality on admin page (C)
 
 
 
@@ -247,33 +247,30 @@
  <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
 
  * Trello:
+
  ![trello](images/trello.png "Trello")
+
   * Accomplishments
-     - Create layout diagrams <br/>
-       ![diags](images/diagramCard.JPG "Creating Diagrams")<br/>
+
+      -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality <br/>
+
+      -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded <br/>
+
+      -Created layout diagrams <br/>
+      ![diags](images/diagramCard.JPG "Creating Diagrams") <br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505
-     - Moved and improved the build instructions on github <br/>
+
+      -Moved and improved the build instructions on GitHub <br/>
        ![buildsInstructions](images/trellob.png "Improving build instructions")
        https://github.com/illinoistech-itm/2019-team-06f/commit/619ceddab7318cdd0d632064d34149f0628baba2#diff-04c6e90faac2675aa89e2176d2eec7d8
-     - Incorporated Prometheus for capture of application metrics <br/>
-       ![appMetrics](images/prometheusCard.JPG "Using Prometheus")<br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/c7e3b36cad78596bbc7a4c6900eb4dedadaa7690#diff-3779388a0eaba3b21ec54cb96d816995
-     - Uploaded pictures linked to each user account (C) <br/>
-       ![uploadPics](images/uploadPhotoCard.JPG "Photos linked to users")<br/>
-	     https://github.com/illinoistech-itm/2019-team-06f/commit/befd459a9fb16bfc2e0cfef8ffe825f6e844fe94#diff-409851e9ddef5a1b16fe63d4050f2757
-     - Added a vertical scroll bar table into the Admin Page to view all the users <br/>
-       ![scroll](images/scrollBarCard.JPG "Scroll Bar")<br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/8d1d8d1e4187b220b50117c54428ab07f896a3c6
-     - Allow registered users to upload images using hashtags <br/>
-       ![hashtags](images/hashtagsCard.JPG "Hashtags")<br/>
-	     https://github.com/illinoistech-itm/2019-team-06f/commit/bf9d339c0b458b4055f5369fa60767a3061aaf36#diff-409851e9ddef5a1b16fe63d4050f2757
-     - Functioning "Search-box" for registered users to search images using (hashtags) <br/>
-       ![search](images/searchBoxCard.JPG "Search Box")<br/>
-	     https://github.com/illinoistech-itm/2019-team-06f/commit/81e9cce28821eaee05313553c23f85769dae9368#diff-c7a628cba22e28eb17b5f5c6ae2a266a <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/blob/master/user/searchresults.php <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6107b27b34bba5ffcaf4bb983f434d63d7427044#diff-c7a628cba22e28eb17b5f5c6ae2a266a
 
- * Incomplete:
+      -Cleaned up the code and kept everything in a code folder <br/>
+
+      -Deleted user functionality on admin page <br/>
+
+
+ * Inprogress:
+ 
    - Responsive Design <br/>
      ![R_D](images/resDesignCard.JPG "Responsive Design")
    - Data Encryption at rest <br/>
@@ -296,9 +293,9 @@
  ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-- Upload photo php is affected by the search-box php and if search box is included in upload.php the upload feature ceases to work. Currently the issue's cause is unknown and the search box has been removed from upload.php to ensure functionality for the time being.
 
-- In the variables-sample.json we have an entry for database-user-name but in the post-install scripts we have that value hard coded as worker.
+
+
 
 
 **Goals for Next Sprint:**
@@ -307,8 +304,7 @@
 - Data Encryption for Data in transit
 - Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
 - Cleaning up code and putting everything in a code folder
-- Resolve the upload.php bug
-- Resolve the variables-sample.json bug
+
 
 
 
