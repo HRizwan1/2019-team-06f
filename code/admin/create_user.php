@@ -26,8 +26,10 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/THLogo.ico" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -123,7 +125,7 @@ if (isset($_GET['logout'])) {
 		</div>
 		<br>
 		<div class="input-group">
-		<button type="submit" class="btn" action="create_user.php" name="register_btn"> Create User</button> <input type="button" class="btn" value="Go Back" onclick="history.back(-1)" />
+		<input type="button" class="btn" value="Go Back" onclick="history.back(-1)" /> <button type="submit" class="btn" action="create_user.php" name="register_btn"> Create User</button> 
 		</div>
 	</form>
 	</div>

@@ -24,8 +24,10 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" type="text/css" href="../css/cssreset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/THLogo.ico" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -70,8 +72,8 @@ if (isset($_GET['logout'])) {
         
 		</header>
         <div class="header">
-	<center> <h2 style="color:#069">Admin Control Panel - Delete User</h2>	</div> </center> 
-
+		<center> <h2 style="color:#069">Admin Control Panel - Delete User</h2>	</div> </center> 
+		<div class="input-group">
         <?php
          if(isset($_POST['delete'])) {
             $db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
@@ -81,7 +83,6 @@ if (isset($_GET['logout'])) {
             }
 				
             $username = $_POST['username'];
-            
                 
 			$query = "DELETE FROM users WHERE username = '$username'"; 
             mysqli_query($db, $query);
@@ -97,33 +98,23 @@ if (isset($_GET['logout'])) {
                      <tr>
                      <td> <center>
 
-                      <td width = "180">Enter Username:</td>
+                      <td width = "180">Enter username you wish to delete:</td>
+					  <br>
+					  <br>
                         <td><input name = "username" type = "text" 
                            username = "username"></td>
                            </center>
-
+					<br>
 
                      </tr>
                      
-                     <tr>
-                        <td width = "100"> </td>
-                        <td> </td>
-                     </tr>
                      
-                     <tr>
-                        <td width = "100"> </td>
-                        <td> <center>
-                           <input name = "delete" type = "submit" 
-                         username = "delete"  value = "Delete">
-                         <Center>	<a href="admin.php" class="btn" style="color: color:#069">Admin Page</a>  </center> 
-
-
-                         </center>
-                        </td>
-                    
-                     </tr>
                      
-                  </table>
+               
+					 <div class="input-group">
+		<center><input type="button" class="btn" value="Go Back" onclick="history.back(-1)" /> <button type="submit" class="btn" value="Delete" name="delete"> Delete User</button><center>
+		</div>
+                     
                </form>
             <?php
          }

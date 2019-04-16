@@ -100,7 +100,7 @@ if (isset($_GET['logout'])) {
 	<Center>	<h2>	Welcome	<strong>  <?php echo $_SESSION['user']['username']; ?></strong>  </h2> </center>
 
 			<center>	<i  style="color: black;"> (<?php echo ucfirst($_SESSION['user']['user_type']); ?>)</i> </center>
-				<Center>	<a href="../index.html?logout='1'" class="btn" style="color: color:#069">Logout</a> <a href="create_user.php" class="btn" style="color: color:#069">Create User</a> <a href="view_user.php" class="btn" style="color: color:#069">View Users</a> <a href="delete_user.php" class="btn" style="color: color:#069">Delete User</a> </center> 
+				<Center>	 <a href="create_user.php" class="btn" style="color: color:#069">Create User</a> <a href="delete_user.php" class="btn" style="color: color:#069">Delete User</a> <a href="view_user.php" class="btn" style="color: color:#069">View Users</a>  <a href="../index.html?logout='1'" class="btn" style="color: color:#069">Logout</a> </center> 
 				</div>
 
 <br>
