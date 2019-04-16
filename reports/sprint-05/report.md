@@ -25,7 +25,7 @@
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
 
 
-### Project Accomplishments: Goals Accomplished ():
+### Project Accomplishments: Goals Accomplished (6/10):
 
 * Fixed the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
 * Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
@@ -33,8 +33,6 @@
 * Moved and improved build instructions (C)
 * Cleaned up the code and kept everything in a code folder (C)
 * 'Delete' user functionality on admin page (C)
-
-
 
 
 ### Project Requirements:
@@ -255,37 +253,37 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
   * Accomplishments:
 
       -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality <br/>
-        closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4
-        upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab
-        upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab
+        closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4 <br/>
+        upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
+        upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab <br/> 
 
 
       -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded <br/>
-       variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f
+       variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f <br/>
 
       -Created layout diagrams <br/>
        ![diags](images/diagramCard.JPG "Creating Diagrams") <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505
+       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br/>
 
       -Moved and improved the build instructions on GitHub <br/>
-       ![buildsInstructions](images/trellob.png "Improving build instructions")
-       diagrams folder: https://github.com/illinoistech-itm/2019-team-06f/commit/cf9d892f0fca9dcb1362212e420b608d683905a5
-       build instructions: https://github.com/illinoistech-itm/2019-team-06f/commit/d4bdf199358ef1671f080e10a2f94aa09f5c87a7
+       ![buildsInstructions](images/trellob.png "Improving build instructions") <br/>
+       diagrams folder: https://github.com/illinoistech-itm/2019-team-06f/commit/cf9d892f0fca9dcb1362212e420b608d683905a5 <br/>
+       build instructions: https://github.com/illinoistech-itm/2019-team-06f/commit/d4bdf199358ef1671f080e10a2f94aa09f5c87a7 <br/>
 
       -Cleaned up the code and kept everything in a code folder <br/>
-       cleaning script: https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a
+       cleaning script: https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br/>
 
       -'Delete' user functionality on admin page <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br/>
 
 
  * Inprogress:
 
    - Responsive Design <br/>
-     ![R_D](images/resDesignCard.JPG "Responsive Design")
-     Iphone 6,7,8 Plus fixed index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e
-     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b
-     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
+     ![R_D](images/resDesignCard.JPG "Responsive Design") <br/>
+     Iphone 6,7,8 Plus fixed index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
+     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br/>
+     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
 
    - Data Encryption at rest <br/>
      ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
