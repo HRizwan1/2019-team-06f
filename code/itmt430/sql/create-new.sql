@@ -8,7 +8,7 @@ CREATE TABLE users(
   user_type VARCHAR(100) NOT NULL,  
   email VARCHAR(100) NOT NULL, 
   password VARCHAR(100) NOT NULL, 
-  PRIMARY KEY(id)
+  PRIMARY KEY(id,username)
 );
 CREATE TABLE pictures(
   photo_id INT(11) NOT NULL AUTO_INCREMENT,
