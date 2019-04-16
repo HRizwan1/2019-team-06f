@@ -111,9 +111,9 @@ sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/admin/searchresults.php
 sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/searchresults.php
 sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/searchresults.php
 
-# Database information passed from variables file into user/upload.php
-sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/user/upload.php
-sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/user/upload.php
+# Database information passed from variables file into admin/delete_user.php
+sudo sed -i -e 's/$DATABASEIP/'$DATABASEIP'/g' /var/www/html/admin/delete_user.php
+sudo sed -i -e 's/$USERPASS/'$USERPASS'/g' /var/www/html/admin/delete_user.php
 
 # Create these two users, and use the --no-create-home and --shell /bin/false options so that these users can't log into the server.
 sudo useradd --no-create-home --shell /bin/false prometheus

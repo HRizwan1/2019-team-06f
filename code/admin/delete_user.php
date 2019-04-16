@@ -82,7 +82,6 @@ if (isset($_GET['logout'])) {
 				
             $username = $_POST['username'];
             
-            mysqli_select_db('website');
                 
 			$query = "DELETE FROM users WHERE username = '$username'"; 
             mysqli_query($db, $query);
