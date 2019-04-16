@@ -68,7 +68,7 @@ if (isset($_GET['logout'])) {
 		     <i class="fas fa-search"></i> 
 		     </button>
 		     </div>
-		   <form>
+		   </form>
 		</li> 
 		<li><a href="index.php">Home</a></li>
 		<li><a href="admin.php">Admin</a></li>
