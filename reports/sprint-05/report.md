@@ -13,20 +13,26 @@
 
 ### Project Goals:
 
+* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
+* Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Create layout diagrams 
-* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet 
-* Data Encryption at rest using XtraDB and InnoDB
-* Data Encryption for Data in transit
-* Cleaning up code and outting everything in a code folder
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys
-* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality
-* Fix the issue: Variable-sample.json: database-user-name value hardcoded
-
+* Move and improve build instructions (C)
+* Cleaning up code and putting everything in a code folder (C)
+* Delete user functionality on admin page (C)
+* Data Encryption at rest using XtraDB and InnoDB (I)
+* Data Encryption for Data in transit (I)
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
+* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
 
 
 ### Project Accomplishments: Goals Accomplished ():
 
-* 
+* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
+* Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
+* Create layout diagrams 
+* Move and improve build instructions (C)
+* Cleaning up code and putting everything in a code folder (C)
+* Delete user functionality on admin page (C)
 
 
 
