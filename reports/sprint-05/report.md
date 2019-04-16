@@ -18,7 +18,7 @@
 * Create layout diagrams (C)
 * Move and improve build instructions (C)
 * Clean up the code and put everything in a code folder (C)
-* Delete user functionality on admin page (C)
+* 'Delete' user functionality on admin page (C)
 * Data Encryption at rest using XtraDB and InnoDB (I)
 * Data Encryption for Data in transit (I)
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
@@ -32,7 +32,7 @@
 * Created layout diagrams (C)
 * Moved and improved build instructions (C)
 * Cleaned up the code and kept everything in a code folder (C)
-* Deleted user functionality on admin page (C)
+* 'Delete' user functionality on admin page (C)
 
 
 
@@ -253,26 +253,38 @@
   * Accomplishments
 
       -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality <br/>
+         https://github.com/illinoistech-itm/2019-team-06f/issues/4
+         https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab
+         https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab
+
 
       -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded <br/>
+       variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f
 
       -Created layout diagrams <br/>
-      ![diags](images/diagramCard.JPG "Creating Diagrams") <br/>
+       ![diags](images/diagramCard.JPG "Creating Diagrams") <br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505
 
       -Moved and improved the build instructions on GitHub <br/>
        ![buildsInstructions](images/trellob.png "Improving build instructions")
-       https://github.com/illinoistech-itm/2019-team-06f/commit/619ceddab7318cdd0d632064d34149f0628baba2#diff-04c6e90faac2675aa89e2176d2eec7d8
+       diagrams folder: https://github.com/illinoistech-itm/2019-team-06f/commit/cf9d892f0fca9dcb1362212e420b608d683905a5
+       build instructions: https://github.com/illinoistech-itm/2019-team-06f/commit/d4bdf199358ef1671f080e10a2f94aa09f5c87a7
 
       -Cleaned up the code and kept everything in a code folder <br/>
+       cleaning script: https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a
 
-      -Deleted user functionality on admin page <br/>
+      -'Delete' user functionality on admin page <br/>
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14
 
 
  * Inprogress:
- 
+
    - Responsive Design <br/>
      ![R_D](images/resDesignCard.JPG "Responsive Design")
+     Iphone 6,7,8 Plus fixed index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e
+     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b
+     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
+
    - Data Encryption at rest <br/>
      ![Encryption](images/encryptionCard.JPG "Encryption at Rest")
 
@@ -303,9 +315,6 @@
 - Data Encryption at Rest using XtraDB and InnoDB
 - Data Encryption for Data in transit
 - Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
-- Cleaning up code and putting everything in a code folder
-
-
 
 
 #### Individual Reflections:
