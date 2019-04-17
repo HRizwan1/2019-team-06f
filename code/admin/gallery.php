@@ -24,7 +24,6 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/THLogo.ico" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="js/search.js" type="text/javascript"></script>
 </head>
 
   <body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
@@ -204,9 +203,6 @@ if (isset($_GET['logout'])) {
     </style>
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1280px;height:953px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../img/spin.svg" />
-        </div>
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1280px;height:853px;overflow:hidden;">
             <div>
                 <img data-u="image" src="../img/gallery/white-car.jpg" />

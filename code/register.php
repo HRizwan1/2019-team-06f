@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--  stylesheet -->
-    <link rel="stylesheet" type="text/css" href="cssreset.css">
+    <link rel="stylesheet" type="text/css" href="css/cssreset.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="img/THLogo.ico" />
     <script type="text/javascript" src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js'></script>
