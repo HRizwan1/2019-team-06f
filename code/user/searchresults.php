@@ -70,6 +70,8 @@ if (isset($_GET['logout'])) {
 		     </div>
 		   </form>
 		</li> 
+	        <?php if (isset($_POST['searchtext'])){
+	        $_SESSION['search']= $_POST['searchtext'];} ?>
 		<li><a href="index.php">Home</a></li>
 		<li><a href="user.php">User</a></li>
                 <li><a href="about.php">About</a></li>
