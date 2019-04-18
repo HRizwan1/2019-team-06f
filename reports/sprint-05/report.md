@@ -314,9 +314,9 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-
-
-
+Two bugs previosly open are now closed and the two following bugs have been found.
+1. The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
+2. The current version of MariaDB that we are running doesn't have file key management which is necesssary for database encryption. 
 
 
 **Goals for Next Sprint:**
