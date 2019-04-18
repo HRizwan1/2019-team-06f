@@ -25,7 +25,6 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="img/THLogo.ico" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script src="js/search.js" type="text/javascript"></script>
 </head>
 
 <body>

@@ -784,6 +784,15 @@ and (max-device-width : 1024px)  {
     margin-left: 0;
   }
 }
+.welcome {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 
 /* Ipad 3 and 4 retina queries*/
 @media only screen 
