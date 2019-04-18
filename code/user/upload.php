@@ -145,7 +145,7 @@ if(isset($_SESSION['username']))
 <br>
 			
 		            
-		<footer class="site-footer">
+		<footer class="footer">
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>
 

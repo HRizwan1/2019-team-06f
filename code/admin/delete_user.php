@@ -118,7 +118,7 @@ if (isset($_GET['logout'])) {
       ?>
 
                   
-		<footer class="site-footer">
+		<footer class="footer">
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>
       
