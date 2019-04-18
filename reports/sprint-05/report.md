@@ -94,7 +94,7 @@
 4. Data Encryption at Rest:
 
  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
- * MariaDB 10.0.38 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
+ * MariaDB 10.1 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
   * XtraDB: A storage engine for the MariaDB
   * InnoDB: A storage engine for the database management system MySQL.
   * MariaDB allow our files to encrypt:
@@ -159,12 +159,14 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  * Upload photos
  * View own photos
  * Search for photos (hashtags)
+ * View recent uploads
  ![user](images/user.png "user") 
 
  **Administrator Access:**
  * Custom made admin panel
  * Able to create accounts (admin or user)
  * Able to view all accounts
+ * Able to delete users
  ![admin](images/admin.png "Admin")
  ![adminadd](images/admin_panel_add1.png "Adminadding")
  ![adminadd2](images/admin_panel_add2.png "Adminadding2")
