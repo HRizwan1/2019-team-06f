@@ -67,7 +67,8 @@
 
   * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next sprint.
 
-  ![vault](images/hashicorp.png "Vault")     
+  ![vault](images/hashicorp.png "Vault")
+  ![vault2](images/vault.png "Vault")       
 
   c. Capture of application metrics:
 
