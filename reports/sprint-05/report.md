@@ -53,7 +53,7 @@
 
   ![gitignore](images/gitignore.png "Gitignore")
 
-  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safely and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
   * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
@@ -63,9 +63,10 @@
 
   * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
-  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret, while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next sprint.
+  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next sprint.
 
-  ![vault](images/hashicorp.png "Vault")     
+  ![vault](images/hashicorp.png "Vault")  
+
   ![vault2](images/vault.png "Vault")
 
   c. Capture of application metrics:
@@ -123,7 +124,7 @@
 6. Responsive Design (In-progress):
 
 <p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
-Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
+Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -147,13 +148,13 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![ufw](images/ufw.png "Uncomplicated Firewall Rules")
 
  * Authentication keys (if applicable)
- * Seeding of username and passwords as well as pre-seeding databases with schema and records is done on build using packer build scripts.
+ * Seeding of username and passwords as well as pre-seeding databases with schema and records are done on build using packer build scripts.
 
  8. Use of User Authentication:
 
  **Unauthenticated users access:**
  * Have access to “read-only” data
- * Restricted features until account created (cannot view gallery or have any access to photos without an account)
+ * Restricted features until account created (cannot view the gallery or have any access to photos without an account)
 
  **Authenticated normal users have access to:**
  * Upload photos
@@ -254,50 +255,50 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
   * Accomplishments:
 
       -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality <br/>
-      ![php](images/phpTrello.PNG "Trello")</br>
+      ![php](images/phpTrello.PNG "Trello")<br/>
       * closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4 <br/>
       * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
       * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab <br/> 
 
 
       -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded <br/>
-      ![variablesBug](images/variables_sampleTrello.PNG "Trello")</br>
+      ![variablesBug](images/variables_sampleTrello.PNG "Trello")<br/>
       * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f <br/>
 
       -Created layout diagrams <br/>
-      ![diagrams](images/diagramsTrello.PNG "Trello")</br>
+      ![diagrams](images/diagramsTrello.PNG "Trello")<br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br/>
 
-      -Cleaned up the code and kept everything in a code folder: </br>
-      ![cleanUp](images/cleaningTrello.PNG "Trello")</br>
+      -Cleaned up the code and kept everything in a code folder: <br/>
+      ![cleanUp](images/cleaningTrello.PNG "Trello")<br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde <br/>
 
       -'Delete' user functionality on admin page <br/>
-      ![delete](images/delete_userTrello.PNG "Trello")</br>
+      ![delete](images/delete_userTrello.PNG "Trello")<br/>
        https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br/>
 
 
  * In-progress:
 
-   - Responsive Design <br/>
-     Iphone 6,7,8 Plus fixed index.php: </br>
-    ![css](images/cssTrello.PNG "Trello")</br>
+   -Responsive Design <br/>
+     Iphone 6,7,8 Plus fixed index.php: <br/>
+    ![css](images/cssTrello.PNG "Trello")<br/>
      https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
      Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br/>
      Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
 
    -Data Encryption at rest <br/>
-    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")</br>
+    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")<br/>
 
-   -Data Encryption for Data Transit</br>
-   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")</br>
+   -Data Encryption for Data Transit<br/>
+   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")<br/>
 
-   -HashiCorp Vault</br>
-   ![vault](images/vaultTrello.PNG "Trello")</br>
+   -HashiCorp Vault<br/>
+   ![vault](images/vaultTrello.PNG "Trello")<br/>
 
-   -Moving Prometheus into a new server</br>
-   ![prometheus](images/PrometheusTrello.PNG "Trello")</br>
+   -Moving Prometheus into a new server<br/>
+   ![prometheus](images/PrometheusTrello.PNG "Trello")<br/>
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer build, for the development environment of the project.
 
@@ -316,9 +317,9 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-Two bugs previosly open are now closed and the two following bugs have been found.
+Two bugs previously opened are now closed and the two following bugs have been found.
 1. The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-2. The current version of MariaDB that we are running doesn't have file key management which is necesssary for database encryption. 
+2. The current version of MariaDB that we are running doesn't have file key management which is necessary for database encryption. 
 
 
 **Goals for Next Sprint:**
@@ -338,6 +339,6 @@ Two bugs previosly open are now closed and the two following bugs have been foun
 
 **Shan** - 
 
-**Hasan** - In this sprint, I feel like we improved the application and fixed alot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB doesnt support database encryption. We will need to overhaul the database for database encryption. We will work on that in the next sprint. For the next sprint, we plan to catch the class off guard with the implementation of something very special. Overall, we met and exceeded our expecations this sprint.     
+**Hasan** - In this sprint, I feel like we improved the application and fixed a lot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that, I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB does not support database encryption. We will need to overhaul the database for database encryption. We will work on that in the next sprint. For the next sprint, we plan to catch the class off guard with the implementation of something very special. Overall, we met and exceeded our expectations this sprint.     
 
 **Bhumi** - 
