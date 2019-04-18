@@ -126,7 +126,7 @@ while ($row = mysqli_fetch_array($query)) {
 			</main>
 			
 		            
-		<footer class="footer">
+		<footer class="site-footer">
 		<img src="../img/THLogo.png" alt="THLogo">
 		<span>&copy; 2019 TruHawk </span>	
 	
