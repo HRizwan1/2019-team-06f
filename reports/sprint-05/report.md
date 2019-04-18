@@ -24,7 +24,7 @@
 * Data Encryption at rest using XtraDB and InnoDB (I)
 * Moving Prometheus into a new server (I)
 
-### Project Accomplishments: Goals Accomplished (6/10):
+### Project Accomplishments: Goals Accomplished (5/10)
 
 * Fixed the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
 * Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
@@ -273,7 +273,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
        https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br/>
 
 
- * Inprogress:
+ * In-progress:
 
    - Responsive Design <br/>
      Iphone 6,7,8 Plus fixed index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
