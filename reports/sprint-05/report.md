@@ -278,11 +278,23 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  * In-progress:
 
    - Responsive Design <br/>
-     Iphone 6,7,8 Plus fixed index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
+     Iphone 6,7,8 Plus fixed index.php: 
+    ![css](images/cssTrello.PNG "Trello")</br>
+     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
      Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br/>
      Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
 
-   - Data Encryption at rest <br/>
+   -Data Encryption at rest <br/>
+    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")</br>
+
+   -Data Encryption for Data Transit</br>
+   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")</br>
+
+   -HashiCorp Vault</br>
+   ![vault](images/vaultTrello.PNG "Trello")</br>
+
+   -Moving Prometheus into a new server</br>
+   ![prometheus](images/PrometheusTrello.PNG "Trello")</br>
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer build, for the development environment of the project.
 
