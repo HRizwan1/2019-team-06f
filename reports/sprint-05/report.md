@@ -16,21 +16,19 @@
 * Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
 * Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Create layout diagrams (C)
-* Move and improve build instructions (C)
 * Clean up the code and put everything in a code folder (C)
 * 'Delete' user functionality on admin page (C)
-* Data Encryption at rest using XtraDB and InnoDB (I)
-* Data Encryption for Data in transit (I)
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
-
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
+* Data Encryption for Data in transit (I)
+* Data Encryption at rest using XtraDB and InnoDB (I)
+* Moving Prometheus into a new server (I)
 
 ### Project Accomplishments: Goals Accomplished (6/10):
 
 * Fixed the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
 * Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Created layout diagrams (C)
-* Moved and improved build instructions (C)
 * Cleaned up the code and kept everything in a code folder (C)
 * 'Delete' user functionality on admin page (C)
 
