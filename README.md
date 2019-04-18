@@ -14,7 +14,7 @@ This is how we are passing passwords/RSA keys securely.
     1) This way we can securely build the system, deploy it and when building it pass in passwords via environment variables
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
 ![screenshot](code/img/screenshot.png "Screenshot")
-1) Issue the commands ```vagrant box add ./itmt430-db-virtualbox-1551913591.box --name database``` and ```vagrant box add ./itmt430-ws-virtualbox-1551917192.box --name webserver``` and ```vagrant box add ./itmt430-dbs-virtualbox-1551918194.box --name databaseslave``` and ```vagrant box add ./itmt430-c-virtualbox-1551918198.box --name cache``` inside the appropriate folders to add the boxes making sure to replace the box numbers with your box numbers.
+1) Issue the commands ```vagrant box add ./itmt430-db* --name database``` and ```vagrant box add ./itmt430-ws* --name webserver``` and ```vagrant box add ./itmt430-dbs* --name databaseslave``` and ```vagrant box add ./itmt430-c* --name cache``` inside the appropriate folders to add the boxes.
 ![screenshot2](code/img/screenshot2.png "Screenshot2")
 1) Issue the commands ```vagrant init database``` and ```vagrant init webserver``` and ```vagrant init databaseslave``` and ```vagrant init cache``` inside the appropriate folders.  
 1) Configure the Vagrantfiles for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the variables.json when building with Packer. Save the Vagrantfiles.
