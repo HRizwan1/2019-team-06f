@@ -10,24 +10,24 @@
 ### Photo Gallery
 ![Gallery](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/gallery.JPG)
 ### User Home
-![u-home](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/userHome.JPG)
+![u-home](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-05/images/userHome.PNG)
 ### User Buttons
 ![u-buttons](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/userButtons.JPG)
 ### User Panel
 
-![U-panel](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/userPanel.JPG)
+![U-panel](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-05/images/userPanel.PNG)
 
 ### Upload Photo
 
-![upload](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/uploadFeature.JPG)
+![upload](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-05/images/uploadFeature.PNG)
 ### Admin Home
-![a-home](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/adminHome.JPG)
+![a-home](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-05/images/adminHome.PNG)
 ### Admin Buttons
 ![a-buttons](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/adminButtons.JPG)
 
 ### Admin Panel
 
-![A-panel](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-04/images/adminPanel.JPG)
+![A-panel](https://github.com/illinoistech-itm/2019-team-06f/blob/master/reports/sprint-05/images/adminPanel.PNG)
 
 ### Create User
 
