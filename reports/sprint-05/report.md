@@ -265,8 +265,8 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
       ![diagrams](images/diagramsTrello.PNG "Trello")</br>
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br/>
 
-      -Cleaned up the code and kept everything in a code folder <br/>
-       cleaning script: 
+      -Cleaned up the code and kept everything in a code folder 
+       cleaning script: </br>
       ![cleanUp](images/cleaningTrello.PNG "Trello")</br>
        https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br/>
 
@@ -278,7 +278,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  * In-progress:
 
    - Responsive Design <br/>
-     Iphone 6,7,8 Plus fixed index.php: 
+     Iphone 6,7,8 Plus fixed index.php: </br>
     ![css](images/cssTrello.PNG "Trello")</br>
      https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
      Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br/>
