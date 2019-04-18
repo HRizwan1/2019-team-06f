@@ -268,10 +268,10 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
       ![diagrams](images/diagramsTrello.PNG "Trello")</br>
        https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br/>
 
-      -Cleaned up the code and kept everything in a code folder 
-       cleaning script: </br>
+      -Cleaned up the code and kept everything in a code folder: </br>
       ![cleanUp](images/cleaningTrello.PNG "Trello")</br>
        https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br/>
+       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde <br/>
 
       -'Delete' user functionality on admin page <br/>
       ![delete](images/delete_userTrello.PNG "Trello")</br>
