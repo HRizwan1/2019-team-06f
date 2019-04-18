@@ -338,6 +338,6 @@ Two bugs previosly open are now closed and the two following bugs have been foun
 
 **Shan** - 
 
-**Hasan** - In this sprint, I feel like we improved the application and fixed alot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB doesnt support database encryption. We will need to overhaul the database for database encryption. We will work on that in next sprint. For the next sprint, we plan to catch the class off guard with the implementation of something very special. Overall, we met and exceeded our expecations this sprint.     
+**Hasan** - In this sprint, I feel like we improved the application and fixed alot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB doesnt support database encryption. We will need to overhaul the database for database encryption. We will work on that in the next sprint. For the next sprint, we plan to catch the class off guard with the implementation of something very special. Overall, we met and exceeded our expecations this sprint.     
 
 **Bhumi** - 
