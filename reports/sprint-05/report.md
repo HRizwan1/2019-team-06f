@@ -201,25 +201,25 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
  * User Home page:
 
-  ![homepage](images/userHome.JPG "Homepage Layout")
+  ![homepage](images/userHome.PNG "Homepage Layout")
  ![buttons](images/userButtons.JPG "Button links on home page")
 
  * User Panel:
 
- ![U-panel](images/userPanel.JPG "User Panel Layout")
+ ![U-panel](images/userPanel.PNG "User Panel Layout")
 
  * Upload Photo:
 
- ![upload](images/uploadFeature.JPG "Upload Photo")
+ ![upload](images/uploadFeature.PNG "Upload Photo")
 
  * Admin Home page:
 
- ![homepage](images/adminHome.JPG "Homepage Layout")
+ ![homepage](images/adminHome.PNG "Homepage Layout")
  ![buttons](images/adminButtons.JPG "Button links on home page")
 
  * Admin Panel:
 
- ![A-panel](images/adminPanel.JPG "Admin Panel Layout")
+ ![A-panel](images/adminPanel.PNG "Admin Panel Layout")
 
  * Create User:
 
