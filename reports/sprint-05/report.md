@@ -343,4 +343,5 @@ Two bugs previously opened are now closed and the two following bugs have been f
 
 **Hasan** - In this sprint, I feel like we improved the application and fixed a lot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that, I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB does not support database encryption. We will need to overhaul the database for database encryption. We will work on that in the next sprint. For the next sprint, we plan implement something very special. Overall, we met and exceeded our expectations this sprint.     
 
-**Bhumi** - 
+**Bhumi** - This sprint I have contributed with documenting the report including GitHub urls and trello accomplished goals. Also, I have tried to search the resources for my own understanding of hashiCorp Vault and how it works. At this stage, our team has accomplished most of the goals and working on the challenges for the upcoming sprint. 
+
