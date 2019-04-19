@@ -19,7 +19,7 @@
 * Clean up the code and put everything in a code folder (C)
 * Add 'Delete User' functionality on admin page (C)
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys (I)
 * Data Encryption for Data in transit (I)
 * Data Encryption at rest using XtraDB and InnoDB (I)
 * Moving Prometheus into a new server (I)
@@ -328,6 +328,7 @@ Two bugs previously opened are now closed and the two following bugs have been f
 - Data Encryption at Rest using XtraDB and InnoDB
 - Data Encryption for Data in transit
 - Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
+- Moving Prometheus into a new server
 
 
 #### Individual Reflections:
