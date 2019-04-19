@@ -337,7 +337,7 @@ Two bugs previously opened are now closed and the two following bugs have been f
 
 **Sarina** - This sprint, I spent some time researching css media queries and making edits related to css responsive design. Also due to changes from last sprint, I spent some time rebuilding my servers. Also, as changes were made to interface of our site, I created updated diagrams for the user panel, admin panel and made sure the repository was up to date with those. I also contributed in the creation and editing of this report scraping trello and github for artifacts. 
 
-**Jason** - 
+**Jason** - This sprint is covering the final stretches of the overall project, with one sprint to go. The team has accomplished alot so far, with this sprint comprised primarly of fixing any issues/bugs, organizing and cleaning things up, as well as focusing on the user experience. As Project manager, I helped to manage trello and the report, as well as recording a demo to demonstrate functionality of our website to be shown in class, learning whatever I can about the components of the website. For the final sprint, we hope to implement something challenging for a final sendoff of this project. 
 
 **Shan** - 
 
