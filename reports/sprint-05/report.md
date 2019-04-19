@@ -333,7 +333,7 @@ Two bugs previously opened are now closed and the two following bugs have been f
 
 #### Individual Reflections:
 
-**Daniel** -
+**Daniel** - I worked on implementing mobile queries which have been tested to work on IPhone 6,7,8; 6,7,8 Plus and Iphone X as well as IPad. While there is more to be desired the CSS queries are resizing and presenting our UI in a usable manner. Also I was able to resolve few bugs, one of which was our searchbar not functioning properly after a search has been executed and another search performed from the searchresults.php page. Upload picture as well as some other php functionality was also affected by the searchbar and those issues were resolved. I also had to deploy another Github key to rebuild the current configuration after the move of the code into Code folder. I was able to succesfully use our website from my Iphone 7 Plus and upload a photo of my own. Overall our team was able to accomplish a lot of our goals and has done considerable progress on others which are still in progress.
 
 **Sarina** - This sprint, I spent some time researching css media queries and making edits related to css responsive design. Also due to changes from last sprint, I spent some time rebuilding my servers. Also, as changes were made to interface of our site, I created updated diagrams for the user panel, admin panel and made sure the repository was up to date with those. I also contributed in the creation and editing of this report scraping trello and github for artifacts. 
 
