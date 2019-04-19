@@ -44,27 +44,27 @@ This is how we are passing passwords/RSA keys securely.
 1) Inserting secrets into Vault
    
    To insert secrets into the Vault, open a new terminal and issue the following commands replacing default values with your own values:  
-   ```vault secrets enable -version=1 -path=secrets kv```
-   ```vault kv put secrets/database-root-password database-root-password=foo```
-   ```vault kv put secrets/database-user-password database-user-password=bar```
-   ```vault kv put secrets/database-access-from-ip database-access-from-ip=127.0.0.1```
-   ```vault kv put secrets/database-ip database-ip=127.0.0.1```
-   ```vault kv put secrets/webserver-ip webserver-ip=127.0.0.1```
-   ```vault kv put secrets/databaseslave-ip databaseslave-ip=127.0.0.1```
-   ```vault kv put secrets/cache-ip cache-ip=127.0.0.1```
+   ```vault secrets enable -version=1 -path=secrets kv``` </br>
+   ```vault kv put secrets/database-root-password database-root-password=foo```</br>
+   ```vault kv put secrets/database-user-password database-user-password=bar```</br>
+   ```vault kv put secrets/database-access-from-ip database-access-from-ip=127.0.0.1```</br>
+   ```vault kv put secrets/database-ip database-ip=127.0.0.1```</br>
+   ```vault kv put secrets/webserver-ip webserver-ip=127.0.0.1```</br>
+   ```vault kv put secrets/databaseslave-ip databaseslave-ip=127.0.0.1```</br>
+   ```vault kv put secrets/cache-ip cache-ip=127.0.0.1```</br>
    ```vault kv put secrets/salt salt=jeremyistheboss123456789```
 1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables 
-```packer build ubuntu16045-itmt430-database.json``` 
-```packer build ubuntu16045-itmt430-webserver.json``` 
-```packer build ubuntu16045-itmt430-database-slave.json```
-```packer build ubuntu16045-itmt430-cache.json```
+```packer build ubuntu16045-itmt430-database.json```</br> 
+```packer build ubuntu16045-itmt430-webserver.json```</br> 
+```packer build ubuntu16045-itmt430-database-slave.json```</br>
+```packer build ubuntu16045-itmt430-cache.json```</br>
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
 ![screenshot](code/img/screenshot.png "Screenshot")
 1) Issue the following commands inside the appropriate folders to add the boxes 
-```vagrant box add ./itmt430-db* --name database``` 
-```vagrant box add ./itmt430-ws* --name webserver``` 
-```vagrant box add ./itmt430-dbs* --name databaseslave``` 
-```vagrant box add ./itmt430-c* --name cache```
+```vagrant box add ./itmt430-db* --name database```</br> 
+```vagrant box add ./itmt430-ws* --name webserver```</br> 
+```vagrant box add ./itmt430-dbs* --name databaseslave```</br> 
+```vagrant box add ./itmt430-c* --name cache```</br>
 ![screenshot2](code/img/screenshot2.png "Screenshot2")
 1) Issue the commands ```vagrant init database``` and ```vagrant init webserver``` and ```vagrant init databaseslave``` and ```vagrant init cache``` inside the appropriate folders.  
 1) Configure the Vagrantfiles for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the variables.json when building with Packer. Save the Vagrantfiles.
