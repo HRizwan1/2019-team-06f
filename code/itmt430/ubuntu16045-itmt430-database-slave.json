@@ -1,4 +1,14 @@
 {
+  "variables": {
+    "database-root-password": "{{ vault `secrets/database-root-password` `database-root-password`}}",
+    "database-user-password": "{{ vault `secrets/database-user-password` `database-user-password`}}",
+    "database-access-from-ip": "{{ vault `secrets/database-access-from-ip` `database-access-from-ip`}}",
+    "database-ip": "{{ vault `secrets/database-ip` `database-ip`}}",
+    "webserver-ip": "{{ vault `secrets/webserver-ip` `webserver-ip`}}",
+    "databaseslave-ip": "{{ vault `secrets/databaseslave-ip` `databaseslave-ip`}}",
+    "cache-ip": "{{ vault `secrets/cache-ip` `cache-ip`}}",
+    "salt": "{{ vault `secrets/salt` `salt`}}"
+  },
     "builders": [{
         "name": "itmt430-dbs",
         "type": "virtualbox-iso",
