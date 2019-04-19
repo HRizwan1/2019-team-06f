@@ -1,4 +1,4 @@
-# Sprint-5 Report
+# Sprint-6 Report
 ## Team True
 ## Project: Flickr/Instagram Hybrid Internal Photo Search Site
 ## Site Name: TruHawk
@@ -13,24 +13,11 @@
 
 ### Project Goals:
 
-* Fix the issue: Php interference on upload.php when search box is added breaks the upload functionality (C)
-* Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
-* Create layout diagrams (C)
-* Clean up the code and put everything in a code folder (C)
-* Add 'Delete User' functionality on admin page (C)
-* Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys (I)
-* Data Encryption for Data in transit (I)
-* Data Encryption at rest using XtraDB and InnoDB (I)
-* Moving Prometheus into a new server (I)
+
 
 ### Project Accomplishments: Goals Accomplished (5/10)
 
-* Fixed the issue: Php interference on upload.php when search box is added breaks the upload functionality (C)
-* Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
-* Created layout diagrams (C)
-* Cleaned up the code and kept everything in a code folder (C)
-* Added 'Delete User' functionality on admin page (C)
+
 
 
 ### Project Requirements:
@@ -318,30 +305,24 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![testimages](images/testimages.png "Test Images")
 
 **Any issues/Bugs?**
-Two bugs previously opened are now closed and the two following bugs have been found.
-1. The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-2. The current version of MariaDB that we are running doesn't have file key management, which is necessary for database encryption. 
+
 
 
 **Goals for Next Sprint:**
-- Implementing responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet
-- Data Encryption at Rest using XtraDB and InnoDB
-- Data Encryption for Data in transit
-- Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys
-- Moving Prometheus into a new server
+
 
 
 #### Individual Reflections:
 
-**Daniel** - I worked on implementing mobile queries which have been tested to work on IPhone 6,7,8; 6,7,8 Plus and Iphone X as well as IPad. While there is more to be desired the CSS queries are resizing and presenting our UI in a usable manner. Also I was able to resolve few bugs, one of which was our searchbar not functioning properly after a search has been executed and another search performed from the searchresults.php page. Upload picture as well as some other php functionality was also affected by the searchbar and those issues were resolved. I also had to deploy another Github key to rebuild the current configuration after the move of the code into Code folder. I was able to succesfully use our website from my Iphone 7 Plus and upload a photo of my own. Overall our team was able to accomplish a lot of our goals and has done considerable progress on others which are still in progress.
+**Daniel** - 
 
-**Sarina** - This sprint, I spent some time researching css media queries and making edits related to css responsive design. Also due to changes from last sprint, I spent some time rebuilding my servers. Also, as changes were made to interface of our site, I created updated diagrams for the user panel, admin panel and made sure the repository was up to date with those. I also contributed in the creation and editing of this report scraping trello and github for artifacts. 
+**Sarina** - 
 
-**Jason** - This sprint is covering the final stretches of the overall project, with one sprint to go. The team has accomplished alot so far, with this sprint comprised primarly of fixing any issues/bugs, organizing and cleaning things up, as well as focusing on the user experience. As Project manager, I helped to manage trello and the report, as well as recording a demo to demonstrate functionality of our website to be shown in class, learning whatever I can about the components of the website. For the final sprint, we hope to implement something challenging for a final sendoff of this project. 
+**Jason** -  
 
-**Shan** - As promised with database encryption, I attempted to work on encrypting the database but found out that the current version of MariaDB we have does not have encryption at rest. Only versions grearer than 0. do so in order to do that we would have to change our whole infrastructure. I am trying to see if someway we can manaully add the encryption files into the current version so that it can work. I worked on devloping the admin page with a delete feature where super users can now remove accounts with JS script. I hope to plan database encryption by the next sprint if possible since we only have a couple weeks left now. 
+**Shan** -  
 
-**Hasan** - In this sprint, I feel like we improved the application and fixed a lot of existing issues. I started off this sprint by fixing the variables-sample.json which was filed as having a bug. After that, I worked on moving everything into a code folder and changing the appropriate paths. I worked with Shan on getting data encryption at rest. However, we ran into an issue which is that our version of MariaDB does not support database encryption. We will need to overhaul the database for database encryption. We will work on that in the next sprint. For the next sprint, we plan implement something very special. Overall, we met and exceeded our expectations this sprint.     
+**Hasan** -      
 
-**Bhumi** - This sprint I have contributed with documenting the report including GitHub urls and trello accomplished goals. Also, I have tried to search the resources for my own understanding of hashiCorp Vault and how it works. At this stage, our team has accomplished most of the goals and working on the challenges for the upcoming sprint. 
+**Bhumi** - 
 
