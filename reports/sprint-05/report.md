@@ -334,7 +334,7 @@ Two bugs previously opened are now closed and the two following bugs have been f
 
 **Daniel** -
 
-**Sarina** - 
+**Sarina** - This sprint, I spent some time researching css media queries and making edits related to css responsive design. Also due to changes from last sprint, I spent some time rebuilding my servers. Also, as changes were made to interface of our site, I created updated diagrams for the user panel, admin panel and made sure the repository was up to date with those. I also contributed in the creation and editing of this report scraping trello and github for artifacts. 
 
 **Jason** - 
 
