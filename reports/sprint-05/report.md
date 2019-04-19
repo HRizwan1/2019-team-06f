@@ -13,7 +13,7 @@
 
 ### Project Goals:
 
-* Fix the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
+* Fix the issue: Php interference on upload.php when search box is added breaks the upload functionality (C)
 * Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Create layout diagrams (C)
 * Clean up the code and put everything in a code folder (C)
@@ -26,11 +26,11 @@
 
 ### Project Accomplishments: Goals Accomplished (5/10)
 
-* Fixed the issue: Php interference on upload.php when search box is added it breaks the upload functionality (C)
+* Fixed the issue: Php interference on upload.php when search box is added breaks the upload functionality (C)
 * Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Created layout diagrams (C)
 * Cleaned up the code and kept everything in a code folder (C)
-* Added'Delete User' functionality on admin page (C)
+* Added 'Delete User' functionality on admin page (C)
 
 
 ### Project Requirements:
@@ -41,7 +41,7 @@
  * Vagrant/Packer is used for building and automating the building of the servers
  * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
- * MariaDB Server 10.0.38 provides an SQL interface for accessing data
+ * MariaDB Server 10.0.38 provides a SQL interface for accessing data
 
  2. Operating System Platform:
 
@@ -53,7 +53,7 @@
 
   ![gitignore](images/gitignore.png "Gitignore")
 
-  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safely and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
 
   * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
 
@@ -63,7 +63,7 @@
 
   * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
-  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next sprint.
+  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next and final sprint.
 
   ![vault](images/hashicorp.png "Vault")  
 
@@ -71,11 +71,11 @@
 
   c. Capture of application metrics:
 
-  * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
+  * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores it in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
   ![prometheus](images/prometheus.png "Prometheus")
 
-  * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is completely an open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has feature rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service which we might incorporate in the future sprint.
+  * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is a completely open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has a feature-rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service, which we might incorporate in the next sprint.
 
   ![grafana](images/grafana.png "Grafana")
 
@@ -301,7 +301,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
    -Moving Prometheus into a new server<br/>
    ![prometheus](images/PrometheusTrello.PNG "Trello")<br/>
 
- * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer build, for the development environment of the project.
+ * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment of the project.
 
  * Github:
   ![github](images/github.png "Github")
@@ -320,7 +320,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 **Any issues/Bugs?**
 Two bugs previously opened are now closed and the two following bugs have been found.
 1. The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-2. The current version of MariaDB that we are running doesn't have file key management which is necessary for database encryption. 
+2. The current version of MariaDB that we are running doesn't have file key management, which is necessary for database encryption. 
 
 
 **Goals for Next Sprint:**
