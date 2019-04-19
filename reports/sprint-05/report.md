@@ -17,7 +17,7 @@
 * Fix the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Create layout diagrams (C)
 * Clean up the code and put everything in a code folder (C)
-* 'Delete' user functionality on admin page (C)
+* Add 'Delete User' functionality on admin page (C)
 * Responsive web design using CSS media queries in order to fit multiple form factors, such as mobile and tablet (I) 
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases ad RSA Keys (I)
 * Data Encryption for Data in transit (I)
@@ -30,7 +30,7 @@
 * Fixed the issue: Variable-sample.json: database-user-name value hardcoded (C)
 * Created layout diagrams (C)
 * Cleaned up the code and kept everything in a code folder (C)
-* 'Delete' user functionality on admin page (C)
+* Added'Delete User' functionality on admin page (C)
 
 
 ### Project Requirements:
@@ -296,6 +296,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
    -HashiCorp Vault<br/>
    ![vault](images/vaultTrello.PNG "Trello")<br/>
+   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4</br>
 
    -Moving Prometheus into a new server<br/>
    ![prometheus](images/PrometheusTrello.PNG "Trello")<br/>
