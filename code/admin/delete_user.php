@@ -80,9 +80,20 @@ if (isset($_GET['logout'])) {
             }
 				
             $username = $_POST['username'];
-                
-			$query = "DELETE FROM users WHERE username = '$username'"; 
-            mysqli_query($db, $query);
+			// Function to get the id of the username
+			 function getId($username){
+             $db = mysqli_connect('$DATABASEIP', 'worker', '$USERPASS', 'website');
+			 $get_id_query = "SELECT `id` FROM `users` WHERE `username` ='$username'";
+			 $result = mysqli_query($db, $get_id_query);
+			 while($row = mysqli_fetch_assoc($result)){
+					 return $row['id'];
+			 }
+	 }
+	$useridtest= getId($username);
+			$delete_pictures_query = "DELETE FROM pictures WHERE id = '$useridtest'"; 
+			mysqli_query($db, $delete_pictures_query);	
+			$delete_user_query = "DELETE FROM users WHERE username = '$username'"; 
+            mysqli_query($db, $delete_user_query);
             
             echo "<script>alert('The user has been successfully deleted!'); window.location = './delete_user.php';</script>";
 
