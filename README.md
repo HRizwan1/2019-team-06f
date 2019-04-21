@@ -45,7 +45,6 @@ This is how we are passing passwords/RSA keys securely.
 
    ![screenshot5](code/img/screenshot5.png "Screenshot5") 
 
-1) After configuring the environment variables in the system, close all open terminals excluding the vault server terminal.
 
 1) Inserting secrets into Vault
    
