@@ -25,13 +25,13 @@ This is how we are passing passwords/RSA keys securely.
 
 1) Starting Vault
   
-   To start the Vault dev server, open a new terminal and run: 
+   To start the Vault dev server, open a new terminal and run: </br> 
    ```vault server -dev -dev-root-token-id="root"```
 
 1) Setting Enviornment Variables for Vault
    
    You need to set two environment variables on your local machine for vault to function properly. 
-   VAULT_ADDR='http://127.0.0.1:8200'
+   VAULT_ADDR='http://127.0.0.1:8200' </br> 
    VAULT_TOKEN=root
    
    The link below shows how to configure environment variables on different operating systems.
