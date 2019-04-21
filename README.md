@@ -29,6 +29,7 @@ This is how we are passing passwords/RSA keys securely.
   
    To start the Vault dev server, open a new terminal and run: </br> 
    ```vault server -dev -dev-root-token-id="root"``` </br> 
+   ![screenshot6](code/img/screenshot6.png "Screenshot6")
    Leave this terminal running
 
 1) Setting Enviornment Variables for Vault
@@ -42,7 +43,7 @@ This is how we are passing passwords/RSA keys securely.
    
    Here is an image of the environment variables configured on Windows.
 
-   ![screenshot4](code/img/screenshot4.png "Screenshot4") 
+   ![screenshot5](code/img/screenshot5.png "Screenshot5") 
 
 1) After configuring the environment variables in the system, close all open command line terminals excluding the vault server terminal.
 
