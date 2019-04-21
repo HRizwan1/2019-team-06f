@@ -34,7 +34,7 @@ This is how we are passing passwords/RSA keys securely.
 
 1) Setting Enviornment Variables for Vault
    
-   You need to set two environment variables on your local machine for vault to accessed properly by Packer 
+   You need to set two environment variables on your local machine for vault to be accessed properly by Packer 
    VAULT_ADDR='http://127.0.0.1:8200' </br> 
    VAULT_TOKEN=root
    
@@ -77,6 +77,7 @@ This is how we are passing passwords/RSA keys securely.
 ```vagrant init webserver```</br>
 ```vagrant init databaseslave```</br>
 ```vagrant init cache``` </br> 
+![screenshot7](code/img/screenshot7.png "Screenshot7")
 1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the vault when building with Packer. Save the Vagrantfiles.
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
 1) Issue the command ```vagrant up``` for each of the servers.
