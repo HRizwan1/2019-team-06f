@@ -28,13 +28,13 @@ This is how we are passing passwords/RSA keys securely.
 1) Starting Vault
   
    To start the Vault dev server, open a new terminal and run: </br> 
-   ```vault server -dev -dev-root-token-id="root"``` </br> 
+   ```vault server -dev -dev-root-token-id="root"``` </br></br>
    ![screenshot6](code/img/screenshot6.png "Screenshot6")
-   Leave this terminal running
+   Leave this terminal open
 
 1) Setting Enviornment Variables for Vault
    
-   You need to set two environment variables on your local machine for vault to function properly. 
+   You need to set two environment variables on your local machine for vault to accessed properly by Packer 
    VAULT_ADDR='http://127.0.0.1:8200' </br> 
    VAULT_TOKEN=root
    
@@ -45,7 +45,7 @@ This is how we are passing passwords/RSA keys securely.
 
    ![screenshot5](code/img/screenshot5.png "Screenshot5") 
 
-1) After configuring the environment variables in the system, close all open command line terminals excluding the vault server terminal.
+1) After configuring the environment variables in the system, close all open terminals excluding the vault server terminal.
 
 1) Inserting secrets into Vault
    
@@ -59,21 +59,25 @@ This is how we are passing passwords/RSA keys securely.
    ```vault kv put secrets/databaseslave-ip databaseslave-ip=127.0.0.1```</br>
    ```vault kv put secrets/cache-ip cache-ip=127.0.0.1```</br>
    ```vault kv put secrets/salt salt=jeremyistheboss123456789```
-1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables 
+1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables </br>
 ```packer build ubuntu16045-itmt430-database.json```</br> 
 ```packer build ubuntu16045-itmt430-webserver.json```</br> 
 ```packer build ubuntu16045-itmt430-database-slave.json```</br>
 ```packer build ubuntu16045-itmt430-cache.json```</br>
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
 ![screenshot](code/img/screenshot.png "Screenshot")
-1) Issue the following commands inside the appropriate folders to add the boxes 
+1) Issue the following commands inside the appropriate folders to add the boxes </br> 
 ```vagrant box add ./itmt430-db* --name database```</br> 
 ```vagrant box add ./itmt430-ws* --name webserver```</br> 
 ```vagrant box add ./itmt430-dbs* --name databaseslave```</br> 
 ```vagrant box add ./itmt430-c* --name cache```</br>
 ![screenshot2](code/img/screenshot2.png "Screenshot2")
-1) Issue the commands ```vagrant init database``` and ```vagrant init webserver``` and ```vagrant init databaseslave``` and ```vagrant init cache``` inside the appropriate folders.  
-1) Configure the Vagrantfiles for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the variables.json when building with Packer. Save the Vagrantfiles.
+1) Issue the following commands inside the appropriate folders initialize each box and to place a Vagrantfile in each fodler.    
+```vagrant init database```</br>
+```vagrant init webserver```</br>
+```vagrant init databaseslave```</br>
+```vagrant init cache``` </br> 
+1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the vault when building with Packer. Save the Vagrantfiles.
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
 1) Issue the command ```vagrant up``` for each of the servers.
 1) To access TruHawk, enter the webserver IP into your web browser.
