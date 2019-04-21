@@ -72,7 +72,7 @@ This is how we are passing passwords/RSA keys securely.
 ```vagrant box add ./itmt430-dbs* --name databaseslave```</br> 
 ```vagrant box add ./itmt430-c* --name cache```</br>
 ![screenshot2](code/img/screenshot2.png "Screenshot2")
-1) Issue the following commands inside the appropriate folders initialize each box and to place a Vagrantfile in each fodler.    
+1) Issue the following commands inside the appropriate folders initialize each box and to place a Vagrantfile in each folder.    
 ```vagrant init database```</br>
 ```vagrant init webserver```</br>
 ```vagrant init databaseslave```</br>
@@ -80,5 +80,6 @@ This is how we are passing passwords/RSA keys securely.
 ![screenshot7](code/img/screenshot7.png "Screenshot7")
 1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the vault when building with Packer. Save the Vagrantfiles.
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
-1) Issue the command ```vagrant up``` for each of the servers.
+1) Issue the following command for each of the servers. </br>
+```vagrant up```
 1) To access TruHawk, enter the webserver IP into your web browser.
