@@ -14,6 +14,8 @@ This is how we are passing passwords/RSA keys securely.
    https://www.vaultproject.io/downloads.html
    
    After downloading Vault, unzip the package. Vault runs as a single binary named vault. Any other files in the package can be safely removed and Vault will still function.
+
+   ![screenshot4](code/img/screenshot4.png "Screenshot4")
    
    The final step is to make sure that the vault binary is available on the PATH. 
    
@@ -26,7 +28,8 @@ This is how we are passing passwords/RSA keys securely.
 1) Starting Vault
   
    To start the Vault dev server, open a new terminal and run: </br> 
-   ```vault server -dev -dev-root-token-id="root"```
+   ```vault server -dev -dev-root-token-id="root"``` </br> 
+   Leave this terminal running
 
 1) Setting Enviornment Variables for Vault
    
@@ -38,6 +41,8 @@ This is how we are passing passwords/RSA keys securely.
    https://www.schrodinger.com/kb/1842
    
    Here is an image of the environment variables configured on Windows.
+
+   ![screenshot4](code/img/screenshot4.png "Screenshot4") 
 
 1) After configuring the environment variables in the system, close all open command line terminals excluding the vault server terminal.
 
