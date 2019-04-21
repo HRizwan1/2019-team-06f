@@ -64,7 +64,7 @@ This is how we are passing passwords/RSA keys securely.
 ```packer build ubuntu16045-itmt430-database.json```</br> 
 ```packer build ubuntu16045-itmt430-webserver.json```</br> 
 ```packer build ubuntu16045-itmt430-database-slave.json```</br>
-```packer build ubuntu16045-itmt430-cache.json```</br>
+```packer build ubuntu16045-itmt430-cache.json```</br> </br>
 ![screenshot9](code/img/screenshot9.png "Screenshot9") 
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. </br></br> 
 ![screenshot](code/img/screenshot.png "Screenshot")
@@ -74,13 +74,15 @@ This is how we are passing passwords/RSA keys securely.
 ```vagrant box add ./itmt430-dbs* --name databaseslave```</br> 
 ```vagrant box add ./itmt430-c* --name cache```</br> </br>
 ![screenshot2](code/img/screenshot2.png "Screenshot2")
-1) Issue the following commands inside the appropriate folders initialize each box and to place a Vagrantfile in each folder.    
+1) Issue the following commands inside the appropriate folders to initialize each box and to place a Vagrantfile in each folder.    
 ```vagrant init database```</br>
 ```vagrant init webserver```</br>
 ```vagrant init databaseslave```</br>
 ```vagrant init cache``` </br> 
 ![screenshot7](code/img/screenshot7.png "Screenshot7")
-1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"```. Replace the 127.0.0.1 with the ip used for that specific server in the vault when building with Packer. Save the Vagrantfiles.
+1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with: </br>
+ ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"``` </br>
+ Replace the 127.0.0.1 with the ip used for that specific server in the Vault. Save the Vagrantfiles. </br> </br>
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
 1) Issue the following command for each of the servers. </br>
 ```vagrant up```
