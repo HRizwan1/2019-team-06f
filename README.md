@@ -77,7 +77,7 @@ This is how we are passing passwords/RSA keys securely.
 ```vagrant init database```</br>
 ```vagrant init webserver```</br>
 ```vagrant init databaseslave```</br>
-```vagrant init cache``` </br> 
+```vagrant init cache``` </br> </br>
 ![screenshot7](code/img/screenshot7.png "Screenshot7")
 1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with: </br>
  ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"``` </br>
