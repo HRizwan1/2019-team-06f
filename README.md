@@ -49,7 +49,7 @@ This is how we are passing passwords/RSA keys securely.
 1) Inserting secrets into Vault
    
    To insert secrets into the Vault, open a new terminal and issue the following commands replacing default values with your own values:  
-   ```console 
+   ```posh 
    vault secrets enable -version=1 -path=secrets kv
    vault kv put secrets/database-root-password database-root-password=foo
    vault kv put secrets/database-user-password database-user-password=bar
@@ -62,10 +62,12 @@ This is how we are passing passwords/RSA keys securely.
    ```
    ![screenshot8](code/img/screenshot8.png "Screenshot8") 
 1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables </br>
-```packer build ubuntu16045-itmt430-database.json```</br> 
-```packer build ubuntu16045-itmt430-webserver.json```</br> 
-```packer build ubuntu16045-itmt430-database-slave.json```</br>
-```packer build ubuntu16045-itmt430-cache.json```</br> </br>
+   ```posh
+   packer build ubuntu16045-itmt430-database.json
+   packer build ubuntu16045-itmt430-webserver.json
+   packer build ubuntu16045-itmt430-database-slave.json
+   packer build ubuntu16045-itmt430-cache.json
+   ```
 ![screenshot9](code/img/screenshot9.png "Screenshot9") 
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. </br></br> 
 ![screenshot](code/img/screenshot.png "Screenshot")
