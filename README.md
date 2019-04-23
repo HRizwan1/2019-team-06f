@@ -28,7 +28,10 @@ This is how we are passing passwords/RSA keys securely.
 1) Starting Vault
   
    To start the Vault dev server, open a new terminal and run: </br> 
-   ```vault server -dev -dev-root-token-id="root"``` </br></br>
+   ```posh
+   vault server -dev -dev-root-token-id="root"
+   ``` 
+
    ![screenshot6](code/img/screenshot6.png "Screenshot6")
    Leave this terminal open
 
@@ -72,11 +75,13 @@ This is how we are passing passwords/RSA keys securely.
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. </br></br> 
 ![screenshot](code/img/screenshot.png "Screenshot")
 1) Issue the following commands inside the appropriate folders to add the boxes. </br> 
-```vagrant box add ./itmt430-db* --name database```</br> 
-```vagrant box add ./itmt430-ws* --name webserver```</br> 
-```vagrant box add ./itmt430-dbs* --name databaseslave```</br> 
-```vagrant box add ./itmt430-c* --name cache```</br> </br>
-![screenshot2](code/img/screenshot2.png "Screenshot2")
+   ```posh
+   vagrant box add ./itmt430-db* --name database 
+   vagrant box add ./itmt430-ws* --name webserver 
+   vagrant box add ./itmt430-dbs* --name databaseslave
+   vagrant box add ./itmt430-c* --name cache
+   ```
+   ![screenshot2](code/img/screenshot2.png "Screenshot2")
 1) Issue the following commands inside the appropriate folders to initialize each box and to place a Vagrantfile in each folder.    
 ```vagrant init database```</br>
 ```vagrant init webserver```</br>
