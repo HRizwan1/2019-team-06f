@@ -50,7 +50,7 @@ This is how we are passing passwords/RSA keys securely.
    
    To insert secrets into the Vault, open a new terminal and issue the following commands replacing default values with your own values:  
    ```posh 
-   vault secrets enable -version=1 -path=secrets kv
+   vault secrets enable -version=1 -path=secrets kv<br/>
    vault kv put secrets/database-root-password database-root-password=foo
    vault kv put secrets/database-user-password database-user-password=bar
    vault kv put secrets/database-access-from-ip database-access-from-ip=127.0.0.1
