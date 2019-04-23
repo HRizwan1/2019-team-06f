@@ -49,7 +49,7 @@ This is how we are passing passwords/RSA keys securely.
 1) Inserting secrets into Vault
    
    To insert secrets into the Vault, open a new terminal and issue the following commands replacing default values with your own values:  
-   ```vault secrets enable -version=1 -path=secrets kv``` </br>
+   ```vault secrets enable -version=1 -path=secrets kv```</br>
    ```vault kv put secrets/database-root-password database-root-password=foo```</br>
    ```vault kv put secrets/database-user-password database-user-password=bar```</br>
    ```vault kv put secrets/database-access-from-ip database-access-from-ip=127.0.0.1```</br>
@@ -57,7 +57,7 @@ This is how we are passing passwords/RSA keys securely.
    ```vault kv put secrets/webserver-ip webserver-ip=127.0.0.1```</br>
    ```vault kv put secrets/databaseslave-ip databaseslave-ip=127.0.0.1```</br>
    ```vault kv put secrets/cache-ip cache-ip=127.0.0.1```</br>
-   ```vault kv put secrets/salt salt=jeremyistheboss123456789```</br> </br> 
+   ```vault kv put secrets/salt salt=jeremyistheboss123456789```</br></br> 
    ![screenshot8](code/img/screenshot8.png "Screenshot8") 
 1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables </br>
 ```packer build ubuntu16045-itmt430-database.json```</br> 
