@@ -71,9 +71,9 @@ This is how we are passing passwords/RSA keys securely.
    packer build ubuntu16045-itmt430-database-slave.json
    packer build ubuntu16045-itmt430-cache.json
    ```
-![screenshot9](code/img/screenshot9.png "Screenshot9") 
+   ![screenshot9](code/img/screenshot9.png "Screenshot9") 
 1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. </br></br> 
-![screenshot](code/img/screenshot.png "Screenshot")
+   ![screenshot](code/img/screenshot.png "Screenshot")
 1) Issue the following commands inside the appropriate folders to add the boxes. </br> 
    ```posh
    vagrant box add ./itmt430-db* --name database 
