@@ -91,7 +91,9 @@ This is how we are passing passwords/RSA keys securely.
    ```
    ![screenshot7](code/img/screenshot7.png "Screenshot7")
 1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with: 
- ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"``` 
+   ```
+   config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"
+   ``` 
  Replace the 127.0.0.1 with the ip used for that specific server in the Vault. Save the Vagrantfiles. 
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
 1) Issue the following command for each of the servers. 
