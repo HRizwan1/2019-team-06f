@@ -64,7 +64,7 @@ This is how we are passing passwords/RSA keys securely.
    vault kv put secrets/salt salt=jeremyistheboss123456789
    ```
    ![screenshot8](code/img/screenshot8.png "Screenshot8") 
-1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables </br>
+1) Issue the commands inside of the code/itmt430 folder to begin the install with password, usernames, and RSA private key properly seeded. This way we can securely build the system, deploy it and when building it pass in passwords via environment variables 
    ```posh
    packer build ubuntu16045-itmt430-database.json
    packer build ubuntu16045-itmt430-webserver.json
@@ -72,9 +72,9 @@ This is how we are passing passwords/RSA keys securely.
    packer build ubuntu16045-itmt430-cache.json
    ```
    ![screenshot9](code/img/screenshot9.png "Screenshot9") 
-1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. </br></br> 
+1) Once all four servers are built, go the the build folder and create a seperate folder for each box file and move each one into it's specific folder. 
    ![screenshot](code/img/screenshot.png "Screenshot")
-1) Issue the following commands inside the appropriate folders to add the boxes. </br> 
+1) Issue the following commands inside the appropriate folders to add the boxes.  
    ```posh
    vagrant box add ./itmt430-db* --name database 
    vagrant box add ./itmt430-ws* --name webserver 
@@ -90,11 +90,11 @@ This is how we are passing passwords/RSA keys securely.
    vagrant init cache
    ```
    ![screenshot7](code/img/screenshot7.png "Screenshot7")
-1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with: </br>
- ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"``` </br>
- Replace the 127.0.0.1 with the ip used for that specific server in the Vault. Save the Vagrantfiles. </br> </br>
+1) Configure the Vagrantfile for each server by uncommenting line 40 and replacing it with: 
+ ```config.vm.network "public_network", ip: "127.0.0.1", netmask: "255.255.0.0"``` 
+ Replace the 127.0.0.1 with the ip used for that specific server in the Vault. Save the Vagrantfiles. 
 ![screenshot3](code/img/screenshot3.png "Screenshot3")
-1) Issue the following command for each of the servers. </br>
+1) Issue the following command for each of the servers. 
    ```posh
    vagrant up
    ```
