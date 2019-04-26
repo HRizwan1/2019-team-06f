@@ -13,17 +13,17 @@
 
 ### Project Goals:
 
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 * The current version of MariaDB that we are running doesn't have file key management which is necessary for database encryption.
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 * Data Encryption for Data in transit.
 * Data Encryption at Rest using XtraDB and InnoDB.
 * Moving Prometheus into a new server.
 
 
 ### Project Accomplishments: Goals Accomplished (5/10)
-
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 
 
 
@@ -37,7 +37,7 @@
  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
  * MariaDB Server 10.0.38 provides a SQL interface for accessing data
 
- 2. Operating System Platform:
+ 2. Operating System Platform: 
 
    a. Linux - Ubuntu 16.04.5
 
@@ -248,52 +248,52 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
   * Accomplishments:
 
-      -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality <br/>
-      ![php](images/phpTrello.PNG "Trello")<br/>
-      * closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4 <br/>
-      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
-      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab <br/> 
+      -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality
+      ![php](images/phpTrello.PNG "Trello")
+      * closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4
+      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab 
+      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab 
 
 
-      -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded <br/>
-      ![variablesBug](images/variables_sampleTrello.PNG "Trello")<br/>
-      * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f <br/>
+      -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded
+      ![variablesBug](images/variables_sampleTrello.PNG "Trello")
+      * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f <br />
 
-      -Created layout diagrams <br/>
-      ![diagrams](images/diagramsTrello.PNG "Trello")<br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br/>
+      -Created layout diagrams <br />
+      ![diagrams](images/diagramsTrello.PNG "Trello")<br />
+       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br />
 
-      -Cleaned up the code and kept everything in a code folder: <br/>
-      ![cleanUp](images/cleaningTrello.PNG "Trello")<br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde <br/>
+      -Cleaned up the code and kept everything in a code folder: <br />
+      ![cleanUp](images/cleaningTrello.PNG "Trello")<br />
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br />
+       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde <br />
 
-      -'Delete' user functionality on admin page <br/>
-      ![delete](images/delete_userTrello.PNG "Trello")<br/>
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br/>
+      -'Delete' user functionality on admin page <br />
+      ![delete](images/delete_userTrello.PNG "Trello")<br />
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br />
 
 
  * In-progress:
 
-   -Responsive Design <br/>
-     Iphone 6,7,8 Plus fixed index.php: <br/>
-    ![css](images/cssTrello.PNG "Trello")<br/>
-     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br/>
-     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br/>
-     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
+   -Responsive Design <br />
+     Iphone 6,7,8 Plus fixed index.php: <br />
+    ![css](images/cssTrello.PNG "Trello")<br />
+     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br />
+     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br />
+     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br />
 
-   -Data Encryption at rest <br/>
-    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")<br/>
+   -Data Encryption at rest <br />
+    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")<br />
 
-   -Data Encryption for Data Transit<br/>
-   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")<br/>
+   -Data Encryption for Data Transit<br />
+   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")<br />
 
-   -HashiCorp Vault<br/>
-   ![vault](images/vaultTrello.PNG "Trello")<br/>
-   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4</br>
+   -HashiCorp Vault<br />
+   ![vault](images/vaultTrello.PNG "Trello")<br />
+   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4<br />
 
-   -Moving Prometheus into a new server<br/>
-   ![prometheus](images/PrometheusTrello.PNG "Trello")<br/>
+   -Moving Prometheus into a new server<br />
+   ![prometheus](images/PrometheusTrello.PNG "Trello")<br />
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment of the project.
 
