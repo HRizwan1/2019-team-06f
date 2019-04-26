@@ -43,13 +43,13 @@
 
    b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
 
-  * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.</p>
+  * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
 
   ![gitignore](images/gitignore.png "Gitignore")
 
-  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.</p>
+  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
 
-  * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.</p>
+  * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.
 
   * SHA1-hash - We used SHA-1 with salt to hash our passwords
 
@@ -111,14 +111,14 @@
  * 1 Apache web server hosts HTML, PHP, JavaScript and CSS
  * 1 Redis Cache server
 
- <p>Our setup uses the Apache server for providing the UI (our website) to the end user; information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server, which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.</p>
- <p>A Redis Cache server is placed between our Web server and Slave Database server and is responsible for storing a portion of the database entries and allows for faster searching and queries entered on the web server.)</p>
+ Our setup uses the Apache server for providing the UI (our website) to the end user; information from the registration page and users uploading photos are written to the master database server. The master is connected to a slave server, which holds a copy of the database used for reads. Writes and reads are separated to minimize the required movement of the disk head. On the master database, separating write from read frees up resources to focus on writes only and minimize the movement of the head by writing a few queries in a sequence and only moving the head once every few writes, in order to move the data into the “heap” (permanent storage in the database). On the slave database, reducing its functions to primarily reads allows it to handle more queries by freeing resources for the job.
+ A Redis Cache server is placed between our Web server and Slave Database server and is responsible for storing a portion of the database entries and allows for faster searching and queries entered on the web server.)
 
 
-6. Responsive Design (In-progress):
+6. Responsive Design:
 
-<p> Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.</p>
-Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br/>
+Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.
+Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
@@ -126,7 +126,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
 7. Use of HTTPS:
 
- <p>The entire website has left HTTP behind and switched to HTTPS. The “S” in HTTPS stands for “Secure”. It’s the secure version of the standard “hypertext transfer protocol” your web browser uses when communicating with websites. It is important for our application to run on HTTPS to gain the trust of our users. We have generated a self-signed certificate. The certificate is issued by Team True at the Illinois Institute of Technology and is good for one year.</p>
+ The entire website has left HTTP behind and switched to HTTPS. The “S” in HTTPS stands for “Secure”. It’s the secure version of the standard “hypertext transfer protocol” your web browser uses when communicating with websites. It is important for our application to run on HTTPS to gain the trust of our users. We have generated a self-signed certificate. The certificate is issued by Team True at the Illinois Institute of Technology and is good for one year.
   
  ![https](images/https.png "HTTPS 1")
 
@@ -169,7 +169,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
 9. Creation of Dev Environment:
 
- <p> We have created the webserver, database master and slave, as well as the cache server using Packer. All of our servers are currently deployable. </p>
+  We have created the webserver, database master and slave, as well as the cache server using Packer. All of our servers are currently deployable. 
 
  ![devenv](images/devenv.png "Dev Environment")
 
@@ -233,14 +233,14 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
 11. Management of Visio Diagram:
 
- <p>Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. Two tools that we are using to create diagrams are LucidChart and Draw.io.</p>
+ Diagrams are managed on a weekly basis, with continual updates by the UI/UX leader and Project Manager. Two tools that we are using to create diagrams are LucidChart and Draw.io.
 
  ![lucidchart](images/lucidchart.png "Lucidchart")
  ![draw](images/draw.io.png "Draw")
 
 12. Management of project progress:
 
- <p> All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.</p>
+ All the communication and update processes for this project are done through Slack. We have integrated Github on Slack so that commits are shown immediately in order to update the team on any changes made. We are keeping track of our to-do, in-progress and done tasks through Trello. Upon the completion of a task, the person assigned to that task moves the card to the done section. We are keeping in contact throughout the duration of the sprint via Slack to update each other on accomplishments/issues.
 
  * Trello:
 
@@ -257,45 +257,45 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
       -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded
       ![variablesBug](images/variables_sampleTrello.PNG "Trello")
-      * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f <br />
+      * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f 
 
-      -Created layout diagrams <br />
-      ![diagrams](images/diagramsTrello.PNG "Trello")<br />
-       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 <br />
+      -Created layout diagrams 
+      ![diagrams](images/diagramsTrello.PNG "Trello")
+       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 
 
-      -Cleaned up the code and kept everything in a code folder: <br />
-      ![cleanUp](images/cleaningTrello.PNG "Trello")<br />
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a <br />
-       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde <br />
+      -Cleaned up the code and kept everything in a code folder: 
+      ![cleanUp](images/cleaningTrello.PNG "Trello")
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a 
+       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde
 
-      -'Delete' user functionality on admin page <br />
-      ![delete](images/delete_userTrello.PNG "Trello")<br />
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 <br />
+      -'Delete' user functionality on admin page 
+      ![delete](images/delete_userTrello.PNG "Trello")
+       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 
 
 
  * In-progress:
 
-   -Responsive Design <br />
-     Iphone 6,7,8 Plus fixed index.php: <br />
-    ![css](images/cssTrello.PNG "Trello")<br />
-     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e <br />
-     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b <br />
-     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab <br />
+   -Responsive Design 
+     Iphone 6,7,8 Plus fixed index.php: 
+    ![css](images/cssTrello.PNG "Trello")
+     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e 
+     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b 
+     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab 
 
-   -Data Encryption at rest <br />
-    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")<br />
+   -Data Encryption at rest 
+    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")
 
-   -Data Encryption for Data Transit<br />
-   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")<br />
+   -Data Encryption for Data Transit
+   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")
 
-   -HashiCorp Vault<br />
-   ![vault](images/vaultTrello.PNG "Trello")<br />
-   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4<br />
+   -HashiCorp Vault
+   ![vault](images/vaultTrello.PNG "Trello")
+   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4
 
-   -Moving Prometheus into a new server<br />
-   ![prometheus](images/PrometheusTrello.PNG "Trello")<br />
+   -Moving Prometheus into a new server
+   ![prometheus](images/PrometheusTrello.PNG "Trello")
 
- * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code, Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment of the project.
+ * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment     of the project.
 
  * Github:
   ![github](images/github.png "Github")
@@ -305,7 +305,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![githubissues](images/githubissues.png "Github Issues")
   
  13. Test Users:
- <p> Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user. </p>
+  Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.
 
  ![15testusers](images/15testusers.png "15 Test Users")
  ![testusers](images/testusers.png "Test Users")
