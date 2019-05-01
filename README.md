@@ -38,7 +38,7 @@ This is how we are passing passwords/RSA keys securely.
 1) Setting Enviornment Variables for Vault
    
    You need to set two environment variables on your local machine for vault to be accessed properly by Packer 
-   VAULT_ADDR='http://127.0.0.1:8200'  
+   VAULT_ADDR=http://127.0.0.1:8200  
    VAULT_TOKEN=root
    
    The link below shows how to configure environment variables on different operating systems.
