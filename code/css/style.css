@@ -669,6 +669,8 @@ and (max-device-width : 736px) {
   .iit {
     min-height: 0;
   }
+  .success {
+    margin-top: 30px;
 }
 /* Iphone X media queries*/
 @media only screen 
