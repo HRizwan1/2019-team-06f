@@ -706,6 +706,9 @@ and (-webkit-device-pixel-ratio : 3) {
     margin-right: 16px;
     font-size: 17px;
   } 
+  .success {
+    margin-top: 35px;
+  }
 }
 
 /* Ipad Media queries */
