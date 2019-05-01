@@ -592,6 +592,8 @@ and (max-device-width : 667px) {
   .images {
     margin-left: 0;
   }
+  .success {
+    margin-top: 35px;
 }
 /* Iphone 6, 7, 8 Plus */
 @media only screen 
