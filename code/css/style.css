@@ -594,6 +594,11 @@ and (max-device-width : 667px) {
   }
   .success {
     margin-top: 35px;
+  }
+  #login{
+    padding-left: 6em;
+    width: auto;
+  }	
 }
 /* Iphone 6, 7, 8 Plus */
 @media only screen 
@@ -673,6 +678,11 @@ and (max-device-width : 736px) {
   }
   .success {
     margin-top: 30px;
+  }
+  #login{
+    padding-left: 6em;
+    width: auto;
+  }
 }
 /* Iphone X media queries*/
 @media only screen 
@@ -708,6 +718,10 @@ and (-webkit-device-pixel-ratio : 3) {
   } 
   .success {
     margin-top: 35px;
+  }
+  #login{
+    padding-left: 6em;
+    width: auto;
   }
 }
 
