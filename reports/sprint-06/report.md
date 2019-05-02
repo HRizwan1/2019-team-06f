@@ -254,11 +254,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
   * Accomplishments:
 
 
-
- * In-progress:
-
-
- * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment     of the project.
+ * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer/vault to build the servers, for the development environment of the project.
 
  * Github:
   ![github](images/github.png "Github")
