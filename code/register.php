@@ -47,7 +47,7 @@
 		<label>Username</label>
     <input type="text" name="username" value="<?php echo $username; ?>">	</div>
 	<div class="input-group">
-		<label>Email</label>
+		<label>Email</label> <span class="justForChrome">
     <input type="email" name="email" value="<?php echo $email; ?>">	</div>
 	<div class="input-group">
 		<label>Password</label>
