@@ -36,7 +36,7 @@
 1. Language and Framework of Choice:
 
  * HTML-5 and CSS are delivered by PHP Version 7.3
- * Javascript media queries is used for the photo slideshow on the gallery page as well as responsive design.
+ * Javascript 1.8.5 is used for the photo slideshow on the gallery page as well as responsive design.
  * Vagrant/Packer is used for building and automating the building of the servers
  * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
@@ -123,9 +123,10 @@
 6. Responsive Design:
 
 Our overall goal was to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.
-Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
+Mobile media queries commit: 
+https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a
 
-![mobileabout](images/mobileabout.png "MobileAbout")
+![mobileabout](images/mobileabout.PNG "MobileAbout")
 ![mobile](images/mobile.png "Mobile")
 
 
@@ -142,7 +143,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  * Firewall:
 
    - Using UFW (Uncomplicated Firewall) in Apache 2:
-   - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup.
+   - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
  
  ![ufw](images/ufw.png "Uncomplicated Firewall Rules")
 
