@@ -250,52 +250,10 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
   * Accomplishments:
 
-      -Fixed the GitHub issue: Php interference on upload.php when search box is added it breaks the upload functionality
-      ![php](images/phpTrello.PNG "Trello")
-      * closed issue: https://github.com/illinoistech-itm/2019-team-06f/issues/4
-      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/687fda9a5b14d5833a42133bfd52531d67581d3b#diff-c13367945d5d4c91047b3b50234aa7ab 
-      * upload.php error fixing: https://github.com/illinoistech-itm/2019-team-06f/commit/6e1d30748d529cf16d8a665ea2fe90d531bbe29b#diff-c13367945d5d4c91047b3b50234aa7ab 
-
-
-      -Fixed the GitHub issue: Variable-sample.json: database-user-name value hardcoded
-      ![variablesBug](images/variables_sampleTrello.PNG "Trello")
-      * variable-sample.json bug: https://github.com/illinoistech-itm/2019-team-06f/commit/40ff9fa504179fc68956f988368ea68693675c7f 
-
-      -Created layout diagrams 
-      ![diagrams](images/diagramsTrello.PNG "Trello")
-       https://github.com/illinoistech-itm/2019-team-06f/commit/74afd5e310797dcd7edc379a7965ef793b900505 
-
-      -Cleaned up the code and kept everything in a code folder: 
-      ![cleanUp](images/cleaningTrello.PNG "Trello")
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6c2a33c4e922b5b61a520e8ea3a51c53be89120a 
-       https://github.com/illinoistech-itm/2019-team-06f/commit/721558a203568ad48d8910c58c8b29994a88ebde
-
-      -'Delete' user functionality on admin page 
-      ![delete](images/delete_userTrello.PNG "Trello")
-       https://github.com/illinoistech-itm/2019-team-06f/commit/6794226c645c4afe3f25ef6de661b7fae96a3f14 
 
 
  * In-progress:
 
-   -Responsive Design 
-     Iphone 6,7,8 Plus fixed index.php: 
-    ![css](images/cssTrello.PNG "Trello")
-     https://github.com/illinoistech-itm/2019-team-06f/commit/1effbfc65d612fd30988cf234fae87deb793898e 
-     Ipad queries for index.php: https://github.com/illinoistech-itm/2019-team-06f/commit/4f0006050341c808a04e20c75064d058eeeb3f8b 
-     Mobile queries: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab 
-
-   -Data Encryption at rest 
-    ![Encryption](images/Encrypt_RestTrello.PNG "Trello")
-
-   -Data Encryption for Data Transit
-   ![Encryption](images/Encrypt_TransitTrello.PNG "Trello")
-
-   -HashiCorp Vault
-   ![vault](images/vaultTrello.PNG "Trello")
-   https://github.com/illinoistech-itm/2019-team-06f/commit/9a3befae8cb882bbc76b46a9c91dcacb61560701#diff-5941385edde1f689d0ce7de988bd14b4
-
-   -Moving Prometheus into a new server
-   ![prometheus](images/PrometheusTrello.PNG "Trello")
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer to build the servers, for the development environment     of the project.
 
