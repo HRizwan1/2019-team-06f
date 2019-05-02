@@ -184,8 +184,6 @@ footer img {
   color: #0f0f0f;
 }
 
-
-
 .section-about {
   text-align: center;
   margin-bottom: 1.875em;
@@ -899,7 +897,13 @@ and (max-device-width : 740px) {
     top: 2.5em;
     left: 13em;
     margin-top: 2em;
-
+	}  
+/*Google Chrome queries */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .selector:not(*:root),
+  span.justForChrome {
+    padding: inherit;
+    padding-left: 2.6%;
   }
   #logo{
     width: 35%;
