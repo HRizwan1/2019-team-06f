@@ -14,6 +14,7 @@
 ### Project Goals:
 
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
+* Rewriting build instructions
 * Destroy and rebuild all servers on each team members machine, incorporating vault.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
@@ -23,9 +24,11 @@
 * Moving Prometheus into a new server.
 
 
-### Project Accomplishments: Goals Accomplished (2/8)
+### Project Accomplishments: Goals Accomplished (4/9)
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 * Destroy and rebuild all servers on each team members machine, incorporating vault.
+* Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
+* Rewriting build instructions
 
 
 
@@ -119,7 +122,7 @@
 
 6. Responsive Design:
 
-Responsive Web Design is in progress. The overall goal is to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.
+Our overall goal was to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.
 Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a#diff-c13367945d5d4c91047b3b50234aa7ab
 
 ![mobileabout](images/mobileabout.png "MobileAbout")
@@ -171,7 +174,7 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
 
 9. Creation of Dev Environment:
 
-  We have created the webserver, database master and slave, as well as the cache server using Packer. All of our servers are currently deployable. 
+  We have created the webserver, database master and slave servers, as well as the cache server using Packer and Hashicorp Vault. All of our servers are currently deployable. 
 
  ![devenv](images/devenv.png "Dev Environment")
 
