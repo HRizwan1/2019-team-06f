@@ -506,6 +506,10 @@ table thead, table tbody tr {
 #cpassword {
   margin-left: .5em;
 }
+ img {
+    max-width:70%;
+    height:auto;
+  }
 /* Iphone media Queries*/
 
 /* Iphone 6,7,8 */
