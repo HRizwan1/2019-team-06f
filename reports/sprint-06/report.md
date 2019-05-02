@@ -14,7 +14,7 @@
 ### Project Goals:
 
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
-* Destroy and rebuild all servers on each team members machine, incorporating vault
+* Destroy and rebuild all servers on each team members machine, incorporating vault.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 * Resolve issue: The current version of MariaDB that we are running doesn't have file key management which is necessary for database encryption.
@@ -23,8 +23,9 @@
 * Moving Prometheus into a new server.
 
 
-### Project Accomplishments: Goals Accomplished (5/10)
+### Project Accomplishments: Goals Accomplished (2/8)
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
+* Destroy and rebuild all servers on each team members machine, incorporating vault.
 
 
 
