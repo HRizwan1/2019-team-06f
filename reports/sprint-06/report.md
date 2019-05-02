@@ -33,7 +33,7 @@
 1. Language and Framework of Choice:
 
  * HTML-5 and CSS are delivered by PHP Version 7.3
- * Javascript is used for the photo slideshow on the gallery page
+ * Javascript media queries is used for the photo slideshow on the gallery page as well as responsive design.
  * Vagrant/Packer is used for building and automating the building of the servers
  * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
  * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
@@ -59,7 +59,7 @@
 
   * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
-  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We plan to incorporate HashiCorp Vault to secure SQL databases and RSA Keys in the next and final sprint.
+  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We have incorporated HashiCorp Vault to secure SQL databases and RSA Keys.
 
   ![vault](images/hashicorp.png "Vault")  
 
@@ -71,7 +71,7 @@
 
   ![prometheus](images/prometheus.png "Prometheus")
 
-  * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is a completely open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has a feature-rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service, which we might incorporate in the next sprint.
+  * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is a completely open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has a feature-rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service.
 
   ![grafana](images/grafana.png "Grafana")
 
