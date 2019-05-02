@@ -714,7 +714,7 @@ and (-webkit-device-pixel-ratio : 3) {
     color: red;
     text-decoration: none;
     display: block;
-    padding: 0.200em 0.4300;
+    padding: 0.225em 0.538em;
     border-radius: 0.188em;
     transition: 0.3s ease all;
   }
