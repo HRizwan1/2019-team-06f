@@ -19,16 +19,17 @@
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
+* Remove unneeded raw HTML from the Markdown
 
 
-### Project Accomplishments: Goals Accomplished (6/6)
+### Project Accomplishments: Goals Accomplished (7/7)
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 * Rewriting build instructions
 * Destroy and rebuild all servers on each team members machine, incorporating vault.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-
+* Remove unneeded raw HTML from the Markdown
 
 
 ### Project Requirements:
@@ -272,13 +273,6 @@ Mobile media queries commit: https://github.com/illinoistech-itm/2019-team-06f/c
  ![15testusers](images/15testusers.png "15 Test Users")
  ![testusers](images/testusers.png "Test Users")
  ![testimages](images/testimages.png "Test Images")
-
-**Any issues/Bugs?**
-
-
-
-**Goals for Next Sprint:**
-
 
 
 #### Individual Reflections:
