@@ -17,18 +17,17 @@
 * Rewriting build instructions
 * Destroy and rebuild all servers on each team members machine, incorporating vault.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
+* Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-* Resolve issue: The current version of MariaDB that we are running doesn't have file key management which is necessary for database encryption.
-* Data Encryption for Data in transit.
-* Data Encryption at Rest using XtraDB and InnoDB.
-* Moving Prometheus into a new server.
 
 
-### Project Accomplishments: Goals Accomplished (4/9)
+### Project Accomplishments: Goals Accomplished (6/6)
 * Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
+* Rewriting build instructions
 * Destroy and rebuild all servers on each team members machine, incorporating vault.
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
-* Rewriting build instructions
+* Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
+* Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 
 
 
