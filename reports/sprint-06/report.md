@@ -29,8 +29,6 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 
 ![trello](images/vaultTrello.PNG "Trello")
 
-![vault](images/vaultTrello.PNG "Trello")
-
 
 * Rewrote build instructions.
 https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d
@@ -57,7 +55,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec9
 
 ![trello](images/reponsiveDesign_Trello.PNG "Trello")
 
-![responsiveDesign](images/reponsiveDesign_Trello.png "Trello")
+
 
 
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
@@ -67,7 +65,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/4c3ad2ce001828d3f82b5c0
 
 ![trello](images/adminPanelFix_Trello.PNG "Trello")
 
-![adminPanel](images/adminPanelFix_Trello.PNG "Trello")
+
 
 
 * Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
@@ -85,7 +83,7 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
 ![trello](images/rawHtmlFix_Trello.PNG "Trello")
 
-![rawHtml](images/rawHtmlFix_Trello.PNG "Trello")
+
 
 
 
