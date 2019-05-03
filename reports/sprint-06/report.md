@@ -30,7 +30,8 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 ![trello](images/vaultTrello.PNG "Trello")
 
 * Rewrote build instructions.
-  <https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d> 
+  
+  <https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d>
   <https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4>
 
 ![trello](images/buildInst_Trello.PNG "Trello")
@@ -40,7 +41,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 ![trello](images/rebuildservers_Vault.PNG "Trello")
 
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
-  <https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c> 
+  <https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c>
   <https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98>
 
 ![trello](images/responsiveDesign_Trello.PNG "Trello")
