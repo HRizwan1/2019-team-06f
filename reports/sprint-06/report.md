@@ -142,8 +142,33 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
 
  * Firewall:
 
-   - Using UFW (Uncomplicated Firewall) in Apache 2:
-   - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
+- Using UFW (Uncomplicated Firewall) in Apache 2:
+- Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
+
+
+database:
+ufw allow proto tcp to 0.0.0.0/0 port 22
+ufw allow from $ACCESSFROMIP to any port 3306
+ufw allow from $DATABASESLAVEIP to any port 3306
+
+databaseslave:
+ufw allow proto tcp to 0.0.0.0/0 port 22
+ufw allow from $ACCESSFROMIP to any port 3306
+ufw allow from $CACHEIP to any port 3306
+
+cache:
+ufw allow from $ACCESSFROMIP to any port 6379
+
+webserver:
+ufw allow proto tcp to 0.0.0.0/0 port 80
+ufw allow proto tcp to 0.0.0.0/0 port 443
+ufw allow proto tcp to 0.0.0.0/0 port 3000
+ufw allow proto tcp to 0.0.0.0/0 port 9090
+ufw allow proto tcp to 0.0.0.0/0 port 9100
+
+
+
+
  
  ![ufw](images/ufw.png "Uncomplicated Firewall Rules")
 
