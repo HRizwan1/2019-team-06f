@@ -71,11 +71,8 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/4c3ad2ce001828d3f82b5c0
 * Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 https://github.com/illinoistech-itm/2019-team-06f/commit/32bb1d8f1490248247d12a3d169d7dae3f2d4e65
 
-
-![trello](images/deleteIssue_Trello.PNG "Trello")
-
 ![deleteIssue](images/deleteIssue_Trello.PNG "Trello")
->>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
+
 
 * Removed unneeded raw HTML from the Markdown.
 https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87
