@@ -114,10 +114,10 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
      ![node_exporter](images/node_exporter.png "Node Exporter")
 
    Packages List: 
-     sudo apt-get install -y apache2 mariadb-client php7.0 libapache2-mod-php7.0 php7.0-mysql
-     sudo apt-get --allow-unauthenticated install -y grafana
-     sudo apt-get install -y mariadb-server
-     sudo apt install -y redis-server
+      sudo apt-get install -y apache2 mariadb-client php7.0 libapache2-mod-php7.0 php7.0-mysql
+      sudo apt-get --allow-unauthenticated install -y grafana
+      sudo apt-get install -y mariadb-server
+      sudo apt install -y redis-server
     
     
 
