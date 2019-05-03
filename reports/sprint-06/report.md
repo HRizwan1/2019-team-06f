@@ -302,7 +302,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
 
  ![trello](images/trello.png "Trello")
 
-  * Accomplishments:
+
 
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer/vault to build the servers, for the development environment of the project.
