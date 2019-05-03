@@ -39,19 +39,17 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718b
 
 ![trello](images/rebuildservers_Vault.PNG "Trello")
 
-<<<<<<< HEAD
 * Destroyed and rebuild all servers on each team members machine, incorporating vault.
 
 ![rebuild](images/rebuildservers_Vault.PNG "Trello")
 
 
-=======
->>>>>>> a65ff52bd91bcee2c22998fb1597689c4d1415a4
+
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads. 
 https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c 
 https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
 
-![trello](images/reponsiveDesign_Trello.PNG "Trello")
+![trello](images/responsiveDesign_Trello.PNG "Trello")
 
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 https://github.com/illinoistech-itm/2019-team-06f/commit/8a4134378d9f399dcb154e03070cd60145e82a1d
@@ -132,7 +130,7 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
 4. Data Encryption at Rest:
 
-<<<<<<< HEAD
+
  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
  * MariaDB 10.1 has Data at Rest Encryption
  * MariaDB allow our files to encrypt:
@@ -140,17 +138,6 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
   - Individual tables
   - Uses a 32-bit integer as a key identifier.
   - Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
-=======
-* Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
-* MariaDB 10.1 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
-* XtraDB: A storage engine for the MariaDB
-* InnoDB: A storage engine for the database management system MySQL.
-* MariaDB allow our files to encrypt:
-- All tablespaces
-- Individual tables
-- Uses a 32-bit integer as a key identifier.
-- Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
->>>>>>> a65ff52bd91bcee2c22998fb1597689c4d1415a4
 
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
