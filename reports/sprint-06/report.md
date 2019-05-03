@@ -73,49 +73,49 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
 * MariaDB Server 10.0.38 provides a SQL interface for accessing data
 
- 2. Operating System Platform: 
+2. Operating System Platform: 
 
-   a. Linux - Ubuntu 16.04.5
+    a. Linux - Ubuntu 16.04.5
 
-   b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
+    b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
 
-* Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
+      * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
 
-![gitignore](images/gitignore.png "Gitignore")
+      ![gitignore](images/gitignore.png "Gitignore")
 
-* OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
+      * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
 
-* SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.
+      * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.
 
-* SHA1-hash - We used SHA-1 with salt to hash our passwords
+      * SHA1-hash - We used SHA-1 with salt to hash our passwords
 
-![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
+      ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
 
-  * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
+      * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
-  * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We have incorporated HashiCorp Vault to secure SQL databases and RSA Keys.
+      * HashiCorp Vault - Vault by HashiCorp is a tool for securely managing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, or certificates. Vault provides a unified interface to any secret while providing tight access control and recording a detailed audit log. We have incorporated HashiCorp Vault to secure SQL databases and RSA Keys.
 
-  ![vault](images/hashicorp.png "Vault")  
+      ![vault](images/hashicorp.png "Vault")  
 
-  ![vault2](images/vault.png "Vault")
+      ![vault2](images/vault.png "Vault")
 
-  c. Capture of application metrics:
+   c. Capture of application metrics:
 
-  * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores it in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
+      * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores it in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
-  ![prometheus](images/prometheus.png "Prometheus")
+      ![prometheus](images/prometheus.png "Prometheus")
 
-  * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is a completely open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has a feature-rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service.
+      * In order to integrate with complex data from Prometheus, we have used a tool called Grafana which is a completely open-source tool for data visualization and a monitoring system that collects metrics from our services. Grafana has a feature-rich metrics dashboard and graph editor for Prometheus and it also allows to query, create alerts, notifications, and ad-hoc filters for our service.
 
-  ![grafana](images/grafana.png "Grafana")
+      ![grafana](images/grafana.png "Grafana")
 
-  * To expand Prometheus beyond capturing metrics about itself only, we have installed an additional exporter called Node Exporter. Node Exporter is a Prometheus exporter that provides detailed information about the system, including CPU, disk, and memory usage. It will expose the webserver's metrics through Prometheus.
+      * To expand Prometheus beyond capturing metrics about itself only, we have installed an additional exporter called Node Exporter. Node Exporter is a Prometheus exporter that provides detailed information about the system, including CPU, disk, and memory usage. It will expose the webserver's metrics through Prometheus.
 
-  ![node_exporter](images/node_exporter.png "Node Exporter")
+     ![node_exporter](images/node_exporter.png "Node Exporter")
     
     
 
- 3. Use of Data Store:
+3. Use of Data Store:
 
  * We are using 2 database servers (Platform: MariaDB/MySQL)
  * One of the database servers serves as the master which we write to. One of the uses of this database is that it is the one that is manipulated by our application. All writes are done to this database. This means that all user information and photos are written to this database.
@@ -123,7 +123,6 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
  * One Redis Cache Server is used for caching the data, which is sent between the slave database and web server. Redis is a NoSQL key-value data store. For storing a value, we associate it with a key and store it in Redis. The purpose of using Redis caching is to improve database loading performance.
 
 4. Data Encryption at Rest:
-
 
  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
  * MariaDB 10.1 has Data at Rest Encryption
@@ -172,39 +171,36 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
 
  * Firewall:
 
-- Using UFW (Uncomplicated Firewall) in Apache 2:
-- This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
+  - Using UFW (Uncomplicated Firewall) in Apache 2:
+  - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
 
-database:
-ufw allow proto tcp to 0.0.0.0/0 port 22
-ufw allow from $ACCESSFROMIP to any port 3306
-ufw allow from $DATABASESLAVEIP to any port 3306
+ * Database:
+  - ufw allow proto tcp to 0.0.0.0/0 port 22
+  - ufw allow from $ACCESSFROMIP to any port 3306
+  - ufw allow from $DATABASESLAVEIP to any port 3306
 
-databaseslave:
-ufw allow proto tcp to 0.0.0.0/0 port 22
-ufw allow from $ACCESSFROMIP to any port 3306
-ufw allow from $CACHEIP to any port 3306
+* Databaseslave:
+  - ufw allow proto tcp to 0.0.0.0/0 port 22
+  - ufw allow from $ACCESSFROMIP to any port 3306
+  - ufw allow from $CACHEIP to any port 3306
 
-cache:
-ufw allow from $ACCESSFROMIP to any port 6379
+* Cache:
+ - ufw allow from $ACCESSFROMIP to any port 6379
 
-webserver:
-ufw allow proto tcp to 0.0.0.0/0 port 80
-ufw allow proto tcp to 0.0.0.0/0 port 443
-ufw allow proto tcp to 0.0.0.0/0 port 3000
-ufw allow proto tcp to 0.0.0.0/0 port 9090
-ufw allow proto tcp to 0.0.0.0/0 port 9100
-
-
+* Webserver:
+  - ufw allow proto tcp to 0.0.0.0/0 port 80
+  - ufw allow proto tcp to 0.0.0.0/0 port 443
+  - ufw allow proto tcp to 0.0.0.0/0 port 3000
+  - ufw allow proto tcp to 0.0.0.0/0 port 9090
+  - ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 
- 
  ![ufw](images/ufw.png "Uncomplicated Firewall Rules")
 
- * Authentication keys (if applicable)
- * Seeding of username and passwords as well as pre-seeding databases with schema and records are done on build using packer build scripts.
+* Authentication keys (if applicable)
+* Seeding of username and passwords as well as pre-seeding databases with schema and records are done on build using packer build scripts.
 
- 8. Use of User Authentication:
+8. Use of User Authentication:
 
  **Unauthenticated users access:**
  * Have access to “read-only” data
@@ -306,6 +302,7 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
  ![trello](images/trello.png "Trello")
 
+  * Accomplishments:
 
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer/vault to build the servers, for the development environment of the project.
@@ -317,7 +314,7 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
  ![githubissues](images/githubissues.png "Github Issues")
   
- 13. Test Users:
+13. Test Users:
   Fifteen test users were generated, and the data is being inserted into our MariaDB databases at build. New users can be added or deleted from the database thereafter. For said purpose, ‘.sql’ files are being used with the insert command to add values into the username, user_type, email and password fields. Fifteen images are being inserted for each user.
 
  ![15testusers](images/15testusers.png "15 Test Users")
@@ -329,7 +326,7 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 **Daniel** - For this sprint my primary focus was on CSS media queries for mobile versions cleaning up the view and adjusting it to better fit smaller screens. Queries for Samsung S9/S9+ were also added to accommodate the top phone makers. I also successfully rebuild the servers using vault to pass the values instead of using a .json file. Overall, I believe our team has made a great progress on the project and although some parts can be polished up and more can be added, it is close to production state as is. I've learned a lot from this project and the experience will be useful going forward with a career in the IT field.
 
-**Sarina** - As our team is wrapping up this project, we are tying together the nuts and bolts. My main focus during this sprint was to to prepare for our final presentation and final report. The big goal for this sprint was to make sure that we could integrate vault into our project and deploy it on every machine. I spent time this sprint trying to rebuild my servers, I struggled with this a bit having to rebuild 3 times (on 3 seperate days) due to mistakes with destroy steps and my secrets. The third time was a success due the great help from my teammate hasan. Also my focus was working on our final report and making changes wherever needed, according to last sprint feedback. I sought information/clarifications needed to update our report.
+**Sarina** - As our team is wrapping up this project, we are tying together the nuts and bolts. My main focus during this sprint was to to prepare for our final presentation and final report. The big goal for this sprint was to make sure that we could integrate vault into our project and deploy it on every machine. I spent time this sprint trying to rebuild my servers, I struggled with this a bit having to rebuild 3 times (on 3 seperate days) due to mistakes with destroy steps and my secrets. The third time was a success due the great help from my teammate hasan. Also my focus was working on our final report and making changes wherever needed, according to last sprint feedback.
 
 **Jason** -  
 
@@ -337,6 +334,6 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 Overall, I believe as a team we made some great progress and learned a lot of powerful security technologies that most business industries are using today.
 
-**Hasan** - For this sprint, as the developer, my main focus was on figuring out how to code HashiCorp Vault to be a part of our infrastruture. I worked closely with Shan and Daniel to implement and prepare a presentation for HashiCorp Vault. Once the Vault was implemented it was my role to rewrite the build instructions and make sure that everyone was comfortable building using Vault. I also implemented a change on the delete user page to make sure that the delete function was deleting the pictures of the user to delete before deleting the user. Overall, I feel like this project has been a great learning experience for the entire group. Although, this is the final sprint and we are done working on this project, this project can be improved way more and the potential is endless. However, I can proudly say that each and every group member learned many things that they didn't know before this project and it is things that will benefit them in their careers. I wish every team member the best of luck in their future.          
+**Hasan** -      
 
 **Bhumi** - 
