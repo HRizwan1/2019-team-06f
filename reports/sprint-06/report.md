@@ -26,40 +26,68 @@
 * Incorporated HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e40f42121ea3a0b2dc6
 
+<<<<<<< HEAD
 ![trello](images/vaultTrello.PNG "Trello")
+=======
+![vault](images/vaultTrello.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
 
-* Rewrote build instructions
+* Rewrote build instructions.
 https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d
 https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4
 
+<<<<<<< HEAD
 ![trello](images/buildInst_Trello.PNG "Trello")
 
 * Destroyed and rebuild all servers on each team members machine, incorporating vault.
 
 ![trello](images/rebuildservers_Vault.PNG "Trello")
+=======
+![instructions](images/buildInst_Trello.png "Trello")
 
-* Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
+* Destroyed and rebuild all servers on each team members machine, incorporating vault.
+
+![rebuild](images/rebuildservers_Vault.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
+
+* Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads. 
 https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c
 https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
 
+<<<<<<< HEAD
 ![trello](images/reponsiveDesign_Trello.PNG "Trello")
+=======
+![responsiveDesign](images/reponsiveDesign_Trello.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
 
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 https://github.com/illinoistech-itm/2019-team-06f/commit/8a4134378d9f399dcb154e03070cd60145e82a1d
 https://github.com/illinoistech-itm/2019-team-06f/commit/4c3ad2ce001828d3f82b5c0631c797eab6889f09
 
+<<<<<<< HEAD
 ![trello](images/adminPanelFix_Trello.PNG "Trello")
+=======
+![adminPanel](images/adminPanelFix_Trello.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
 
 * Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 https://github.com/illinoistech-itm/2019-team-06f/commit/32bb1d8f1490248247d12a3d169d7dae3f2d4e65
 
+<<<<<<< HEAD
 ![trello](images/deleteIssue_Trello.PNG "Trello")
+=======
+![deleteIssue](images/deleteIssue_Trello.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
 
-* Removed unneeded raw HTML from the Markdown
+* Removed unneeded raw HTML from the Markdown.
 https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87
 https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05604cb
 
+<<<<<<< HEAD
 ![trello](images/rawHtmlFix_Trello.PNG "Trello")
+=======
+![rawHtml](images/rawHtmlFix_Trello.png "Trello")
+>>>>>>> f820bf7bafb4b87f7fe09dfe58527cbca77ab41b
 
 
 ### Project Requirements:
