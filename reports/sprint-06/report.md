@@ -356,7 +356,9 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 **Jason** -  
 
-**Shan** -  
+**Shan** - For the last sprint, I tagged along with Hasan on the Vault deployment. Since our DB version is not compatible to run encryption at rest, and would require a complete infrastructure change; and with only a couple weeks left of the semester I wanted to help Hasan on further deployment. After countless attempts on my end, Hasan was successfully able to have vault up and running. I also found that there were some styling issues with some web pages and our CSS, so I further added changes to them. For instance, in our admin create user panel, the alignment of "User Type" was not in the right position so that needed to be fixed. I also checked our site on multiple web browsers, but found that on Google Chrome the register page was not properly aligned. I was able to implement a CSS special line of code for Chrome browsers only and it had fixed that particular issue.
+
+Overall, I believe as a team we made some great progress and learned a lot of powerful security technologies that most business industries are using today.
 
 **Hasan** -      
 
