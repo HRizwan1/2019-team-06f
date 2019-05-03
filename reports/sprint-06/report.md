@@ -29,7 +29,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 
 ![trello](images/vaultTrello.PNG "Trello")
 
-* Rewrote build instructions.
+* Rewrote build instructions.  
   <https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d>
   <https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4>
 
@@ -56,9 +56,9 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 
 ![deleteIssue](images/deleteIssue_Trello.PNG "Trello")
 
-* Removed unneeded raw HTML from the Markdown.
-https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87
-https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05604cb
+* Removed unneeded raw HTML from the Markdown.  
+<https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87>
+<https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05604cb>
 
 ![trello](images/rawHtmlFix_Trello.PNG "Trello")
 
