@@ -13,23 +13,23 @@
 
 ### Project Goals:
 
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
-* Rewriting build instructions
-* Destroy and rebuild all servers on each team members machine, incorporating vault.
-* Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
-* Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
-* Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-* Remove unneeded raw HTML from the Markdown
+* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys (C)
+* Rewriting build instructions (C)
+* Destroy and rebuild all servers on each team members machine, incorporating vault (C)
+* Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads (C)
+* Fixed column spacing alignment for admin panel (create user) and register page google chrome browser (C)
+* Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint (C)
+* Remove unneeded raw HTML from the Markdown (C)
 
 
 ### Project Accomplishments: Goals Accomplished (7/7)
-* Incorporating HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
-* Rewriting build instructions
-* Destroy and rebuild all servers on each team members machine, incorporating vault.
-* Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
+* Incorporated HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
+* Rewrote build instructions
+* Destroyed and rebuild all servers on each team members machine, incorporating vault.
+* Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
-* Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
-* Remove unneeded raw HTML from the Markdown
+* Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
+* RemoveD unneeded raw HTML from the Markdown
 
 
 ### Project Requirements:
