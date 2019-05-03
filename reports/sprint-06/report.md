@@ -39,12 +39,6 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718b
 
 ![trello](images/rebuildservers_Vault.PNG "Trello")
 
-* Destroyed and rebuild all servers on each team members machine, incorporating vault.
-
-![rebuild](images/rebuildservers_Vault.PNG "Trello")
-
-
-
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads. 
 https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c 
 https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
