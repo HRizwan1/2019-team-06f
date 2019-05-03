@@ -334,6 +334,6 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
 
 Overall, I believe as a team we made some great progress and learned a lot of powerful security technologies that most business industries are using today.
 
-**Hasan** -      
+**Hasan** - For this sprint, as the developer, my main focus was on figuring out how to code HashiCorp Vault to be a part of our infrastruture. I worked closely with Shan and Daniel to implement and prepare a presentation for HashiCorp Vault. Once the Vault was implemented it was my role to rewrite the build instructions and make sure that everyone was comfortable building using Vault. I also implemented a change on the delete user page to make sure that the delete function was deleting the pictures of the user to delete before deleting the user. Overall, I feel like this project has been a great learning experience for the entire group. Although, this is the final sprint and we are done working on this project, this project can be improved way more and the potential is endless. However, I can proudly say that each and every group member learned many things that they didn't know before this project and it is things that will benefit them in their careers. I wish every team member the best of luck in their future.     
 
 **Bhumi** - 
