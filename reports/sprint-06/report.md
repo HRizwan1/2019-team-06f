@@ -24,12 +24,30 @@
 
 ### Project Accomplishments: Goals Accomplished (7/7)
 * Incorporated HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
+https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e40f42121ea3a0b2dc6
+
+
 * Rewrote build instructions
+https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d
+https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4
+
 * Destroyed and rebuild all servers on each team members machine, incorporating vault.
+
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
+https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c
+https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
+
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
+https://github.com/illinoistech-itm/2019-team-06f/commit/8a4134378d9f399dcb154e03070cd60145e82a1d
+https://github.com/illinoistech-itm/2019-team-06f/commit/4c3ad2ce001828d3f82b5c0631c797eab6889f09
+
 * Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
+https://github.com/illinoistech-itm/2019-team-06f/commit/32bb1d8f1490248247d12a3d169d7dae3f2d4e65
+
 * RemoveD unneeded raw HTML from the Markdown
+https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87
+https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05604cb
+
 
 
 ### Project Requirements:
@@ -95,13 +113,13 @@
 
  * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
  * MariaDB 10.1 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
-  * XtraDB: A storage engine for the MariaDB
-  * InnoDB: A storage engine for the database management system MySQL.
-  * MariaDB allow our files to encrypt:
-    - All tablespaces
-    - Individual tables
-    - Uses a 32-bit integer as a key identifier.
-    - Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
+ * XtraDB: A storage engine for the MariaDB
+ * InnoDB: A storage engine for the database management system MySQL.
+ * MariaDB allow our files to encrypt:
+  - All tablespaces
+  - Individual tables
+  - Uses a 32-bit integer as a key identifier.
+  - Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
 
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
@@ -144,7 +162,6 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
 
 - Using UFW (Uncomplicated Firewall) in Apache 2:
 - Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
-
 
 database:
 ufw allow proto tcp to 0.0.0.0/0 port 22
