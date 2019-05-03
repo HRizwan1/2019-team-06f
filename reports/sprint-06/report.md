@@ -300,6 +300,7 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 #### Individual Reflections:
 
 **Daniel** - For this sprint my primary focus was on CSS media queries for mobile versions cleaning up the view and adjusting it to better fit smaller screens. Queries for Samsung S9/S9+ were also added to accommodate the top phone makers. I also successfully rebuild the servers using vault to pass the values instead of using a .json file. Overall, I believe our team has made a great progress on the project and although some parts can be polished up and more can be added, it is close to production state as is. I've learned a lot from this project and the experience will be useful going forward with a career in the IT field.
+
 **Sarina** - 
 
 **Jason** -  
