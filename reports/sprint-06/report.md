@@ -162,7 +162,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e4
 6. Responsive Design:
 
 Our overall goal was to make the website scale and adapt to multiple form factors and screen sizes, such as when using a smartphone or tablet. We have added media queries into the css file (style.css) based on expected screen sizes. We have also added styling to reposition, resize and hide elements. There is no framework being specifically utilized for responsive design, as the framework currently being used is Font Awesome, and queries are stored in a css styles page. Will be experimenting and looking into a framework called W3.CSS as this framework has built-in responsiveness, supports responsive mobile-first design by default, equality for all devices and browsers, as well as being simpler and faster.
-Mobile media queries commit: 
+Mobile media queries commit:  
 https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594390a03c961755285a
 
 ![mobileabout](images/mobileabout.PNG "MobileAbout")
