@@ -23,17 +23,15 @@
 
 
 ### Project Accomplishments: Goals Accomplished (7/7)
+
 * Incorporated HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e40f42121ea3a0b2dc6
 
-
 ![trello](images/vaultTrello.PNG "Trello")
 
-
-* Rewrote build instructions.
-https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d
+* Rewrote build instructions. 
+https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d 
 https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4
-
 
 ![trello](images/buildInst_Trello.PNG "Trello")
 
@@ -41,38 +39,22 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718b
 
 ![trello](images/rebuildservers_Vault.PNG "Trello")
 
-![instructions](images/buildInst_Trello.PNG "Trello")
-
-* Destroyed and rebuild all servers on each team members machine, incorporating vault.
-
-![rebuild](images/rebuildservers_Vault.PNG "Trello")
-
-
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads. 
-  https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c
-  https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
+https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c 
+https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
 
-
-![trello](images/responsiveDesign_Trello.PNG "Trello")
-
-
-
+![trello](images/reponsiveDesign_Trello.PNG "Trello")
 
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 https://github.com/illinoistech-itm/2019-team-06f/commit/8a4134378d9f399dcb154e03070cd60145e82a1d
 https://github.com/illinoistech-itm/2019-team-06f/commit/4c3ad2ce001828d3f82b5c0631c797eab6889f09
 
-
 ![trello](images/adminPanelFix_Trello.PNG "Trello")
-
-
-
 
 * Fixed issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint.
 https://github.com/illinoistech-itm/2019-team-06f/commit/32bb1d8f1490248247d12a3d169d7dae3f2d4e65
 
 ![deleteIssue](images/deleteIssue_Trello.PNG "Trello")
-
 
 * Removed unneeded raw HTML from the Markdown.
 https://github.com/illinoistech-itm/2019-team-06f/compare/aa42585dce82...185c45d82b87
@@ -81,18 +63,15 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 ![trello](images/rawHtmlFix_Trello.PNG "Trello")
 
 
-
-
-
 ### Project Requirements:
 1. Language and Framework of Choice:
 
- * HTML-5 and CSS are delivered by PHP Version 7.3
- * Javascript 1.8.5 is used for the photo slideshow on the gallery page as well as responsive design.
- * Vagrant/Packer is used for building and automating the building of the servers
- * Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
- * Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
- * MariaDB Server 10.0.38 provides a SQL interface for accessing data
+* HTML-5 and CSS are delivered by PHP Version 7.3
+* Javascript 1.8.5 is used for the photo slideshow on the gallery page as well as responsive design.
+* Vagrant/Packer is used for building and automating the building of the servers
+* Apache 2.4.18 (Ubuntu) webserver hosts HTML, PHP, Javascript, and CSS
+* Redis 5.0.3 is used as in-memory data structure store and allows for faster searching and to cache data from the web server
+* MariaDB Server 10.0.38 provides a SQL interface for accessing data
 
  2. Operating System Platform: 
 
@@ -100,17 +79,17 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
    b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
 
-  * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
+* Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
 
-  ![gitignore](images/gitignore.png "Gitignore")
+![gitignore](images/gitignore.png "Gitignore")
 
-  * OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
+* OpenSSL - Purpose of using openSSL is to keep the sending and receiving traffic safe and secure between the server and clients without the possibility of the messages being intercepted by outside parties.
 
-  * SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.
+* SSH Key - To automate secure access to the servers, bypassing the need to manually enter log-in credentials. The SSH key provides strong, encrypted verification and communication between the user and a remote computer. RSA keys are used to verify users before allowing the cloning of our private repository into the remote servers.
 
-  * SHA1-hash - We used SHA-1 with salt to hash our passwords
+* SHA1-hash - We used SHA-1 with salt to hash our passwords
 
-  ![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
+![Alt Text](https://media.giphy.com/media/l4Jz3a8jO92crUlWM/giphy.gif)
 
   * Privileges - Unregistered users cannot view photos; Admins have the ability to view and create new users
 
@@ -145,15 +124,15 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
 4. Data Encryption at Rest:
 
- * Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
- * MariaDB 10.1 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
- * XtraDB: A storage engine for the MariaDB
- * InnoDB: A storage engine for the database management system MySQL.
- * MariaDB allow our files to encrypt:
-  - All tablespaces
-  - Individual tables
-  - Uses a 32-bit integer as a key identifier.
-  - Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
+* Encrypted using a symmetric cipher provided by OpenSSL. Password fields are encrypted using SHA1-hash with salt (salt concatenates random data with the hash)
+* MariaDB 10.1 has Data at Rest Encryption and is fully supported for XtraDB and InnoDB.
+* XtraDB: A storage engine for the MariaDB
+* InnoDB: A storage engine for the database management system MySQL.
+* MariaDB allow our files to encrypt:
+- All tablespaces
+- Individual tables
+- Uses a 32-bit integer as a key identifier.
+- Encryption keys can also be rotated, which basically creates a new version of the encryption key. Decryption is also readable through Maria’s file server keys.
 
 
 5. Use of MySQL/MariaDB Database Master-Slave Replication:
@@ -352,14 +331,14 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
 **Daniel** - For this sprint my primary focus was on CSS media queries for mobile versions cleaning up the view and adjusting it to better fit smaller screens. Queries for Samsung S9/S9+ were also added to accommodate the top phone makers. I also successfully rebuild the servers using vault to pass the values instead of using a .json file. Overall, I believe our team has made a great progress on the project and although some parts can be polished up and more can be added, it is close to production state as is. I've learned a lot from this project and the experience will be useful going forward with a career in the IT field.
 
-**Sarina** - As our team is wrapping up this project, we are tying together the nuts and bolts. My main focus during this sprint was to to prepare for our final presentation and final report. The big goal for this sprint was to make sure that we could integrate vault into our project and deploy it on every machine. I spent time this sprint trying to rebuild my servers, I struggled with this a bit having to rebuild 3 times (on 3 seperate days) due to mistakes with destroy steps and my secrets. The third time was a success due the great help from my teammate hasan. Also my focus was working on our final report and making changes wherever needed, according to last sprint feedback.
+**Sarina** - 
 
-**Jason**
+**Jason** -  
 
 **Shan** - For the last sprint, I tagged along with Hasan on the Vault deployment. Since our DB version is not compatible to run encryption at rest, and would require a complete infrastructure change; and with only a couple weeks left of the semester I wanted to help Hasan on further deployment. After countless attempts on my end, Hasan was successfully able to have vault up and running. I also found that there were some styling issues with some web pages and our CSS, so I further added changes to them. For instance, in our admin create user panel, the alignment of "User Type" was not in the right position so that needed to be fixed. I also checked our site on multiple web browsers, but found that on Google Chrome the register page was not properly aligned. I was able to implement a CSS special line of code for Chrome browsers only and it had fixed that particular issue.
 
 Overall, I believe as a team we made some great progress and learned a lot of powerful security technologies that most business industries are using today.
 
-**Hasan** - For this sprint, as the developer, my main focus was on figuring out how to code HashiCorp Vault to be a part of our infrastruture. I worked closely with Shan and Daniel to implement and prepare a presentation for HashiCorp Vault. Once the Vault was implemented it was my role to rewrite the build instructions and make sure that everyone was comfortable building using Vault. I also implemented a change on the delete user page to make sure that the delete function was deleting the pictures of the user to delete before deleting the user. Overall, I feel like this project has been a great learning experience for the entire group. I can proudly say that each and every group member learned many things that they didn't know before this project and it is things that will benefit them in their careers. I wish every team member the best of luck in their future.     
+**Hasan** -      
 
 **Bhumi** - 
