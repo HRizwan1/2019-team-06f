@@ -17,7 +17,7 @@
 * Rewriting build instructions (C)
 * Destroy and rebuild all servers on each team members machine, incorporating vault (C)
 * Design responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads (C)
-* Fixed column spacing alignment for admin panel (create user) and register page google chrome browser (C)
+* Fix column spacing alignment for admin panel (create user) and register page google chrome browser (C)
 * Fix issue: The delete user page is unable to delete users that have uploaded pictures due to a foreign key constraint (C)
 * Remove unneeded raw HTML from the Markdown (C)
 
