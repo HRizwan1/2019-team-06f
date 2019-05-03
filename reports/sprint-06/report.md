@@ -75,9 +75,9 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
 2. Operating System Platform: 
 
-    a. Linux - Ubuntu 16.04.5
+    Linux - Ubuntu 16.04.5
 
-    b. Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
+    Process of secrets management: gitignore, openSSL, SSH key, HashiCorp Vault
 
       * Gitignore - The gitignore file was created for the purpose of preventing files from being uploaded without needing to explicitly exclude them. Any file added to gitignore is not included in git commits. Using gitignore allows system-specific files to be untouched, and it ensures that those sensitive files will never get uploaded.
 
@@ -99,7 +99,7 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
 
       ![vault2](images/vault.png "Vault")
 
-   c. Capture of application metrics:
+   Capture of application metrics:
 
       * We used Prometheus as a tool to capture application metrics. Prometheus is an open-source monitoring system that collects metrics from our services and stores it in a time-series database. Prometheus provides a basic web interface for monitoring the status os itself and its exporters, executing queries, and generating graphs.
 
@@ -112,6 +112,12 @@ https://github.com/illinoistech-itm/2019-team-06f/compare/185c45d82b87...91b3f05
       * To expand Prometheus beyond capturing metrics about itself only, we have installed an additional exporter called Node Exporter. Node Exporter is a Prometheus exporter that provides detailed information about the system, including CPU, disk, and memory usage. It will expose the webserver's metrics through Prometheus.
 
      ![node_exporter](images/node_exporter.png "Node Exporter")
+
+   Packages List: 
+     sudo apt-get install -y apache2 mariadb-client php7.0 libapache2-mod-php7.0 php7.0-mysql
+     sudo apt-get --allow-unauthenticated install -y grafana
+     sudo apt-get install -y mariadb-server
+     sudo apt install -y redis-server
     
     
 
