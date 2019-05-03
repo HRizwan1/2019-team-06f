@@ -25,17 +25,19 @@
 ### Project Accomplishments: Goals Accomplished (7/7)
 * Incorporated HashiCorp Vault for data encryption and to secure SQL databases and RSA Keys.
 https://github.com/illinoistech-itm/2019-team-06f/commit/5d9fb3f30153782a819c7e40f42121ea3a0b2dc6
-
+![trello](images/vaultTrello.png "Trello")
 
 * Rewrote build instructions
 https://github.com/illinoistech-itm/2019-team-06f/commit/1123b90adb1220c28e404667462366de5946064d
 https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718bf9fb494df324568f4
+![trello](images/rebuildservers_Vault.png "Trello")
 
 * Destroyed and rebuild all servers on each team members machine, incorporating vault.
 
 * Designed responsive web design using CSS media queries in order to adapt the layout on devices such as mobile and ipads.
 https://github.com/illinoistech-itm/2019-team-06f/commit/f354b8d09ea323d0338d603997c61a8190dd698c
 https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
+![trello](images/reponsiveDesign_Trello.png "Trello")
 
 * Fixed column spacing alignment for admin panel (create user) and register page google chrome browser.
 https://github.com/illinoistech-itm/2019-team-06f/commit/8a4134378d9f399dcb154e03070cd60145e82a1d
