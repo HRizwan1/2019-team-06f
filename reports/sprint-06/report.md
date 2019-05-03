@@ -173,7 +173,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/f01aa997eb2ae30e1bb8594
  * Firewall:
 
 - Using UFW (Uncomplicated Firewall) in Apache 2:
-- Ideally, we want to limit the number of ports open and only want to use which we need. This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
+- This is a list of open ports and our current firewall setup on the websever node. Other servers have very limited ports open. 
 
 database:
 ufw allow proto tcp to 0.0.0.0/0 port 22
@@ -306,7 +306,6 @@ ufw allow proto tcp to 0.0.0.0/0 port 9100
 
  ![trello](images/trello.png "Trello")
 
-  * Accomplishments:
 
 
  * Development Environment: Our team members are using Windows and Mac OS to run Ubuntu via Oracle VirtualBox, Visual Studio Code,  Git Bash, Sublime Text for coding, and Powershell 6 for vagrant/packer/vault to build the servers, for the development environment of the project.
