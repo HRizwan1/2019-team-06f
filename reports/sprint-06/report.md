@@ -41,8 +41,6 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718b
 
 ![trello](images/rebuildservers_Vault.PNG "Trello")
 
-![instructions](images/buildInst_Trello.PNG "Trello")
-
 * Destroyed and rebuild all servers on each team members machine, incorporating vault.
 
 ![rebuild](images/rebuildservers_Vault.PNG "Trello")
