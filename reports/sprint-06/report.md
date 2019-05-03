@@ -53,7 +53,7 @@ https://github.com/illinoistech-itm/2019-team-06f/commit/80535dfdab573bd1911718b
   https://github.com/illinoistech-itm/2019-team-06f/commit/f4776969c96270c27c90ec92729f80f14edc4c98
 
 
-![trello](images/reponsiveDesign_Trello.PNG "Trello")
+![trello](images/responsiveDesign_Trello.PNG "Trello")
 
 
 
